@@ -479,6 +479,9 @@ function selectAnswer(index) {
 
 function nextQuestion() {
     qIndex += 1;
+    const pct = (qIndex / TOTAL_QUESTIONS) * 100;
+    document.getElementById('progress-bar').style.width = pct + '%';
+    
     if (qIndex < TOTAL_QUESTIONS) {
         loadQuestion();
     } else {
@@ -790,6 +793,7 @@ function showCode() {
 }
 
 function startAutoReset() {
+    if (autoResetTimer) clearInterval(autoResetTimer);
     let seconds = 20;
     document.getElementById('timer-sec').textContent = seconds;
     autoResetTimer = setInterval(() => {
@@ -805,6 +809,7 @@ function startAutoReset() {
 function resetApp(force = false) {
     clearInterval(questionTimer);
     clearInterval(inactivityTimer);
+    if (autoResetTimer) clearInterval(autoResetTimer);
     
     document.getElementById('input-name').value = '';
     document.getElementById('input-phone').value = '';

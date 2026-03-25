@@ -1,0 +1,11 @@
+leads.txt
+leads.csv
+servidor_totem.exe
+servidor_totem.spec
+build/
+dist/
+stock.json
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
