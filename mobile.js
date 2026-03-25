@@ -1,238 +1,188 @@
-// Panther Quiz Mobile - Standalone Demo Logic
+// Panther Quiz Mobile - 100% Sync with Totem script.js
+// Standalone version (no server required)
+
 const INITIAL_STOCK = {
-    'Chapéu': 10,
-    'Boné': 15,
-    'Squeeze': 30,
-    'Chaveiro Trena': 50,
-    'Caneta': 100
+    'Chapéu': 50,
+    'Boné': 70,
+    'Squeeze': 150,
+    'Chaveiro Trena': 150,
+    'Caneta': 150
 };
 
-const QUIZ_QUESTIONS = [
+const questionsBank = [
     {
-        q: "Qual destes lubrificantes é ideal para motores diesel pesados?",
-        options: ["Triton 15W40", "Gear 80W90", "Hydra 68", "Moto 4T"],
-        correct: 0
-    },
-    {
-        q: "Qual a função principal do lubrificante no motor?",
-        options: ["Apenas limpar", "Reduzir atrito e calor", "Aumentar o consumo", "Mudar a cor do motor"],
+        q: "Qual é a principal função de um lubrificante Panther no motor?",
+        answers: ["Aumentar o tamanho do motor", "Reduzir o atrito entre as peças", "Colorir o motor", "Substituir o combustível"],
         correct: 1
     },
     {
-        q: "A Panther Lubrificantes é uma marca focada em...",
-        options: ["Apenas carros", "Apenas motos", "Alta performance industrial e automotiva", "Alimentos"],
+        q: "A Panther Lubrificantes desenvolve produtos para quais tipos de aplicação?",
+        answers: ["Apenas carros de passeio", "Apenas motos", "Linha automotiva, motos, pesados e agrícola", "Apenas máquinas agrícolas"],
         correct: 2
     },
     {
-        q: "O que significa a sigla SAE em um óleo?",
-        options: ["Sociedade de Engenheiros Automotivos", "Sistema de Ar Especial", "Saída de Ar Esquerda", "Sempre Altamente Eficiente"],
+        q: "Os lubrificantes Panther são desenvolvidos para ajudar a:",
+        answers: ["Reduzir o desgaste do motor", "Proteger os componentes internos", "Melhorar o desempenho dos equipamentos", "Todas as alternativas"],
+        correct: 3
+    },
+    {
+        q: "Para equipamentos agrícolas como tratores e colheitadeiras, é importante usar lubrificantes que:",
+        answers: ["Tenham qualidade e especificação correta", "Sejam apenas mais baratos", "Qualquer tipo de óleo serve", "Não precisam ser trocados"],
         correct: 0
     },
     {
-        q: "Qual produto Panther é indicado para transmissões agrícolas?",
-        options: ["Tractor Multi", "Moto Special", "Chain Lube", "Dot 4"],
-        correct: 0
+        q: "Utilizar um lubrificante de qualidade, como os da Panther, ajuda a:",
+        answers: ["Aumentar a vida útil do equipamento", "Reduzir manutenção inesperada", "Melhorar a eficiência da máquina", "Todas as alternativas"],
+        correct: 3
     },
     {
-        q: "Com que frequência deve-se checar o nível do óleo?",
-        options: ["Uma vez por ano", "Nunca", "Regularmente (semanal/quinzenal)", "Apenas se o carro parar"],
-        correct: 2
+        q: "O que indica a viscosidade de um óleo lubrificante?",
+        options: ["A cor do óleo", "A espessura ou fluidez do óleo", "O cheiro do óleo", "O tamanho da embalagem"],
+        correct: 1
     },
     {
-        q: "A viscosidade do óleo (ex: 5W30) refere-se a...",
-        options: ["À cor do óleo", "À resistência ao escoamento", "Ao preço", "Ao tamanho da embalagem"],
+        q: "Qual tipo de motor é mais comum em tratores agrícolas?",
+        answers: ["Motor elétrico", "Motor diesel", "Motor a gás", "Motor híbrido"],
+        correct: 1
+    },
+    {
+        q: "Lubrificantes Panther podem ser usados em:",
+        answers: ["Motores", "Sistemas hidráulicos", "Transmissões", "Todas as alternativas"],
+        correct: 3
+    },
+    {
+        q: "Em operações agrícolas intensas, o lubrificante precisa:",
+        answers: ["Ser trocado quando escurece", "Ter especificação correta", "Durar para sempre", "Ser qualquer tipo"],
+        correct: 1
+    },
+    {
+        q: "Durante a colheita, parar uma máquina por problema mecânico pode:",
+        answers: ["Não causar impacto", "Atrasar toda a operação", "Não fazer diferença", "Melhorar a produção"],
         correct: 1
     }
 ];
 
 // State
-let m_playerName = "";
-let m_score = 0;
-let m_currentIdx = 0;
-let m_timeLeft = 20;
-let m_timer = null;
-let m_wonPrize = "";
-let m_wheelAngle = 0;
-let m_stock = JSON.parse(localStorage.getItem('m_agriStock')) || {...INITIAL_STOCK};
+let participants = JSON.parse(localStorage.getItem('m_participants') || '[]');
+let prizeStock = JSON.parse(localStorage.getItem('m_prizeStock')) || {...INITIAL_STOCK};
+let currentQuestions = [];
+let currentQuestionIndex = 0;
+let score = 0;
+let timer = null;
+let timeLeft = 20;
+let selectedPrize = null;
+let wheelAngle = 0;
+let currentUser = { name: '', phone: '' };
 
 // Navigation
-function showScreen(screenId) {
-    console.log("Mudando para tela:", screenId);
+function showScreen(id) {
+    console.log("Showing screen:", id);
     document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-    const target = document.getElementById(`screen-${screenId}`);
+    const target = document.getElementById(`screen-${id}`);
     if (target) {
         target.classList.add('active');
-        window.scrollTo(0, 0);
-        
-        if (screenId === 'quiz') {
-            console.log("Iniciando Quiz...");
-            startQuiz();
-        }
-        if (screenId === 'roulette') {
-            console.log("Iniciando Roleta...");
-            initWheel();
-        }
-    } else {
-        console.error("Tela não encontrada:", screenId);
+        if (id === 'home') resetApp();
     }
 }
 
-// Registration
-function submitRegister() {
-    console.log("Iniciando registro...");
-    try {
-        const nameInput = document.getElementById('m-input-name');
-        const phoneInput = document.getElementById('m-input-phone');
-        const lgpdInput = document.getElementById('m-input-lgpd');
-        const err = document.getElementById('m-form-error');
-
-        if (!nameInput || !phoneInput || !lgpdInput) {
-            console.error("Elementos do formulário não encontrados!");
-            return;
-        }
-
-        const name = nameInput.value.trim();
-        const phone = phoneInput.value.trim();
-        const lgpd = lgpdInput.checked;
-
-        console.log("Dados capturados:", { name, phone, lgpd });
-
-        if (!name || name.length < 3) {
-            showError("Por favor, insira seu nome completo.");
-            return;
-        }
-        if (!phone || phone.length < 10) {
-            showError("Insira um WhatsApp válido.");
-            return;
-        }
-        if (!lgpd) {
-            showError("Você precisa aceitar os termos da LGPD.");
-            return;
-        }
-
-        m_playerName = nameInput.value;
-        err.classList.add('hidden');
-        
-        // Save lead locally with try-catch
-        try {
-            const leads = JSON.parse(localStorage.getItem('m_leads') || '[]');
-            leads.push({name, phone, date: new Date().toISOString()});
-            localStorage.setItem('m_leads', JSON.stringify(leads));
-            console.log("Lead salvo com sucesso no localStorage.");
-        } catch (e) {
-            console.warn("Erro ao salvar no localStorage (pode estar em modo privado):", e);
-        }
-
-        console.log("Transicionando para o Quiz...");
-        showScreen('quiz');
-    } catch (errGlobal) {
-        console.error("Erro crítico no submitRegister:", errGlobal);
-        alert("Ocorreu um erro ao iniciar. Verifique se o modo privado está ativado.");
-    }
+function goToRegister() {
+    showScreen('register');
 }
 
-function showError(msg) {
-    const err = document.getElementById('m-form-error');
-    err.textContent = msg;
-    err.classList.remove('hidden');
-    if (window.navigator.vibrate) window.navigator.vibrate(50);
-}
-
-// Quiz Logic
 function startQuiz() {
-    m_score = 0;
-    m_currentIdx = 0;
+    showScreen('quiz');
+    // Random 7 questions like the totem
+    currentQuestions = [...questionsBank].sort(() => 0.5 - Math.random()).slice(0, 7);
+    currentQuestionIndex = 0;
+    score = 0;
     loadQuestion();
 }
 
 function loadQuestion() {
-    if (m_currentIdx >= QUIZ_QUESTIONS.length) {
-        finishQuiz();
+    if (currentQuestionIndex >= currentQuestions.length) {
+        showResults();
         return;
     }
 
-    const qData = QUIZ_QUESTIONS[m_currentIdx];
-    document.getElementById('m-question-text').textContent = qData.q;
-    document.getElementById('m-question-counter').textContent = `${m_currentIdx + 1} / ${QUIZ_QUESTIONS.length}`;
-    document.getElementById('m-progress-bar').style.width = `${((m_currentIdx + 1) / QUIZ_QUESTIONS.length) * 100}%`;
-
-    const container = document.getElementById('m-answers');
-    container.innerHTML = '';
+    const q = currentQuestions[currentQuestionIndex];
+    document.getElementById('question-text').textContent = q.q;
+    document.getElementById('question-count').textContent = `Pergunta ${currentQuestionIndex + 1} de ${currentQuestions.length}`;
     
-    qData.options.forEach((opt, i) => {
+    // Progress
+    const progress = ((currentQuestionIndex + 1) / currentQuestions.length) * 100;
+    document.getElementById('quiz-progress').style.width = progress + '%';
+
+    const answersGrid = document.getElementById('answers-grid');
+    answersGrid.innerHTML = '';
+
+    const options = q.answers || q.options; // Compatibility
+    options.forEach((ans, i) => {
         const btn = document.createElement('button');
-        btn.className = 'btn-m-answer';
-        btn.textContent = opt;
+        btn.className = 'industrial-btn answer-btn';
+        btn.innerHTML = `<span class="opt-letter">${String.fromCharCode(65 + i)}</span> <span class="opt-text">${ans}</span>`;
         btn.onclick = () => selectAnswer(i);
-        container.appendChild(btn);
+        answersGrid.appendChild(btn);
     });
 
     startTimer();
 }
 
 function startTimer() {
-    clearInterval(m_timer);
-    m_timeLeft = 20;
-    document.getElementById('m-quiz-timer').textContent = `${m_timeLeft}s`;
+    clearInterval(timer);
+    timeLeft = 20;
+    document.getElementById('timer-val').textContent = timeLeft;
     
-    m_timer = setInterval(() => {
-        m_timeLeft -= 1;
-        document.getElementById('m-quiz-timer').textContent = `${m_timeLeft}s`;
-        if (m_timeLeft <= 0) {
-            clearInterval(m_timer);
+    timer = setInterval(() => {
+        timeLeft--;
+        document.getElementById('timer-val').textContent = timeLeft;
+        if (timeLeft <= 0) {
+            clearInterval(timer);
             selectAnswer(-1); // Timeout
         }
     }, 1000);
 }
 
 function selectAnswer(idx) {
-    clearInterval(m_timer);
-    const qData = QUIZ_QUESTIONS[m_currentIdx];
-    const btns = document.querySelectorAll('.btn-m-answer');
+    clearInterval(timer);
+    const q = currentQuestions[currentQuestionIndex];
+    const btns = document.querySelectorAll('.answer-btn');
     
-    if (idx === qData.correct) {
-        m_score += 1;
+    if (idx === q.correct) {
+        score++;
         if (btns[idx]) btns[idx].classList.add('correct');
         if (window.navigator.vibrate) window.navigator.vibrate(20);
     } else {
         if (btns[idx]) btns[idx].classList.add('wrong');
-        if (btns[qData.correct]) btns[qData.correct].classList.add('correct');
+        if (btns[q.correct]) btns[q.correct].classList.add('correct');
         if (window.navigator.vibrate) window.navigator.vibrate([50, 50]);
     }
 
     setTimeout(() => {
-        m_currentIdx += 1;
+        currentQuestionIndex++;
         loadQuestion();
     }, 1200);
 }
 
-function finishQuiz() {
-    document.getElementById('m-result-text').textContent = `Você acertou ${m_score} de ${QUIZ_QUESTIONS.length} perguntas!`;
-    
-    const winActions = document.getElementById('m-win-actions');
-    const loseActions = document.getElementById('m-lose-actions');
-    const title = document.getElementById('m-result-title');
-    const emoji = document.getElementById('m-result-emoji');
-
-    if (m_score >= 5) {
-        title.textContent = "PARABÉNS!";
-        emoji.textContent = "🏆";
-        winActions.classList.remove('hidden');
-        loseActions.classList.add('hidden');
-    } else {
-        title.textContent = "POR POUCO!";
-        emoji.textContent = "⚠️";
-        winActions.classList.add('hidden');
-        loseActions.classList.remove('hidden');
-    }
+function showResults() {
     showScreen('results');
+    document.getElementById('final-score').textContent = score;
+    
+    if (score >= 5) {
+        document.getElementById('results-win').classList.remove('hidden');
+        document.getElementById('results-lose').classList.add('hidden');
+    } else {
+        document.getElementById('results-win').classList.add('hidden');
+        document.getElementById('results-lose').classList.remove('hidden');
+    }
 }
 
-// Roulette Logic
-function initWheel() {
-    const canvas = document.getElementById('m-wheel-canvas');
-    if (!canvas) return;
-    drawWheel(canvas);
+// Roulette
+function initRoulette() {
+    showScreen('roulette');
+    selectedPrize = getRandomPrize();
+    console.log("Selected prize:", selectedPrize);
+    const canvas = document.getElementById('wheel-canvas');
+    if (canvas) drawWheel(canvas);
 }
 
 function drawWheel(canvas) {
@@ -241,8 +191,8 @@ function drawWheel(canvas) {
     const centerY = canvas.height / 2;
     const radius = canvas.width / 2 - 10;
     
-    const prizes = ['Chapéu', 'Squeeze', 'Chaveiro', 'Caneta', 'Boné', 'Squeeze', 'Chaveiro', 'Caneta'];
-    const colors = ['#E84011', '#1e1e20', '#E84011', '#1e1e20', '#E84011', '#1e1e20', '#E84011', '#1e1e20'];
+    const prizes = ['Chapéu', 'Squeeze', 'Chaveiro Trena', 'Caneta', 'Boné', 'Squeeze', 'Chaveiro Trena', 'Caneta'];
+    const colors = ['#FF4500', '#111111', '#FF4500', '#111111', '#FF4500', '#111111', '#FF4500', '#111111'];
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     
@@ -258,91 +208,126 @@ function drawWheel(canvas) {
         ctx.translate(centerX, centerY);
         ctx.rotate(i * angle + angle / 2);
         ctx.fillStyle = "white";
-        ctx.font = "bold 24px Outfit";
+        ctx.font = "bold 20px Outfit";
         ctx.textAlign = "right";
-        ctx.fillText(prize, radius - 30, 10);
+        ctx.fillText(prize, radius - 40, 10);
         ctx.restore();
     });
 }
 
-function spinWheel() {
-    const btn = document.getElementById('m-btn-spin');
-    btn.disabled = true;
-    
-    // Choose prize (Mock probability)
-    const availablePrizes = Object.keys(m_stock).filter(k => m_stock[k] > 0);
-    m_wonPrize = availablePrizes[Math.floor(Math.random() * availablePrizes.length)] || "Caneta";
-    
-    const prizes = ['Chapéu', 'Squeeze', 'Chaveiro', 'Caneta', 'Boné', 'Squeeze', 'Chaveiro', 'Caneta'];
-    const targetIdx = prizes.indexOf(m_wonPrize);
-    
-    const extraSpins = 5;
-    const rotation = (extraSpins * 360) + (360 - (targetIdx * 45) - 22.5);
-    m_wheelAngle += rotation;
+function getRandomPrize() {
+    // Check presentation mode
+    const forceSelect = document.getElementById('force-prize-select');
+    if (forceSelect && forceSelect.value !== "") {
+        return forceSelect.value;
+    }
 
-    const canvas = document.getElementById('m-wheel-canvas');
-    canvas.style.transition = 'transform 4s cubic-bezier(0.15, 0, 0.15, 1)';
-    canvas.style.transform = `rotate(${m_wheelAngle}deg)`;
+    const available = Object.entries(prizeStock).filter(([_, qty]) => qty > 0);
+    const total = available.reduce((acc, [_, qty]) => acc + qty, 0);
+    if (total === 0) return "Squeeze"; // Fallback
+
+    let random = Math.random() * total;
+    for (const [name, qty] of available) {
+        if (random < qty) return name;
+        random -= qty;
+    }
+    return available[0][0];
+}
+
+function spinWheel() {
+    const btn = document.getElementById('spin-btn');
+    btn.disabled = true;
+
+    const prizes = ['Chapéu', 'Squeeze', 'Chaveiro Trena', 'Caneta', 'Boné', 'Squeeze', 'Chaveiro Trena', 'Caneta'];
+    const prizeIdx = prizes.indexOf(selectedPrize);
+    
+    const spins = 5;
+    const deg = spins * 360 + (360 - (prizeIdx * 45) - 22.5);
+    wheelAngle += deg;
+
+    const wheel = document.getElementById('wheel-canvas');
+    wheel.style.transition = 'transform 4s cubic-bezier(0.15, 0, 0.15, 1)';
+    wheel.style.transform = `rotate(${wheelAngle}deg)`;
 
     setTimeout(() => {
-        document.getElementById('m-btn-spin').classList.add('hidden');
-        document.getElementById('m-spin-status').classList.add('hidden');
-        document.getElementById('m-prize-name').textContent = m_wonPrize;
-        document.getElementById('m-prize-reveal').classList.remove('hidden');
-        
-        // Update local stock
-        m_stock[m_wonPrize] -= 1;
-        localStorage.setItem('m_agriStock', JSON.stringify(m_stock));
-        
-        if (window.navigator.vibrate) window.navigator.vibrate([100, 50, 100]);
+        finishGiveaway();
     }, 4500);
 }
 
-// Final Screen
-function showCode() {
-    const code = `PANTHER-${Math.floor(1000 + Math.random() * 9000)}`;
-    document.getElementById('m-rescue-code').textContent = code;
-    document.getElementById('m-code-prize').textContent = m_wonPrize;
-    showScreen('code');
-    startResetCountdown();
+function finishGiveaway() {
+    showScreen('ticket');
+    document.getElementById('ticket-prize-name').textContent = selectedPrize;
+    const code = `PAN-${Math.floor(1000 + Math.random() * 9000)}`;
+    document.getElementById('rescue-code').textContent = code;
+
+    // Save
+    const lead = {
+        ...currentUser,
+        score,
+        prize: selectedPrize,
+        code,
+        date: new Date().toLocaleDateString(),
+        time: new Date().toLocaleTimeString()
+    };
+    participants.push(lead);
+    localStorage.setItem('m_participants', JSON.stringify(participants));
+    
+    // Update stock
+    prizeStock[selectedPrize]--;
+    localStorage.setItem('m_prizeStock', JSON.stringify(prizeStock));
+    
+    startAutoReset(30);
 }
 
-function startResetCountdown() {
-    let sec = 20;
-    const timerEl = document.getElementById('m-reset-sec');
-    const resetInterval = setInterval(() => {
-        sec -= 1;
-        timerEl.textContent = sec;
-        if (sec <= 0) {
-            clearInterval(resetInterval);
-            resetApp();
+function startAutoReset(sec) {
+    let count = sec;
+    document.getElementById('m-reset-sec').textContent = count;
+    const itv = setInterval(() => {
+        count--;
+        document.getElementById('m-reset-sec').textContent = count;
+        if (count <= 0) {
+            clearInterval(itv);
+            showScreen('home');
         }
     }, 1000);
-
-    // Stop if user resets manually
-    window.lastResetInterval = resetInterval;
+    window.mResetItv = itv;
 }
 
 function resetApp() {
-    if (window.lastResetInterval) clearInterval(window.lastResetInterval);
-    clearInterval(m_timer);
-    
-    // Reset Form
-    document.getElementById('m-input-name').value = '';
-    document.getElementById('m-input-phone').value = '';
-    document.getElementById('m-input-lgpd').checked = false;
-    
-    // Reset Visibility
-    document.getElementById('m-btn-spin').disabled = false;
-    document.getElementById('m-btn-spin').classList.remove('hidden');
-    document.getElementById('m-spin-status').classList.remove('hidden');
-    document.getElementById('m-prize-reveal').classList.add('hidden');
-    
-    showScreen('home');
+    if (window.mResetItv) clearInterval(window.mResetItv);
+    clearInterval(timer);
+    currentUser = { name: '', phone: '' };
+    const btn = document.getElementById('spin-btn');
+    if (btn) btn.disabled = false;
+    const wheel = document.getElementById('wheel-canvas');
+    if (wheel) {
+        wheel.style.transition = 'none';
+        wheel.style.transform = `rotate(${wheelAngle % 360}deg)`;
+    }
 }
 
-// Initial
+// Form logic
+function registerParticipant() {
+    const name = document.getElementById('input-name').value.trim();
+    const phone = document.getElementById('input-phone').value.trim();
+    const lgpd = document.getElementById('m-input-lgpd').checked;
+
+    if (name.length < 3 || phone.length < 10 || !lgpd) {
+        alert("Preencha todos os dados e aceite a LGPD.");
+        return;
+    }
+
+    currentUser = { name, phone };
+    startQuiz();
+}
+
+// Admin (Simplified)
+function resetStock() {
+    prizeStock = {...INITIAL_STOCK};
+    localStorage.setItem('m_prizeStock', JSON.stringify(prizeStock));
+    alert("Estoque resetado!");
+}
+
 window.onload = () => {
-    // Check if we need orientation lock or similar
-    console.log("Panther Mobile Loaded");
+    console.log("Panther Mobile Sync Loaded");
 };
