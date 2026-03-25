@@ -1,0 +1,20 @@
+[2026-03-25 01:19:40] Nome=1 | WhatsApp=1 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 01:19
+[2026-03-25 01:20:38] Nome=gUILHERME | WhatsApp=123 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 01:20
+[NOVO] [2026-03-25 01:26:48] Nome=Teste Integracao | WhatsApp=11999999999 | Acertos=7 | Premio=Boné | Codigo=TEST-123 | Data=2026-03-25 01:30
+[ATUALIZADO] [2026-03-25 01:26:55] Nome=1 | WhatsApp=1 | Acertos=0 | Premio=- | Codigo=- | Data=25/03/2026 01:19
+[ATUALIZADO] [2026-03-25 01:26:55] Nome=gUILHERME | WhatsApp=123 | Acertos=2 | Premio=- | Codigo=- | Data=25/03/2026 01:20
+[NOVO] [2026-03-25 01:26:58] Nome=das | WhatsApp=13123 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 01:26
+[ATUALIZADO] [2026-03-25 01:27:10] Nome=das | WhatsApp=13123 | Acertos=1 | Premio=- | Codigo=- | Data=25/03/2026 01:26
+[NOVO] [2026-03-25 01:37:25] Nome=1234 | WhatsApp=1234 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 01:37
+[NOVO] [2026-03-25 01:52:35] Nome=1 | WhatsApp=1 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 01:52
+[ATUALIZADO] [2026-03-25 01:52:48] Nome=1 | WhatsApp=1 | Acertos=1 | Premio=- | Codigo=- | Data=25/03/2026 01:52
+[NOVO] [2026-03-25 01:57:28] Nome=1 | WhatsApp=1 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 01:57
+[NOVO] [2026-03-25 02:00:51] Nome=Test User | WhatsApp=11999999999 | Acertos=7 | Premio=- | Codigo=- | Data=25/03/2026 00:29
+[NOVO] [2026-03-25 02:00:51] Nome=Test User | WhatsApp=11999999999 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-7225 | Data=25/03/2026 00:35
+[NOVO] [2026-03-25 02:02:55] Nome=João Apresentação | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 02:02
+[ATUALIZADO] [2026-03-25 02:03:10] Nome=João Apresentação | WhatsApp=11999999999 | Acertos=2 | Premio=- | Codigo=- | Data=25/03/2026 02:02
+[NOVO] [2026-03-25 02:03:32] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[ATUALIZADO] [2026-03-25 02:03:33] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Boné | Codigo= | Data= 
+[ATUALIZADO] [2026-03-25 02:03:38] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Boné | Codigo=AGRISHOW-4878 | Data= 
+[NOVO] [2026-03-25 02:09:38] Nome=1 | WhatsApp=1 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 02:09
+[ATUALIZADO] [2026-03-25 02:09:53] Nome=1 | WhatsApp=1 | Acertos=5 | Premio=- | Codigo=- | Data=25/03/2026 02:09
