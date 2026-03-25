@@ -1,9 +1,9 @@
-// Panther Quiz Mobile - 100% Sync with Totem script.js
+﻿// Panther Quiz Mobile - 100% Sync with Totem script.js
 // Standalone version (no server required)
 
 const INITIAL_STOCK = {
-    'Chapéu': 50,
-    'Boné': 70,
+    'ChapÃ©u': 50,
+    'BonÃ©': 70,
     'Squeeze': 150,
     'Chaveiro Trena': 150,
     'Caneta': 150
@@ -11,53 +11,53 @@ const INITIAL_STOCK = {
 
 const questionsBank = [
     {
-        q: "Qual é a principal função de um lubrificante Panther no motor?",
-        answers: ["Aumentar o tamanho do motor", "Reduzir o atrito entre as peças", "Colorir o motor", "Substituir o combustível"],
+        q: "Qual Ã© a principal funÃ§Ã£o de um lubrificante Panther no motor?",
+        answers: ["Aumentar o tamanho do motor", "Reduzir o atrito entre as peÃ§as", "Colorir o motor", "Substituir o combustÃ­vel"],
         correct: 1
     },
     {
-        q: "A Panther Lubrificantes desenvolve produtos para quais tipos de aplicação?",
-        answers: ["Apenas carros de passeio", "Apenas motos", "Linha automotiva, motos, pesados e agrícola", "Apenas máquinas agrícolas"],
+        q: "A Panther Lubrificantes desenvolve produtos para quais tipos de aplicaÃ§Ã£o?",
+        answers: ["Apenas carros de passeio", "Apenas motos", "Linha automotiva, motos, pesados e agrÃ­cola", "Apenas mÃ¡quinas agrÃ­colas"],
         correct: 2
     },
     {
-        q: "Os lubrificantes Panther são desenvolvidos para ajudar a:",
+        q: "Os lubrificantes Panther sÃ£o desenvolvidos para ajudar a:",
         answers: ["Reduzir o desgaste do motor", "Proteger os componentes internos", "Melhorar o desempenho dos equipamentos", "Todas as alternativas"],
         correct: 3
     },
     {
-        q: "Para equipamentos agrícolas como tratores e colheitadeiras, é importante usar lubrificantes que:",
-        answers: ["Tenham qualidade e especificação correta", "Sejam apenas mais baratos", "Qualquer tipo de óleo serve", "Não precisam ser trocados"],
+        q: "Para equipamentos agrÃ­colas como tratores e colheitadeiras, Ã© importante usar lubrificantes que:",
+        answers: ["Tenham qualidade e especificaÃ§Ã£o correta", "Sejam apenas mais baratos", "Qualquer tipo de Ã³leo serve", "NÃ£o precisam ser trocados"],
         correct: 0
     },
     {
         q: "Utilizar um lubrificante de qualidade, como os da Panther, ajuda a:",
-        answers: ["Aumentar a vida útil do equipamento", "Reduzir manutenção inesperada", "Melhorar a eficiência da máquina", "Todas as alternativas"],
+        answers: ["Aumentar a vida Ãºtil do equipamento", "Reduzir manutenÃ§Ã£o inesperada", "Melhorar a eficiÃªncia da mÃ¡quina", "Todas as alternativas"],
         correct: 3
     },
     {
-        q: "O que indica a viscosidade de um óleo lubrificante?",
-        options: ["A cor do óleo", "A espessura ou fluidez do óleo", "O cheiro do óleo", "O tamanho da embalagem"],
+        q: "O que indica a viscosidade de um Ã³leo lubrificante?",
+        options: ["A cor do Ã³leo", "A espessura ou fluidez do Ã³leo", "O cheiro do Ã³leo", "O tamanho da embalagem"],
         correct: 1
     },
     {
-        q: "Qual tipo de motor é mais comum em tratores agrícolas?",
-        answers: ["Motor elétrico", "Motor diesel", "Motor a gás", "Motor híbrido"],
+        q: "Qual tipo de motor Ã© mais comum em tratores agrÃ­colas?",
+        answers: ["Motor elÃ©trico", "Motor diesel", "Motor a gÃ¡s", "Motor hÃ­brido"],
         correct: 1
     },
     {
         q: "Lubrificantes Panther podem ser usados em:",
-        answers: ["Motores", "Sistemas hidráulicos", "Transmissões", "Todas as alternativas"],
+        answers: ["Motores", "Sistemas hidrÃ¡ulicos", "TransmissÃµes", "Todas as alternativas"],
         correct: 3
     },
     {
-        q: "Em operações agrícolas intensas, o lubrificante precisa:",
-        answers: ["Ser trocado quando escurece", "Ter especificação correta", "Durar para sempre", "Ser qualquer tipo"],
+        q: "Em operaÃ§Ãµes agrÃ­colas intensas, o lubrificante precisa:",
+        answers: ["Ser trocado quando escurece", "Ter especificaÃ§Ã£o correta", "Durar para sempre", "Ser qualquer tipo"],
         correct: 1
     },
     {
-        q: "Durante a colheita, parar uma máquina por problema mecânico pode:",
-        answers: ["Não causar impacto", "Atrasar toda a operação", "Não fazer diferença", "Melhorar a produção"],
+        q: "Durante a colheita, parar uma mÃ¡quina por problema mecÃ¢nico pode:",
+        answers: ["NÃ£o causar impacto", "Atrasar toda a operaÃ§Ã£o", "NÃ£o fazer diferenÃ§a", "Melhorar a produÃ§Ã£o"],
         correct: 1
     }
 ];
@@ -191,7 +191,7 @@ function drawWheel(canvas) {
     const centerY = canvas.height / 2;
     const radius = canvas.width / 2 - 10;
     
-    const prizes = ['Chapéu', 'Squeeze', 'Chaveiro Trena', 'Caneta', 'Boné', 'Squeeze', 'Chaveiro Trena', 'Caneta'];
+    const prizes = ['ChapÃ©u', 'Squeeze', 'Chaveiro Trena', 'Caneta', 'BonÃ©', 'Squeeze', 'Chaveiro Trena', 'Caneta'];
     const colors = ['#FF4500', '#111111', '#FF4500', '#111111', '#FF4500', '#111111', '#FF4500', '#111111'];
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -238,7 +238,7 @@ function spinWheel() {
     const btn = document.getElementById('spin-btn');
     btn.disabled = true;
 
-    const prizes = ['Chapéu', 'Squeeze', 'Chaveiro Trena', 'Caneta', 'Boné', 'Squeeze', 'Chaveiro Trena', 'Caneta'];
+    const prizes = ['ChapÃ©u', 'Squeeze', 'Chaveiro Trena', 'Caneta', 'BonÃ©', 'Squeeze', 'Chaveiro Trena', 'Caneta'];
     const prizeIdx = prizes.indexOf(selectedPrize);
     
     const spins = 5;

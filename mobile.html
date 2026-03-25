@@ -5,35 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>Quiz Panther - Mobile</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <!-- Usamos o mobile.css que será um clone do style.css com ajustes responsivos -->
-    <link rel="stylesheet" href="mobile.css?v=4">
+    <!-- Usamos o mobile.css que serÃ¡ um clone do style.css com ajustes responsivos -->
+    <link rel="stylesheet" href="mobile.css?v=5">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 <body>
     <div id="app">
-        <!-- Background Decor (same as totem) -->
-        <div class="floating-products">
-            <img src="panther.png" class="float-img float-1">
-            <img src="panther.png" class="float-img float-2">
-            <img src="panther.png" class="float-img float-3">
-            <img src="panther.png" class="float-img float-4">
-        </div>
-
         <!-- Home Screen -->
         <div id="screen-home" class="screen active">
-            <div class="bg-decor">
-                <div class="bd-circle c1"></div>
-                <div class="bd-circle c2"></div>
-            </div>
             <div class="content main-content">
                 <div class="logo-wrapper">
                     <img src="panther.png" alt="Panther" class="home-logo">
                 </div>
                 <div class="event-badge">AGRISHOW 2026</div>
                 <h1 class="main-title">QUIZ<br>PANTHER</h1>
-                <p class="subtitle">Responda as perguntas e<br>concorra a brindes exclusivos! ✨</p>
-                <button class="btn btn-primary btn-jumbo bounce" onclick="goToRegister()">🚜 PARTICIPAR</button>
+                <p class="subtitle">Responda as perguntas e<br>concorra a brindes exclusivos! âœ¨</p>
+                <button class="btn btn-primary btn-jumbo bounce" onclick="goToRegister()">ðŸšœ PARTICIPAR</button>
             </div>
         </div>
 
@@ -59,7 +47,7 @@
                         <label for="m-input-lgpd">Autorizo o uso dos meus dados conforme a LGPD.</label>
                     </div>
 
-                    <button class="btn btn-primary" onclick="registerParticipant()">PRÓXIMO ➜</button>
+                    <button class="btn btn-primary" onclick="registerParticipant()">PRÃ“XIMO âžœ</button>
                     <button class="btn btn-outline" onclick="showScreen('home')">VOLTAR</button>
                 </div>
             </div>
@@ -71,7 +59,7 @@
                 <div id="quiz-progress" class="progress-bar"></div>
                 <div class="quiz-meta">
                     <span id="question-count">Pergunta 1 de 7</span>
-                    <div class="timer-box">⏰ <span id="timer-val">20</span>s</div>
+                    <div class="timer-box">â° <span id="timer-val">20</span>s</div>
                 </div>
             </div>
             
@@ -94,12 +82,12 @@
                     </div>
                     
                     <div id="results-win" class="hidden">
-                        <p class="res-msg">Excelente desempenho!<br>Você ganhou uma chance na roleta!</p>
-                        <button class="btn btn-primary btn-jumbo" onclick="initRoulette()">🎡 GIRAR ROLETA</button>
+                        <p class="res-msg">Excelente desempenho!<br>VocÃª ganhou uma chance na roleta!</p>
+                        <button class="btn btn-primary btn-jumbo" onclick="initRoulette()">ðŸŽ¡ GIRAR ROLETA</button>
                     </div>
                     
                     <div id="results-lose" class="hidden">
-                        <p class="res-msg">Não foi desta vez!<br>Acerte 5 ou mais para ganhar.</p>
+                        <p class="res-msg">NÃ£o foi desta vez!<br>Acerte 5 ou mais para ganhar.</p>
                         <button class="btn btn-outline" onclick="showScreen('home')">TENTAR NOVAMENTE</button>
                     </div>
                 </div>
@@ -126,18 +114,18 @@
                         <img src="panther.png" alt="Panther" class="t-logo">
                     </div>
                     <div class="t-body">
-                        <p>VOCÊ GANHOU:</p>
-                        <h2 id="ticket-prize-name">PRÊMIO</h2>
+                        <p>VOCÃŠ GANHOU:</p>
+                        <h2 id="ticket-prize-name">PRÃŠMIO</h2>
                         <div class="code-box">
                             <span id="rescue-code">PAN-0000</span>
                         </div>
                     </div>
                     <div class="t-footer">
-                        Apresente este código no balcão da Panther na Agrishow.
+                        Apresente este cÃ³digo no balcÃ£o da Panther na Agrishow.
                     </div>
                 </div>
-                <button class="btn btn-primary" style="margin-top: 30px;" onclick="showScreen('home')">CONCLUÍDO</button>
-                <p class="reset-hint">Início em <span id="m-reset-sec">30</span>s</p>
+                <button class="btn btn-primary" style="margin-top: 30px;" onclick="showScreen('home')">CONCLUÃDO</button>
+                <p class="reset-hint">InÃ­cio em <span id="m-reset-sec">30</span>s</p>
             </div>
         </div>
 
