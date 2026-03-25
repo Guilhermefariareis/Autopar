@@ -1,0 +1,240 @@
+/*
+ * Panther Quiz - Mobile Override CSS
+ * Layer on top of style.css to scale the totem UI for iPhone/Android
+ * Viewport: 390px wide, 844px tall (iPhone 14 baseline)
+ */
+
+/* ─── SAFE AREA / SCROLL ─────────────────────────────────── */
+body {
+    overflow-y: auto !important;
+    overflow-x: hidden;
+}
+
+#app {
+    min-height: 100dvh;
+}
+
+/* ─── SCREEN SYSTEM ─────────────────────────────────────── */
+.screen {
+    position: relative !important;
+    min-height: 100dvh;
+    display: none;
+    flex-direction: column;
+    padding: env(safe-area-inset-top, 16px) 20px env(safe-area-inset-bottom, 24px);
+    overflow: hidden;
+}
+.screen.active {
+    display: flex;
+}
+.screen.screen-modal {
+    position: fixed !important;
+    inset: 0;
+    z-index: 200;
+    overflow-y: auto;
+}
+
+/* ─── HOME SCREEN ───────────────────────────────────────── */
+.main-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 0;
+}
+.logo-wrapper { margin-bottom: 16px; }
+.home-logo { width: 55vw; max-width: 240px; height: auto; }
+
+.event-badge {
+    font-size: 13px;
+    padding: 6px 18px;
+    margin-bottom: 14px;
+}
+.main-title {
+    font-size: clamp(52px, 18vw, 80px) !important;
+    line-height: 0.9;
+    margin-bottom: 14px;
+}
+.subtitle {
+    font-size: clamp(16px, 4vw, 20px);
+    margin-bottom: 36px;
+}
+.sold-out-banner h2 { font-size: 22px !important; }
+
+/* ─── BUTTONS ────────────────────────────────────────────── */
+.btn {
+    font-size: clamp(16px, 4vw, 22px) !important;
+    padding: 18px 28px !important;
+}
+.btn-jumbo {
+    font-size: clamp(20px, 5vw, 26px) !important;
+    padding: 22px 28px !important;
+}
+.btn-test-roulette {
+    font-size: 14px !important;
+    padding: 12px 28px !important;
+    margin-top: 16px;
+}
+.btn-link {
+    font-size: 16px !important;
+    padding: 12px 28px !important;
+}
+
+/* ─── REGISTER ───────────────────────────────────────────── */
+.register-content {
+    justify-content: flex-start;
+    padding-top: 0;
+}
+.reg-panel {
+    width: 100% !important;
+    padding: 28px 20px !important;
+    border-radius: 0 !important;
+    min-height: 100dvh;
+}
+.reg-logo-mini { margin-bottom: 12px; }
+.reg-logo-img { width: 120px !important; }
+.reg-title { font-size: 32px !important; margin-bottom: 6px !important; }
+.reg-sub   { font-size: 16px !important; margin-bottom: 28px !important; }
+
+.field-group { margin-bottom: 28px !important; gap: 14px !important; }
+.field-input { font-size: 22px !important; padding: 18px 0 8px !important; }
+.field-label { font-size: 18px !important; top: 18px !important; }
+.field-input:not(:placeholder-shown) ~ .field-label,
+.field-input:focus ~ .field-label {
+    font-size: 12px !important;
+    top: 0 !important;
+}
+
+.lgpd-toggle-row { margin-bottom: 24px !important; }
+.lgpd-toggle-text { font-size: 15px !important; }
+.toggle-track { min-width: 56px !important; height: 32px !important; }
+.toggle-thumb { width: 24px !important; height: 24px !important; top: 4px !important; left: 4px !important; }
+.toggle-input:checked + .toggle-track .toggle-thumb { transform: translateX(24px) !important; }
+
+.form-error { font-size: 14px !important; }
+
+/* ─── QUIZ ───────────────────────────────────────────────── */
+#screen-quiz {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.quiz-wrap {
+    width: 100% !important;
+    padding: 20px !important;
+    border-radius: 0 !important;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.quiz-header { margin-bottom: 18px !important; gap: 10px !important; }
+.progress-container { height: 8px !important; }
+.quiz-timer { font-size: 22px !important; padding: 4px 14px !important; min-width: 70px !important; }
+.counter { font-size: 16px !important; }
+
+#question-text {
+    font-size: clamp(20px, 5vw, 26px) !important;
+    line-height: 1.25 !important;
+    text-align: center;
+    min-height: auto !important;
+}
+.question-box { min-height: 100px !important; margin-bottom: 20px !important; }
+
+.answers-container { gap: 12px !important; }
+.btn-answer {
+    font-size: clamp(16px, 4vw, 20px) !important;
+    padding: 16px 18px !important;
+    min-height: 56px !important;
+    text-align: center !important;
+}
+
+.btn-cancel-quiz {
+    font-size: 13px !important;
+    padding: 8px 14px !important;
+}
+
+/* Floating product logos — smaller on mobile */
+.float-img { opacity: 0.18 !important; }
+.float-1 { height: 14vw !important; top: 6% !important; left: -4% !important; }
+.float-2 { height: 18vw !important; bottom: 8% !important; right: -4% !important; }
+.float-3 { height: 10vw !important; top: 38% !important; left: -6% !important; }
+.float-4 { height: 14vw !important; top: 12% !important; right: -4% !important; }
+
+/* ─── WIN / LOSE ─────────────────────────────────────────── */
+.result-panel {
+    width: 100% !important;
+    padding: 28px 20px !important;
+}
+.trophy-icon { font-size: 64px !important; }
+.success-title { font-size: clamp(36px, 10vw, 56px) !important; }
+.success-title span { font-size: clamp(28px, 8vw, 42px) !important; }
+.error-title { font-size: clamp(40px, 12vw, 60px) !important; }
+.result-score-text { font-size: 22px !important; }
+.result-score-text strong { font-size: 28px !important; }
+.result-panel .subtitle { font-size: 18px !important; margin-bottom: 28px !important; }
+
+/* ─── ROULETTE ───────────────────────────────────────────── */
+.roulette-screen {
+    padding: 16px 0 20px !important;
+    justify-content: space-between;
+}
+.roulette-top { padding: 0 20px !important; }
+.roulette-badge { font-size: 12px !important; padding: 5px 16px !important; }
+.roulette-heading { font-size: clamp(22px, 6vw, 30px) !important; }
+#roulette-player-name { font-size: 18px !important; }
+
+.wheel-stage {
+    width: min(92vw, 400px) !important;
+    height: min(92vw, 400px) !important;
+}
+/* Scale down the glow rings so they don't overflow */
+.ring1 { width: min(100vw, 440px) !important; height: min(100vw, 440px) !important; }
+.ring2 { width: min(95vw, 420px) !important; height: min(95vw, 420px) !important; }
+.wheel-center-cap { width: 52px !important; height: 52px !important; }
+.wheel-pointer { font-size: 36px !important; }
+
+.roulette-bottom { padding: 0 20px !important; gap: 14px !important; }
+.prize-name-big { font-size: clamp(36px, 10vw, 56px) !important; }
+.you-won-label  { font-size: 16px !important; }
+
+/* Prize popup */
+.prize-popup-card { padding: 28px 24px !important; }
+.prize-popup-name { font-size: 32px !important; }
+.prize-popup-label { font-size: 18px !important; }
+
+/* ─── TICKET / CODE SCREEN ───────────────────────────────── */
+.code-screen .content {
+    gap: 16px !important;
+    padding: 20px !important;
+    overflow-y: auto;
+}
+.ticket-wrapper { border-radius: 16px !important; }
+.ticket-top { padding: 20px !important; }
+.ticket-body { padding: 28px 20px !important; gap: 8px !important; }
+.code-text { font-size: clamp(30px, 8vw, 48px) !important; }
+.ticket-label { font-size: 14px !important; }
+.ticket-prize-label { font-size: 18px !important; }
+.ticket-prize-label strong { font-size: 20px !important; }
+.ticket-thanks { padding: 20px !important; }
+.thanks-hashtag { font-size: 18px !important; }
+.thanks-sub { font-size: 14px !important; }
+.timeout-text { font-size: 14px !important; }
+
+/* ─── ADMIN PANEL ────────────────────────────────────────── */
+.admin-content {
+    width: 95% !important;
+    padding: 24px !important;
+    gap: 16px !important;
+}
+.admin-content h2 { font-size: 32px !important; }
+.stat-box h3     { font-size: 48px !important; }
+.stat-box p      { font-size: 16px !important; }
+.btn-danger, .btn-export { font-size: 16px !important; padding: 16px 20px !important; }
+
+/* ─── ANIMATIONS ─────────────────────────────────────────── */
+@keyframes slowFloat {
+    0%   { transform: translateY(0px) scale(1); }
+    100% { transform: translateY(16px) scale(1.04); }
+}
+
+/* ─── REMOVE DESKTOP SERVER-STATUS ──────────────────────── */
+#server-status { display: none !important; }
