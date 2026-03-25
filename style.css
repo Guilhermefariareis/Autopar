@@ -29,6 +29,8 @@ html, body {
     font-family: 'Outfit', sans-serif;
     color: var(--text);
     user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 /* â”€â”€ App Wrapper full bleed â”€â”€ */

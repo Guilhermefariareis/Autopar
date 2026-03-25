@@ -370,7 +370,11 @@ document.getElementById('input-phone').addEventListener('input', function () {
 });
 
 function startQuiz() {
-    if (!checkGlobalStock()) return;
+    if (!checkGlobalStock()) {
+        alert("Ops! Todos os brindes acabaram. Modo de demonstração encerrado.");
+        window.location.reload();
+        return;
+    }
 
     resetInactivityTimer();
     score = 0;

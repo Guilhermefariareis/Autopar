@@ -18,3 +18,1281 @@
 [ATUALIZADO] [2026-03-25 02:03:38] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Boné | Codigo=AGRISHOW-4878 | Data= 
 [NOVO] [2026-03-25 02:09:38] Nome=1 | WhatsApp=1 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 02:09
 [ATUALIZADO] [2026-03-25 02:09:53] Nome=1 | WhatsApp=1 | Acertos=5 | Premio=- | Codigo=- | Data=25/03/2026 02:09
+[NOVO] [2026-03-25 14:19:20] Nome=1 | WhatsApp=1 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 00:42
+[NOVO] [2026-03-25 14:19:20] Nome=Guilherme reis | WhatsApp=16991704868 | Acertos=2 | Premio=- | Codigo=- | Data=25/03/2026 00:57
+[NOVO] [2026-03-25 14:19:20] Nome=1 | WhatsApp=1 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 01:01
+[NOVO] [2026-03-25 14:19:20] Nome=Guilherme REis | WhatsApp=16991704868 | Acertos=4 | Premio=- | Codigo=- | Data=25/03/2026 01:04
+[NOVO] [2026-03-25 14:19:20] Nome=Guilherme Reis | WhatsApp=1 | Acertos=2 | Premio=- | Codigo=- | Data=25/03/2026 01:05
+[NOVO] [2026-03-25 14:19:20] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=1 | Premio=- | Codigo=- | Data=25/03/2026 01:10
+[NOVO] [2026-03-25 14:19:20] Nome=Guilherme | WhatsApp=16991704868 | Acertos=1 | Premio=- | Codigo=- | Data=25/03/2026 01:11
+[NOVO] [2026-03-25 14:19:20] Nome=gUILHERME rEIS | WhatsApp=16991704868 | Acertos=0 | Premio=- | Codigo=- | Data=25/03/2026 01:16
+[NOVO] [2026-03-25 14:19:20] Nome=A | WhatsApp=1 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 01:17
+[NOVO] [2026-03-25 14:19:20] Nome=1 | WhatsApp=1 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 01:18
+[NOVO] [2026-03-25 14:19:20] Nome=a | WhatsApp=1 | Acertos=1 | Premio=- | Codigo=- | Data=25/03/2026 01:24
+[NOVO] [2026-03-25 14:19:20] Nome=3123 | WhatsApp=123 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 01:25
+[NOVO] [2026-03-25 14:20:43] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 14:20
+[ATUALIZADO] [2026-03-25 14:22:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3775 | Data=25/03/2026 14:20
+[NOVO] [2026-03-25 14:23:48] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[ATUALIZADO] [2026-03-25 14:24:55] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-3298 | Data= 
+[NOVO] [2026-03-25 14:43:37] Nome=1 | WhatsApp=1 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 14:43
+[ATUALIZADO] [2026-03-25 14:43:49] Nome=1 | WhatsApp=1 | Acertos=2 | Premio=- | Codigo=- | Data=25/03/2026 14:43
+[NOVO] [2026-03-25 14:45:41] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:46:03] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:46:03] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:46:08] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=- | Codigo=- | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:46:08] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=- | Codigo=- | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:46:29] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=- | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:46:31] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:46:31] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:46:33] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:46:33] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:47:03] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:47:03] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:47:34] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:47:34] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:48:04] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:48:04] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:48:34] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:48:34] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:49:04] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:49:04] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:49:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:49:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:50:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:50:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:51:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:51:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:53:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:53:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:53:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:53:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:53:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:01] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:01] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:01] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:02] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:01] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:02] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:01] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:02] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:02] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:02] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:13] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:13] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:13] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:13] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:13] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:15] Nome=Gui | WhatsApp=123 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:54:15] Nome=Gui | WhatsApp=123 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:54:15] Nome=Gui | WhatsApp=123 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:54:15] Nome=Gui | WhatsApp=123 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:54:15] Nome=Gui | WhatsApp=123 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:54:31] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:31] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:31] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:31] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:31] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:34] Nome=Gui | WhatsApp=123 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:54:34] Nome=Gui | WhatsApp=123 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:54:34] Nome=Gui | WhatsApp=123 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:54:34] Nome=Gui | WhatsApp=123 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:54:34] Nome=Gui | WhatsApp=123 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:54:49] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:49] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:49] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:49] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:49] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:51] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=- | Codigo=- | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:54:51] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=- | Codigo=- | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:54:51] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=- | Codigo=- | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:54:51] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=- | Codigo=- | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:54:51] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=- | Codigo=- | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:54:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:57] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:57] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:57] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:57] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:59] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:57] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:54:59] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:55:00] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=- | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:54:59] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:55:00] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=- | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:54:59] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:55:00] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=- | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:54:59] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:55:00] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=- | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:55:02] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:55:00] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=- | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:55:02] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:55:02] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:55:02] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:55:02] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:55:02] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:55:02] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:55:02] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:55:02] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:55:02] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:55:04] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:55:04] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:55:04] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:55:04] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:55:04] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:55:32] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:55:32] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:55:32] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:55:32] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:55:32] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:55:34] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:55:34] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:55:34] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:55:34] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:55:34] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:55:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:55:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:55:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:55:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:55:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:56:02] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:56:02] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:56:02] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:56:02] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:56:02] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:56:05] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:56:05] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:56:05] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:56:05] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:56:05] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:56:32] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:56:32] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:56:32] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:56:32] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:56:32] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:56:34] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:56:34] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:56:34] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:56:34] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:56:34] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:56:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:56:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:56:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:56:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:56:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:57:02] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:57:02] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:57:02] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:57:02] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:57:02] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:57:04] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:57:04] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:57:04] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:57:04] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:57:04] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:57:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:57:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:57:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:57:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:57:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:57:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:57:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:57:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:57:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:57:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:57:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:57:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:58:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:58:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:58:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:58:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:58:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:58:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:58:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:58:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:58:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:58:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:58:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:58:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:58:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:58:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:58:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:59:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:59:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:59:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:59:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:59:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:59:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:59:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:59:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:59:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 14:59:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:59:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:59:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:59:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 14:59:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:00:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:00:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:00:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:00:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:00:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:00:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:00:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:00:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:00:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:00:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:00:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:00:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:00:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:00:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:00:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:01:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:01:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:01:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:01:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:01:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:01:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:01:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:01:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:01:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:01:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:01:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:01:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:02:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:02:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:02:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:02:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:02:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:02:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:02:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:02:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:02:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:02:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:02:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:02:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:02:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:02:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:02:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:03:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:03:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:03:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:03:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:03:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:03:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:03:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:03:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:03:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:03:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:03:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:03:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:04:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:04:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:04:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:04:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:04:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:04:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:04:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:04:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:04:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:04:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:04:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:04:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:04:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:04:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:04:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:05:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:05:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:05:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:05:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:05:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:05:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:05:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:05:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:05:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:05:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:05:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:05:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:05:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:05:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:06:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:06:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:06:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:06:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:06:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:06:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:06:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:06:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:06:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:06:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:06:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:06:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:06:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:06:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:06:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:07:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:07:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:07:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:07:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:07:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:07:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:07:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:07:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:07:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:07:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:07:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:07:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:08:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:08:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:08:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:08:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:08:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:08:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:08:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:08:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:08:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:08:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:08:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:08:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:08:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:08:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:09:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:09:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:09:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:09:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:09:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:09:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:09:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:09:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:09:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:09:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:09:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:09:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:09:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:09:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:09:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:10:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:10:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:10:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:10:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:10:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:10:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:10:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:10:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:10:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:10:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:10:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:10:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:10:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:10:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:11:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:11:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:11:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:11:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:11:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:11:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:11:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:11:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:11:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:11:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:11:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:11:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:11:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:11:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:11:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:12:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:12:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:12:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:12:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:12:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:12:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:12:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:12:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:12:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:12:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:12:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:12:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:12:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:12:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:13:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:13:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:13:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:13:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:13:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:13:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:13:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:13:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:13:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:13:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:13:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:13:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:13:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:13:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:13:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:14:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:14:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:14:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:14:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:14:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:14:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:14:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:14:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:14:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:14:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:14:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:14:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:15:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:15:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:15:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:15:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:15:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:15:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:15:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:15:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:15:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:15:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:15:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:15:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:15:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:15:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:15:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:16:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:16:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:16:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:16:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:16:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:16:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:16:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:16:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:16:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:16:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:16:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:16:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:17:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:17:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:17:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:17:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:17:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:17:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:17:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:17:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:17:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:17:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:17:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:17:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:17:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:17:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:17:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:18:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:18:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:18:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:18:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:18:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:18:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:18:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:18:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:18:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:18:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:18:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:18:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:18:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:18:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:19:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:19:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:19:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:19:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:19:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:19:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:19:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:19:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:19:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:19:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:19:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:19:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:19:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:19:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:19:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:20:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:20:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:20:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:20:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:20:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:20:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:20:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:20:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:20:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:20:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:20:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:20:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:21:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:21:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:21:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:21:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:21:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:21:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:21:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:21:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:21:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:21:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:21:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:21:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:21:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:21:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:21:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:22:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:22:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:22:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:22:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:22:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:22:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:22:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:22:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:22:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:22:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:22:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:22:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:23:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:23:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:23:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:23:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:23:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:23:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:23:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:23:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:23:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:23:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:23:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:23:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:23:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:23:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:23:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:24:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:24:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:24:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:24:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:24:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:24:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:24:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:24:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:24:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:24:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:24:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:24:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:24:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:24:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:24:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:25:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:25:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:25:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:25:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:25:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:25:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:25:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:25:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:25:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:25:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:25:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:25:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:25:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:25:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:25:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:26:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:26:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:26:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:26:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:26:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:26:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:26:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:26:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:26:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:26:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:26:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:26:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:26:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:27:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:27:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:27:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:27:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:27:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:27:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:27:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:27:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:27:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:27:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:27:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:27:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:27:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:27:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:27:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:28:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:28:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:28:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:28:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:28:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:28:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:28:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:28:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:28:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:28:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:28:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:28:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:28:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:28:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:28:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:29:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:29:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:29:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:29:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:29:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:29:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:29:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:29:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:29:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:29:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:29:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:29:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:29:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:29:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:29:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:30:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:30:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:30:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:30:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:30:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:30:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:30:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:30:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:30:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:30:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:30:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:30:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:30:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:30:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:31:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:31:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:31:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:31:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:31:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:31:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:31:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:31:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:31:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:31:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:31:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:31:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:31:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:31:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:31:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:32:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:32:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:32:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:32:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:32:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:32:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:32:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:32:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:32:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:32:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:32:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:32:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:32:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:32:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:33:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:33:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:33:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:33:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:33:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:33:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:33:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:33:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:33:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:33:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:33:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:33:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:33:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:33:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:33:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:34:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:34:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:34:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:34:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:34:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:34:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:34:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:34:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:34:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:34:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:34:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:34:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:34:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:34:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:35:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:35:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:35:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:35:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:35:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:35:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:35:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:35:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:35:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:35:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:35:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:35:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:35:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:35:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:35:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:36:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:36:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:36:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:36:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:36:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:36:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:36:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:36:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:36:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:36:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:36:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:36:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:36:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:37:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:37:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:37:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:37:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:37:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:37:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:37:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:37:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:37:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:37:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:37:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:37:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:37:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:37:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:37:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:38:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:38:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:38:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:38:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:38:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:38:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:38:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:38:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:38:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:38:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:38:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:38:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:38:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:39:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:39:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:39:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:39:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:39:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:39:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:39:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:39:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:39:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:39:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:39:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:39:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:39:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:39:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:39:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:40:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:40:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:40:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:40:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:40:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:40:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:40:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:40:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:40:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:40:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:40:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:40:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:40:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:41:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:41:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:41:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:41:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:41:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:41:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:41:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:41:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:41:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:41:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:41:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:41:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:41:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:41:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:41:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:42:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:42:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:42:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:42:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:42:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:42:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:42:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:42:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:42:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:42:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:42:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:42:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:42:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:43:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:43:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:43:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:43:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:43:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:43:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:43:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:43:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:43:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:43:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:43:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:43:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:43:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:43:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:43:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:44:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:44:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:44:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:44:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:44:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:44:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:44:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:44:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:44:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:44:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:44:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:44:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:45:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:45:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:45:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:45:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:45:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:45:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:45:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:45:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:45:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:45:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:45:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:45:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:45:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:45:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:45:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:46:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:46:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:46:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:46:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:46:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:46:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:46:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:46:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:46:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:46:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:46:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:46:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:46:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:47:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:47:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:47:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:47:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:47:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:47:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:47:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:47:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:47:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:47:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:47:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:47:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:47:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:47:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:47:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:48:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:48:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:48:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:48:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:48:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:48:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:48:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:48:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:48:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:48:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:48:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:48:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:48:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:49:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:49:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:49:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:49:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:49:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:49:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:49:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:49:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:49:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:49:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:49:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:49:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:49:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:49:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:49:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:50:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:50:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:50:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:50:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:50:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:50:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:50:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:50:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:50:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:50:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:50:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:50:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:51:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:51:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:51:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:51:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:51:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:51:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:51:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:51:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:51:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:51:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:51:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:51:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:51:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:51:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:51:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:52:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:52:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:52:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:52:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:52:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:52:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:52:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:52:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:52:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:52:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:52:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:52:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:52:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:53:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:53:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:53:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:53:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:53:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:53:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:53:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:53:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:53:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:53:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:53:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:53:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:53:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:53:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:53:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:54:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:54:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:54:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:54:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:54:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:54:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:54:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:54:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:54:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:54:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:54:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:54:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:55:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:55:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:55:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:55:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:55:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:55:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:55:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:55:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:55:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:55:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:55:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:55:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:55:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:55:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:55:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:56:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:56:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:56:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:56:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:56:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:56:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:56:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:56:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:56:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:56:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:56:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:56:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:56:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:56:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:56:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:57:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:57:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:57:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:57:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:57:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:57:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:57:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:57:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:57:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:57:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:57:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:57:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:57:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:57:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:57:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:58:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:58:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:58:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:58:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:58:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:58:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:58:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:58:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:58:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:58:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:58:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:58:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:58:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:59:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:59:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:59:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:59:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:59:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:59:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:59:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:59:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:59:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:59:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 15:59:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:59:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:59:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:59:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 15:59:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:00:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:00:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:00:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:00:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:00:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:00:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:00:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:00:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:00:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:00:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:00:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:01:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:01:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:01:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:01:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:01:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:01:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:01:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:01:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:01:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:01:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:01:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:01:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:01:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:01:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:01:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:02:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:02:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:02:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:02:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:02:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:02:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:02:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:02:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:02:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:02:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:02:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:03:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:03:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:03:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:03:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:03:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:03:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:03:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:03:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:03:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:03:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:03:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:03:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:03:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:03:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:03:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:04:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:04:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:04:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:04:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:04:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:04:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:04:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:04:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:04:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:04:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:04:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:04:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:04:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:05:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:05:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:05:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:05:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:05:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:05:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:05:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:05:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:05:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:05:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:05:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:05:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:05:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:05:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:05:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:06:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:06:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:06:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:06:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:06:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:06:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:06:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:06:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:06:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:06:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:06:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:06:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:06:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:06:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:06:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:07:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:07:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:07:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:07:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:07:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:07:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:07:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:07:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:07:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:07:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:07:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:07:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:07:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:07:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:07:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:08:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:08:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:08:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:08:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:08:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:08:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:08:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:08:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:08:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:08:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:08:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:08:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:09:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:09:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:09:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:09:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:09:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:09:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:09:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:09:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:09:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:09:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:09:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:09:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:09:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:09:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:09:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:10:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:10:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:10:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:10:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:10:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:10:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:10:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:10:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:10:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:10:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:10:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:10:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:10:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:11:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:11:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:11:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:11:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:11:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:11:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:11:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:11:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:11:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:11:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:11:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:11:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:11:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:11:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:11:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:12:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:12:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:12:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:12:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:12:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:12:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:12:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:12:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:12:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:12:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:12:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:12:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:12:58] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:13:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:13:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:13:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:13:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:13:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:13:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:13:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:13:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:13:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:13:55] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:13:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:13:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:13:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:13:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:13:57] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:15:11] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:15:11] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:15:12] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:15:11] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:15:12] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:15:11] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:15:12] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:15:11] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:15:12] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:15:14] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:15:12] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:15:14] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:15:14] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:15:14] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:15:14] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:15:14] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:15:14] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:15:14] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:15:14] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:15:14] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:15:43] Nome=Guilherme Reis | WhatsApp=16991704868 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-4104 | Data=25/03/2026 14:45
+[NOVO] [2026-03-25 16:15:43] Nome=Gui | WhatsApp=123 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-3195 | Data=25/03/2026 14:54
+[NOVO] [2026-03-25 16:30:17] Nome=1 | WhatsApp=1 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 16:30
+[NOVO] [2026-03-25 16:31:51] Nome=1 | WhatsApp=1 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 16:31
+[NOVO] [2026-03-25 16:37:35] Nome=1 | WhatsApp=1 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 16:37
+[NOVO] [2026-03-25 16:37:42] Nome=1 | WhatsApp=1 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 16:37

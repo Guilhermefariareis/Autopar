@@ -11,12 +11,23 @@ import socketserver
 import json
 import csv
 import os
+import sys
+import time
 from datetime import datetime
 
+class ThreadedHTTPServer(socketserver.ThreadingMixIn, socketserver.TCPServer):
+    pass
+
+# Ajuste crítico para suportar PyInstaller (.exe)
+if getattr(sys, 'frozen', False):
+    application_path = os.path.dirname(sys.executable)
+else:
+    application_path = os.path.dirname(__file__)
+
 PORT    = 8000
-TXT_FILE = os.path.join(os.path.dirname(__file__), "leads.txt")
-CSV_FILE = os.path.join(os.path.dirname(__file__), "leads.csv")
-STOCK_FILE = os.path.join(os.path.dirname(__file__), "stock.json")
+TXT_FILE = os.path.join(application_path, "leads.txt")
+CSV_FILE = os.path.join(application_path, "leads.csv")
+STOCK_FILE = os.path.join(application_path, "stock.json")
 
 CSV_FIELDS = ["id", "name", "phone", "date", "time", "score", "prize", "code"]
 
@@ -193,8 +204,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
 if __name__ == "__main__":
     _load_saved_ids()   # reutiliza leads já salvos após restart
-    socketserver.TCPServer.allow_reuse_address = True
-    with socketserver.TCPServer(("", PORT), Handler) as httpd:
+    ThreadedHTTPServer.allow_reuse_address = True
+    with ThreadedHTTPServer(("", PORT), Handler) as httpd:
         print("=" * 55)
         print("  🐾  Panther Totem — Servidor Ativo")
         print(f"  🌐  http://localhost:{PORT}")
