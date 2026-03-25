@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Panther Quiz - Mobile Edition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mobile.css?v=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+    <div id="app">
+        <!-- Background Effects -->
+        <div class="mobile-bg-glow"></div>
+        
+        <!-- Home Screen -->
+        <div id="screen-home" class="screen active">
+            <div class="mobile-content">
+                <div class="mobile-logo-wrap">
+                    <img src="panther.png" alt="Panther" class="mobile-home-logo">
+                </div>
+                <div class="mobile-hero">
+                    <div class="event-capsule">AGRISHOW 2026</div>
+                    <h1 class="mobile-title">QUIZ<br><span class="highlight">PANTHER</span></h1>
+                    <p class="mobile-subtitle">Teste seus conhecimentos e ganhe brindes exclusivos Panther Lubrificantes.</p>
+                </div>
+                <div class="mobile-footer-actions">
+                    <button class="btn-mobile btn-primary-mobile" onclick="showScreen('register')">PARTICIPAR AGORA</button>
+                    <p class="mobile-hint">Experiência otimizada para iPhone</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Register Screen -->
+        <div id="screen-register" class="screen">
+            <div class="mobile-header-nav">
+                <button class="btn-icon" onclick="showScreen('home')">✕</button>
+                <span class="nav-title">CADASTRO</span>
+                <div style="width: 48px;"></div>
+            </div>
+            <div class="mobile-content-scroll">
+                <div class="mobile-form-card">
+                    <h2 class="form-title">Quase lá!</h2>
+                    <p class="form-sub">Preencha seus dados para começar o quiz.</p>
+                    
+                    <div class="m-input-group">
+                        <label>Nome Completo</label>
+                        <input type="text" id="m-input-name" placeholder="Ex: João Silva" autocomplete="name">
+                    </div>
+                    
+                    <div class="m-input-group">
+                        <label>WhatsApp / Celular</label>
+                        <input type="tel" id="m-input-phone" placeholder="(00) 00000-0000">
+                    </div>
+
+                    <div class="m-checkbox-group">
+                        <input type="checkbox" id="m-input-lgpd">
+                        <label for="m-input-lgpd">Autorizo a Panther Lubrificantes a usar meus dados conforme a LGPD.</label>
+                    </div>
+                    
+                    <p id="m-form-error" class="m-error-msg hidden"></p>
+                </div>
+            </div>
+            <div class="mobile-footer-sticky">
+                <button class="btn-mobile btn-primary-mobile" onclick="submitRegister()">COMEÇAR DESAFIO</button>
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="screen-quiz" class="screen">
+            <div class="mobile-quiz-header">
+                <div class="quiz-progress-wrap">
+                    <div id="m-progress-bar" class="m-progress-bar"></div>
+                </div>
+                <div class="quiz-info-row">
+                    <span id="m-question-counter">1 / 7</span>
+                    <div id="m-quiz-timer" class="m-timer">20s</div>
+                </div>
+            </div>
+            
+            <div class="mobile-floating-logos">
+                <img src="panther.png" class="m-float m-f1">
+                <img src="panther.png" class="m-float m-f2">
+            </div>
+
+            <div class="mobile-quiz-content">
+                <h2 id="m-question-text" class="m-question-text">Carregando pergunta...</h2>
+                <div id="m-answers" class="m-answers-grid">
+                    <!-- Answers inject here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="screen-results" class="screen">
+            <div class="mobile-content m-centered">
+                <div class="result-icon-wrap">
+                    <div id="m-result-emoji">🏆</div>
+                </div>
+                <h2 id="m-result-title" class="m-result-title">PARABÉNS!</h2>
+                <p id="m-result-text" class="m-result-text">Você acertou 7 de 7 perguntas!</p>
+                
+                <div id="m-win-actions" class="m-result-actions hidden">
+                    <button class="btn-mobile btn-primary-mobile pulse-m" onclick="showScreen('roulette')">TESTAR MINHA SORTE</button>
+                </div>
+                <div id="m-lose-actions" class="m-result-actions hidden">
+                    <button class="btn-mobile btn-outline-mobile" onclick="resetApp()">TENTAR NOVAMENTE</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Roulette Screen -->
+        <div id="screen-roulette" class="screen">
+            <div class="m-roulette-header">
+                <div class="m-badge">AGRISHOW 2026</div>
+                <h2 class="m-r-title">Role a Roda!</h2>
+            </div>
+            
+            <div class="m-wheel-container">
+                <div class="m-wheel-pointer"></div>
+                <canvas id="m-wheel-canvas" width="600" height="600"></canvas>
+            </div>
+
+            <div class="m-roulette-footer">
+                <p id="m-spin-status" class="m-status">Gire para ganhar!</p>
+                <button id="m-btn-spin" class="btn-mobile btn-primary-mobile" onclick="spinWheel()">🎡 GIRAR AGORA</button>
+                
+                <div id="m-prize-reveal" class="m-reveal hidden">
+                    <p class="m-reveal-label">VOCÊ GANHOU:</p>
+                    <h3 id="m-prize-name" class="m-prize-name">Boné Panther</h3>
+                    <button class="btn-mobile btn-secondary-mobile" onclick="showCode()">VER MEU CÓDIGO</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Code Screen -->
+        <div id="screen-code" class="screen">
+            <div class="mobile-content m-centered">
+                <div class="m-ticket">
+                    <div class="m-ticket-top">
+                        <img src="panther.png" alt="Panther" class="m-ticket-logo">
+                    </div>
+                    <div class="m-ticket-body">
+                        <p>Código de Resgate:</p>
+                        <h1 id="m-rescue-code">PANTHER-1234</h1>
+                        <div class="m-ticket-prize">
+                            <span id="m-code-prize">Boné Panther</span>
+                        </div>
+                    </div>
+                    <div class="m-ticket-footer">
+                        <p>Apresente este código no balcão da Panther na Agrishow.</p>
+                    </div>
+                </div>
+                
+                <button class="btn-mobile btn-primary-mobile" style="margin-top: 30px;" onclick="resetApp()">CONCLUÍDO</button>
+                <p class="m-reset-timer">Voltando ao início em <span id="m-reset-sec">20</span>s</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="mobile.js?v=1"></script>
+</body>
+</html>
