@@ -57,46 +57,78 @@ let m_stock = JSON.parse(localStorage.getItem('m_agriStock')) || {...INITIAL_STO
 
 // Navigation
 function showScreen(screenId) {
+    console.log("Mudando para tela:", screenId);
     document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
     const target = document.getElementById(`screen-${screenId}`);
     if (target) {
         target.classList.add('active');
         window.scrollTo(0, 0);
         
-        if (screenId === 'quiz') startQuiz();
-        if (screenId === 'roulette') initWheel();
+        if (screenId === 'quiz') {
+            console.log("Iniciando Quiz...");
+            startQuiz();
+        }
+        if (screenId === 'roulette') {
+            console.log("Iniciando Roleta...");
+            initWheel();
+        }
+    } else {
+        console.error("Tela não encontrada:", screenId);
     }
 }
 
 // Registration
 function submitRegister() {
-    const name = document.getElementById('m-input-name').value.trim();
-    const phone = document.getElementById('m-input-phone').value.trim();
-    const lgpd = document.getElementById('m-input-lgpd').checked;
-    const err = document.getElementById('m-form-error');
+    console.log("Iniciando registro...");
+    try {
+        const nameInput = document.getElementById('m-input-name');
+        const phoneInput = document.getElementById('m-input-phone');
+        const lgpdInput = document.getElementById('m-input-lgpd');
+        const err = document.getElementById('m-form-error');
 
-    if (!name || name.length < 3) {
-        showError("Por favor, insira seu nome completo.");
-        return;
-    }
-    if (!phone || phone.length < 10) {
-        showError("Insira um WhatsApp válido.");
-        return;
-    }
-    if (!lgpd) {
-        showError("Você precisa aceitar os termos da LGPD.");
-        return;
-    }
+        if (!nameInput || !phoneInput || !lgpdInput) {
+            console.error("Elementos do formulário não encontrados!");
+            return;
+        }
 
-    m_playerName = name;
-    err.classList.add('hidden');
-    
-    // Save lead locally
-    const leads = JSON.parse(localStorage.getItem('m_leads') || '[]');
-    leads.push({name, phone, date: new Date().toISOString()});
-    localStorage.setItem('m_leads', JSON.stringify(leads));
+        const name = nameInput.value.trim();
+        const phone = phoneInput.value.trim();
+        const lgpd = lgpdInput.checked;
 
-    showScreen('quiz');
+        console.log("Dados capturados:", { name, phone, lgpd });
+
+        if (!name || name.length < 3) {
+            showError("Por favor, insira seu nome completo.");
+            return;
+        }
+        if (!phone || phone.length < 10) {
+            showError("Insira um WhatsApp válido.");
+            return;
+        }
+        if (!lgpd) {
+            showError("Você precisa aceitar os termos da LGPD.");
+            return;
+        }
+
+        m_playerName = nameInput.value;
+        err.classList.add('hidden');
+        
+        // Save lead locally with try-catch
+        try {
+            const leads = JSON.parse(localStorage.getItem('m_leads') || '[]');
+            leads.push({name, phone, date: new Date().toISOString()});
+            localStorage.setItem('m_leads', JSON.stringify(leads));
+            console.log("Lead salvo com sucesso no localStorage.");
+        } catch (e) {
+            console.warn("Erro ao salvar no localStorage (pode estar em modo privado):", e);
+        }
+
+        console.log("Transicionando para o Quiz...");
+        showScreen('quiz');
+    } catch (errGlobal) {
+        console.error("Erro crítico no submitRegister:", errGlobal);
+        alert("Ocorreu um erro ao iniciar. Verifique se o modo privado está ativado.");
+    }
 }
 
 function showError(msg) {
