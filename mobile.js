@@ -118,7 +118,7 @@ function loadQuestion() {
     const options = q.answers || q.options; // Compatibility
     options.forEach((ans, i) => {
         const btn = document.createElement('button');
-        btn.className = 'industrial-btn answer-btn';
+        btn.className = 'btn-answer';
         btn.innerHTML = `<span class="opt-letter">${String.fromCharCode(65 + i)}</span> <span class="opt-text">${ans}</span>`;
         btn.onclick = () => selectAnswer(i);
         answersGrid.appendChild(btn);
