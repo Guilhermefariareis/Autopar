@@ -87,24 +87,27 @@ body {
 }
 .reg-panel {
     width: 100% !important;
-    padding: 28px 20px !important;
+    padding: 20px 20px !important;
     border-radius: 0 !important;
-    min-height: 100dvh;
+    min-height: auto !important;
+    padding-bottom: 25dvh !important;
 }
-.reg-logo-mini { margin-bottom: 12px; }
-.reg-logo-img { width: 120px !important; }
-.reg-title { font-size: 32px !important; margin-bottom: 6px !important; }
-.reg-sub   { font-size: 16px !important; margin-bottom: 28px !important; }
+.reg-logo-mini { margin-bottom: 8px; }
+.reg-logo-img { width: 100px !important; }
+.reg-title { font-size: 24px !important; margin-bottom: 4px !important; }
+.reg-sub   { font-size: 14px !important; margin-bottom: 20px !important; }
 
-.field-group { margin-bottom: 28px !important; gap: 14px !important; }
-.field-input { font-size: 22px !important; padding: 18px 0 8px !important; }
-.field-label { font-size: 18px !important; top: 18px !important; }
+.field-group { margin-bottom: 20px !important; gap: 10px !important; }
+.field-input { font-size: 18px !important; padding: 16px 0 6px !important; }
+.field-label { font-size: 16px !important; top: 16px !important; }
 .field-input:not(:placeholder-shown) ~ .field-label,
 .field-input:focus ~ .field-label {
-    font-size: 12px !important;
+    font-size: 11px !important;
     top: 0 !important;
 }
 
+.lgpd-toggle-row { margin-bottom: 18px !important; gap: 8px !important; }
+.lgpd-toggle-text { font-size: 11px !important; line-height: 1.2 !important; opacity: 0.8; }
 .toggle-track { 
     min-width: 56px !important; 
     height: 32px !important; 
@@ -141,9 +144,9 @@ body {
     flex-direction: column;
 }
 .quiz-header { margin-bottom: 18px !important; gap: 10px !important; }
-.progress-container { height: 8px !important; }
-.quiz-timer { font-size: 22px !important; padding: 4px 14px !important; min-width: 70px !important; }
-.counter { font-size: 16px !important; }
+.progress-container { height: 6px !important; }
+.quiz-timer { font-size: 18px !important; padding: 3px 10px !important; min-width: 60px !important; }
+.counter { font-size: 13px !important; opacity: 0.7; font-weight: 700; text-align: center; }
 
 #question-text {
     font-size: clamp(20px, 5vw, 26px) !important;
