@@ -290,14 +290,16 @@ body {
 .prize-popup-label { font-size: 16px !important; opacity: 0.8; }
 .prize-popup-text  { font-size: 15px !important; margin-bottom: 20px !important; line-height: 1.4; }
 .prize-popup-btn   { 
-    width: 100% !important; 
-    max-width: 280px !important;
-    padding: 18px !important; 
-    font-size: 18px !important; 
+    width: 180px !important; 
+    min-width: 180px !important;
+    padding: 14px 10px !important; 
+    font-size: 15px !important; 
     box-sizing: border-box !important;
-    margin: 0 auto !important;
+    margin: 10px auto 0 !important;
     display: flex !important;
     justify-content: center !important;
+    text-align: center !important;
+    border-radius: 100px !important;
 }
 
 /* ─── TICKET / CODE SCREEN ───────────────────────────────── */
