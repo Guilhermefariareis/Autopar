@@ -39,7 +39,7 @@ function setupReel() {
     
     // We'll populate this later during spin or on load
     container.innerHTML = ''; 
-    const initialPrize = { name: 'BOA SORTE!', icon: '🍀' };
+    const initialPrize = { name: 'AQUECENDO...', icon: '' };
     container.appendChild(createReelItem(initialPrize.name, initialPrize.icon));
 }
 
@@ -48,7 +48,7 @@ function createReelItem(name, icon) {
     item.className = 'reel-item';
     item.innerHTML = `
         <div class="reel-item-inner">
-            <span class="reel-item-icon">${icon || '🎁'}</span>
+            <span class="reel-item-icon">${icon || ''}</span>
             <span class="reel-item-name">${name.toUpperCase()}</span>
         </div>
     `;
@@ -75,19 +75,19 @@ window.spinWheel = function() {
     }
 
     const UI_PRIZES = [
-        { name: 'Chapéu', icon: '🪖' },
-        { name: 'Boné', icon: '🧢' },
-        { name: 'Squeeze', icon: '💧' },
-        { name: 'Chaveiro Trena', icon: '🔧' },
-        { name: 'Caneta', icon: '✏️' }
+        { name: 'Chapéu', icon: '' },
+        { name: 'Boné', icon: '' },
+        { name: 'Squeeze', icon: '' },
+        { name: 'Chaveiro Trena', icon: '' },
+        { name: 'Caneta', icon: '' }
     ];
     
     const EMOJIS = {
-        'Chapéu': '🪖',
-        'Boné': '🧢',
-        'Squeeze': '💧',
-        'Chaveiro Trena': '🔧',
-        'Caneta': '✏️'
+        'Chapéu': '',
+        'Boné': '',
+        'Squeeze': '',
+        'Chaveiro Trena': '',
+        'Caneta': ''
     };
 
     const container = document.getElementById('reel-container');
@@ -153,7 +153,7 @@ window.spinWheel = function() {
             }
         }
 
-        document.getElementById('spin-status').innerHTML = 'PARABÉNS!';
+        document.getElementById('spin-status').innerHTML = 'PARABENS!';
         
         // Resume inactivity reset
         if (typeof startAutoReset === 'function') startAutoReset();

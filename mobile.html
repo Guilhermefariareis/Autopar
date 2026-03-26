@@ -70,8 +70,8 @@
                 <h2>BRINDES ESGOTADOS POR HOJE</h2>
                 <p>Agradecemos sua visita. Volte amanhã!</p>
             </div>
-            <button class="btn btn-primary btn-jumbo bounce" onclick="goToRegister()">🚜 PARTICIPAR</button>
-            <button class="btn-test-roulette" onclick="testRoulette()">🎯 Testar Roleta</button>
+            <button class="btn btn-primary btn-jumbo bounce" onclick="goToRegister()">PARTICIPAR</button>
+            <button class="btn-test-roulette" onclick="testRoulette()">Testar Roleta</button>
         </div>
     </div>
 
@@ -155,7 +155,6 @@
     <div id="screen-win" class="screen">
         <div class="content">
             <div class="result-panel glass-panel">
-                <div class="trophy-icon">🏆</div>
                 <h1 class="success-title">PARABENS,<br><span id="win-name">Visitante</span>!</h1>
                 <h2 style="font-size: 24px; color:#fff;">Você fez <span id="win-score"></span> pontos.</h2>
                 <br>
@@ -173,11 +172,11 @@
     <div id="screen-lose" class="screen">
         <div class="content">
             <div class="result-panel glass-panel">
-                <div class="trophy-icon">✨</div>
+                <div class="trophy-icon"></div>
                 <h1 class="error-title">Quase la!</h1>
                 <p class="result-score-text">Voce acertou <strong id="lose-score">3</strong> de 7.</p>
                 <p class="subtitle">Eram necessarios 5 acertos. Tente de novo!</p>
-                <button class="btn btn-primary btn-jumbo" onclick="resetApp()">🔁 JOGAR NOVAMENTE</button>
+                <button class="btn btn-primary btn-jumbo" onclick="resetApp()">JOGAR NOVAMENTE</button>
             </div>
         </div>
     </div>
@@ -187,16 +186,16 @@
         <div id="confetti-container"></div>
         <div id="prize-popup" class="prize-popup hidden">
             <div class="prize-popup-card">
-                <p class="prize-popup-label">🎉 VOCE GANHOU</p>
+                <p class="prize-popup-label">VOCE GANHOU</p>
                 <h3 id="prize-popup-name" class="prize-popup-name">-</h3>
                 <p class="prize-popup-text">Apresente o codigo para retirar seu brinde.</p>
-                <button class="btn btn-primary prize-popup-btn" onclick="showCode()">🎟 GERAR CODIGO</button>
+                <button class="btn btn-primary prize-popup-btn" onclick="showCode()">GERAR CODIGO</button>
             </div>
         </div>
         <div class="roulette-top">
             <div class="roulette-badge">AGRISHOW 2026</div>
-            <h2 class="roulette-heading"><span class="roulette-fire">🔥</span> ROLETA DE BRINDES <span class="roulette-fire">🔥</span></h2>
-            <p id="roulette-player-name" class="roulette-player-name">Boa sorte!</p>
+            <h2 class="roulette-heading">ROLETA DE BRINDES</h2>
+            <p id="roulette-player-name" class="roulette-player-name">Prepare-se!</p>
         </div>
         <div class="reel-viewport">
             <div class="reel-window">
@@ -209,11 +208,11 @@
         </div>
         <div class="roulette-bottom">
             <p id="spin-status" class="spin-status">&nbsp;</p>
-            <button id="btn-spin" class="btn btn-primary btn-jumbo pulse-glow" onclick="spinWheel()">🎰 GIRAR AGORA</button>
+            <button id="btn-spin" class="btn btn-primary btn-jumbo pulse-glow" onclick="spinWheel()">GIRAR AGORA</button>
             <div id="prize-reveal" class="prize-reveal hidden">
-                <p class="you-won-label">🎉 PARABENS! VOCE GANHOU</p>
+                <p class="you-won-label">PARABENS! VOCE GANHOU</p>
                 <h1 id="prize-name-display" class="prize-name-big">-</h1>
-                <button class="btn btn-secondary btn-jumbo pop-in" onclick="showCode()">🎟 GERAR CODIGO</button>
+                <button class="btn btn-secondary btn-jumbo pop-in" onclick="showCode()">GERAR CODIGO</button>
             </div>
         </div>
     </div>
@@ -241,7 +240,7 @@
                     <p class="thanks-sub">Apresente este codigo no balcao para retirar seu brinde.</p>
                 </div>
             </div>
-            <button class="btn btn-outline btn-block" onclick="resetApp(true)">✅ FINALIZAR</button>
+            <button class="btn btn-outline btn-block" onclick="resetApp(true)">FINALIZAR</button>
             <p class="timeout-text">Voltando ao inicio em <span id="timer-sec">10</span>s...</p>
         </div>
     </div>

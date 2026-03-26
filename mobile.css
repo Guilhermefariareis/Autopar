@@ -276,27 +276,29 @@ body {
 .you-won-label  { font-size: 14px !important; margin-bottom: 0 !important; }
 
 /* Prize popup */
-.prize-popup-card { padding: 28px 24px !important; }
-.prize-popup-name { font-size: 32px !important; }
-.prize-popup-label { font-size: 18px !important; }
+.prize-popup-card { padding: 20px 18px !important; width: 90% !important; max-width: 320px !important; }
+.prize-popup-name { font-size: 26px !important; margin: 10px 0 !important; }
+.prize-popup-label { font-size: 16px !important; }
+.prize-popup-text  { font-size: 14px !important; margin-bottom: 15px !important; }
+.prize-popup-btn   { width: 100% !important; padding: 16px !important; font-size: 18px !important; }
 
 /* ─── TICKET / CODE SCREEN ───────────────────────────────── */
 .code-screen .content {
-    gap: 16px !important;
-    padding: 20px !important;
-    overflow-y: auto;
+    gap: 12px !important;
+    padding: 15px !important;
 }
-.ticket-wrapper { border-radius: 16px !important; }
-.ticket-top { padding: 20px !important; }
-.ticket-body { padding: 28px 20px !important; gap: 8px !important; }
-.code-text { font-size: clamp(30px, 8vw, 48px) !important; }
-.ticket-label { font-size: 14px !important; }
-.ticket-prize-label { font-size: 18px !important; }
-.ticket-prize-label strong { font-size: 20px !important; }
-.ticket-thanks { padding: 20px !important; }
-.thanks-hashtag { font-size: 18px !important; }
-.thanks-sub { font-size: 14px !important; }
-.timeout-text { font-size: 14px !important; }
+.ticket-wrapper { border-radius: 12px !important; max-height: 80vh; overflow: hidden; }
+.ticket-top { padding: 15px !important; }
+.ticket-top img { width: 100px !important; }
+.ticket-body { padding: 15px !important; gap: 5px !important; }
+.code-text { font-size: clamp(24px, 6vw, 36px) !important; margin: 10px 0 !important; }
+.ticket-label { font-size: 12px !important; }
+.ticket-prize-label { font-size: 16px !important; }
+.ticket-prize-label strong { font-size: 18px !important; }
+.ticket-thanks { padding: 15px !important; }
+.thanks-hashtag { font-size: 16px !important; }
+.thanks-sub { font-size: 12px !important; }
+.timeout-text { font-size: 12px !important; margin-top: 5px !important; }
 
 /* ─── ADMIN PANEL ────────────────────────────────────────── */
 .admin-content {
