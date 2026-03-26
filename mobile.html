@@ -159,11 +159,11 @@
                 <h1 class="success-title">PARABENS,<br><span id="win-name">Visitante</span>!</h1>
                 <h2 style="font-size: 24px; color:#fff;">Você fez <span id="win-score"></span> pontos.</h2>
                 <br>
-                <div id="win-product-podium" style="text-align: center; margin: 20px 0; animation: slowFloat 4s ease-in-out infinite alternate;">
-                    <img src="IMG_1 (3).png" id="win-podium-img" style="height: 28vh; filter: drop-shadow(0 20px 30px rgba(255,100,0,0.5)); transition:all 0.5s;"/>
-                    <div style="width: 150px; height: 12px; background: radial-gradient(ellipse, rgba(0,0,0,0.8) 0%, transparent 70%); margin: auto; margin-top:10px; border-radius:50%;"></div>
+                <div id="win-product-podium" style="text-align: center; margin: 10px 0; animation: slowFloat 4s ease-in-out infinite alternate;">
+                    <img src="IMG_1 (3).png" id="win-podium-img" style="height: 18vh; max-height: 180px; filter: drop-shadow(0 20px 30px rgba(255,100,0,0.5)); transition:all 0.5s;"/>
+                    <div style="width: 120px; height: 10px; background: radial-gradient(ellipse, rgba(0,0,0,0.8) 0%, transparent 70%); margin: auto; margin-top:8px; border-radius:50%;"></div>
                 </div>
-                <p style="margin-bottom:20px; font-size: 16px;">Gire a roleta para descobrir sua recompensa!</p>
+                <p style="margin-bottom:15px; font-size: 15px;">Gire a roleta para descobrir sua recompensa!</p>
                 <button class="btn" style="width:100%; justify-content:center;" onclick="showRoulette()">🛒 GIRAR A ROLETA</button>
             </div>
         </div>
@@ -198,18 +198,18 @@
             <h2 class="roulette-heading"><span class="roulette-fire">🔥</span> ROLETA DE BRINDES <span class="roulette-fire">🔥</span></h2>
             <p id="roulette-player-name" class="roulette-player-name">Boa sorte!</p>
         </div>
-        <div class="wheel-stage">
-            <div class="wheel-glow-ring ring1"></div>
-            <div class="wheel-glow-ring ring2"></div>
-            <div class="wheel-pointer-wrap">
-                <div id="wheel-pointer" class="wheel-pointer"></div>
+        <div class="reel-viewport">
+            <div class="reel-window">
+                <div id="reel-container" class="reel-container">
+                    <!-- Populated by mobile.js -->
+                </div>
             </div>
-            <canvas id="wheel-canvas" width="960" height="960"></canvas>
-            <div class="wheel-center-cap"></div>
+            <div class="reel-pointer-top"></div>
+            <div class="reel-pointer-bottom"></div>
         </div>
         <div class="roulette-bottom">
             <p id="spin-status" class="spin-status">&nbsp;</p>
-            <button id="btn-spin" class="btn btn-primary btn-jumbo pulse-glow" onclick="spinWheel()">🎡 GIRAR AGORA</button>
+            <button id="btn-spin" class="btn btn-primary btn-jumbo pulse-glow" onclick="spinWheel()">🎰 GIRAR AGORA</button>
             <div id="prize-reveal" class="prize-reveal hidden">
                 <p class="you-won-label">🎉 PARABENS! VOCE GANHOU</p>
                 <h1 id="prize-name-display" class="prize-name-big">-</h1>
@@ -248,6 +248,7 @@
     </div>
 
     <script src="script.js?v=5"></script>
+    <script src="mobile.js?v=1"></script>
     <!-- Sem server-status no mobile -->
 </body>
 </html>
