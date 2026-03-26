@@ -68,8 +68,6 @@ window.spinWheel = function() {
     // Add visual excitement
     const viewport = document.querySelector('.reel-viewport');
     viewport.classList.add('spinning-glow');
-    document.body.classList.add('spin-shake');
-    setTimeout(() => document.body.classList.remove('spin-shake'), 500);
 
     // Get winner from base logic
     const wonPrize = window.getRandomPrize();

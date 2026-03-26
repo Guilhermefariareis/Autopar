@@ -536,6 +536,8 @@ body {
     font-size: 13px !important;
     color: #666;
     margin-top: 10px !important;
+    text-align: center !important;
+    width: 100% !important;
 }
 .timeout-text span { color: #ff6a00; font-weight: 900; }
 
