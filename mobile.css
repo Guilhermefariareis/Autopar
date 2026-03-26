@@ -82,7 +82,7 @@ body {
 
 /* ─── REGISTER ───────────────────────────────────────────── */
 .register-content {
-    justify-content: flex-start !important;
+    justify-content: center !important;
     padding-top: 10px !important;
     padding-bottom: 10px !important;
     height: 100% !important;
