@@ -98,6 +98,15 @@ const ADMIN_PIN = '1234';
 // ============================================================
 // CSV Export - 100% Offline via Browser Download
 // ============================================================
+
+/** Helper: Robust Shuffle (Fisher-Yates) */
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
 function exportCSV() {
     const headers = ['ID', 'Nome', 'Telefone', 'Data', 'Hora', 'Pontuacao', 'Premio', 'Codigo'];
     const rows = participants.map(p => [
@@ -380,7 +389,8 @@ function startQuiz() {
     score = 0;
     qIndex = 0;
 
-    const bank = [...questionsBank].sort(() => Math.random() - 0.5);
+    // Shuffle and pick 7 random questions from the bank
+    const bank = shuffleArray([...questionsBank]);
     currentQs = bank.slice(0, TOTAL_QUESTIONS);
 
     stats.players += 1;
@@ -417,12 +427,12 @@ function loadQuestion() {
     document.getElementById('question-counter').textContent = `${qIndex + 1} / ${TOTAL_QUESTIONS}`;
     document.getElementById('question-text').textContent = question.q;
 
-    // Randomize answers (A, B, C, D)
+    // Randomize answers (A, B, C, D) using Fisher-Yates
     let options = question.answers.map((text, index) => ({
         text,
         isCorrect: index === question.correct
     }));
-    options = options.sort(() => Math.random() - 0.5);
+    options = shuffleArray(options);
     shuffledAnswers = options;
 
     document.querySelectorAll('.btn-answer').forEach((button, index) => {

@@ -106,7 +106,9 @@ window.spinWheel = function() {
     }
     
     // Set the last one as the actual winner
-    reelItems.push({ name: wonPrize, icon: EMOJIS[wonPrize] || '🎁' });
+    // We use a safe check to avoid fallback emojis like 🎁
+    const finalIcon = (EMOJIS[wonPrize] !== undefined) ? EMOJIS[wonPrize] : "";
+    reelItems.push({ name: wonPrize, icon: finalIcon });
 
     reelItems.forEach(p => {
         container.appendChild(createReelItem(p.name, p.icon));
