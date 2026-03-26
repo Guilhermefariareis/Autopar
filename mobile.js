@@ -126,7 +126,7 @@ window.spinWheel = function() {
 
     // Handle Reveal
     setTimeout(() => {
-        window.wonPrizeName = wonPrize;
+        wonPrizeName = wonPrize; // Update global
         
         // Update stock and logs (from script.js)
         if (typeof prizeStock !== 'undefined' && prizeStock[wonPrize] !== undefined) {
@@ -134,8 +134,13 @@ window.spinWheel = function() {
             if (typeof saveStock === 'function') saveStock();
         }
 
-        document.getElementById('prize-name-display').textContent = window.wonPrizeName;
-        document.getElementById('prize-popup-name').textContent = window.wonPrizeName;
+        document.getElementById('prize-name-display').textContent = wonPrizeName;
+        document.getElementById('prize-popup-name').textContent = wonPrizeName;
+        
+        // Safety: ensure the ticket screen also has the prize name ready
+        const ticketPrize = document.getElementById('code-prize-name');
+        if (ticketPrize) ticketPrize.textContent = wonPrizeName;
+
         document.getElementById('prize-reveal').classList.remove('hidden');
         document.getElementById('prize-popup').classList.remove('hidden');
 
