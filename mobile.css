@@ -105,23 +105,25 @@ body {
     top: 0 !important;
 }
 
-.lgpd-toggle-row { margin-bottom: 24px !important; }
-.lgpd-toggle-text { font-size: 15px !important; }
 .toggle-track { 
     min-width: 56px !important; 
     height: 32px !important; 
-    display: flex !important;
-    align-items: center !important;
-    padding: 0 4px !important;
+    position: relative !important;
+    border-radius: 32px !important;
     box-sizing: border-box !important;
 }
 .toggle-thumb { 
     width: 24px !important; 
     height: 24px !important; 
-    position: relative !important;
+    background: #fff !important;
+    border-radius: 50% !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 4px !important;
+    transform: translateY(-50%) !important;
     transition: transform 0.2s cubic-bezier(0.15, 0, 0.15, 1) !important;
 }
-.toggle-input:checked + .toggle-track .toggle-thumb { transform: translateX(24px) !important; }
+.toggle-input:checked + .toggle-track .toggle-thumb { transform: translate(24px, -50%) !important; }
 
 .form-error { font-size: 14px !important; }
 
