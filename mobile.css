@@ -271,8 +271,45 @@ body {
     z-index: 2;
 }
 
+/* Animations & Effects */
+.spinning-glow {
+    box-shadow: 0 0 40px var(--orange), inset 0 0 20px var(--orange) !important;
+    border-color: var(--orange) !important;
+    transition: all 0.3s ease;
+}
+
+.spin-shake {
+    animation: shake 0.1s ease-in-out infinite;
+}
+@keyframes shake {
+    0%, 100% { transform: translate(0,0); }
+    25% { transform: translate(-2px, 2px); }
+    75% { transform: translate(2px, -2px); }
+}
+
+.reel-item-inner {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.prize-name-big { 
+    animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+@keyframes popIn { from { transform: scale(0.5); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
 .roulette-bottom { padding: 0 10px 5px !important; gap: 5px !important; }
-.prize-name-big { font-size: clamp(28px, 8vw, 42px) !important; line-height: 1 !important; margin: 5px 0 !important; }
+.roulette-title { 
+    font-size: 32px !important; 
+    font-weight: 900 !important; 
+    margin: 5px 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.roulette-title::before, .roulette-title::after { content: '🔥'; font-size: 24px; animation: flame 0.8s ease-in-out infinite alternate; }
+@keyframes flame { from { transform: scale(1); opacity: 0.8; } to { transform: scale(1.2); opacity: 1; } }
+
+.roulette-subtitle { font-size: 16px !important; opacity: 0.7; margin: 0 !important; font-weight: 700; }
+
 .you-won-label  { font-size: 14px !important; margin-bottom: 0 !important; }
 
 /* Prize popup */

@@ -37,9 +37,8 @@ function setupReel() {
     const container = document.getElementById('reel-container');
     if (!container) return;
     
-    // We'll populate this later during spin or on load
     container.innerHTML = ''; 
-    const initialPrize = { name: 'AQUECENDO...', icon: '' };
+    const initialPrize = { name: 'BOA SORTE!', icon: '🎁' };
     container.appendChild(createReelItem(initialPrize.name, initialPrize.icon));
 }
 
@@ -64,7 +63,13 @@ window.spinWheel = function() {
 
     window.wheelSpun = true;
     document.getElementById('btn-spin').classList.add('hidden');
-    document.getElementById('spin-status').innerHTML = 'SORTEANDO...';
+    document.getElementById('spin-status').innerHTML = 'SORTEANDO... 🎰';
+
+    // Add visual excitement
+    const viewport = document.querySelector('.reel-viewport');
+    viewport.classList.add('spinning-glow');
+    document.body.classList.add('spin-shake');
+    setTimeout(() => document.body.classList.remove('spin-shake'), 500);
 
     // Get winner from base logic
     const wonPrize = window.getRandomPrize();
@@ -160,7 +165,8 @@ window.spinWheel = function() {
             }
         }
 
-        document.getElementById('spin-status').innerHTML = 'PARABENS!';
+        document.getElementById('spin-status').innerHTML = 'PARABÉNS! 🎊';
+        viewport.classList.remove('spinning-glow');
         
         // Resume inactivity reset
         if (typeof startAutoReset === 'function') startAutoReset();
