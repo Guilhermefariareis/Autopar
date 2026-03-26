@@ -177,24 +177,25 @@ body {
     padding: 16px 0 20px !important;
     justify-content: space-between;
 }
-.roulette-top { padding: 0 20px !important; }
-.roulette-badge { font-size: 12px !important; padding: 5px 16px !important; }
-.roulette-heading { font-size: clamp(22px, 6vw, 30px) !important; }
-#roulette-player-name { font-size: 18px !important; }
+.roulette-top { padding: 0 10px !important; }
+.roulette-badge { font-size: 11px !important; padding: 4px 12px !important; margin-bottom: 5px !important; }
+.roulette-heading { font-size: clamp(18px, 5vw, 24px) !important; margin-bottom: 5px !important; }
+#roulette-player-name { font-size: 16px !important; margin-top: 0 !important; }
 
 .wheel-stage {
-    width: min(92vw, 400px) !important;
-    height: min(92vw, 400px) !important;
+    width: min(75vw, 260px) !important;
+    height: min(75vw, 260px) !important;
+    margin: 5px auto !important;
 }
 /* Scale down the glow rings so they don't overflow */
-.ring1 { width: min(100vw, 440px) !important; height: min(100vw, 440px) !important; }
-.ring2 { width: min(95vw, 420px) !important; height: min(95vw, 420px) !important; }
-.wheel-center-cap { width: 52px !important; height: 52px !important; }
-.wheel-pointer { font-size: 36px !important; }
+.ring1 { width: min(85vw, 300px) !important; height: min(85vw, 300px) !important; }
+.ring2 { width: min(80vw, 280px) !important; height: min(80vw, 280px) !important; }
+.wheel-center-cap { width: 38px !important; height: 38px !important; }
+.wheel-pointer { font-size: 28px !important; }
 
-.roulette-bottom { padding: 0 20px !important; gap: 14px !important; }
-.prize-name-big { font-size: clamp(36px, 10vw, 56px) !important; }
-.you-won-label  { font-size: 16px !important; }
+.roulette-bottom { padding: 0 10px 5px !important; gap: 5px !important; }
+.prize-name-big { font-size: clamp(28px, 8vw, 42px) !important; line-height: 1 !important; margin: 5px 0 !important; }
+.you-won-label  { font-size: 14px !important; margin-bottom: 0 !important; }
 
 /* Prize popup */
 .prize-popup-card { padding: 28px 24px !important; }
