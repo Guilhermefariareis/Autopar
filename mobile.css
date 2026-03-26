@@ -271,16 +271,30 @@ body {
     z-index: 2;
 }
 
-.roulette-bottom { padding: 0 10px 5px !important; gap: 5px !important; }
-.prize-name-big { font-size: clamp(28px, 8vw, 42px) !important; line-height: 1 !important; margin: 5px 0 !important; }
-.you-won-label  { font-size: 14px !important; margin-bottom: 0 !important; }
+.roulette-bottom { padding: 0 10px 0 !important; gap: 0 !important; }
+.prize-reveal { display: flex; flex-direction: column; align-items: center; }
+.prize-name-big { font-size: clamp(24px, 7vw, 36px) !important; line-height: 1 !important; margin: 2px 0 !important; }
+.you-won-label  { font-size: 13px !important; margin: 0 !important; }
+.prize-reveal .btn-jumbo { margin-top: 5px !important; padding: 14px 20px !important; }
 
 /* Prize popup */
-.prize-popup-card { padding: 20px 18px !important; width: 90% !important; max-width: 320px !important; }
-.prize-popup-name { font-size: 26px !important; margin: 10px 0 !important; }
-.prize-popup-label { font-size: 16px !important; }
-.prize-popup-text  { font-size: 14px !important; margin-bottom: 15px !important; }
-.prize-popup-btn   { width: 100% !important; padding: 16px !important; font-size: 18px !important; }
+.prize-popup {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 20px !important;
+    overflow-y: auto !important;
+}
+.prize-popup-card { 
+    padding: 15px !important; 
+    width: 95% !important; 
+    max-width: 320px !important; 
+    margin: auto !important; /* Center inside scrollable parent */
+}
+.prize-popup-name { font-size: 22px !important; margin: 5px 0 !important; }
+.prize-popup-label { font-size: 14px !important; }
+.prize-popup-text  { font-size: 13px !important; margin-bottom: 10px !important; }
+.prize-popup-btn   { width: 100% !important; padding: 14px !important; font-size: 16px !important; }
 
 /* ─── TICKET / CODE SCREEN ───────────────────────────────── */
 .code-screen .content {
