@@ -428,6 +428,7 @@ function loadQuestion() {
     document.querySelectorAll('.btn-answer').forEach((button, index) => {
         button.textContent = options[index].text;
         button.className = 'btn-answer';
+        button.classList.remove('selected'); // Explicitly remove to ensure UI reset
         button.disabled = false;
     });
 
