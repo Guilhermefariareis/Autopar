@@ -82,15 +82,24 @@ body {
 
 /* ─── REGISTER ───────────────────────────────────────────── */
 .register-content {
-    justify-content: flex-start;
-    padding-top: 0;
+    justify-content: space-between !important;
+    padding-top: 10px !important;
+    padding-bottom: 30px !important;
+    height: 100% !important;
+    flex: 1;
 }
 .reg-panel {
     width: 100% !important;
-    padding: 20px 20px !important;
+    padding: 10px 20px !important;
     border-radius: 0 !important;
     min-height: auto !important;
-    padding-bottom: 25dvh !important;
+    background: transparent !important;
+    border: none !important;
+}
+.reg-footer {
+    width: 100%;
+    padding: 0 20px;
+    margin-top: auto;
 }
 .reg-logo-mini { margin-bottom: 8px; }
 .reg-logo-img { width: 100px !important; }

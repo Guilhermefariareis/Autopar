@@ -358,8 +358,18 @@ function submitRegister() {
     playerName = nameEl.value.trim();
     playerPhone = phoneEl.value.trim();
 
-    if (!playerName || !playerPhone) {
-        errEl.textContent = "Preencha nome e telefone para continuar.";
+    // Stricter Validation
+    const nameParts = playerName.split(/\s+/).filter(part => part.length > 1);
+    const rawPhone = playerPhone.replace(/\D/g, "");
+
+    if (nameParts.length < 2) {
+        errEl.textContent = "Por favor, insira seu nome e sobrenome.";
+        errEl.classList.remove('hide');
+        return;
+    }
+
+    if (rawPhone.length < 10) {
+        errEl.textContent = "Por favor, insira um WhatsApp válido.";
         errEl.classList.remove('hide');
         return;
     }
@@ -375,7 +385,19 @@ function submitRegister() {
 }
 
 document.getElementById('input-phone').addEventListener('input', function () {
-    this.value = this.value.replace(/[^\d\s()\-+]/g, '');
+    let v = this.value.replace(/\D/g, "");
+    if (v.length > 11) v = v.slice(0, 11);
+    
+    if (v.length > 10) {
+        v = v.replace(/^(\d{2})(\d{5})(\d{4})/, "($1) $2-$3");
+    } else if (v.length > 5) {
+        v = v.replace(/^(\d{2})(\d{4})(\d{0,4})/, "($1) $2-$3");
+    } else if (v.length > 2) {
+        v = v.replace(/^(\d{2})(\d{0,5})/, "($1) $2");
+    } else if (v.length > 0) {
+        v = v.replace(/^(\d*)/, "($1");
+    }
+    this.value = v;
 });
 
 function startQuiz() {
