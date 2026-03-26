@@ -221,26 +221,31 @@
     <div id="screen-code" class="screen code-screen">
         <div class="content">
             <div class="ticket-wrapper">
-                <div class="ticket-top">
-                    <img src="panther.png" alt="Panther" style="width: 130px; filter: brightness(0) invert(1);">
-                    <span class="ticket-event">AGRISHOW 2026</span>
+                <div class="ticket-header">
+                    <img src="panther.png" alt="Panther" class="ticket-logo">
+                    <span class="ticket-event-name">AGRISHOW 2026</span>
                 </div>
                 <div class="ticket-body">
-                    <p class="ticket-label">Codigo de Resgate</p>
-                    <h1 id="rescue-code" class="code-text">AGRISHOW-0000</h1>
-                    <p class="ticket-prize-label">Premio: <strong id="code-prize-name">-</strong></p>
+                    <p class="ticket-label">CODIGO DE RESGATE</p>
+                    <h1 id="rescue-code" class="ticket-code">AGRISHOW-0000</h1>
+                    <p class="ticket-prize-row">Premio: <span id="code-prize-name" class="ticket-prize-val">-</span></p>
                 </div>
                 <div class="ticket-divider">
-                    <span class="divider-circle left"></span>
-                    <div class="divider-dashes"></div>
-                    <span class="divider-circle right"></span>
+                    <span class="divider-notch left"></span>
+                    <div class="divider-line"></div>
+                    <span class="divider-notch right"></span>
                 </div>
-                <div class="ticket-thanks">
+                <div class="ticket-footer">
                     <p class="thanks-hashtag">#PANTHERSAGRISHOW2026</p>
                     <p class="thanks-sub">Apresente este codigo no balcao para retirar seu brinde.</p>
                 </div>
             </div>
-            <button class="btn btn-outline btn-block" onclick="resetApp(true)">FINALIZAR</button>
+            
+            <button class="btn-finish-pill" onclick="resetApp(true)">
+                <div class="finish-check-box">✓</div>
+                <span>FINALIZAR</span>
+            </button>
+            
             <p class="timeout-text">Voltando ao inicio em <span id="timer-sec">10</span>s...</p>
         </div>
     </div>

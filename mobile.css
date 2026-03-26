@@ -304,21 +304,161 @@ body {
 
 /* ─── TICKET / CODE SCREEN ───────────────────────────────── */
 .code-screen .content {
-    gap: 12px !important;
-    padding: 15px !important;
+    gap: 15px !important;
+    padding: 20px !important;
 }
-.ticket-wrapper { border-radius: 12px !important; max-height: 80vh; overflow: hidden; }
-.ticket-top { padding: 15px !important; }
-.ticket-top img { width: 100px !important; }
-.ticket-body { padding: 15px !important; gap: 5px !important; }
-.code-text { font-size: clamp(24px, 6vw, 36px) !important; margin: 10px 0 !important; }
-.ticket-label { font-size: 12px !important; }
-.ticket-prize-label { font-size: 16px !important; }
-.ticket-prize-label strong { font-size: 18px !important; }
-.ticket-thanks { padding: 15px !important; }
-.thanks-hashtag { font-size: 16px !important; }
-.thanks-sub { font-size: 12px !important; }
-.timeout-text { font-size: 12px !important; margin-top: 5px !important; }
+
+.ticket-wrapper {
+    width: 100%;
+    max-width: 340px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket-header {
+    background: #D14524; /* Panther Orange */
+    padding: 18px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ticket-logo {
+    width: 100px;
+    filter: brightness(0) invert(1);
+    object-fit: contain;
+}
+
+.ticket-event-name {
+    color: #fff;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.ticket-body {
+    background: #fff;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.ticket-label {
+    color: #888;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 8px !important;
+}
+
+.ticket-code {
+    color: #D14524;
+    font-size: clamp(28px, 8vw, 42px);
+    font-weight: 900;
+    margin-bottom: 5px !important;
+}
+
+.ticket-prize-row {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.ticket-prize-val {
+    color: #D14524;
+    font-weight: 900;
+}
+
+.ticket-divider {
+    height: 30px;
+    background: #000;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.divider-line {
+    width: 100%;
+    height: 1px;
+    border-top: 1px dashed rgba(255,255,255,0.4);
+}
+
+.divider-notch {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: #000;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.divider-notch.left { left: -12px; }
+.divider-notch.right { right: -12px; }
+
+.ticket-footer {
+    background: #000;
+    padding: 20px 15px 15px;
+    text-align: center;
+}
+
+.thanks-hashtag {
+    color: #ff6a00;
+    font-weight: 900;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-bottom: 8px !important;
+    text-shadow: 0 0 10px rgba(255,106,0,0.4);
+}
+
+.thanks-sub {
+    color: #888;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+/* Custom Finish Pill Button */
+.btn-finish-pill {
+    width: 100%;
+    max-width: 340px;
+    height: 70px;
+    background: #000;
+    border: 2px solid #D14524;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #D14524;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(209,69,36,0.3);
+    margin-top: 10px;
+}
+
+.finish-check-box {
+    width: 32px;
+    height: 32px;
+    background: #22c55e; /* Green */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.timeout-text {
+    font-size: 13px !important;
+    color: #666;
+    margin-top: 10px !important;
+}
+.timeout-text span { color: #ff6a00; font-weight: 900; }
 
 /* ─── ADMIN PANEL ────────────────────────────────────────── */
 .admin-content {
