@@ -137,7 +137,6 @@
                 <div class="row align-items-center mb-4">
                     <div class="col"><h2 class="section-title">DESAFIO PANTHER 🎯</h2></div>
                     <div class="col-auto">
-                        <div id="question-counter" class="counter">1 / 7</div>
                         <div id="quiz-timer" class="quiz-timer">20s</div>
                     </div>
                 </div>
@@ -146,10 +145,13 @@
                 <h2 id="question-text">Carregando...</h2>
             </div>
             <div class="answers-container">
-                <button class="btn-answer" id="ans-0" onclick="selectAnswer(0)"></button>
-                <button class="btn-answer" id="ans-1" onclick="selectAnswer(1)"></button>
-                <button class="btn-answer" id="ans-2" onclick="selectAnswer(2)"></button>
-                <button class="btn-answer" id="ans-3" onclick="selectAnswer(3)"></button>
+                <button class="btn btn-answer" id="ans-0" onclick="selectAnswer(0)"></button>
+                <button class="btn btn-answer" id="ans-1" onclick="selectAnswer(1)"></button>
+                <button class="btn btn-answer" id="ans-2" onclick="selectAnswer(2)"></button>
+                <button class="btn btn-answer" id="ans-3" onclick="selectAnswer(3)"></button>
+            </div>
+            <div class="quiz-footer-meta">
+                <div id="question-counter" class="counter">1 / 7</div>
             </div>
         </div>
     </div>
