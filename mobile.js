@@ -9,6 +9,30 @@ window.drawWheel = function(canvas) {
     setupReel();
 };
 
+// Override showRoulette to avoid canvas errors
+window.showRoulette = function() {
+    window.wheelSpun = false;
+    
+    // In mobile.html there is no canvas, so we just setup the reel UI
+    const container = document.getElementById('reel-container');
+    if (container) {
+        container.style.transition = 'none';
+        container.style.transform = 'translateY(0)';
+        setupReel();
+    }
+
+    document.getElementById('prize-reveal').classList.add('hidden');
+    document.getElementById('prize-popup').classList.add('hidden');
+    document.getElementById('btn-spin').classList.remove('hidden');
+    document.getElementById('spin-status').innerHTML = '&nbsp;';
+    document.getElementById('confetti-container').innerHTML = '';
+
+    const firstName = playerName ? playerName.split(' ')[0] : 'Visitante';
+    document.getElementById('roulette-player-name').textContent = `Boa sorte, ${firstName}!`;
+
+    showScreen('roulette');
+};
+
 function setupReel() {
     const container = document.getElementById('reel-container');
     if (!container) return;
