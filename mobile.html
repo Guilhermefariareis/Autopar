@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Quiz Panther - Agrishow 2026</title>
@@ -10,256 +12,285 @@
     <link rel="stylesheet" href="style.css?v=5">
     <link rel="stylesheet" href="mobile.css?v=1">
 </head>
+
 <body>
     <div id="app">
-    <div id="admin-zone" aria-hidden="true"></div>
+        <div id="admin-zone" aria-hidden="true"></div>
 
-    <div id="admin-panel" class="screen screen-modal hide">
-        <div class="modal-backdrop" onclick="closeAdmin()"></div>
-        <div class="admin-content glass-panel">
-            <h2>Painel Admin</h2>
-            <div class="stat-row">
-                <div class="stat-box">
-                    <p>Jogadores</p>
-                    <h3 id="stat-players">0</h3>
-                </div>
-                <div class="stat-box">
-                    <p>Brindes</p>
-                    <h3 id="stat-prizes">0</h3>
-                </div>
-            </div>
-            <button class="btn btn-export" onclick="exportCSV()">Exportar Lista (CSV)</button>
-            <div id="admin-debug-log" class="debug-log-box"></div>
-            <button class="btn btn-primary" onclick="resetStock()">Resetar Estoque</button>
-            <button class="btn btn-outline" style="border-color: #ffaa00; color: #ffaa00;" onclick="simulateSoldOut()">Simular Esgotamento</button>
-            <button class="btn btn-danger" onclick="resetStats()">Zerar Jogadores</button>
-            <div class="admin-test-zone" style="margin-top: 20px; text-align: left;">
-                <h3 style="color: #FFD700; margin-bottom: 15px; border-bottom: 1px solid #333; padding-bottom: 10px;">🧪 Modo Apresentação</h3>
-                <div style="display: flex; gap: 15px; margin-bottom: 15px;">
-                    <button class="btn btn-outline" style="flex: 1; border-color: #00ff88; color: #00ff88; font-size: 14px; min-height: 50px; padding: 10px;" onclick="demoAutoRegister()">👤 Auto-Cadastro</button>
-                    <button class="btn btn-outline" style="flex: 1; border-color: #00ff88; color: #00ff88; font-size: 14px; min-height: 50px; padding: 10px;" onclick="demoJumpToRoulette()">🎡 Ir para Roleta</button>
-                </div>
-                <select id="force-prize-select" style="width: 100%; padding: 12px; border-radius: 8px; background: #222; color: #fff; border: 1px solid #555; font-size: 16px;">
-                    <option value="">🍀 Roleta: Modo Justo (Sorte)</option>
-                    <option value="Squeeze">🏆 Forçar: Squeeze</option>
-                    <option value="Boné">🏆 Forçar: Boné</option>
-                    <option value="Caneta">🏆 Forçar: Caneta</option>
-                    <option value="Chaveiro Trena">🏆 Forçar: Chaveiro Trena</option>
-                    <option value="Chapéu">🏆 Forçar: Chapéu</option>
-                </select>
-            </div>
-            <button class="btn btn-outline" onclick="closeAdmin()">Fechar Painel</button>
-        </div>
-    </div>
-
-    <!-- HOME -->
-    <div id="screen-home" class="screen active">
-        <div class="bg-decor">
-            <div class="bd-circle c1"></div>
-            <div class="bd-circle c2"></div>
-            <div class="bd-circle c3"></div>
-        </div>
-        <div class="content main-content">
-            <div class="logo-wrapper">
-                <img src="panther.png" alt="Panther Lubrificantes" class="home-logo">
-            </div>
-            <div class="event-badge">AGRISHOW 2026</div>
-            <h1 class="main-title">QUIZ<br>PANTHER</h1>
-            <p class="subtitle">Responda as perguntas e<br>concorra a brindes exclusivos! ✨</p>
-            <div id="sold-out-banner" class="sold-out-banner hidden">
-                <h2>BRINDES ESGOTADOS POR HOJE</h2>
-                <p>Agradecemos sua visita. Volte amanhã!</p>
-            </div>
-            <button class="btn btn-primary btn-jumbo bounce" onclick="goToRegister()">PARTICIPAR</button>
-            <button class="btn-test-roulette" onclick="testRoulette()">Testar Roleta</button>
-        </div>
-    </div>
-
-    <!-- REGISTER -->
-    <div id="screen-register" class="screen">
-        <div class="content register-content">
-            <div class="glass-panel reg-panel">
-                <div class="reg-logo-mini">
-                    <img src="logo.png" alt="Panther Lubrificantes" class="reg-logo-img">
-                </div>
-                <h2 class="reg-title">Seus Dados</h2>
-                <p class="reg-sub">Preencha para participar</p>
-                <div class="field-group">
-                    <div class="field-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <div id="admin-panel" class="screen screen-modal hide">
+            <div class="modal-backdrop" onclick="closeAdmin()"></div>
+            <div class="admin-content glass-panel">
+                <h2>Painel Admin</h2>
+                <div class="stat-row">
+                    <div class="stat-box">
+                        <p>Jogadores</p>
+                        <h3 id="stat-players">0</h3>
                     </div>
-                    <div class="field-inner">
-                        <input type="text" id="input-name" class="field-input" placeholder=" " maxlength="50" autocomplete="off">
-                        <label class="field-label">Nome completo</label>
-                        <span class="field-line"></span>
+                    <div class="stat-box">
+                        <p>Brindes</p>
+                        <h3 id="stat-prizes">0</h3>
                     </div>
                 </div>
-                <div class="field-group">
-                    <div class="field-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                <button class="btn btn-export" onclick="exportCSV()">Exportar Lista (CSV)</button>
+                <div id="admin-debug-log" class="debug-log-box"></div>
+                <button class="btn btn-primary" onclick="resetStock()">Resetar Estoque</button>
+                <button class="btn btn-outline" style="border-color: #ffaa00; color: #ffaa00;"
+                    onclick="simulateSoldOut()">Simular Esgotamento</button>
+                <button class="btn btn-danger" onclick="resetStats()">Zerar Jogadores</button>
+                <div class="admin-test-zone" style="margin-top: 20px; text-align: left;">
+                    <h3
+                        style="color: #FFD700; margin-bottom: 15px; border-bottom: 1px solid #333; padding-bottom: 10px;">
+                        🧪 Modo Apresentação</h3>
+                    <div style="display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap;">
+                        <button class="btn btn-outline"
+                            style="flex: 1; border-color: #00ff88; color: #00ff88; font-size: 14px; min-height: 50px; padding: 10px;"
+                            onclick="demoAutoRegister()">👤 Auto-Cadastro</button>
+                        <button class="btn btn-outline"
+                            style="flex: 1; border-color: #00ff88; color: #00ff88; font-size: 14px; min-height: 50px; padding: 10px;"
+                            onclick="demoJumpToRoulette()">🎡 Ir para Roleta</button>
+                        <button class="btn btn-outline"
+                            style="flex: 1; width: 100%; border-color: #ffaa00; color: #ffaa00; font-size: 14px; min-height: 50px; padding: 10px;"
+                            onclick="testRoulette()">🎯 Testar Roleta</button>
                     </div>
-                    <div class="field-inner">
-                        <input type="tel" id="input-phone" class="field-input" placeholder=" " maxlength="20" autocomplete="off">
-                        <label class="field-label">WhatsApp</label>
-                        <span class="field-line"></span>
+                    <select id="force-prize-select"
+                        style="width: 100%; padding: 12px; border-radius: 8px; background: #222; color: #fff; border: 1px solid #555; font-size: 16px;">
+                        <option value="">🍀 Roleta: Modo Justo (Sorte)</option>
+                        <option value="Squeeze">🏆 Forçar: Squeeze</option>
+                        <option value="Boné">🏆 Forçar: Boné</option>
+                        <option value="Caneta">🏆 Forçar: Caneta</option>
+                        <option value="Chaveiro Trena">🏆 Forçar: Chaveiro Trena</option>
+                        <option value="Chapéu">🏆 Forçar: Chapéu</option>
+                    </select>
+                </div>
+                <button class="btn btn-outline" onclick="closeAdmin()">Fechar Painel</button>
+            </div>
+        </div>
+
+        <!-- HOME -->
+        <div id="screen-home" class="screen active">
+            <div class="bg-decor">
+                <div class="bd-circle c1"></div>
+                <div class="bd-circle c2"></div>
+                <div class="bd-circle c3"></div>
+            </div>
+            <div class="content main-content">
+                <div class="logo-wrapper">
+                    <img src="panther.png" alt="Panther Lubrificantes" class="home-logo">
+                </div>
+                <div class="event-badge">AGRISHOW 2026</div>
+                <h1 class="main-title">QUIZ<br>PANTHER</h1>
+                <p class="subtitle">Responda as perguntas e<br>concorra a brindes exclusivos! ✨</p>
+                <button class="btn btn-primary btn-jumbo bounce" onclick="goToRegister()">PARTICIPAR</button>
+                <button class="btn-test-roulette" onclick="testRoulette()">Testar Roleta</button>
+            </div>
+        </div>
+
+        <!-- REGISTER -->
+        <div id="screen-register" class="screen">
+            <div class="content register-content">
+                <div class="glass-panel reg-panel">
+                    <div class="reg-logo-mini">
+                        <img src="logo.png" alt="Panther Lubrificantes" class="reg-logo-img">
+                    </div>
+                    <h2 class="reg-title">Seus Dados</h2>
+                    <p class="reg-sub">Preencha para participar</p>
+                    <div class="field-group">
+                        <div class="field-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <circle cx="12" cy="8" r="4" />
+                                <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+                            </svg>
+                        </div>
+                        <div class="field-inner">
+                            <input type="text" id="input-name" class="field-input" placeholder=" " maxlength="50"
+                                autocomplete="off">
+                            <label class="field-label">Nome completo</label>
+                            <span class="field-line"></span>
+                        </div>
+                    </div>
+                    <div class="field-group">
+                        <div class="field-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                            </svg>
+                        </div>
+                        <div class="field-inner">
+                            <input type="tel" id="input-phone" class="field-input" placeholder=" " maxlength="20"
+                                autocomplete="off">
+                            <label class="field-label">WhatsApp</label>
+                            <span class="field-line"></span>
+                        </div>
+                    </div>
+                    <div class="lgpd-toggle-row">
+                        <label class="lgpd-toggle-wrap" for="input-lgpd">
+                            <input type="checkbox" id="input-lgpd" class="toggle-input">
+                            <span class="toggle-track">
+                                <span class="toggle-thumb"></span>
+                            </span>
+                            <span class="lgpd-toggle-text">Autorizo a Panther Lubrificantes a usar meus dados para
+                                contato via WhatsApp conforme a LGPD.</span>
+                        </label>
+                    </div>
+                    <p id="form-error" class="form-error hide"></p>
+                    <button class="btn btn-primary btn-block" onclick="submitRegister()">▶ COMEÇAR QUIZ</button>
+                    <button class="btn btn-link" onclick="showScreen('home')">Voltar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- QUIZ -->
+        <div id="screen-quiz" class="screen">
+            <button class="btn-cancel-quiz" onclick="resetApp()">✖ SAIR</button>
+            <div class="floating-products">
+                <img src="panther.png" class="float-img float-1" />
+                <img src="panther.png" class="float-img float-2" />
+                <img src="panther.png" class="float-img float-3" />
+                <img src="panther.png" class="float-img float-4" />
+            </div>
+            <div class="quiz-wrap glass-panel" style="z-index: 10;">
+                <div class="quiz-header">
+                    <div class="progress-container">
+                        <div id="progress-bar" class="progress-bar"></div>
+                    </div>
+                    <div class="row align-items-center mb-4">
+                        <div class="col">
+                            <h2 class="section-title">DESAFIO PANTHER 🎯</h2>
+                        </div>
+                        <div class="col-auto">
+                            <div id="quiz-timer" class="quiz-timer">20s</div>
+                        </div>
                     </div>
                 </div>
-                <div class="lgpd-toggle-row">
-                    <label class="lgpd-toggle-wrap" for="input-lgpd">
-                        <input type="checkbox" id="input-lgpd" class="toggle-input">
-                        <span class="toggle-track">
-                            <span class="toggle-thumb"></span>
-                        </span>
-                        <span class="lgpd-toggle-text">Autorizo a Panther Lubrificantes a usar meus dados para contato via WhatsApp conforme a LGPD.</span>
-                    </label>
+                <div class="question-box">
+                    <h2 id="question-text">Carregando...</h2>
                 </div>
-                <p id="form-error" class="form-error hide"></p>
-                <button class="btn btn-primary btn-block" onclick="submitRegister()">▶ COMEÇAR QUIZ</button>
-                <button class="btn btn-link" onclick="showScreen('home')">Voltar</button>
+                <div class="answers-container">
+                    <button class="btn btn-answer" id="ans-0" onclick="selectAnswer(0)"></button>
+                    <button class="btn btn-answer" id="ans-1" onclick="selectAnswer(1)"></button>
+                    <button class="btn btn-answer" id="ans-2" onclick="selectAnswer(2)"></button>
+                    <button class="btn btn-answer" id="ans-3" onclick="selectAnswer(3)"></button>
+                </div>
+                <div class="quiz-footer-meta">
+                    <div id="question-counter" class="counter">1 / 7</div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- QUIZ -->
-    <div id="screen-quiz" class="screen">
-        <button class="btn-cancel-quiz" onclick="resetApp()">✖ SAIR</button>
-        <div class="floating-products">
-            <img src="panther.png" class="float-img float-1" />
-            <img src="panther.png" class="float-img float-2" />
-            <img src="panther.png" class="float-img float-3" />
-            <img src="panther.png" class="float-img float-4" />
-        </div>
-        <div class="quiz-wrap glass-panel" style="z-index: 10;">
-            <div class="quiz-header">
-                <div class="progress-container">
-                    <div id="progress-bar" class="progress-bar"></div>
+        <!-- WIN -->
+        <div id="screen-win" class="screen">
+            <div class="content">
+                <div class="result-panel glass-panel">
+                    <h1 class="success-title">PARABENS,<br><span id="win-name">Visitante</span>!</h1>
+                    <h2 style="font-size: 24px; color:#fff;">Você fez <span id="win-score"></span> pontos.</h2>
+                    <br>
+                    <div id="win-product-podium"
+                        style="text-align: center; margin: 10px 0; animation: slowFloat 4s ease-in-out infinite alternate;">
+                        <img src="IMG_1 (3).png" id="win-podium-img"
+                            style="height: 18vh; max-height: 180px; filter: drop-shadow(0 20px 30px rgba(255,100,0,0.5)); transition:all 0.5s;" />
+                        <div
+                            style="width: 120px; height: 10px; background: radial-gradient(ellipse, rgba(0,0,0,0.8) 0%, transparent 70%); margin: auto; margin-top:8px; border-radius:50%;">
+                        </div>
+                    </div>
+                    <p style="margin-bottom:15px; font-size: 15px;">Gire a roleta para descobrir sua recompensa!</p>
+                    <button class="btn" style="width:100%; justify-content:center;" onclick="showRoulette()">GIRAR A
+                        ROLETA</button>
                 </div>
-                <div class="row align-items-center mb-4">
-                    <div class="col"><h2 class="section-title">DESAFIO PANTHER 🎯</h2></div>
-                    <div class="col-auto">
-                        <div id="quiz-timer" class="quiz-timer">20s</div>
+            </div>
+        </div>
+
+        <!-- LOSE -->
+        <div id="screen-lose" class="screen">
+            <div class="content">
+                <div class="result-panel glass-panel">
+                    <div class="trophy-icon"></div>
+                    <h1 class="error-title">Quase la!</h1>
+                    <p class="result-score-text">Voce acertou <strong id="lose-score">3</strong> de 7.</p>
+                    <p class="subtitle">Eram necessarios 5 acertos. Tente de novo!</p>
+                    <button class="btn btn-primary btn-jumbo" onclick="resetApp()">JOGAR NOVAMENTE</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ROULETTE -->
+        <div id="screen-roulette" class="screen roulette-screen">
+            <div id="confetti-container"></div>
+            <div id="prize-popup" class="prize-popup hidden">
+                <div class="prize-popup-card">
+                    <p class="prize-popup-label">VOCE GANHOU</p>
+                    <h3 id="prize-popup-name" class="prize-popup-name">-</h3>
+                    <p class="prize-popup-text">Apresente o codigo para retirar seu brinde.</p>
+                    <button class="btn btn-primary prize-popup-btn" onclick="showCode()">GERAR CODIGO</button>
+                </div>
+            </div>
+            <div class="roulette-top">
+                <div class="roulette-logo-wrap">
+                    <img src="logo.png" alt="Panther" class="roulette-header-logo" />
+                </div>
+                <h2 class="roulette-title">GIRE E <span class="ganhe-spin">GANHE!</span></h2>
+                <p id="roulette-player-name" class="roulette-subtitle">Prepare-se!</p>
+            </div>
+            <div class="reel-viewport">
+                <div class="reel-window">
+                    <div id="reel-container" class="reel-container">
+                        <!-- Populated by mobile.js -->
                     </div>
                 </div>
+                <div class="reel-pointer-top"></div>
+                <div class="reel-pointer-bottom"></div>
             </div>
-            <div class="question-box">
-                <h2 id="question-text">Carregando...</h2>
-            </div>
-            <div class="answers-container">
-                <button class="btn btn-answer" id="ans-0" onclick="selectAnswer(0)"></button>
-                <button class="btn btn-answer" id="ans-1" onclick="selectAnswer(1)"></button>
-                <button class="btn btn-answer" id="ans-2" onclick="selectAnswer(2)"></button>
-                <button class="btn btn-answer" id="ans-3" onclick="selectAnswer(3)"></button>
-            </div>
-            <div class="quiz-footer-meta">
-                <div id="question-counter" class="counter">1 / 7</div>
+            <div class="roulette-bottom">
+                <p id="spin-status" class="spin-status">&nbsp;</p>
+                <button id="btn-spin" class="btn btn-primary btn-jumbo pulse-glow" onclick="spinWheel()">GIRAR
+                    AGORA</button>
+                <div id="prize-reveal" class="prize-reveal hidden">
+                    <p class="you-won-label">PARABENS! VOCE GANHOU 🎉</p>
+                    <h1 id="prize-name-display" class="prize-name-big">-</h1>
+                    <button class="btn btn-secondary btn-jumbo pop-in" onclick="showCode()">GERAR CODIGO</button>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- WIN -->
-    <div id="screen-win" class="screen">
-        <div class="content">
-            <div class="result-panel glass-panel">
-                <h1 class="success-title">PARABENS,<br><span id="win-name">Visitante</span>!</h1>
-                <h2 style="font-size: 24px; color:#fff;">Você fez <span id="win-score"></span> pontos.</h2>
-                <br>
-                <div id="win-product-podium" style="text-align: center; margin: 10px 0; animation: slowFloat 4s ease-in-out infinite alternate;">
-                    <img src="IMG_1 (3).png" id="win-podium-img" style="height: 18vh; max-height: 180px; filter: drop-shadow(0 20px 30px rgba(255,100,0,0.5)); transition:all 0.5s;"/>
-                    <div style="width: 120px; height: 10px; background: radial-gradient(ellipse, rgba(0,0,0,0.8) 0%, transparent 70%); margin: auto; margin-top:8px; border-radius:50%;"></div>
+        <!-- CODE / TICKET -->
+        <div id="screen-code" class="screen code-screen">
+            <div class="content">
+                <div class="ticket-wrapper">
+                    <div class="ticket-header">
+                        <img src="panther.png" alt="Panther" class="ticket-logo">
+                        <span class="ticket-event-name">AGRISHOW 2026</span>
+                    </div>
+                    <div class="ticket-body">
+                        <p class="ticket-label">CODIGO DE RESGATE</p>
+                        <h1 id="rescue-code" class="ticket-code">AGRISHOW-0000</h1>
+                        <p class="ticket-prize-row">Premio: <span id="code-prize-name" class="ticket-prize-val">-</span>
+                        </p>
+                    </div>
+                    <div class="ticket-divider">
+                        <span class="divider-notch left"></span>
+                        <div class="divider-line"></div>
+                        <span class="divider-notch right"></span>
+                    </div>
+                    <div class="ticket-footer">
+                        <p class="thanks-hashtag">#PANTHERSAGRISHOW2026</p>
+                        <p class="thanks-sub">Apresente este codigo no balcao para retirar seu brinde.</p>
+                    </div>
                 </div>
-                <p style="margin-bottom:15px; font-size: 15px;">Gire a roleta para descobrir sua recompensa!</p>
-                <button class="btn" style="width:100%; justify-content:center;" onclick="showRoulette()">GIRAR A ROLETA</button>
-            </div>
-        </div>
-    </div>
 
-    <!-- LOSE -->
-    <div id="screen-lose" class="screen">
-        <div class="content">
-            <div class="result-panel glass-panel">
-                <div class="trophy-icon"></div>
-                <h1 class="error-title">Quase la!</h1>
-                <p class="result-score-text">Voce acertou <strong id="lose-score">3</strong> de 7.</p>
-                <p class="subtitle">Eram necessarios 5 acertos. Tente de novo!</p>
-                <button class="btn btn-primary btn-jumbo" onclick="resetApp()">JOGAR NOVAMENTE</button>
-            </div>
-        </div>
-    </div>
+                <button class="btn-finish-pill" onclick="resetApp(true)">
+                    <div class="finish-check-box">✓</div>
+                    <span>FINALIZAR</span>
+                </button>
 
-    <!-- ROULETTE -->
-    <div id="screen-roulette" class="screen roulette-screen">
-        <div id="confetti-container"></div>
-        <div id="prize-popup" class="prize-popup hidden">
-            <div class="prize-popup-card">
-                <p class="prize-popup-label">VOCE GANHOU</p>
-                <h3 id="prize-popup-name" class="prize-popup-name">-</h3>
-                <p class="prize-popup-text">Apresente o codigo para retirar seu brinde.</p>
-                <button class="btn btn-primary prize-popup-btn" onclick="showCode()">GERAR CODIGO</button>
+                <p class="timeout-text">Voltando ao inicio em <span id="timer-sec">10</span>s...</p>
             </div>
         </div>
-        <div class="roulette-top">
-            <div class="roulette-logo-wrap">
-                <img src="logo.png" alt="Panther" class="roulette-header-logo" />
-            </div>
-            <h2 class="roulette-title">GIRE E <span class="ganhe-spin">GANHE!</span> 🎰</h2>
-            <p id="roulette-player-name" class="roulette-subtitle">Prepare-se!</p>
-        </div>
-        <div class="reel-viewport">
-            <div class="reel-window">
-                <div id="reel-container" class="reel-container">
-                    <!-- Populated by mobile.js -->
-                </div>
-            </div>
-            <div class="reel-pointer-top"></div>
-            <div class="reel-pointer-bottom"></div>
-        </div>
-        <div class="roulette-bottom">
-            <p id="spin-status" class="spin-status">&nbsp;</p>
-            <button id="btn-spin" class="btn btn-primary btn-jumbo pulse-glow" onclick="spinWheel()">GIRAR AGORA</button>
-            <div id="prize-reveal" class="prize-reveal hidden">
-                <p class="you-won-label">PARABENS! VOCE GANHOU 🎉</p>
-                <h1 id="prize-name-display" class="prize-name-big">-</h1>
-                <button class="btn btn-secondary btn-jumbo pop-in" onclick="showCode()">GERAR CODIGO</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- CODE / TICKET -->
-    <div id="screen-code" class="screen code-screen">
-        <div class="content">
-            <div class="ticket-wrapper">
-                <div class="ticket-header">
-                    <img src="panther.png" alt="Panther" class="ticket-logo">
-                    <span class="ticket-event-name">AGRISHOW 2026</span>
-                </div>
-                <div class="ticket-body">
-                    <p class="ticket-label">CODIGO DE RESGATE</p>
-                    <h1 id="rescue-code" class="ticket-code">AGRISHOW-0000</h1>
-                    <p class="ticket-prize-row">Premio: <span id="code-prize-name" class="ticket-prize-val">-</span></p>
-                </div>
-                <div class="ticket-divider">
-                    <span class="divider-notch left"></span>
-                    <div class="divider-line"></div>
-                    <span class="divider-notch right"></span>
-                </div>
-                <div class="ticket-footer">
-                    <p class="thanks-hashtag">#PANTHERSAGRISHOW2026</p>
-                    <p class="thanks-sub">Apresente este codigo no balcao para retirar seu brinde.</p>
-                </div>
-            </div>
-            
-            <button class="btn-finish-pill" onclick="resetApp(true)">
-                <div class="finish-check-box">✓</div>
-                <span>FINALIZAR</span>
-            </button>
-            
-            <p class="timeout-text">Voltando ao inicio em <span id="timer-sec">10</span>s...</p>
-        </div>
-    </div>
     </div>
 
     <script src="script.js?v=5"></script>
     <script src="mobile.js?v=1"></script>
     <!-- Sem server-status no mobile -->
 </body>
+
 </html>
