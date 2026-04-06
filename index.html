@@ -237,31 +237,27 @@
         <div class="content">
             <div class="ticket-wrapper">
                 <div class="ticket-top">
-                    <div class="ticket-header-content">
-                        <img src="panther.png" alt="Panther" class="ticket-logo">
-                        <span class="ticket-event">AGRISHOW 2026</span>
-                    </div>
+                    <img src="panther.png" alt="Panther" style="width: 220px; filter: brightness(0) invert(1);">
+                    <span class="ticket-event">AGRISHOW 2026</span>
                 </div>
                 <div class="ticket-body">
-                    <p class="ticket-label">PRÊMIO</p>
-                    <h1 id="code-prize-name" class="ticket-prize-name">BRINDE</h1>
-                    <p class="ticket-sublabel">Apresente esta tela no balcão para retirar seu brinde.</p>
+                    <p class="ticket-label">Codigo de Resgate</p>
+                    <h1 id="rescue-code" class="code-text">AGRISHOW-0000</h1>
+                    <p class="ticket-prize-label">Premio: <strong id="code-prize-name">-</strong></p>
                 </div>
                 <div class="ticket-divider">
                     <span class="divider-circle left"></span>
                     <div class="divider-dashes"></div>
                     <span class="divider-circle right"></span>
                 </div>
-                <div class="ticket-footer">
+                <div class="ticket-thanks">
                     <p class="thanks-hashtag">#PANTHERSAGRISHOW2026</p>
-                    <p class="thanks-info">A Agrishow é o maior palco do agronegócio.</p>
+                    <p class="thanks-sub">Apresente este codigo no balcao para retirar seu brinde.</p>
                 </div>
             </div>
 
-            <button class="btn-finalizar-ticket" onclick="resetApp(true)">
-                <div class="btn-icon-box">✓</div> FINALIZAR
-            </button>
-            <p class="timeout-text">Voltando ao início em <span id="timer-sec">20</span>s...</p>
+            <button class="btn btn-outline btn-block" onclick="resetApp(true)">✅ FINALIZAR</button>
+            <p class="timeout-text">Voltando ao inicio em <span id="timer-sec">10</span>s...</p>
         </div>
     </div>
 </div>
