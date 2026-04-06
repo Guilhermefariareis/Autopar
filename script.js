@@ -823,8 +823,7 @@ function launchConfetti() {
 }
 
 function showCode() {
-    const random = Math.floor(1000 + Math.random() * 9000);
-    const code = `AGRISHOW-${random}`;
+    const code = wonPrizeName.toUpperCase();
     document.getElementById('rescue-code').textContent = code;
     document.getElementById('code-prize-name').textContent = wonPrizeName;
 
