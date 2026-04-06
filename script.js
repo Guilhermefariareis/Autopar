@@ -788,11 +788,15 @@ function spinWheel() {
         const record = participants.find((item) => item.id === currentSessionId);
         if (record) {
             record.prize = wonPrizeName;
+            record.code = "-"; // Removed code generation as requested
             saveAndSync();
         }
 
-        // Resume inactivity reset mode
-        startAutoReset();
+        // AUTO-FLOW: Skip intermediate popups and show the final ticket immediately
+        // We wait a tiny bit to let the user see the "Parabens" name change if they were looking at it
+        setTimeout(() => {
+            showCode();
+        }, 1200);
     }, 4100);
 }
 
@@ -823,17 +827,11 @@ function launchConfetti() {
 }
 
 function showCode() {
-    const random = Math.floor(1000 + Math.random() * 9000);
-    const code = `AGRISHOW-${random}`;
-    document.getElementById('rescue-code').textContent = code;
+    // Standard rescue code is no longer shown, but we keep the element for prize display
     document.getElementById('code-prize-name').textContent = wonPrizeName;
 
-    const record = participants.find((item) => item.id === currentSessionId);
-    if (record) {
-        record.prize = wonPrizeName; // ensure it's set
-        record.code = code;
-        saveAndSync();
-    }
+    // Trigger confetti again for the final screen
+    launchConfetti();
 
     showScreen('code');
     startAutoReset();
