@@ -171,11 +171,17 @@ window.spinWheel = function () {
     }, 4100);
 };
 
+window.celebrateInterval = null;
+
 // Celebration delay before resetting to home
 window.celebrarEFinalizar = function () {
     // Close the popup, keep the roulette screen with confetti
     document.getElementById('prize-popup').classList.add('hidden');
     document.getElementById('prize-reveal').classList.remove('hidden');
+
+    // Show skip button
+    const skipBtn = document.getElementById('btn-skip-celebration');
+    if (skipBtn) skipBtn.classList.remove('hidden');
 
     // Launch extra confetti burst
     if (typeof launchConfetti === 'function') {
@@ -193,18 +199,40 @@ window.celebrarEFinalizar = function () {
         countdownEl.classList.remove('hidden');
         secEl.textContent = DURATION;
 
+        if (window.celebrateInterval) clearInterval(window.celebrateInterval);
+        
         let remaining = DURATION;
-        const tick = setInterval(() => {
+        window.celebrateInterval = setInterval(() => {
             remaining -= 1;
             secEl.textContent = remaining;
             if (remaining <= 0) {
-                clearInterval(tick);
+                clearInterval(window.celebrateInterval);
+                window.celebrateInterval = null;
                 window.resetApp(true);
             }
         }, 1000);
     } else {
         // Fallback if elements not found
         setTimeout(() => window.resetApp(true), 8000);
+    }
+};
+
+// Override original resetApp to clear celebration timer if active
+const originalResetApp = window.resetApp;
+window.resetApp = function(force) {
+    if (window.celebrateInterval) {
+        clearInterval(window.celebrateInterval);
+        window.celebrateInterval = null;
+    }
+    
+    // Hide celebration elements
+    const skipBtn = document.getElementById('btn-skip-celebration');
+    const countdownEl = document.getElementById('celebrate-countdown');
+    if (skipBtn) skipBtn.classList.add('hidden');
+    if (countdownEl) countdownEl.classList.add('hidden');
+    
+    if (typeof originalResetApp === 'function') {
+        originalResetApp(force);
     }
 };
 

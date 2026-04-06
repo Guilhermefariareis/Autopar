@@ -626,3 +626,18 @@ body {
     from { opacity: 0; transform: translateY(6px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+.celebrate-skip-btn {
+    margin-top: 25px !important;
+    font-size: 14px !important;
+    padding: 12px 24px !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #fff !important;
+    opacity: 0.8;
+}
+
+.celebrate-skip-btn:active {
+    background: rgba(255, 255, 255, 0.15) !important;
+    transform: scale(0.95);
+}
