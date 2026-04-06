@@ -825,7 +825,6 @@ function launchConfetti() {
 function showCode() {
     const code = wonPrizeName.toUpperCase();
     document.getElementById('rescue-code').textContent = code;
-    document.getElementById('code-prize-name').textContent = wonPrizeName;
 
     const record = participants.find((item) => item.id === currentSessionId);
     if (record) {
