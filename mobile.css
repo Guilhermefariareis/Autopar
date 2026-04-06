@@ -184,8 +184,38 @@ body {
 }
 
 .btn-cancel-quiz {
-    font-size: 13px !important;
-    padding: 8px 14px !important;
+    position: absolute !important;
+    top: 25px !important;
+    right: 20px !important;
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #fff !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 101 !important;
+    padding: 0 !important;
+    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3) !important;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn-cancel-quiz:active {
+    transform: scale(0.9) !important;
+    background: rgba(255, 69, 0, 0.3) !important;
+    border-color: var(--orange) !important;
+}
+
+.btn-cancel-quiz svg {
+    width: 20px;
+    height: 20px;
+    opacity: 0.9;
 }
 
 /* Floating product logos — smaller on mobile */
