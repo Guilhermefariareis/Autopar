@@ -386,28 +386,29 @@ function submitRegister() {
 
 document.getElementById('input-phone').addEventListener('input', function (e) {
     let v = this.value.replace(/\D/g, "");
+    if (v.length > 11) v = v.slice(0, 11);
     
     // Explicitly handle empty state to ensure it's cleared "completely"
     if (!v || v.length === 0) {
-        this.value = '';
+        if (this.value !== "") this.value = "";
         return;
     }
 
-    if (v.length > 11) v = v.slice(0, 11);
-    
-    let formatted = "";
-    if (v.length > 10) {
-        formatted = v.replace(/^(\d{2})(\d{5})(\d{4})/, "($1) $2-$3");
-    } else if (v.length > 5) {
-        formatted = v.replace(/^(\d{2})(\d{4})(\d{0,4})/, "($1) $2-$3");
-    } else if (v.length > 2) {
-        formatted = v.replace(/^(\d{2})(\d{0,5})/, "($1) $2");
-    } else {
-        // Only add parenthesis if there's at least one digit
-        formatted = "(" + v;
+    let formatted = "(" + v.slice(0, 2);
+    if (v.length > 2) {
+        formatted += ") " + v.slice(2, 6);
+        if (v.length > 6) {
+            if (v.length > 10) {
+                // Mobile style: (11) 99999-9999
+                formatted = "(" + v.slice(0, 2) + ") " + v.slice(2, 7) + "-" + v.slice(7);
+            } else {
+                // Standard style: (11) 9999-9999
+                formatted += "-" + v.slice(6);
+            }
+        }
     }
-
-    // Only update if changed to avoid breaking current input/delete flow
+    
+    // Only update if changed to avoid breaking deletion/cursor flow
     if (this.value !== formatted) {
         this.value = formatted;
     }
