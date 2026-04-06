@@ -171,6 +171,43 @@ window.spinWheel = function () {
     }, 4100);
 };
 
+// Celebration delay before resetting to home
+window.celebrarEFinalizar = function () {
+    // Close the popup, keep the roulette screen with confetti
+    document.getElementById('prize-popup').classList.add('hidden');
+    document.getElementById('prize-reveal').classList.remove('hidden');
+
+    // Launch extra confetti burst
+    if (typeof launchConfetti === 'function') {
+        launchConfetti();
+        setTimeout(() => launchConfetti(), 1500);
+        setTimeout(() => launchConfetti(), 3000);
+    }
+
+    // Show countdown
+    const countdownEl = document.getElementById('celebrate-countdown');
+    const secEl = document.getElementById('celebrate-sec');
+    const DURATION = 8;
+
+    if (countdownEl && secEl) {
+        countdownEl.classList.remove('hidden');
+        secEl.textContent = DURATION;
+
+        let remaining = DURATION;
+        const tick = setInterval(() => {
+            remaining -= 1;
+            secEl.textContent = remaining;
+            if (remaining <= 0) {
+                clearInterval(tick);
+                window.resetApp(true);
+            }
+        }, 1000);
+    } else {
+        // Fallback if elements not found
+        setTimeout(() => window.resetApp(true), 8000);
+    }
+};
+
 // Hook into window load to init the reel if we are already on the screen (rare)
 window.addEventListener('load', () => {
     if (document.getElementById('screen-roulette').classList.contains('active')) {

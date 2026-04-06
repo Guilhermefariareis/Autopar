@@ -608,3 +608,21 @@ body {
 
 /* ─── REMOVE DESKTOP SERVER-STATUS ──────────────────────── */
 #server-status { display: none !important; }
+
+/* ─── CELEBRATION COUNTDOWN TEXT ──────────────────────── */
+.celebrate-countdown-text {
+    font-size: 15px !important;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 14px !important;
+    text-align: center;
+    letter-spacing: 1px;
+    animation: fadeIn 0.5s ease;
+}
+.celebrate-countdown-text span {
+    color: var(--orange);
+    font-weight: 900;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
