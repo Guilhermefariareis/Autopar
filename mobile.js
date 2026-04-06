@@ -4,15 +4,15 @@
  */
 
 // Override drawWheel to do nothing or setup the reel
-window.drawWheel = function(canvas) {
+window.drawWheel = function (canvas) {
     console.log("Mobile: Setting up Reel instead of Drawing Wheel");
     setupReel();
 };
 
 // Override showRoulette to avoid canvas errors
-window.showRoulette = function() {
+window.showRoulette = function () {
     window.wheelSpun = false;
-    
+
     // In mobile.html there is no canvas, so we just setup the reel UI
     const container = document.getElementById('reel-container');
     if (container) {
@@ -36,8 +36,8 @@ window.showRoulette = function() {
 function setupReel() {
     const container = document.getElementById('reel-container');
     if (!container) return;
-    
-    container.innerHTML = ''; 
+
+    container.innerHTML = '';
     const initialPrize = { name: 'BOA SORTE!', icon: '🎁' };
     container.appendChild(createReelItem(initialPrize.name, initialPrize.icon));
 }
@@ -55,15 +55,15 @@ function createReelItem(name, icon) {
 }
 
 // Override spinWheel
-window.spinWheel = function() {
+window.spinWheel = function () {
     if (window.wheelSpun) return;
-    
+
     // Pause inactivity timer (from script.js)
     if (typeof inactivityTimer !== 'undefined') clearInterval(inactivityTimer);
 
     window.wheelSpun = true;
     document.getElementById('btn-spin').classList.add('hidden');
-    document.getElementById('spin-status').innerHTML = 'SORTEANDO... 🎰';
+    document.getElementById('spin-status').innerHTML = 'SORTEANDO...';
 
     // Add visual excitement
     const viewport = document.querySelector('.reel-viewport');
@@ -84,7 +84,7 @@ window.spinWheel = function() {
         { name: 'Chaveiro Trena', icon: '' },
         { name: 'Caneta', icon: '' }
     ];
-    
+
     const EMOJIS = {
         'Chapéu': '',
         'Boné': '',
@@ -101,13 +101,13 @@ window.spinWheel = function() {
     // Build a long reel for the "blur" effect
     const itemCount = 40; // Total items to scroll through
     const reelItems = [];
-    
+
     // Fill with random noise
     for (let i = 0; i < itemCount - 1; i++) {
         const randomP = UI_PRIZES[Math.floor(Math.random() * UI_PRIZES.length)];
         reelItems.push(randomP);
     }
-    
+
     // Set the last one as the actual winner
     // We use a safe check to avoid fallback emojis like 🎁
     const finalIcon = (EMOJIS[wonPrize] !== undefined) ? EMOJIS[wonPrize] : "";
@@ -123,14 +123,14 @@ window.spinWheel = function() {
     // Trigger animation
     const itemHeight = 100; // Matches CSS
     const totalScroll = (itemCount - 1) * itemHeight;
-    
+
     container.style.transition = 'transform 4s cubic-bezier(0.15, 0, 0.15, 1)';
     container.style.transform = `translateY(-${totalScroll}px)`;
 
     // Handle Reveal
     setTimeout(() => {
         wonPrizeName = wonPrize; // Update global
-        
+
         // Update stock and logs (from script.js)
         if (typeof prizeStock !== 'undefined' && prizeStock[wonPrize] !== undefined) {
             prizeStock[wonPrize] -= 1;
@@ -139,7 +139,7 @@ window.spinWheel = function() {
 
         document.getElementById('prize-name-display').textContent = wonPrizeName;
         document.getElementById('prize-popup-name').textContent = wonPrizeName;
-        
+
         // Safety: ensure the ticket screen also has the prize name ready
         const ticketPrize = document.getElementById('code-prize-name');
         if (ticketPrize) ticketPrize.textContent = wonPrizeName;
@@ -165,7 +165,7 @@ window.spinWheel = function() {
 
         document.getElementById('spin-status').innerHTML = 'PARABÉNS! 🎊';
         viewport.classList.remove('spinning-glow');
-        
+
         // Resume inactivity reset
         if (typeof startAutoReset === 'function') startAutoReset();
     }, 4100);
@@ -173,7 +173,7 @@ window.spinWheel = function() {
 
 // Hook into window load to init the reel if we are already on the screen (rare)
 window.addEventListener('load', () => {
-   if (document.getElementById('screen-roulette').classList.contains('active')) {
-       setupReel();
-   }
+    if (document.getElementById('screen-roulette').classList.contains('active')) {
+        setupReel();
+    }
 });

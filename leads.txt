@@ -1318,3 +1318,6 @@
 [ATUALIZADO] [2026-03-25 19:29:01] Nome=1 | WhatsApp=1 | Acertos=3 | Premio=Chapéu | Codigo=- | Data=25/03/2026 19:28
 [ATUALIZADO] [2026-03-25 19:29:04] Nome=1 | WhatsApp=1 | Acertos=3 | Premio=Chapéu | Codigo=AGRISHOW-9988 | Data=25/03/2026 19:28
 [NOVO] [2026-03-25 20:37:15] Nome=Guilherme REis | WhatsApp=12131293123 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 20:37
+[NOVO] [2026-03-25 23:40:12] Nome=123 2131 | WhatsApp=(12) 31232-1312 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 23:39
+[NOVO] [2026-03-25 23:44:25] Nome=Guilherme Reis | WhatsApp=(12) 34123-1231 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 23:44
+[NOVO] [2026-03-25 23:50:16] Nome=eads1 13123 | WhatsApp=(13) 12313-2131 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 23:50
