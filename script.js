@@ -384,20 +384,33 @@ function submitRegister() {
     startQuiz();
 }
 
-document.getElementById('input-phone').addEventListener('input', function () {
+document.getElementById('input-phone').addEventListener('input', function (e) {
     let v = this.value.replace(/\D/g, "");
+    
+    // Explicitly handle empty state to ensure it's cleared "completely"
+    if (!v || v.length === 0) {
+        this.value = '';
+        return;
+    }
+
     if (v.length > 11) v = v.slice(0, 11);
     
+    let formatted = "";
     if (v.length > 10) {
-        v = v.replace(/^(\d{2})(\d{5})(\d{4})/, "($1) $2-$3");
+        formatted = v.replace(/^(\d{2})(\d{5})(\d{4})/, "($1) $2-$3");
     } else if (v.length > 5) {
-        v = v.replace(/^(\d{2})(\d{4})(\d{0,4})/, "($1) $2-$3");
+        formatted = v.replace(/^(\d{2})(\d{4})(\d{0,4})/, "($1) $2-$3");
     } else if (v.length > 2) {
-        v = v.replace(/^(\d{2})(\d{0,5})/, "($1) $2");
-    } else if (v.length > 0) {
-        v = v.replace(/^(\d*)/, "($1");
+        formatted = v.replace(/^(\d{2})(\d{0,5})/, "($1) $2");
+    } else {
+        // Only add parenthesis if there's at least one digit
+        formatted = "(" + v;
     }
-    this.value = v;
+
+    // Only update if changed to avoid breaking current input/delete flow
+    if (this.value !== formatted) {
+        this.value = formatted;
+    }
 });
 
 function startQuiz() {
