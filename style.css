@@ -1559,7 +1559,10 @@ html, body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
+    margin-bottom: 15vh; /* Levanta o botao do fundo */
+    position: relative;
+    z-index: 50;
 }
 #btn-spin {
     width: 85% !important;
