@@ -1565,11 +1565,11 @@ html, body {
     z-index: 50;
 }
 #btn-spin {
-    width: 85% !important;
-    max-width: 700px !important;
-    min-height: 130px !important;
-    font-size: 54px !important;
-    border-radius: 80px !important;
+    width: 90% !important;
+    max-width: 840px !important;
+    min-height: 160px !important;
+    font-size: 65px !important;
+    border-radius: 100px !important;
     display: flex !important;
     align-items: center;
     justify-content: center;
