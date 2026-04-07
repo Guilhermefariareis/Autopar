@@ -21,11 +21,8 @@ window.showRoulette = function () {
         setupReel();
     }
 
-    document.getElementById('prize-reveal').classList.add('hidden');
-    document.getElementById('prize-popup').classList.add('hidden');
     document.getElementById('btn-spin').classList.remove('hidden');
     document.getElementById('spin-status').innerHTML = '&nbsp;';
-    document.getElementById('confetti-container').innerHTML = '';
 
     const firstName = playerName ? playerName.split(' ')[0] : 'Visitante';
     document.getElementById('roulette-player-name').textContent = `Boa sorte, ${firstName}!`;
@@ -124,7 +121,8 @@ window.spinWheel = function () {
     const itemHeight = 100; // Matches CSS
     const totalScroll = (itemCount - 1) * itemHeight;
 
-    container.style.transition = 'transform 4s cubic-bezier(0.15, 0, 0.15, 1)';
+    // Adiciona suspense com slow-motion
+    container.style.transition = 'transform 7s cubic-bezier(0.1, 0.0, 0.1, 1)';
     container.style.transform = `translateY(-${totalScroll}px)`;
 
     // Handle Reveal
@@ -137,104 +135,27 @@ window.spinWheel = function () {
             if (typeof saveStock === 'function') saveStock();
         }
 
-        document.getElementById('prize-name-display').textContent = wonPrizeName;
-        document.getElementById('prize-popup-name').textContent = wonPrizeName;
-
-        // Safety: ensure the ticket screen also has the prize name ready
-        const ticketPrize = document.getElementById('code-prize-name');
-        if (ticketPrize) ticketPrize.textContent = wonPrizeName;
-
-        document.getElementById('prize-reveal').classList.remove('hidden');
-        document.getElementById('prize-popup').classList.remove('hidden');
-
-        if (typeof launchConfetti === 'function') launchConfetti();
-
         if (typeof stats !== 'undefined') {
             stats.prizes += 1;
             localStorage.setItem('agriPrizes', String(stats.prizes));
         }
 
-        // Update record (from script.js)
-        if (typeof participants !== 'undefined' && typeof currentSessionId !== 'undefined') {
-            const record = participants.find((item) => item.id === currentSessionId);
-            if (record) {
-                record.prize = window.wonPrizeName;
-                if (typeof saveAndSync === 'function') saveAndSync();
-            }
+        // Vai direto para a tela de código usando a função unificada
+        if (typeof showCode === 'function') {
+            showCode();
+        } else {
+            console.error("showCode function not found. Missing script.js?");
+            document.getElementById('spin-status').innerHTML = 'PARABÉNS!';
+            if (typeof startAutoReset === 'function') startAutoReset();
         }
 
-        document.getElementById('spin-status').innerHTML = 'PARABÉNS! 🎊';
         viewport.classList.remove('spinning-glow');
-
-        // Resume inactivity reset
-        if (typeof startAutoReset === 'function') startAutoReset();
-    }, 4100);
+    }, 7500);
 };
 
 window.celebrateInterval = null;
 
-// Celebration delay before resetting to home
-window.celebrarEFinalizar = function () {
-    // Close the popup, keep the roulette screen with confetti
-    document.getElementById('prize-popup').classList.add('hidden');
-    document.getElementById('prize-reveal').classList.remove('hidden');
 
-    // Show skip button
-    const skipBtn = document.getElementById('btn-skip-celebration');
-    if (skipBtn) skipBtn.classList.remove('hidden');
-
-    // Launch extra confetti burst
-    if (typeof launchConfetti === 'function') {
-        launchConfetti();
-        setTimeout(() => launchConfetti(), 1500);
-        setTimeout(() => launchConfetti(), 3000);
-    }
-
-    // Show countdown
-    const countdownEl = document.getElementById('celebrate-countdown');
-    const secEl = document.getElementById('celebrate-sec');
-    const DURATION = 8;
-
-    if (countdownEl && secEl) {
-        countdownEl.classList.remove('hidden');
-        secEl.textContent = DURATION;
-
-        if (window.celebrateInterval) clearInterval(window.celebrateInterval);
-        
-        let remaining = DURATION;
-        window.celebrateInterval = setInterval(() => {
-            remaining -= 1;
-            secEl.textContent = remaining;
-            if (remaining <= 0) {
-                clearInterval(window.celebrateInterval);
-                window.celebrateInterval = null;
-                window.resetApp(true);
-            }
-        }, 1000);
-    } else {
-        // Fallback if elements not found
-        setTimeout(() => window.resetApp(true), 8000);
-    }
-};
-
-// Override original resetApp to clear celebration timer if active
-const originalResetApp = window.resetApp;
-window.resetApp = function(force) {
-    if (window.celebrateInterval) {
-        clearInterval(window.celebrateInterval);
-        window.celebrateInterval = null;
-    }
-    
-    // Hide celebration elements
-    const skipBtn = document.getElementById('btn-skip-celebration');
-    const countdownEl = document.getElementById('celebrate-countdown');
-    if (skipBtn) skipBtn.classList.add('hidden');
-    if (countdownEl) countdownEl.classList.add('hidden');
-    
-    if (typeof originalResetApp === 'function') {
-        originalResetApp(force);
-    }
-};
 
 // Hook into window load to init the reel if we are already on the screen (rare)
 window.addEventListener('load', () => {

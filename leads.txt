@@ -1321,3 +1321,25 @@
 [NOVO] [2026-03-25 23:40:12] Nome=123 2131 | WhatsApp=(12) 31232-1312 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 23:39
 [NOVO] [2026-03-25 23:44:25] Nome=Guilherme Reis | WhatsApp=(12) 34123-1231 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 23:44
 [NOVO] [2026-03-25 23:50:16] Nome=eads1 13123 | WhatsApp=(13) 12313-2131 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 23:50
+[NOVO] [2026-04-06 20:26:47] Nome=asad 12 | WhatsApp=(12) 31249-8489 | Acertos= | Premio=- | Codigo=- | Data=06/04/2026 20:26
+[ATUALIZADO] [2026-04-06 20:27:08] Nome=asad 12 | WhatsApp=(12) 31249-8489 | Acertos=7 | Premio=- | Codigo=- | Data=06/04/2026 20:26
+[ATUALIZADO] [2026-04-06 20:27:25] Nome=asad 12 | WhatsApp=(12) 31249-8489 | Acertos=7 | Premio=Caneta | Codigo=- | Data=06/04/2026 20:26
+[ATUALIZADO] [2026-04-06 20:27:25] Nome=asad 12 | WhatsApp=(12) 31249-8489 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-6841 | Data=06/04/2026 20:26
+[ATUALIZADO] [2026-04-06 20:27:46] Nome=asad 12 | WhatsApp=(12) 31249-8489 | Acertos=7 | Premio=Squeeze | Codigo=AGRISHOW-6841 | Data=06/04/2026 20:26
+[ATUALIZADO] [2026-04-06 20:28:20] Nome=asad 12 | WhatsApp=(12) 31249-8489 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-6841 | Data=06/04/2026 20:26
+[ATUALIZADO] [2026-04-06 20:28:21] Nome=asad 12 | WhatsApp=(12) 31249-8489 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-3948 | Data=06/04/2026 20:26
+[ATUALIZADO] [2026-04-06 20:28:59] Nome=asad 12 | WhatsApp=(12) 31249-8489 | Acertos=7 | Premio=Caneta | Codigo=AGRISHOW-5022 | Data=06/04/2026 20:26
+[NOVO] [2026-04-06 20:33:07] Nome=Teste | WhatsApp=1234 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 14:25
+[NOVO] [2026-04-06 20:33:07] Nome=1 | WhatsApp=1 | Acertos=7 | Premio=Caneta | Codigo=- | Data=25/03/2026 20:46
+[NOVO] [2026-04-06 20:33:07] Nome=1 | WhatsApp=1 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 20:59
+[NOVO] [2026-04-06 20:33:07] Nome=123 | WhatsApp=123 | Acertos=6 | Premio=- | Codigo=- | Data=25/03/2026 21:07
+[NOVO] [2026-04-06 20:33:07] Nome=fa | WhatsApp=1 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 21:14
+[NOVO] [2026-04-06 20:33:07] Nome=João Apresentação | WhatsApp=11999999999 | Acertos=7 | Premio= | Codigo=AGRISHOW-7679 | Data=25/03/2026 21:16
+[NOVO] [2026-04-06 20:33:07] Nome=123 | WhatsApp=123 | Acertos=7 | Premio= | Codigo=AGRISHOW-4593 | Data=25/03/2026 21:20
+[NOVO] [2026-04-06 20:33:07] Nome=123 | WhatsApp=123 | Acertos= | Premio=Caneta | Codigo=- | Data=25/03/2026 21:21
+[NOVO] [2026-04-06 20:33:07] Nome=123 | WhatsApp=123 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 22:11
+[NOVO] [2026-04-06 20:33:07] Nome=123 | WhatsApp=123 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 22:14
+[NOVO] [2026-04-06 20:33:07] Nome=123 | WhatsApp=213 | Acertos= | Premio=- | Codigo=- | Data=25/03/2026 22:23
+[NOVO] [2026-04-06 20:33:07] Nome=1 | WhatsApp=1 | Acertos= | Premio=Chapéu | Codigo=AGRISHOW-6568 | Data=25/03/2026 22:32
+[NOVO] [2026-04-07 16:58:55] Nome=asd asda | WhatsApp=(12) 31231-2312 | Acertos= | Premio=- | Codigo=- | Data=07/04/2026 16:58
+[ATUALIZADO] [2026-04-07 16:59:25] Nome=asd asda | WhatsApp=(12) 31231-2312 | Acertos=7 | Premio=- | Codigo=- | Data=07/04/2026 16:58

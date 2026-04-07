@@ -1470,7 +1470,14 @@ html, body {
 
     /* ── VOUCHER ── */
     .ticket-wrapper { width: min(1200px, 80vw); }
-    .code-text { font-size: clamp(60px, 8vw, 110px); }
+    .code-text { 
+        font-size: clamp(40px, 7vw, 110px); 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis;
+        padding: 0 20px;
+        margin: 10px 0;
+    }
     .ticket-prize-label { font-size: 46px; }
     .ticket-prize-label strong { font-size: 56px; }
     .thanks-hashtag { font-size: 46px; }

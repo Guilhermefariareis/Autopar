@@ -222,15 +222,7 @@
 
         <!-- ROULETTE -->
         <div id="screen-roulette" class="screen roulette-screen">
-            <div id="confetti-container"></div>
-            <div id="prize-popup" class="prize-popup hidden">
-                <div class="prize-popup-card">
-                    <p class="prize-popup-label">VOCE GANHOU</p>
-                    <h3 id="prize-popup-name" class="prize-popup-name">-</h3>
-                    <p class="prize-popup-text">Apresente esta tela para retirar seu brinde.</p>
-                    <button class="btn btn-primary prize-popup-btn" onclick="celebrarEFinalizar()">RESGATAR BRINDE</button>
-                </div>
-            </div>
+
             <div class="roulette-top">
                 <div class="roulette-logo-wrap">
                     <img src="logo.png" alt="Panther" class="roulette-header-logo" />
@@ -251,12 +243,6 @@
                 <p id="spin-status" class="spin-status">&nbsp;</p>
                 <button id="btn-spin" class="btn btn-primary btn-jumbo pulse-glow" onclick="spinWheel()">GIRAR
                     AGORA</button>
-                <div id="prize-reveal" class="prize-reveal hidden">
-                    <p class="you-won-label">PARABENS! VOCE GANHOU 🎉</p>
-                    <h1 id="prize-name-display" class="prize-name-big">-</h1>
-                    <p id="celebrate-countdown" class="celebrate-countdown-text hidden">Voltando em <span id="celebrate-sec">8</span>s...</p>
-                    <button class="btn btn-secondary celebrate-skip-btn hidden" id="btn-skip-celebration" onclick="resetApp(true)">VOLTAR AO INÍCIO</button>
-                </div>
             </div>
         </div>
 
@@ -269,19 +255,12 @@
                         <span class="ticket-event-name">AGRISHOW 2026</span>
                     </div>
                     <div class="ticket-body">
-                        <p class="ticket-label">CODIGO DE RESGATE</p>
-                        <h1 id="rescue-code" class="ticket-code">AGRISHOW-0000</h1>
-                        <p class="ticket-prize-row">Premio: <span id="code-prize-name" class="ticket-prize-val">-</span>
-                        </p>
+                        <p class="ticket-label">VOCE GANHOU</p>
+                        <h1 id="rescue-code" class="ticket-code">CARREGANDO...</h1>
                     </div>
-                    <div class="ticket-divider">
-                        <span class="divider-notch left"></span>
-                        <div class="divider-line"></div>
-                        <span class="divider-notch right"></span>
-                    </div>
+
                     <div class="ticket-footer">
                         <p class="thanks-hashtag">#PANTHERSAGRISHOW2026</p>
-                        <p class="thanks-sub">Apresente este codigo no balcao para retirar seu brinde.</p>
                     </div>
                 </div>
 
@@ -295,6 +274,8 @@
         </div>
     </div>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="script.js?v=5"></script>
     <script src="mobile.js?v=1"></script>
     <!-- Sem server-status no mobile -->

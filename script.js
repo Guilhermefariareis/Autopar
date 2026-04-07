@@ -22,7 +22,7 @@ if (!prizeStock || Object.keys(prizeStock).length === 0 || Object.values(prizeSt
 
 function saveStock() {
     localStorage.setItem('agriStock', JSON.stringify(prizeStock));
-    
+
     // Sincroniza estoque com o servidor
     const apiHost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' ? '' : 'http://localhost:8000';
     fetch(apiHost + '/stock', {
@@ -38,7 +38,7 @@ async function loadStockFromServer() {
         const apiHost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' ? '' : 'http://localhost:8000';
         const res = await fetch(apiHost + '/stock');
         const serverStock = await res.json();
-        
+
         if (serverStock && Object.keys(serverStock).length > 0) {
             prizeStock = serverStock;
             localStorage.setItem('agriStock', JSON.stringify(prizeStock));
@@ -55,12 +55,12 @@ let participants = JSON.parse(localStorage.getItem('agriParticipants') || '[]');
 function saveAndSync() {
     try {
         localStorage.setItem('agriParticipants', JSON.stringify(participants));
-        
+
         if (window.location.protocol === 'file:') {
             console.error('❌ ERRO: O sistema está rodando via arquivo local (file://). O salvamento em disco NÃO funcionará. Use http://localhost:8000');
             return;
         }
-        
+
         syncLeadsToServer();
     } catch (e) {
         console.error('❌ Erro no saveAndSync:', e);
@@ -115,19 +115,19 @@ function exportCSV() {
         `"${(p.phone || '').replace(/"/g, '""')}"`,
         p.date || '',
         p.time || '',
-        p.score   != null ? p.score  : '',
+        p.score != null ? p.score : '',
         `"${(p.prize || '').replace(/"/g, '""')}"`,
         p.code || ''
     ].join(','));
 
     const csvContent = [headers.join(','), ...rows].join('\n');
     const blob = new Blob(['\uFEFF' + csvContent], { type: 'text/csv;charset=utf-8;' });
-    const url  = URL.createObjectURL(blob);
-    const now  = new Date();
-    const ts   = `${now.getFullYear()}${String(now.getMonth()+1).padStart(2,'0')}${String(now.getDate()).padStart(2,'0')}_${String(now.getHours()).padStart(2,'0')}${String(now.getMinutes()).padStart(2,'0')}`;
+    const url = URL.createObjectURL(blob);
+    const now = new Date();
+    const ts = `${now.getFullYear()}${String(now.getMonth() + 1).padStart(2, '0')}${String(now.getDate()).padStart(2, '0')}_${String(now.getHours()).padStart(2, '0')}${String(now.getMinutes()).padStart(2, '0')}`;
 
     const link = document.createElement('a');
-    link.href     = url;
+    link.href = url;
     link.download = `panther_leads_${ts}.csv`;
     document.body.appendChild(link);
     link.click();
@@ -154,12 +154,12 @@ function debugLog(msg, type = 'info') {
     }
 }
 
-window.onerror = function(msg, url, lineNo, columnNo, error) {
+window.onerror = function (msg, url, lineNo, columnNo, error) {
     debugLog(`${msg} (${lineNo}:${columnNo})`, 'error');
-    return false; 
+    return false;
 };
 
-window.onunhandledrejection = function(event) {
+window.onunhandledrejection = function (event) {
     debugLog(`Promise Rejection: ${event.reason}`, 'error');
 };
 
@@ -173,42 +173,42 @@ function syncLeadsToServer(onComplete) {
     }
 
     const payload = participants.map(p => ({
-        id:    p.id    || '',
-        name:  p.name  || '',
+        id: p.id || '',
+        name: p.name || '',
         phone: p.phone || '',
-        date:  p.date  || '',
-        time:  p.time  || '',
+        date: p.date || '',
+        time: p.time || '',
         score: p.score != null ? p.score : '',
         prize: p.prize || '',
-        code:  p.code  || ''
+        code: p.code || ''
     }));
 
     // Usamos URL absoluta para garantir, mas com fallback para localhost
-    const apiHost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
-                  ? '' : 'http://localhost:8000';
+    const apiHost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+        ? '' : 'http://localhost:8000';
 
     fetch(apiHost + '/dump', {
-        method:  'POST',
+        method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body:    JSON.stringify(payload)
+        body: JSON.stringify(payload)
     })
-    .then(r => r.json())
-    .then(data => {
-        updateServerStatus(true);
-        debugLog(`Sync OK: ${data.saved} leads salvos.`);
-        if (onComplete) onComplete(true);
-    })
-    .catch(err => {
-        updateServerStatus(false);
-        debugLog(`Erro de Sync: ${err.message}`, 'error');
-        if (onComplete) onComplete(false);
-    });
+        .then(r => r.json())
+        .then(data => {
+            updateServerStatus(true);
+            debugLog(`Sync OK: ${data.saved} leads salvos.`);
+            if (onComplete) onComplete(true);
+        })
+        .catch(err => {
+            updateServerStatus(false);
+            debugLog(`Erro de Sync: ${err.message}`, 'error');
+            if (onComplete) onComplete(false);
+        });
 }
 
 function updateServerStatus(online) {
     const statusEl = document.getElementById('server-status');
     if (!statusEl) return;
-    
+
     const textEl = statusEl.querySelector('.status-text');
     if (online) {
         statusEl.classList.add('online');
@@ -387,7 +387,7 @@ function submitRegister() {
 document.getElementById('input-phone').addEventListener('input', function (e) {
     let v = this.value.replace(/\D/g, "");
     if (v.length > 11) v = v.slice(0, 11);
-    
+
     // Explicitly handle empty state to ensure it's cleared "completely"
     if (!v || v.length === 0) {
         if (this.value !== "") this.value = "";
@@ -407,7 +407,7 @@ document.getElementById('input-phone').addEventListener('input', function (e) {
             }
         }
     }
-    
+
     // Only update if changed to avoid breaking deletion/cursor flow
     if (this.value !== formatted) {
         this.value = formatted;
@@ -448,6 +448,26 @@ function startQuiz() {
 
     showScreen('quiz');
     loadQuestion();
+}
+
+function testRoulette() {
+    currentSessionId = Date.now();
+    playerName = "TESTE ROLETA";
+    playerPhone = "11999999999";
+    stats.players += 1;
+    localStorage.setItem('agriPlayers', String(stats.players));
+    participants.push({
+        id: currentSessionId,
+        name: playerName,
+        phone: playerPhone,
+        date: new Date().toLocaleDateString('pt-BR'),
+        time: new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }),
+        score: null,
+        prize: '-',
+        code: '-'
+    });
+    saveAndSync();
+    showRoulette();
 }
 
 function loadQuestion() {
@@ -528,7 +548,7 @@ function nextQuestion() {
     qIndex += 1;
     const pct = (qIndex / TOTAL_QUESTIONS) * 100;
     document.getElementById('progress-bar').style.width = pct + '%';
-    
+
     if (qIndex < TOTAL_QUESTIONS) {
         loadQuestion();
     } else {
@@ -561,11 +581,8 @@ function showRoulette() {
     canvas.style.transform = 'rotate(0deg)';
     wheelAngle = 0;
 
-    document.getElementById('prize-reveal').classList.add('hidden');
-    document.getElementById('prize-popup').classList.add('hidden');
     document.getElementById('btn-spin').classList.remove('hidden');
     document.getElementById('spin-status').innerHTML = '&nbsp;';
-    document.getElementById('confetti-container').innerHTML = '';
 
     const firstName = playerName ? playerName.split(' ')[0] : 'Visitante';
     document.getElementById('roulette-player-name').textContent = `Boa sorte, ${firstName}!`;
@@ -575,45 +592,45 @@ function showRoulette() {
 }
 
 function drawWheel(canvas) {
-    const ctx   = canvas.getContext('2d');
-    const cw    = canvas.width;
-    const ch    = canvas.height;
-    const cx    = cw / 2;
-    const cy    = ch / 2;
+    const ctx = canvas.getContext('2d');
+    const cw = canvas.width;
+    const ch = canvas.height;
+    const cx = cw / 2;
+    const cy = ch / 2;
     const radius = cx - 30;
 
     const UI_PRIZES = [
         'Chapéu', 'Squeeze', 'Chaveiro Trena', 'Caneta',
-        'Boné',   'Squeeze', 'Chaveiro Trena', 'Caneta'
+        'Boné', 'Squeeze', 'Chaveiro Trena', 'Caneta'
     ];
     const EMOJI = {
-        'Chapéu':       '🪖',
-        'Squeeze':      '💧',
-        'Chaveiro Trena':'🔑',
-        'Caneta':       '✏️',
-        'Boné':         '🧢',
+        'Chapéu': '🪖',
+        'Squeeze': '💧',
+        'Chaveiro Trena': '🔑',
+        'Caneta': '✏️',
+        'Boné': '🧢',
     };
     // Vibrant segment palette (alternating 8 distinct colours)
     const COLORS = [
-        ['#FF4500','#C93918'],  // 0: Laranja Panther
-        ['#0a0a0a','#000000'],  // 1: Preto Profundo
-        ['#FF4500','#C93918'],  // 2: Laranja Panther
-        ['#0a0a0a','#000000'],  // 3: Preto Profundo
-        ['#FF4500','#C93918'],  // 4: Laranja Panther
-        ['#0a0a0a','#000000'],  // 5: Preto Profundo
-        ['#FF4500','#C93918'],  // 6: Laranja Panther
-        ['#0a0a0a','#000000'],  // 7: Preto Profundo
+        ['#FF4500', '#C93918'],  // 0: Laranja Panther
+        ['#0a0a0a', '#000000'],  // 1: Preto Profundo
+        ['#FF4500', '#C93918'],  // 2: Laranja Panther
+        ['#0a0a0a', '#000000'],  // 3: Preto Profundo
+        ['#FF4500', '#C93918'],  // 4: Laranja Panther
+        ['#0a0a0a', '#000000'],  // 5: Preto Profundo
+        ['#FF4500', '#C93918'],  // 6: Laranja Panther
+        ['#0a0a0a', '#000000'],  // 7: Preto Profundo
     ];
 
     const total = UI_PRIZES.length;
-    const arc   = (2 * Math.PI) / total;
+    const arc = (2 * Math.PI) / total;
 
     ctx.clearRect(0, 0, cw, ch);
 
     // --- Background shadow disc ---
     ctx.save();
     ctx.shadowColor = 'rgba(255,69,0,0.4)';
-    ctx.shadowBlur  = 60;
+    ctx.shadowBlur = 60;
     ctx.beginPath();
     ctx.arc(cx, cy, radius + 10, 0, Math.PI * 2);
     ctx.fillStyle = '#050505';
@@ -623,8 +640,8 @@ function drawWheel(canvas) {
     // --- Segments ---
     UI_PRIZES.forEach((prize, i) => {
         const startAngle = i * arc - Math.PI / 2;
-        const endAngle   = startAngle + arc;
-        const midAngle   = startAngle + arc / 2;
+        const endAngle = startAngle + arc;
+        const midAngle = startAngle + arc / 2;
 
         const [c1, c2] = COLORS[i];
 
@@ -634,9 +651,9 @@ function drawWheel(canvas) {
         const gx2 = cx + Math.cos(midAngle) * radius * 0.95;
         const gy2 = cy + Math.sin(midAngle) * radius * 0.95;
         const grad = ctx.createLinearGradient(gx1, gy1, gx2, gy2);
-        grad.addColorStop(0,    c1);
-        grad.addColorStop(0.6,  c2);
-        grad.addColorStop(1,    '#1a0000');
+        grad.addColorStop(0, c1);
+        grad.addColorStop(0.6, c2);
+        grad.addColorStop(1, '#1a0000');
 
         ctx.beginPath();
         ctx.moveTo(cx, cy);
@@ -652,9 +669,9 @@ function drawWheel(canvas) {
             cx + Math.cos(midAngle + arc * 0.35) * radius * 0.85,
             cy + Math.sin(midAngle + arc * 0.35) * radius * 0.85
         );
-        hlGrad.addColorStop(0,   'rgba(255,255,255,0)');
+        hlGrad.addColorStop(0, 'rgba(255,255,255,0)');
         hlGrad.addColorStop(0.5, 'rgba(255,255,255,0.12)');
-        hlGrad.addColorStop(1,   'rgba(255,255,255,0)');
+        hlGrad.addColorStop(1, 'rgba(255,255,255,0)');
         ctx.beginPath();
         ctx.moveTo(cx, cy);
         ctx.arc(cx, cy, radius - 2, startAngle, endAngle);
@@ -670,14 +687,14 @@ function drawWheel(canvas) {
         ctx.moveTo(cx, cy);
         ctx.lineTo(cx + Math.cos(angle) * radius, cy + Math.sin(angle) * radius);
         ctx.strokeStyle = 'rgba(255,255,255,0.2)';
-        ctx.lineWidth   = 3;
+        ctx.lineWidth = 3;
         ctx.stroke();
     });
 
     // --- Labels: centered text only (no emoji) ---
     UI_PRIZES.forEach((prize, i) => {
         const startAngle = i * arc - Math.PI / 2;
-        const midAngle   = startAngle + arc / 2;
+        const midAngle = startAngle + arc / 2;
 
         // Text position at 60% of radius from center
         const textR = radius * 0.62;
@@ -685,7 +702,7 @@ function drawWheel(canvas) {
         ctx.save();
         ctx.translate(cx + Math.cos(midAngle) * textR, cy + Math.sin(midAngle) * textR);
         ctx.rotate(midAngle + Math.PI / 2); // rotate to follow segment direction
-        ctx.textAlign    = 'center';
+        ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
 
         // Prize name — two lines if needed
@@ -693,14 +710,14 @@ function drawWheel(canvas) {
         const line1 = words.slice(0, Math.ceil(words.length / 2)).join(' ');
         const line2 = words.slice(Math.ceil(words.length / 2)).join(' ');
 
-        ctx.font        = '900 34px Outfit, sans-serif';
-        ctx.fillStyle   = '#FFFFFF';
+        ctx.font = '900 34px Outfit, sans-serif';
+        ctx.fillStyle = '#FFFFFF';
         ctx.shadowColor = 'rgba(0,0,0,0.9)';
-        ctx.shadowBlur  = 12;
+        ctx.shadowBlur = 12;
 
         if (line2) {
             ctx.fillText(line1, 0, -20);
-            ctx.fillText(line2, 0,  20);
+            ctx.fillText(line2, 0, 20);
         } else {
             ctx.fillText(line1, 0, 0);
         }
@@ -710,23 +727,23 @@ function drawWheel(canvas) {
 
     // --- Metallic border ring ---
     const metalGrad = ctx.createLinearGradient(cx - radius, cy, cx + radius, cy);
-    metalGrad.addColorStop(0,    '#BF360C');
+    metalGrad.addColorStop(0, '#BF360C');
     metalGrad.addColorStop(0.25, '#FF6D00');
-    metalGrad.addColorStop(0.5,  '#FFD180');
+    metalGrad.addColorStop(0.5, '#FFD180');
     metalGrad.addColorStop(0.75, '#FF6D00');
-    metalGrad.addColorStop(1,    '#BF360C');
+    metalGrad.addColorStop(1, '#BF360C');
 
     ctx.beginPath();
     ctx.arc(cx, cy, radius, 0, Math.PI * 2);
     ctx.strokeStyle = metalGrad;
-    ctx.lineWidth   = 18;
+    ctx.lineWidth = 18;
     ctx.stroke();
 
     // Inner bright highlight of border
     ctx.beginPath();
     ctx.arc(cx, cy, radius - 9, 0, Math.PI * 2);
     ctx.strokeStyle = 'rgba(255,255,255,0.2)';
-    ctx.lineWidth   = 3;
+    ctx.lineWidth = 3;
     ctx.stroke();
 }
 
@@ -750,10 +767,10 @@ function spinWheel() {
 
     // 8 Segments as requested: 1x Hat, 1x Cap, 2x Squeeze, 2x Keychain, 2x Pen
     const UI_PRIZES = [
-        'Chapéu', 'Squeeze', 'Chaveiro Trena', 'Caneta', 
+        'Chapéu', 'Squeeze', 'Chaveiro Trena', 'Caneta',
         'Boné', 'Squeeze', 'Chaveiro Trena', 'Caneta'
     ];
-    
+
     // Find all indices where this prize appears and pick one
     const possibleIndices = UI_PRIZES.map((p, i) => p === wonPrize ? i : -1).filter(i => i !== -1);
     const winIdx = possibleIndices[Math.floor(Math.random() * possibleIndices.length)];
@@ -764,7 +781,8 @@ function spinWheel() {
     const totalRotation = wheelAngle + (360 * 8) + targetAngle - (wheelAngle % 360);
 
     const canvas = document.getElementById('wheel-canvas');
-    canvas.style.transition = 'transform 4s cubic-bezier(0.15, 0, 0.15, 1)';
+    // Adiciona efeito longo de suspenses (slow-motion) girando rápido no início e quase parando no final
+    canvas.style.transition = 'transform 7s cubic-bezier(0.1, 0.0, 0.1, 1)';
     canvas.style.transform = `rotate(${totalRotation}deg)`;
     wheelAngle = totalRotation;
 
@@ -774,57 +792,75 @@ function spinWheel() {
         prizeStock[wonPrize] -= 1;
         saveStock();
 
-        document.getElementById('prize-name-display').textContent = wonPrizeName;
-        document.getElementById('prize-popup-name').textContent = wonPrizeName;
-        document.getElementById('prize-reveal').classList.remove('hidden');
-        document.getElementById('prize-popup').classList.remove('hidden');
-
-        launchConfetti();
-
+        // Salva e vai direto para a tela de código
         stats.prizes += 1;
         localStorage.setItem('agriPrizes', String(stats.prizes));
 
-        // Update record with prize immediately
         const record = participants.find((item) => item.id === currentSessionId);
         if (record) {
             record.prize = wonPrizeName;
-            saveAndSync();
+            // O showCode() já chama o saveAndSync()
         }
 
-        // Resume inactivity reset mode
-        startAutoReset();
-    }, 4100);
+        showCode();
+    }, 7500);
 }
 
+
+
 function launchConfetti() {
-    const container = document.getElementById('confetti-container');
-    const colors = ['#E84011', '#FF5C2E', '#FFFFFF', '#E0E0E0', '#C2330D', '#F5F5F5'];
-    const shapes = ['square', 'circle', 'strip'];
+    const duration = 3 * 1000;
+    const end = Date.now() + duration;
+    window.stopConfetti = false;
 
-    for (let index = 0; index < 28; index += 1) {
+    // First big burst
+    if (typeof confetti === 'function') {
+        confetti({
+            particleCount: 150,
+            spread: 70,
+            origin: { y: 0.6 },
+            colors: ['#FF4500', '#FFD700', '#FFFFFF', '#000000']
+        });
+
+        // Side cannons loop
+        (function frame() {
+            confetti({
+                particleCount: 2,
+                angle: 60,
+                spread: 55,
+                origin: { x: 0 },
+                colors: ['#FF4500', '#FFD700']
+            });
+            confetti({
+                particleCount: 2,
+                angle: 120,
+                spread: 55,
+                origin: { x: 1 },
+                colors: ['#FFD700', '#FFFFFF']
+            });
+
+            if (Date.now() < end && !window.stopConfetti) {
+                requestAnimationFrame(frame);
+            }
+        }());
+
+        // Hard stop: Clear everything after exactly 3s
         setTimeout(() => {
-            const piece = document.createElement('div');
-            const color = colors[Math.floor(Math.random() * colors.length)];
-            const shape = shapes[Math.floor(Math.random() * shapes.length)];
-            const duration = 1.5 + Math.random() * 0.9;
-
-            piece.className = `confetti-piece ${shape}`;
-            piece.style.cssText = `
-                left:${Math.random() * 100}%;
-                background:${color};
-                animation-duration:${duration}s;
-                animation-delay:${Math.random() * 0.2}s;
-                transform:rotate(${Math.random() * 360}deg);
-            `;
-            container.appendChild(piece);
-            setTimeout(() => piece.remove(), (duration + 0.6) * 1000);
-        }, index * 22);
+            if (!window.stopConfetti) confetti.reset();
+        }, duration);
     }
 }
 
 function showCode() {
     const code = wonPrizeName.toUpperCase();
     document.getElementById('rescue-code').textContent = code;
+
+    // Ensure the ticket screen also has the prize name ready for mobile
+    const ticketPrize = document.getElementById('code-prize-name');
+    if (ticketPrize) ticketPrize.textContent = wonPrizeName;
+
+    // Show confetti when code/prize is shown
+    launchConfetti();
 
     const record = participants.find((item) => item.id === currentSessionId);
     if (record) {
@@ -856,6 +892,15 @@ function resetApp(force = false) {
     clearInterval(inactivityTimer);
     if (autoResetTimer) clearInterval(autoResetTimer);
     
+    // Parada forçada imediata do loop de confete
+    window.stopConfetti = true;
+    if (typeof confetti === 'function') {
+        confetti.reset();
+        // Remove the canvas element forcefully if it persists
+        const canvas = document.querySelector('canvas[style*="z-index: 100"]');
+        if (canvas) canvas.remove();
+    }
+
     document.getElementById('input-name').value = '';
     document.getElementById('input-phone').value = '';
     const lgpd = document.getElementById('input-lgpd');
@@ -863,7 +908,7 @@ function resetApp(force = false) {
 
     showScreen('home');
     checkGlobalStock();
-    
+
     // Start home inactivity monitor
     resetInactivityTimer();
 }
@@ -891,7 +936,7 @@ checkGlobalStock();
 function openAdmin() {
     document.getElementById('stat-players').textContent = stats.players;
     document.getElementById('stat-prizes').textContent = stats.prizes;
-    
+
     // Show current stock in admin
     const adminContent = document.querySelector('.admin-content');
     let stockInfo = document.getElementById('admin-stock-info');
@@ -901,7 +946,7 @@ function openAdmin() {
         stockInfo.className = 'admin-stock-list';
         adminContent.insertBefore(stockInfo, adminContent.querySelector('.btn-export'));
     }
-    
+
     stockInfo.innerHTML = '<h3>Estoque Atual</h3>' + Object.entries(prizeStock).map(([name, count]) => `
         <div class="stock-item">
             <span>${name}:</span> <strong>${count}</strong>
@@ -967,7 +1012,7 @@ function demoAutoRegister() {
         document.getElementById('input-name').value = 'João Apresentação';
         document.getElementById('input-phone').value = '11999999999';
         const lgpd = document.getElementById('input-lgpd');
-        if(lgpd) lgpd.checked = true;
+        if (lgpd) lgpd.checked = true;
         // Não clica automático para deixar o apresentador explicar a tela e clicar em COMEÇAR
     }, 300);
 }
@@ -987,23 +1032,20 @@ function demoJumpToRoulette() {
         code: null,
         timestamp: new Date().toISOString()
     });
-    
+
     clearInterval(questionTimer);
     document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-    
+
     // Preparar UI da Roleta
-    document.getElementById('prize-reveal').classList.add('hidden');
-    document.getElementById('prize-popup').classList.add('hidden');
     document.getElementById('btn-spin').classList.remove('hidden');
     document.getElementById('spin-status').innerHTML = '&nbsp;';
-    document.getElementById('confetti-container').innerHTML = '';
-    
+
     const firstName = playerName.split(' ')[0];
     document.getElementById('roulette-player-name').textContent = `Boa sorte, ${firstName}!`;
-    
+
     const canvas = document.getElementById('wheel-canvas');
     if (canvas) drawWheel(canvas);
-    
+
     showScreen('roulette');
 }
 
@@ -1028,7 +1070,7 @@ window.onload = () => {
                 showAdminPin();
             }
         };
-        adminZone.addEventListener('click',      handleAdminTap);
+        adminZone.addEventListener('click', handleAdminTap);
         adminZone.addEventListener('touchstart', (e) => { e.preventDefault(); handleAdminTap(); }, { passive: false });
     }
 };
