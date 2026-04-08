@@ -186,10 +186,18 @@ body {
 }
 .btn-answer:focus { outline: none !important; }
 
+.quiz-footer-meta {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin-top: 16px !important;
+}
+
 .btn-cancel-quiz {
     display: inline-block !important;
     position: static !important;
-    margin-top: 14px !important;
+    margin-top: 0 !important;
     padding: 8px 18px !important;
     border-radius: 50px !important;
     background: var(--orange) !important;
