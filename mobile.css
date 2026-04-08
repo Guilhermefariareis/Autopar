@@ -161,9 +161,17 @@ body {
     display: flex;
     flex-direction: column;
 }
-.quiz-header { margin-bottom: 12px !important; gap: 8px !important; }
-.progress-container { height: 6px !important; }
-.quiz-timer { font-size: 18px !important; padding: 3px 10px !important; min-width: 60px !important; }
+.quiz-header { margin-bottom: 20px !important; gap: 15px !important; }
+.progress-container { height: 8px !important; margin-bottom: 10px !important; }
+.quiz-header .row { 
+    display: flex !important; 
+    flex-direction: column !important;
+    align-items: center !important; 
+    justify-content: center !important; 
+    width: 100% !important; 
+    gap: 20px !important;
+}
+.quiz-timer { font-size: 18px !important; padding: 5px 12px !important; min-width: 70px !important; }
 .quiz-footer-meta { margin-top: 25px !important; display: flex; justify-content: center; }
 .counter { font-size: 18px !important; opacity: 0.9; font-weight: 800; text-align: center; color: var(--orange); }
 

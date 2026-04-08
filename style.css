@@ -179,13 +179,15 @@ html, body {
     color: var(--text);
     border: 2px solid var(--text);
 }
-.btn-export:hover { background: var(--text); color: var(--bg); }
+@media (hover: hover) {
+    .btn-export:hover { background: var(--text); color: var(--bg); }
+    .btn-danger:hover { background: #991b1b; }
+    .btn-outline:hover { background: var(--accent); color: white; }
+}
 .btn-danger { background: #7f1d1d; color: white; border: 2px solid #991b1b; }
-.btn-danger:hover { background: #991b1b; }
 .btn-outline { background: transparent; border: 2px solid var(--accent); color: var(--accent); }
-.btn-outline:hover { background: var(--accent); color: white; }
 
-/* Ã¢â€â‚¬Ã¢â€â‚¬ Glass Panel Ã¢â€â‚¬Ã¢â€â‚¬ */
+/* Ã¢â€ â‚¬Ã¢â€ â‚¬ Glass Panel Ã¢â€ â‚¬Ã¢â€ â‚¬ */
 .glass-panel {
     background: var(--glass);
     border: 2px solid var(--border-o);
@@ -388,7 +390,9 @@ html, body {
     text-transform: uppercase;
     letter-spacing: 4px;
 }
-.btn-primary:hover  { box-shadow: 8px 8px 0 #7A1E05, 0 0 70px rgba(255,80,0,0.55); filter: brightness(1.08); }
+@media (hover: hover) {
+    .btn-primary:hover  { box-shadow: 8px 8px 0 #7A1E05, 0 0 70px rgba(255,80,0,0.55); filter: brightness(1.08); }
+}
 .btn-primary:active { transform: translate(6px, 6px); box-shadow: 2px 2px 0 #7A1E05, 0 0 20px rgba(255,69,0,0.3); }
 
 .btn-secondary {
@@ -439,7 +443,9 @@ html, body {
     padding: 18px 60px; cursor: pointer; letter-spacing: 1px;
     transition: color 0.3s, border-color 0.3s, background 0.3s;
 }
-.btn-test-roulette:hover  { color: rgba(255,255,255,0.5); border-color: rgba(255,255,255,0.3); background: rgba(255,255,255,0.03); }
+@media (hover: hover) {
+    .btn-test-roulette:hover  { color: rgba(255,255,255,0.5); border-color: rgba(255,255,255,0.3); background: rgba(255,255,255,0.03); }
+}
 .btn-test-roulette:active { color: var(--orange); border-color: var(--orange); }
 
 /* â”€â”€ Animations â”€â”€ */
@@ -1363,15 +1369,17 @@ html, body {
     transition: transform 0.18s ease, box-shadow 0.25s ease, filter 0.25s ease, border-color 0.25s ease, background 0.25s ease;
 }
 
-.btn:hover,
-.btn-test-roulette:hover {
-    transform: translateY(-2px);
-}
+@media (hover: hover) {
+    .btn:hover,
+    .btn-test-roulette:hover {
+        transform: translateY(-2px);
+    }
 
-.btn-answer:hover {
-    transform: translateY(-2px);
-    border-color: rgba(255, 69, 0, 0.45);
-    background: rgba(255,255,255,0.08);
+    .btn-answer:hover {
+        transform: translateY(-2px);
+        border-color: rgba(255, 69, 0, 0.45);
+        background: rgba(255,255,255,0.08);
+    }
 }
 
 .progress-bar {
@@ -1599,13 +1607,47 @@ html, body {
     margin: 0 auto;
 }
 
-@media (orientation: landscape) and (min-width: 1200px) {
-    .roulette-bottom {
-        align-items: flex-start !important;
-    }
-    #btn-spin {
-        width: 100% !important;
-        max-width: 600px !important;
-        margin: 0 !important;
-    }
+/* --- Confirmation Modal --- */
+.confirm-content {
+    position: relative;
+    z-index: 160;
+    width: min(550px, 90vw);
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+}
+.confirm-icon {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+.confirm-title {
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--orange);
+    letter-spacing: 2px;
+}
+.confirm-text {
+    font-size: 24px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+.confirm-buttons {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+.modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 150;
+}
+.bounceIn {
+    animation: bounceIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
 }

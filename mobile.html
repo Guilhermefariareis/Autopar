@@ -178,7 +178,21 @@
                 </div>
                 <div class="quiz-footer-meta">
                     <div id="question-counter" class="counter">1 / 7</div>
-                    <button class="btn-cancel-quiz" onclick="resetApp()" aria-label="Encerrar Quiz">ENCERRAR</button>
+                    <button class="btn-cancel-quiz" onclick="openExitConfirm()" aria-label="Encerrar Quiz">ENCERRAR</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Confirm Exit Modal -->
+        <div id="screen-exit-confirm" class="screen screen-modal hide">
+            <div class="modal-backdrop" onclick="closeExitConfirm()"></div>
+            <div class="confirm-content glass-panel bounceIn">
+                <div class="confirm-icon">⚠️</div>
+                <h2 class="confirm-title">TEM CERTEZA?</h2>
+                <p class="confirm-text">Seu progresso neste quiz será perdido.</p>
+                <div class="confirm-buttons">
+                    <button class="btn btn-danger" style="flex: 1; padding: 20px; font-size: 24px;" onclick="confirmExit()">SIM</button>
+                    <button class="btn btn-secondary" style="flex: 1; padding: 20px; font-size: 24px;" onclick="closeExitConfirm()">NÃO</button>
                 </div>
             </div>
         </div>

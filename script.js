@@ -496,6 +496,7 @@ function loadQuestion() {
 
     document.querySelectorAll('.btn-answer').forEach((button, i) => {
         button.textContent = options[i].text;
+        button.style.pointerEvents = 'auto'; // Re-enable pointer events
         
         // Remember if this button had 'btn' class originally (mobile has it, totem doesn't)
         const hasBtnClass = button.dataset.hasBtnClass === 'true' || button.classList.contains('btn');
@@ -514,8 +515,9 @@ function loadQuestion() {
         button.disabled = false;
         
         // Remove browser-level focus highlight/persistence
-        // setTimeout ensures the DOM has re-rendered before blurring
-        setTimeout(() => { if (button.blur) button.blur(); }, 0);
+        // 100% Force blur and clear active states
+        if (button.blur) button.blur();
+        button.classList.remove('selected');
     });
 
     questionTimer = setInterval(() => {
@@ -552,8 +554,17 @@ function selectAnswer(index) {
     clearInterval(questionTimer);
 
     const chosen = shuffledAnswers[index];
-    document.getElementById('ans-' + index).classList.add('selected');
-    document.querySelectorAll('.btn-answer').forEach(btn => btn.disabled = true);
+    const btn = document.getElementById('ans-' + index);
+    btn.classList.add('selected');
+    
+    // Explicitly blur the selected button to prevent sticky states
+    if (btn.blur) btn.blur();
+
+    // Disable all options to prevent multiple clicks
+    document.querySelectorAll('.btn-answer').forEach(btn => {
+        btn.disabled = true;
+        btn.style.pointerEvents = 'none'; // Prevent any further interaction
+    });
 
     if (chosen.isCorrect) {
         score += 1;
@@ -1089,6 +1100,57 @@ function demoJumpToResult() {
     document.getElementById('win-score').textContent = score;
     document.getElementById('win-name').textContent = playerName.split(' ')[0];
     showScreen('win');
+}
+
+
+// ═══════════════════════════════════════════════════════
+//  EXIT CONFIRMATION MODAL
+// ═══════════════════════════════════════════════════════
+
+function openExitConfirm() {
+    // Pausa o cronômetro do quiz se estiver ativo
+    if (questionTimer) {
+        clearInterval(questionTimer);
+    }
+    const modal = document.getElementById('screen-exit-confirm');
+    if (modal) {
+        modal.classList.remove('hide');
+        modal.classList.add('active');
+        modal.style.display = 'flex'; // Garante visibilidade
+    }
+}
+
+function closeExitConfirm() {
+    const modal = document.getElementById('screen-exit-confirm');
+    if (modal) {
+        modal.classList.add('hide');
+        modal.classList.remove('active');
+        modal.style.display = 'none';
+    }
+    
+    // Resume o cronômetro do quiz se estivermos na tela de quiz
+    const quizScreen = document.getElementById('screen-quiz');
+    if (quizScreen && quizScreen.classList.contains('active') && !isLocked) {
+        // Reinicia o intervalo (timeLeft já contém o tempo restante)
+        questionTimer = setInterval(() => {
+            timeLeft -= 1;
+            updateTimerDisplay();
+            if (timeLeft <= 0) {
+                clearInterval(questionTimer);
+                handleTimeout();
+            }
+        }, 1000);
+    }
+}
+
+function confirmExit() {
+    const modal = document.getElementById('screen-exit-confirm');
+    if (modal) {
+        modal.style.display = 'none';
+        modal.classList.add('hide');
+        modal.classList.remove('active');
+    }
+    resetApp();
 }
 
 // Initialization

@@ -172,7 +172,7 @@
                         <div id="question-counter" class="counter">1 / 7</div>
                         <div id="quiz-timer" class="quiz-timer">20s</div>
                     </div>
-                    <button class="btn-cancel-quiz" onclick="resetApp()">ENCERRAR</button>
+                    <button class="btn-cancel-quiz" onclick="openExitConfirm()">ENCERRAR</button>
                 </div>
                 <div class="question-box">
                     <h2 id="question-text">Carregando...</h2>
@@ -182,6 +182,20 @@
                     <button class="btn-answer" id="ans-1" onclick="selectAnswer(1)"></button>
                     <button class="btn-answer" id="ans-2" onclick="selectAnswer(2)"></button>
                     <button class="btn-answer" id="ans-3" onclick="selectAnswer(3)"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Confirm Exit Modal -->
+        <div id="screen-exit-confirm" class="screen screen-modal hide">
+            <div class="modal-backdrop" onclick="closeExitConfirm()"></div>
+            <div class="confirm-content glass-panel bounceIn">
+                <div class="confirm-icon">⚠️</div>
+                <h2 class="confirm-title">TEM CERTEZA?</h2>
+                <p class="confirm-text">Seu progresso neste quiz será perdido.</p>
+                <div class="confirm-buttons">
+                    <button class="btn btn-danger" style="flex: 1; padding: 25px; font-size: 30px;" onclick="confirmExit()">SIM, ENCERRAR</button>
+                    <button class="btn btn-secondary" style="flex: 1; padding: 25px; font-size: 30px;" onclick="closeExitConfirm()">NÃO, VOLTAR</button>
                 </div>
             </div>
         </div>
