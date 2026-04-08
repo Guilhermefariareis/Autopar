@@ -621,6 +621,27 @@ html, body {
 #question-text { font-size: 50px; font-weight: 700; line-height: 1.35; color: white; text-align: center; }
 
 .answers-container { width: 100%; display: flex; flex-direction: column; gap: 26px; }
+.btn-cancel-quiz {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    padding: 12px 24px;
+    border-radius: 50px;
+    background: var(--orange);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    border: none;
+    z-index: 101;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 69, 0, 0.4);
+    transition: all 0.2s ease;
+}
+.btn-cancel-quiz:active {
+    transform: scale(0.95);
+    filter: brightness(1.2);
+}
+
 .btn-answer {
     width: 100%;
     background: #111;

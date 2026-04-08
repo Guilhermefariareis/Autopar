@@ -494,10 +494,18 @@ function loadQuestion() {
     options = shuffleArray(options);
     shuffledAnswers = options;
 
-    document.querySelectorAll('.btn-answer').forEach((button, index) => {
-        button.textContent = options[index].text;
-        button.className = 'btn-answer';
+    document.querySelectorAll('.btn-answer').forEach((button, i) => {
+        button.textContent = options[i].text;
+        
+        // Reset classes completely to ensure 'selected' or focus styles are gone
+        // Preserve 'btn' and 'btn-answer'
+        button.className = 'btn btn-answer';
         button.classList.remove('selected'); 
+        
+        // Inline style reset just in case
+        button.style.backgroundColor = '';
+        button.style.borderColor = '';
+        
         button.disabled = false;
         
         // Remove browser-level focus highlight/persistence

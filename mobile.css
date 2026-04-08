@@ -188,31 +188,25 @@ body {
 
 .btn-cancel-quiz {
     position: absolute !important;
-    top: 25px !important;
+    top: 20px !important;
     right: 20px !important;
-    width: 48px !important;
-    height: 48px !important;
-    border-radius: 50% !important;
-    background: rgba(255, 255, 255, 0.1) !important;
-    backdrop-filter: blur(10px) !important;
-    -webkit-backdrop-filter: blur(10px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    padding: 8px 16px !important;
+    border-radius: 50px !important;
+    background: var(--orange) !important;
     color: #fff !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
+    font-size: 14px !important;
+    font-weight: 900 !important;
+    border: none !important;
     z-index: 101 !important;
-    padding: 0 !important;
-    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3) !important;
     cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 69, 0, 0.4) !important;
+    transition: all 0.2s ease !important;
     -webkit-tap-highlight-color: transparent;
 }
 
 .btn-cancel-quiz:active {
-    transform: scale(0.9) !important;
-    background: rgba(255, 69, 0, 0.3) !important;
-    border-color: var(--orange) !important;
+    transform: scale(0.95) !important;
+    filter: brightness(1.2) !important;
 }
 
 .btn-cancel-quiz svg {
