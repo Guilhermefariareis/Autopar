@@ -426,8 +426,11 @@ function startQuiz() {
     qIndex = 0;
 
     // Shuffle and pick 7 random questions from the bank
-    const bank = shuffleArray([...questionsBank]);
-    currentQs = bank.slice(0, TOTAL_QUESTIONS);
+    // We create a fresh copy and shuffle twice to ensure high randomness
+    const shuffledBank = shuffleArray([...questionsBank]);
+    currentQs = shuffleArray(shuffledBank).slice(0, TOTAL_QUESTIONS);
+    
+    console.log("Quiz Iniciado - Questões Embaralhadas:", currentQs.map(q => q.q.substring(0, 15) + "..."));
 
     stats.players += 1;
     localStorage.setItem('agriPlayers', String(stats.players));
@@ -494,8 +497,11 @@ function loadQuestion() {
     document.querySelectorAll('.btn-answer').forEach((button, index) => {
         button.textContent = options[index].text;
         button.className = 'btn-answer';
-        button.classList.remove('selected'); // Explicitly remove to ensure UI reset
+        button.classList.remove('selected'); 
         button.disabled = false;
+        
+        // Remove browser-level focus highlight/persistence
+        if (button.blur) button.blur();
     });
 
     questionTimer = setInterval(() => {
@@ -1047,6 +1053,28 @@ function demoJumpToRoulette() {
     if (canvas) drawWheel(canvas);
 
     showScreen('roulette');
+}
+
+function demoJumpToResult() {
+    closeAdmin();
+    // Simular que passou no quiz com sucesso e está na tela de resultado
+    playerName = "Visitante VIP";
+    score = 7;
+    currentSessionId = 'demo-' + Date.now();
+    participants.push({
+        id: currentSessionId,
+        name: playerName,
+        phone: '00000000000',
+        score: score,
+        prize: null,
+        code: null,
+        timestamp: new Date().toISOString()
+    });
+
+    clearInterval(questionTimer);
+    document.getElementById('win-score').textContent = score;
+    document.getElementById('win-name').textContent = playerName.split(' ')[0];
+    showScreen('win');
 }
 
 // Initialization

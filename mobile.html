@@ -49,6 +49,9 @@
                             style="flex: 1; border-color: #00ff88; color: #00ff88; font-size: 14px; min-height: 50px; padding: 10px;"
                             onclick="demoJumpToRoulette()">🎡 Ir para Roleta</button>
                         <button class="btn btn-outline"
+                            style="flex: 1; width: 100%; border-color: #00ff88; color: #00ff88; font-size: 14px; min-height: 50px; padding: 10px;"
+                            onclick="demoJumpToResult()">🏆 Mostrar Acertos</button>
+                        <button class="btn btn-outline"
                             style="flex: 1; width: 100%; border-color: #ffaa00; color: #ffaa00; font-size: 14px; min-height: 50px; padding: 10px;"
                             onclick="testRoulette()">🎯 Testar Roleta</button>
                     </div>
@@ -230,14 +233,14 @@
                 <h2 class="roulette-title">GIRE E <span class="ganhe-spin">GANHE!</span></h2>
                 <p id="roulette-player-name" class="roulette-subtitle">Prepare-se!</p>
             </div>
-            <div class="reel-viewport">
-                <div class="reel-window">
-                    <div id="reel-container" class="reel-container">
-                        <!-- Populated by mobile.js -->
-                    </div>
+            <div class="wheel-stage">
+                <div class="wheel-glow-ring ring1"></div>
+                <div class="wheel-glow-ring ring2"></div>
+                <div class="wheel-pointer-wrap">
+                    <div id="wheel-pointer" class="wheel-pointer"></div>
                 </div>
-                <div class="reel-pointer-top"></div>
-                <div class="reel-pointer-bottom"></div>
+                <canvas id="wheel-canvas" width="960" height="960"></canvas>
+                <div class="wheel-center-cap"></div>
             </div>
             <div class="roulette-bottom">
                 <p id="spin-status" class="spin-status">&nbsp;</p>

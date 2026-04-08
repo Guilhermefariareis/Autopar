@@ -181,7 +181,10 @@ body {
     padding: 16px 18px !important;
     min-height: 56px !important;
     text-align: center !important;
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent !important;
 }
+.btn-answer:focus { outline: none !important; }
 
 .btn-cancel-quiz {
     position: absolute !important;
@@ -248,114 +251,46 @@ body {
 .roulette-heading { font-size: clamp(18px, 5vw, 24px) !important; margin-bottom: 5px !important; }
 #roulette-player-name { font-size: 16px !important; margin-top: 0 !important; }
 
-/* ─── CASINO REEL (REPLACES WHEEL) ───────────────────────── */
-.reel-viewport {
-    position: relative;
-    width: 90%;
-    max-width: 320px;
-    height: 120px;
-    margin: 20px auto;
-    background: rgba(0, 0, 0, 0.4);
-    border: 3px solid #ff4500;
-    border-radius: 12px;
-    box-shadow: 0 0 25px rgba(255, 69, 0, 0.3), inset 0 0 15px rgba(0,0,0,0.8);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* ─── WHEEL STAGE SCALING ───────────────────────── */
+.wheel-stage {
+    width: 320px !important;
+    height: 320px !important;
+    margin: 20px auto !important;
 }
 
-.reel-window {
-    width: 100%;
-    height: 100px;
-    overflow: hidden;
-    position: relative;
+#wheel-canvas {
+    width: 300px !important;
+    height: 300px !important;
 }
 
-.reel-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    transform: translateY(0);
+.wheel-glow-ring.ring1 {
+    width: 320px !important;
+    height: 320px !important;
 }
 
-.reel-item {
-    width: 100%;
-    height: 100px; /* Crucial: Matches JS itemHeight */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
+.wheel-glow-ring.ring2 {
+    width: 280px !important;
+    height: 280px !important;
 }
 
-.reel-item-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
+.wheel-pointer-wrap {
+    top: -15px !important;
+    transform: translateX(-50%) scale(0.6) !important;
 }
 
-.reel-item-icon {
-    font-size: 42px;
+.wheel-center-cap {
+    width: 45px !important;
+    height: 45px !important;
+    border-width: 3px !important;
 }
 
-.reel-item-name {
-    font-size: 14px;
-    font-weight: 900;
-    color: #fff;
-    letter-spacing: 1px;
+#btn-spin {
+    width: 100% !important;
+    min-height: 80px !important;
+    font-size: 28px !important;
+    padding: 15px 30px !important;
 }
 
-/* Indicators (pointers) */
-.reel-pointer-top, .reel-pointer-bottom {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 6px;
-    background: #FFD700;
-    border-radius: 3px;
-    box-shadow: 0 0 10px #FFD700;
-    z-index: 5;
-}
-.reel-pointer-top { top: -3px; }
-.reel-pointer-bottom { bottom: -3px; }
-
-/* Subtle glass overlay to give depth */
-.reel-viewport::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to bottom,
-        rgba(0,0,0,0.4) 0%,
-        rgba(255,255,255,0.05) 45%,
-        rgba(255,255,255,0.05) 55%,
-        rgba(0,0,0,0.4) 100%
-    );
-    pointer-events: none;
-    z-index: 2;
-}
-
-/* Animations & Effects */
-.spinning-glow {
-    box-shadow: 0 0 40px var(--orange), inset 0 0 20px var(--orange) !important;
-    border-color: var(--orange) !important;
-    transition: all 0.3s ease;
-}
-
-.spin-shake {
-    animation: shake 0.1s ease-in-out infinite;
-}
-@keyframes shake {
-    0%, 100% { transform: translate(0,0); }
-    25% { transform: translate(-2px, 2px); }
-    75% { transform: translate(2px, -2px); }
-}
-
-.reel-item-inner {
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
 .prize-name-big { 
     animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
 }

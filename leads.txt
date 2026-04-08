@@ -1343,3 +1343,20 @@
 [NOVO] [2026-04-06 20:33:07] Nome=1 | WhatsApp=1 | Acertos= | Premio=Chapéu | Codigo=AGRISHOW-6568 | Data=25/03/2026 22:32
 [NOVO] [2026-04-07 16:58:55] Nome=asd asda | WhatsApp=(12) 31231-2312 | Acertos= | Premio=- | Codigo=- | Data=07/04/2026 16:58
 [ATUALIZADO] [2026-04-07 16:59:25] Nome=asd asda | WhatsApp=(12) 31231-2312 | Acertos=7 | Premio=- | Codigo=- | Data=07/04/2026 16:58
+[NOVO] [2026-04-08 08:42:35] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=08/04/2026 08:42
+[ATUALIZADO] [2026-04-08 08:42:48] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=Chapéu | Codigo=CHAPÉU | Data=08/04/2026 08:42
+[NOVO] [2026-04-08 08:46:10] Nome=asdasd asdasd | WhatsApp=(12) 31231-2321 | Acertos=7 | Premio=- | Codigo=- | Data=07/04/2026 19:07
+[NOVO] [2026-04-08 08:46:10] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Caneta | Codigo=CANETA | Data= 
+[NOVO] [2026-04-08 08:46:10] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Caneta | Codigo=CANETA | Data= 
+[NOVO] [2026-04-08 08:46:10] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Caneta | Codigo=CANETA | Data= 
+[NOVO] [2026-04-08 08:46:10] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Chapéu | Codigo=CHAPÉU | Data= 
+[NOVO] [2026-04-08 08:46:10] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Squeeze | Codigo=SQUEEZE | Data= 
+[NOVO] [2026-04-08 08:46:10] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=07/04/2026 19:54
+[NOVO] [2026-04-08 08:46:10] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=07/04/2026 19:59
+[NOVO] [2026-04-08 08:46:10] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=07/04/2026 20:04
+[NOVO] [2026-04-08 08:46:41] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=Chaveiro Trena | Codigo=CHAVEIRO TRENA | Data=08/04/2026 08:46
+[NOVO] [2026-04-08 08:47:24] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=Caneta | Codigo=CANETA | Data=08/04/2026 08:46
+[NOVO] [2026-04-08 08:47:24] Nome=João Apresentação | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=08/04/2026 08:47
+[NOVO] [2026-04-08 08:52:14] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Caneta | Codigo=CANETA | Data= 
+[NOVO] [2026-04-08 08:54:44] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=08/04/2026 08:54
+[ATUALIZADO] [2026-04-08 08:55:14] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=Squeeze | Codigo=SQUEEZE | Data=08/04/2026 08:54
