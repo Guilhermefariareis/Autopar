@@ -497,19 +497,25 @@ function loadQuestion() {
     document.querySelectorAll('.btn-answer').forEach((button, i) => {
         button.textContent = options[i].text;
         
-        // Reset classes completely to ensure 'selected' or focus styles are gone
-        // Preserve 'btn' and 'btn-answer'
-        button.className = 'btn btn-answer';
-        button.classList.remove('selected'); 
+        // Remember if this button had 'btn' class originally (mobile has it, totem doesn't)
+        const hasBtnClass = button.dataset.hasBtnClass === 'true' || button.classList.contains('btn');
         
-        // Inline style reset just in case
-        button.style.backgroundColor = '';
-        button.style.borderColor = '';
+        // Reset all classes - preserve original base classes only
+        if (hasBtnClass) {
+            button.className = 'btn btn-answer';
+            button.dataset.hasBtnClass = 'true';
+        } else {
+            button.className = 'btn-answer';
+        }
+        
+        // Inline style reset - critical for ghost highlight on totem
+        button.style.cssText = '';
         
         button.disabled = false;
         
         // Remove browser-level focus highlight/persistence
-        if (button.blur) button.blur();
+        // setTimeout ensures the DOM has re-rendered before blurring
+        setTimeout(() => { if (button.blur) button.blur(); }, 0);
     });
 
     questionTimer = setInterval(() => {

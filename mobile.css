@@ -187,19 +187,18 @@ body {
 .btn-answer:focus { outline: none !important; }
 
 .btn-cancel-quiz {
-    position: absolute !important;
-    top: 20px !important;
-    right: 20px !important;
-    padding: 8px 16px !important;
+    display: inline-block !important;
+    position: static !important;
+    margin-top: 14px !important;
+    padding: 8px 18px !important;
     border-radius: 50px !important;
     background: var(--orange) !important;
     color: #fff !important;
-    font-size: 14px !important;
+    font-size: 13px !important;
     font-weight: 900 !important;
     border: none !important;
-    z-index: 101 !important;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(255, 69, 0, 0.4) !important;
+    box-shadow: 0 4px 12px rgba(255, 69, 0, 0.4) !important;
     transition: all 0.2s ease !important;
     -webkit-tap-highlight-color: transparent;
 }

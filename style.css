@@ -622,10 +622,9 @@ html, body {
 
 .answers-container { width: 100%; display: flex; flex-direction: column; gap: 26px; }
 .btn-cancel-quiz {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    padding: 12px 24px;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
     border-radius: 50px;
     background: var(--orange);
     color: #fff;
