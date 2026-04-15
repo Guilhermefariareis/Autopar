@@ -76,6 +76,7 @@
             <div class="content main-content">
                 <div class="logo-wrapper">
                     <img src="panther.png" alt="Panther Lubrificantes" class="home-logo">
+                    <img src="leme_logo.png" alt="Leme Logo" class="home-logo leme-logo">
                 </div>
 
                 <div class="event-badge">AGRISHOW 2026</div>
@@ -97,6 +98,7 @@
                 <div class="glass-panel reg-panel">
                     <div class="reg-logo-mini">
                         <img src="logo.png" alt="Panther Lubrificantes" class="reg-logo-img">
+                        <img src="leme_logo.png" alt="Leme Logo" class="reg-logo-img leme-logo">
                     </div>
                     <h2 class="reg-title">Seus Dados</h2>
                     <p class="reg-sub">Preencha para participar</p>
@@ -157,10 +159,10 @@
         <div id="screen-quiz" class="screen">
             <!-- LOGOS FLUTUANTES (Marca Panther em 3D) -->
             <div class="floating-products">
-                <img src="panther.png" class="float-img float-1" />
-                <img src="panther.png" class="float-img float-2" />
-                <img src="panther.png" class="float-img float-3" />
-                <img src="panther.png" class="float-img float-4" />
+                <img src="panther.png" alt="Produto Panther" class="float-img float-1" />
+                <img src="panther.png" alt="Produto Panther" class="float-img float-2" />
+                <img src="panther.png" alt="Produto Panther" class="float-img float-3" />
+                <img src="panther.png" alt="Produto Panther" class="float-img float-4" />
             </div>
 
             <div class="quiz-wrap glass-panel" style="z-index: 10;">
@@ -172,7 +174,6 @@
                         <div id="question-counter" class="counter">1 / 7</div>
                         <div id="quiz-timer" class="quiz-timer">20s</div>
                     </div>
-                    <button class="btn-cancel-quiz" onclick="openExitConfirm()">ENCERRAR</button>
                 </div>
                 <div class="question-box">
                     <h2 id="question-text">Carregando...</h2>
@@ -182,6 +183,9 @@
                     <button class="btn-answer" id="ans-1" onclick="selectAnswer(1)"></button>
                     <button class="btn-answer" id="ans-2" onclick="selectAnswer(2)"></button>
                     <button class="btn-answer" id="ans-3" onclick="selectAnswer(3)"></button>
+                </div>
+                <div class="quiz-footer">
+                    <button class="btn-cancel-quiz-footer" onclick="openExitConfirm()">ENCERRAR SESSÃO</button>
                 </div>
             </div>
         </div>
@@ -219,7 +223,7 @@
                     </div>
 
                     <p style="margin-bottom:30px;">Gire a roleta para descobrir a sua recompensa Panther!</p>
-                    <button class="btn" style="width:100%; justify-content:center;" onclick="showRoulette()">🛒 GIRAR A
+                    <button class="btn" style="width:100%; justify-content:center;" onclick="showInstagram()">📱 GIRAR A
                         ROLETA</button>
                 </div>
             </div>
@@ -264,12 +268,35 @@
             </div>
         </div>
 
+        <!-- Instagram Follow Screen -->
+        <div id="screen-instagram" class="screen instagram-screen">
+            <div class="insta-content">
+                <div class="insta-logos">
+                    <img src="panther.png" alt="Panther" class="insta-logo-panther">
+                    <img src="leme_logo.png" alt="Leme" class="insta-logo-leme">
+                </div>
+                <h1 class="insta-title">SIGA A PANTHER!</h1>
+                <p class="insta-subtitle">Escaneie o QR Code e siga nosso Instagram<br>para liberar a roleta de prêmios</p>
+                <div class="insta-qr-wrap">
+                    <img src="qr_instagram.png" alt="QR Code Instagram Panther" class="insta-qr-img">
+                </div>
+                <p class="insta-handle">@pantherlubrificantes</p>
+                <button class="btn btn-primary btn-jumbo pulse-glow insta-confirm-btn" onclick="showRoulette()">
+                    ✅ JÁ SEGUI — GIRAR ROLETA
+                </button>
+                <button class="btn-cancel-quiz-footer btn-insta-exit" onclick="openExitConfirm()">Encerrar Sessão</button>
+            </div>
+        </div>
+
         <div id="screen-code" class="screen code-screen">
             <div class="content">
                 <div class="ticket-wrapper">
                     <div class="ticket-top">
-                        <img src="panther.png" alt="Panther" style="width: 220px; filter: brightness(0) invert(1);">
                         <span class="ticket-event">AGRISHOW 2026</span>
+                        <div class="ticket-logo-container">
+                            <img src="panther.png" alt="Panther" class="panther-voucher-logo">
+                            <img src="leme_logo.png" alt="Leme" class="leme-voucher-logo">
+                        </div>
                     </div>
                     <div class="ticket-body">
                         <h1 id="rescue-code" class="code-text" style="margin-top: 10px;">AGRISHOW-0000</h1>

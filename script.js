@@ -605,21 +605,34 @@ function showResults() {
     }
 }
 
+function showInstagram() {
+    showScreen('instagram');
+}
+
 function showRoulette() {
-    wheelSpun = false;
-    const canvas = document.getElementById('wheel-canvas');
-    canvas.style.transition = 'none';
-    canvas.style.transform = 'rotate(0deg)';
-    wheelAngle = 0;
+    try {
+        wheelSpun = false;
+        const canvas = document.getElementById('wheel-canvas');
+        if (!canvas) throw new Error("Canvas da roleta não encontrado");
+        
+        canvas.style.transition = 'none';
+        canvas.style.transform = 'rotate(0deg)';
+        wheelAngle = 0;
 
-    document.getElementById('btn-spin').classList.remove('hidden');
-    document.getElementById('spin-status').innerHTML = '&nbsp;';
+        document.getElementById('btn-spin').classList.remove('hidden');
+        document.getElementById('spin-status').innerHTML = '&nbsp;';
 
-    const firstName = playerName ? playerName.split(' ')[0] : 'Visitante';
-    document.getElementById('roulette-player-name').textContent = `Boa sorte, ${firstName}!`;
+        const firstName = playerName ? playerName.split(' ')[0] : 'Visitante';
+        document.getElementById('roulette-player-name').textContent = `Boa sorte, ${firstName}!`;
 
-    drawWheel(canvas);
-    showScreen('roulette');
+        drawWheel(canvas);
+        showScreen('roulette');
+        debugLog('Roleta carregada com sucesso.');
+    } catch (e) {
+        debugLog('Erro ao carregar roleta: ' + e.message, 'error');
+        alert('Erro ao carregar a roleta. Recarregando...');
+        window.location.reload();
+    }
 }
 
 function drawWheel(canvas) {
@@ -818,22 +831,32 @@ function spinWheel() {
     wheelAngle = totalRotation;
 
     setTimeout(() => {
-        wonPrizeName = wonPrize;
-        // Subtract from stock
-        prizeStock[wonPrize] -= 1;
-        saveStock();
+        try {
+            wonPrizeName = wonPrize;
+            // Subtract from stock
+            if (prizeStock[wonPrize] > 0) {
+                prizeStock[wonPrize] -= 1;
+                saveStock();
+            } else {
+                debugLog('Tentativa de ganhar prêmio sem estoque: ' + wonPrize, 'warn');
+            }
 
-        // Salva e vai direto para a tela de código
-        stats.prizes += 1;
-        localStorage.setItem('agriPrizes', String(stats.prizes));
+            // Salva e vai direto para a tela de código
+            stats.prizes += 1;
+            localStorage.setItem('agriPrizes', String(stats.prizes));
 
-        const record = participants.find((item) => item.id === currentSessionId);
-        if (record) {
-            record.prize = wonPrizeName;
-            // O showCode() já chama o saveAndSync()
+            const record = participants.find((item) => item.id === currentSessionId);
+            if (record) {
+                record.prize = wonPrizeName;
+            }
+            
+            debugLog('Prêmio ganho: ' + wonPrizeName);
+            showCode();
+        } catch (e) {
+            debugLog('Erro ao processar fim do giro: ' + e.message, 'error');
+            alert('Ops! Ocorreu um erro ao processar seu prêmio. Por favor, avise um atendente.');
+            resetApp();
         }
-
-        showCode();
     }, 7500);
 }
 
@@ -863,7 +886,7 @@ function launchConfetti() {
                 colors: ['#FF4500', '#FFD700']
             });
             confetti({
-                particleCount: 2,
+                particleCount: 120,
                 angle: 120,
                 spread: 55,
                 origin: { x: 1 },
@@ -919,10 +942,20 @@ function startAutoReset() {
 }
 
 function resetApp(force = false) {
+    debugLog('App resetado (force: ' + force + ')');
     clearInterval(questionTimer);
     clearInterval(inactivityTimer);
     if (autoResetTimer) clearInterval(autoResetTimer);
     
+    // Reset global game state to prevent carry-over bugs
+    qIndex = 0;
+    score = 0;
+    isLocked = false;
+    wheelAngle = 0;
+    wheelSpun = false;
+    wonPrizeName = '';
+    currentSessionId = null;
+
     // Parada forçada imediata do loop de confete
     window.stopConfetti = true;
     if (typeof confetti === 'function') {
@@ -965,28 +998,69 @@ checkGlobalStock();
 
 // Admin Stock Controls
 function openAdmin() {
-    document.getElementById('stat-players').textContent = stats.players;
-    document.getElementById('stat-prizes').textContent = stats.prizes;
-
-    // Show current stock in admin
-    const adminContent = document.querySelector('.admin-content');
-    let stockInfo = document.getElementById('admin-stock-info');
-    if (!stockInfo) {
-        stockInfo = document.createElement('div');
-        stockInfo.id = 'admin-stock-info';
-        stockInfo.className = 'admin-stock-list';
-        adminContent.insertBefore(stockInfo, adminContent.querySelector('.btn-export'));
+    console.log("📂 Abrindo Painel Admin...");
+    // alert("Ativando Painel Admin..."); // Debug alert
+    
+    const panel = document.getElementById('admin-panel');
+    if (!panel) {
+        console.error("❌ Erro: Elemento 'admin-panel' não encontrado.");
+        return;
     }
 
-    stockInfo.innerHTML = '<h3>Estoque Atual</h3>' + Object.entries(prizeStock).map(([name, count]) => `
-        <div class="stock-item">
-            <span>${name}:</span> <strong>${count}</strong>
-        </div>
-    `).join('');
+    // Brute-force visibility for mobile safari
+    panel.style.display = 'flex';
+    panel.style.opacity = '1';
+    panel.style.visibility = 'visible';
+    panel.style.zIndex = '10000';
 
-    const panel = document.getElementById('admin-panel');
+    const playersEl = document.getElementById('stat-players');
+    const prizesEl = document.getElementById('stat-prizes');
+    
+    if (playersEl) playersEl.textContent = stats.players;
+    if (prizesEl) prizesEl.textContent = stats.prizes;
+
+    // Show current stock in admin
+    const adminContent = panel.querySelector('.admin-content');
+    if (adminContent) {
+        adminContent.style.opacity = '1';
+        adminContent.style.visibility = 'visible';
+        adminContent.style.zIndex = '10010';
+        adminContent.style.display = 'flex';
+
+        let stockInfo = document.getElementById('admin-stock-info');
+        if (!stockInfo) {
+            stockInfo = document.createElement('div');
+            stockInfo.id = 'admin-stock-info';
+            stockInfo.className = 'admin-stock-list';
+            
+            const btnExport = adminContent.querySelector('.btn-export');
+            if (btnExport) {
+                adminContent.insertBefore(stockInfo, btnExport);
+            } else {
+                adminContent.appendChild(stockInfo);
+            }
+        }
+
+        if (prizeStock) {
+            stockInfo.innerHTML = '<h3>Estoque Atual</h3>' + Object.entries(prizeStock).map(([name, count]) => `
+                <div class="stock-item">
+                    <span>${name}:</span> <strong>${count}</strong>
+                </div>
+            `).join('');
+        }
+    }
+
     panel.classList.remove('hide');
     panel.classList.add('active');
+    
+    // Fallback force show
+    setTimeout(() => {
+        panel.style.display = 'flex';
+        panel.style.opacity = '1';
+        panel.style.visibility = 'visible';
+    }, 100);
+
+    console.log("✅ Painel Admin ativado.");
 }
 
 function resetStock() {
