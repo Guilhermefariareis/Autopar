@@ -302,13 +302,13 @@ body {
 .roulette-top { padding: 0 10px !important; }
 .roulette-badge { font-size: 11px !important; padding: 4px 12px !important; margin-bottom: 5px !important; }
 .roulette-heading { font-size: clamp(18px, 5vw, 24px) !important; margin-bottom: 5px !important; }
-#roulette-player-name { font-size: 16px !important; margin-top: 0 !important; }
+#roulette-player-name { font-size: 16px !important; margin-top: 5px !important; }
 
 /* ─── WHEEL STAGE SCALING ───────────────────────── */
 .wheel-stage {
     width: 320px !important;
     height: 320px !important;
-    margin: 20px auto !important;
+    margin: 45px auto 30px !important;
 }
 
 #wheel-canvas {
@@ -372,7 +372,7 @@ body {
     gap: 15px;
 }
 .roulette-header-logo {
-    width: 100px;
+    width: 130px;
     height: auto;
     filter: drop-shadow(0 0 10px rgba(255,69,0,0.4));
 }
@@ -447,7 +447,7 @@ body {
 }
 
 .ticket-logo {
-    height: 40px !important;
+    height: 52px !important;
     width: auto !important;
     filter: brightness(0) invert(1);
     object-fit: contain !important;
