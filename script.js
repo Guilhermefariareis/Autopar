@@ -886,11 +886,11 @@ function launchConfetti() {
                 colors: ['#FF4500', '#FFD700']
             });
             confetti({
-                particleCount: 120,
+                particleCount: 2,
                 angle: 120,
                 spread: 55,
                 origin: { x: 1 },
-                colors: ['#FFD700', '#FFFFFF']
+                colors: ['#FF4500', '#FFD700']
             });
 
             if (Date.now() < end && !window.stopConfetti) {
