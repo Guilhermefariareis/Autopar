@@ -687,10 +687,36 @@ html, body {
 .btn-answer.selected { background: var(--orange); border-color: var(--orange); box-shadow: 8px 8px 0 rgba(0,0,0,0.5); }
 .btn-answer:disabled { opacity: 0.65; cursor: not-allowed; }
 
+.win-content {
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    padding: 60px 0 !important;
+    position: relative;
+}
+
+.win-screen-logo {
+    width: min(80%, 650px);
+    height: auto;
+    filter: drop-shadow(0 0 30px rgba(255,165,0,0.4));
+    animation: slowFloat 5s ease-in-out infinite alternate;
+    z-index: 5;
+}
+
+.win-logo-top {
+    margin-bottom: 20px;
+}
+
+.win-logo-bottom {
+    margin-top: 20px;
+    width: min(80%, 550px) !important;
+}
+
 .result-panel {
     width: min(94%, 920px);
     padding: clamp(50px, 6vw, 90px);
     display: flex; flex-direction: column; align-items: center; text-align: center;
+    position: relative;
+    z-index: 10;
 }
 .trophy-icon  { font-size: 160px; line-height: 1; margin-bottom: 20px; }
 .success-title {
