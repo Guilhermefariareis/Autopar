@@ -690,25 +690,24 @@ html, body {
 .win-content {
     flex-direction: column !important;
     justify-content: space-between !important;
-    padding: 60px 0 !important;
+    padding: 20px 0 !important;
     position: relative;
 }
 
 .win-screen-logo {
-    width: min(80%, 650px);
+    width: min(90%, 900px);
     height: auto;
-    filter: drop-shadow(0 0 30px rgba(255,165,0,0.4));
-    animation: slowFloat 5s ease-in-out infinite alternate;
+    filter: drop-shadow(0 0 40px rgba(255,165,0,0.5));
     z-index: 5;
 }
 
 .win-logo-top {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .win-logo-bottom {
-    margin-top: 20px;
-    width: min(80%, 550px) !important;
+    margin-top: 10px;
+    width: min(90%, 800px) !important;
 }
 
 .result-panel {
