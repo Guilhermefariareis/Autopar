@@ -1798,7 +1798,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 40px;
     padding: 40px;
     max-width: 900px;
     width: 100%;
@@ -1814,13 +1814,13 @@ html, body {
 }
 
 .insta-logo-panther {
-    height: 120px;
+    height: 200px;
     width: auto;
     filter: drop-shadow(0 0 30px rgba(255, 69, 0, 0.3));
 }
 
 .insta-logo-leme {
-    height: 165px;
+    height: 260px;
     width: auto;
     filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.15));
 }
@@ -1911,10 +1911,20 @@ html, body {
 }
 
 .btn-insta-exit {
-    margin-top: 5px;
+    margin-top: 80px;
     font-size: 24px;
     padding: 15px 40px;
-    border-width: 2px;
-    border-color: rgba(255,255,255,0.2);
-    color: rgba(255,255,255,0.4);
+    border: 2px solid var(--orange);
+    background: var(--orange);
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.btn-insta-exit:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(255,106,0,0.4);
 }

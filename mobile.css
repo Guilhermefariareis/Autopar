@@ -638,11 +638,11 @@ body {
 /* ─── INSTAGRAM SCREEN ───────────────────────────────────── */
 .instagram-screen .insta-content {
     padding: 30px 20px !important;
-    gap: 15px !important;
+    gap: 30px !important;
 }
 .insta-logos { gap: 15px !important; margin-bottom: 5px !important; }
-.insta-logo-panther { height: 40px !important; }
-.insta-logo-leme { height: 55px !important; }
+.insta-logo-panther { height: 90px !important; }
+.insta-logo-leme { height: 140px !important; }
 
 .insta-title {
     font-size: 32px !important;
@@ -672,8 +672,13 @@ body {
 }
 .btn-insta-exit {
     font-size: 16px !important;
-    padding: 10px 20px !important;
-    margin-top: 0 !important;
+    padding: 12px 30px !important;
+    margin-top: 50px !important;
+    background: var(--orange) !important;
+    border: 2px solid var(--orange) !important;
+    color: #fff !important;
+    border-radius: 50px !important;
+    font-weight: 900 !important;
 }
 
 /* Win Screen Logos Mobile Overrides */
