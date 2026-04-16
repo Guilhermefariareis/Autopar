@@ -48,44 +48,48 @@
 
         <div id="admin-panel" class="screen screen-modal hide">
             <div class="modal-backdrop" onclick="closeAdmin()"></div>
-            <div class="admin-content glass-panel">
-                <h2>Painel Admin</h2>
-                <div class="stat-row">
-                    <div class="stat-box">
-                        <p>Jogadores</p>
-                        <h3 id="stat-players">0</h3>
-                    </div>
-                    <div class="stat-box">
-                        <p>Brindes</p>
-                        <h3 id="stat-prizes">0</h3>
-                    </div>
+            <div class="admin-content glass-panel" style="padding: 20px; gap: 15px;">
+                <h2 style="margin-bottom: 5px;">Painel Admin</h2>
+                
+                <div class="admin-tabs-nav" style="display:flex; gap:8px; margin-bottom:5px; width: 100%;">
+                   <button class="btn btn-outline admin-tab-btn active" style="flex:1; padding:10px 5px !important; font-size:14px !important; min-height:45px !important; border-color:var(--orange); background:var(--orange); color:#fff;" onclick="showAdminTab('tab-stats')">Dados</button>
+                   <button class="btn btn-outline admin-tab-btn" style="flex:1; padding:10px 5px !important; font-size:14px !important; min-height:45px !important; border-color:var(--orange); color:var(--orange);" onclick="showAdminTab('tab-stock')">Estoque</button>
+                   <button class="btn btn-outline admin-tab-btn" style="flex:1; padding:10px 5px !important; font-size:14px !important; min-height:45px !important; border-color:var(--orange); color:var(--orange);" onclick="showAdminTab('tab-demo')">Demo</button>
                 </div>
-                <button class="btn btn-export" onclick="exportCSV()">Exportar Lista (CSV)</button>
-                <div id="admin-debug-log" class="debug-log-box"></div>
-                <button class="btn btn-primary" onclick="resetStock()">Resetar Estoque</button>
-                <button class="btn btn-outline" style="border-color: #ffaa00; color: #ffaa00;"
-                    onclick="simulateSoldOut()">Simular Esgotamento</button>
-                <button class="btn btn-danger" onclick="resetStats()">Zerar Jogadores</button>
-                <div class="admin-test-zone" style="margin-top: 20px; text-align: left;">
-                    <h3
-                        style="color: #FFD700; margin-bottom: 15px; border-bottom: 1px solid #333; padding-bottom: 10px;">
-                        🧪 Modo Apresentação (Vendas)</h3>
-                    <div style="display: flex; gap: 8px; margin-bottom: 15px;">
-                        <button class="btn btn-outline"
-                            style="flex: 1; border-color: #00ff88; color: #00ff88; font-size: 13px; min-height: 50px; padding: 5px;"
-                            onclick="demoAutoRegister()">👤 Cadastro</button>
-                        <button class="btn btn-outline"
-                            style="flex: 1; border-color: #00ff88; color: #00ff88; font-size: 13px; min-height: 50px; padding: 5px;"
-                            onclick="demoJumpToResult()">🏆 Acertos</button>
-                        <button class="btn btn-outline"
-                            style="flex: 1; border-color: #00ff88; color: #00ff88; font-size: 13px; min-height: 50px; padding: 5px;"
-                            onclick="demoJumpToResult()">🎊 Parabéns</button>
-                        <button class="btn btn-outline"
-                            style="flex: 1; border-color: #00ff88; color: #00ff88; font-size: 13px; min-height: 50px; padding: 5px;"
-                            onclick="demoJumpToRoulette()">🎡 Roleta</button>
+
+                <!-- TAB: ESTATÍSTICAS -->
+                <div id="tab-stats" class="admin-tab-pane" style="display:flex; flex-direction:column; gap:15px; width:100%;">
+                    <div class="stat-row" style="margin-bottom:0;">
+                        <div class="stat-box" style="padding:15px;">
+                            <p style="font-size:14px;">Jogadores</p>
+                            <h3 id="stat-players" style="font-size:36px;">0</h3>
+                        </div>
+                        <div class="stat-box" style="padding:15px;">
+                            <p style="font-size:14px;">Brindes</p>
+                            <h3 id="stat-prizes" style="font-size:36px;">0</h3>
+                        </div>
                     </div>
-                    <select id="force-prize-select"
-                        style="width: 100%; padding: 15px; border-radius: 8px; background: #222; color: #fff; border: 1px solid #555; font-size: 18px;">
+                    <button class="btn btn-export" style="padding:15px !important; font-size:18px !important; min-height: 55px !important; margin-bottom:0;" onclick="exportCSV()">Exportar Lista (CSV)</button>
+                    <div id="admin-debug-log" class="debug-log-box" style="max-height:80px; overflow-y:auto; font-size:12px;"></div>
+                </div>
+
+                <!-- TAB: ESTOQUE E AÇÕES -->
+                <div id="tab-stock" class="admin-tab-pane" style="display:none; flex-direction:column; gap:15px; width:100%;">
+                    <button class="btn btn-primary" style="padding:15px !important; font-size:18px !important; min-height: 55px !important; margin: 0;" onclick="resetStock()">Resetar Estoque</button>
+                    <button class="btn btn-outline" style="padding:15px !important; border-color: #ffaa00; color: #ffaa00; font-size:18px !important; min-height: 55px !important; margin: 0;" onclick="simulateSoldOut()">Simular Esgotamento</button>
+                    <button class="btn btn-danger" style="padding:15px !important; font-size:18px !important; min-height: 55px !important; margin: 0;" onclick="resetStats()">Zerar Jogadores</button>
+                </div>
+
+                <!-- TAB: MODO DEMO -->
+                <div id="tab-demo" class="admin-tab-pane" style="display:none; flex-direction:column; gap:15px; width:100%; text-align: left;">
+                    <h3 style="color: #FFD700; margin-bottom: 5px; border-bottom: 1px solid #333; padding-bottom: 5px; font-size:16px;">Modo Apresentação (Vendas)</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                        <button class="btn btn-outline" style="flex: 1 1 45%; border-color: #00ff88; color: #00ff88; font-size: 14px !important; min-height: 45px !important; padding: 5px !important;" onclick="demoAutoRegister()">👤 Cadastro</button>
+                        <button class="btn btn-outline" style="flex: 1 1 45%; border-color: #00ff88; color: #00ff88; font-size: 14px !important; min-height: 45px !important; padding: 5px !important;" onclick="demoJumpToResult()">🏆 Acertos</button>
+                        <button class="btn btn-outline" style="flex: 1 1 45%; border-color: #00ff88; color: #00ff88; font-size: 14px !important; min-height: 45px !important; padding: 5px !important;" onclick="demoJumpToResult()">🎊 Parabéns</button>
+                        <button class="btn btn-outline" style="flex: 1 1 45%; border-color: #00ff88; color: #00ff88; font-size: 14px !important; min-height: 45px !important; padding: 5px !important;" onclick="demoJumpToRoulette()">🎡 Roleta</button>
+                    </div>
+                    <select id="force-prize-select" style="width: 100%; padding: 15px; border-radius: 8px; background: #222; color: #fff; border: 1px solid #555; font-size: 16px;">
                         <option value="">🍀 Roleta: Modo Justo (Sorte)</option>
                         <option value="Squeeze">🏆 Forçar: Squeeze</option>
                         <option value="Boné">🏆 Forçar: Boné</option>
@@ -96,7 +100,27 @@
                         <option value="Lixinho de Câmbio">🏆 Forçar: Lixinho</option>
                     </select>
                 </div>
-                <button class="btn btn-outline" onclick="closeAdmin()">Fechar Painel</button>
+
+                <button class="btn btn-outline" style="padding:15px !important; font-size:18px !important; min-height: 45px !important; width: 100%; margin-top:5px; border-color:#888; color:#888;" onclick="closeAdmin()">Fechar Painel</button>
+
+                <script>
+                    function showAdminTab(tabId) {
+                        document.querySelectorAll('.admin-tab-pane').forEach(el => el.style.display = 'none');
+                        document.querySelectorAll('.admin-tab-btn').forEach(el => {
+                            el.classList.remove('active');
+                            el.style.background = 'transparent';
+                            el.style.color = 'var(--orange)';
+                        });
+                        
+                        document.getElementById(tabId).style.display = 'flex';
+                        const activeBtn = Array.from(document.querySelectorAll('.admin-tab-btn')).find(el => el.getAttribute('onclick').includes(tabId));
+                        if(activeBtn) {
+                            activeBtn.classList.add('active');
+                            activeBtn.style.background = 'var(--orange)';
+                            activeBtn.style.color = '#fff';
+                        }
+                    }
+                </script>
             </div>
         </div>
 
