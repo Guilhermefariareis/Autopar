@@ -1034,8 +1034,8 @@ function openAdmin() {
             stockInfo.className = 'admin-stock-list';
             
             const btnExport = adminContent.querySelector('.btn-export');
-            if (btnExport) {
-                adminContent.insertBefore(stockInfo, btnExport);
+            if (btnExport && btnExport.parentNode) {
+                btnExport.parentNode.insertBefore(stockInfo, btnExport);
             } else {
                 adminContent.appendChild(stockInfo);
             }
