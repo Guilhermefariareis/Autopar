@@ -486,9 +486,9 @@ html, body {
 .reg-title { font-size: 68px; font-weight: 900; color: var(--orange); margin-bottom: 16px; }
 .reg-sub   { font-size: 36px; color: var(--muted); margin-bottom: 55px; }
 .reg-logo-img { width: 300px; height: auto; display: block; }
-.leme-logo { height: 100%; object-fit: contain; }
+.leme-logo { height: 100%; object-fit: contain; transform: scale(1.1); transform-origin: center; }
 .leme-voucher-logo {
-    height: 130px !important;
+    height: 143px !important;
     width: auto !important;
 }
 
@@ -1592,7 +1592,7 @@ html, body {
     /* ── VOUCHER ── */
     .ticket-wrapper { width: min(1200px, 85vw); }
     .panther-voucher-logo { height: 220px !important; }
-    .leme-voucher-logo { height: 240px !important; }
+    .leme-voucher-logo { height: 264px !important; }
     .code-text { 
         font-size: clamp(60px, 10vw, 150px); 
         white-space: nowrap; 
@@ -1821,7 +1821,7 @@ html, body {
 }
 
 .insta-logo-leme {
-    height: 150px;
+    height: 165px;
     width: auto;
     filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.15));
 }

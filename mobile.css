@@ -642,7 +642,7 @@ body {
 }
 .insta-logos { gap: 15px !important; margin-bottom: 5px !important; }
 .insta-logo-panther { height: 40px !important; }
-.insta-logo-leme { height: 50px !important; }
+.insta-logo-leme { height: 55px !important; }
 
 .insta-title {
     font-size: 32px !important;
@@ -680,4 +680,4 @@ body {
 .win-content { padding: 40px 10px !important; }
 .win-screen-logo { width: 140px !important; margin: 0 auto; }
 .win-logo-top { margin-bottom: 20px !important; }
-.win-logo-bottom { width: 120px !important; margin-top: 20px !important; }
+.win-logo-bottom { width: 132px !important; margin-top: 20px !important; }
