@@ -3368,27 +3368,23 @@ body.keyboard-open .quiz-wrap {
         height: calc(100vh - 40px) !important;
     }
 
-    .quiz-header-row { 
-        display: flex !important; 
-        align-items: center !important; 
-        justify-content: center !important; 
-        gap: 40px !important; 
-        margin-bottom: 20px !important; 
-    }
-
-    .quiz-title-main { font-size: 55px !important; margin: 0 !important; }
+    .quiz-title-main { font-size: 55px !important; margin: 0 auto !important; text-align: center !important; width: 100% !important; }
     
     .quiz-timer-inline { 
         background: var(--orange) !important; 
         color: white !important; 
-        font-size: 45px !important; 
+        font-size: 42px !important; 
         font-weight: 900 !important; 
-        padding: 10px 30px !important; 
+        padding: 10px 35px !important; 
         border-radius: 12px !important; 
         min-width: 140px !important; 
         text-align: center !important;
+        margin: 20px auto 0 !important;
+        display: block !important;
+        width: fit-content !important;
     }
 
+    .quiz-header-row { display: none !important; }
     .quiz-timer-box { display: none !important; }
     
     .question-box { 
@@ -3396,8 +3392,8 @@ body.keyboard-open .quiz-wrap {
         display: flex !important; 
         align-items: center !important; 
         justify-content: center !important;
-        margin: 40px 0 !important; 
-        min-height: 250px !important; 
+        margin: 30px 0 !important; 
+        min-height: 220px !important; 
         
         /* MOLDURA DA PERGUNTA */
         border: 2px solid rgba(255, 69, 0, 0.4) !important;
@@ -3408,7 +3404,7 @@ body.keyboard-open .quiz-wrap {
     
     #question-text { font-size: 62px !important; margin: 0 !important; line-height: 1.2 !important; font-weight: 800 !important; }
     
-    .answers-container { width: 100% !important; margin-bottom: 60px !important; flex: 1 !important; display: flex !important; flex-direction: column !important; justify-content: center !important; }
+    .answers-container { width: 100% !important; margin-bottom: 50px !important; flex: 1 !important; display: flex !important; flex-direction: column !important; justify-content: center !important; }
     
     .btn-answer { 
         font-size: 42px !important; 
@@ -3417,6 +3413,7 @@ body.keyboard-open .quiz-wrap {
         margin-bottom: 20px !important; 
         background: rgba(255,255,255,0.05) !important; 
         width: 100% !important; 
+        border: 1.5px solid var(--orange) !important; /* BORDA LARANJA FINA */
         transition: background 0.2s, border-color 0.2s !important;
     }
     
