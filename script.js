@@ -174,21 +174,23 @@ async function syncToSupabase(lead) {
     if (!SUPABASE_URL || !SUPABASE_KEY) return;
 
     try {
-        const response = await fetch(`${SUPABASE_URL}/rest/v1/leads`, {
+        // Usamos UPSERT (se o ID já existe, atualiza. Se não, cria)
+        const response = await fetch(`${SUPABASE_URL}/rest/v1/leads?on_conflict=id`, {
             method: 'POST',
             headers: {
                 'apikey': SUPABASE_KEY,
                 'Authorization': `Bearer ${SUPABASE_KEY}`,
                 'Content-Type': 'application/json',
-                'Prefer': 'return=minimal'
+                'Prefer': 'resolution=merge-duplicates'
             },
             body: JSON.stringify({
+                id: lead.id, // ID local do totem
                 name: lead.name,
                 phone: lead.phone,
                 score: lead.score,
                 prize: lead.prize,
                 code: lead.code,
-                created_at: new Date().toISOString()
+                created_at: lead.created_at || new Date().toISOString()
             })
         });
 
@@ -973,6 +975,9 @@ function showCode() {
         record.prize = wonPrizeName; // ensure it's set
         record.code = code;
         saveAndSync();
+        
+        // ENVIA O PRÊMIO FINAL PARA A NUVEM
+        syncToSupabase(record);
     }
 
     showScreen('code');
