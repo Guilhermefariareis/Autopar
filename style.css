@@ -1990,11 +1990,7 @@ html, body {
     padding: 0 10px;
 }
 #kb-target-label {
-    font-size: 28px;
-    font-weight: 700;
-    color: var(--orange);
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    display: none;
 }
 .btn-kb-done {
     background: var(--orange);
@@ -2038,7 +2034,7 @@ html, body {
 /* Key types */
 .kb-key.wide      { grid-column: span 1.5; }
 .kb-key.extra-wide { grid-column: span 2; }
-.kb-key.space      { grid-column: span 4; background: rgba(255,255,255,0.15); }
+.kb-key.space      { grid-column: span 7; background: rgba(255,255,255,0.15); }
 .kb-key.backspace  { background: rgba(255, 69, 0, 0.2); color: var(--orange); }
 .kb-key.special    { background: rgba(255, 255, 255, 0.12); font-size: 24px; }
 
@@ -2048,3 +2044,10 @@ html, body {
     max-width: 500px;
 }
 .keyboard-grid.numeric .kb-key { height: 110px; font-size: 44px; }
+
+/* Sobe o conteúdo quando o teclado abre */
+body.keyboard-open .reg-panel,
+body.keyboard-open .quiz-wrap {
+    transform: translateY(-400px) !important;
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}

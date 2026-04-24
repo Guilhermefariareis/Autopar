@@ -1330,13 +1330,14 @@ function initKeyboard() {
 function openKeyboard() {
     const kb = document.getElementById('virtual-keyboard');
     const grid = document.getElementById('keyboard-keys');
-    const label = document.getElementById('kb-target-label');
     
     if (!kb || !grid || !activeInput) return;
 
+    // Adiciona classe ao body para subir o conteúdo
+    document.body.classList.add('keyboard-open');
+
     // Determina o layout (numérico ou texto)
     const isPhone = activeInput.id.includes('phone') || activeInput.type === 'tel';
-    label.innerText = isPhone ? 'Digite seu WhatsApp' : 'Digite seu Nome';
     
     grid.innerHTML = '';
     grid.className = isPhone ? 'keyboard-grid numeric' : 'keyboard-grid';
@@ -1389,5 +1390,7 @@ function closeKeyboard() {
         kb.classList.add('hide');
         kb.classList.remove('active');
     }
+    // Remove a classe do body para a tela voltar ao normal
+    document.body.classList.remove('keyboard-open');
     activeInput = null;
 }
