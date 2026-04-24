@@ -1319,9 +1319,6 @@ let activeInput = null;
 function initKeyboard() {
     const inputs = document.querySelectorAll('.input-field, .field-input');
     inputs.forEach(input => {
-        // No totem, impedimos o teclado nativo do windows de subir se possível
-        input.setAttribute('readonly', 'true'); 
-        
         input.onclick = (e) => {
             activeInput = e.target;
             openKeyboard();
