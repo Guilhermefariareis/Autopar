@@ -91,7 +91,7 @@ def append_lead(data: dict) -> bool:
             # Em um sistema real, faríamos um update no CSV, mas para logs, append resolve.
             file_exists = os.path.isfile(CSV_FILE) and os.path.getsize(CSV_FILE) > 0
             with open(CSV_FILE, "a", newline="", encoding="utf-8-sig") as f:
-                writer = csv.DictWriter(f, fieldnames=CSV_FIELDS, extrasaction="ignore")
+                writer = csv.DictWriter(f, fieldnames=CSV_FIELDS, extrasaction="ignore", delimiter=';')
                 if not file_exists:
                     writer.writeheader()
                 writer.writerow(current_state_dict)

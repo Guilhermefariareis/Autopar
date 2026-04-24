@@ -118,9 +118,9 @@ function exportCSV() {
         p.score != null ? p.score : '',
         `"${(p.prize || '').replace(/"/g, '""')}"`,
         p.code || ''
-    ].join(','));
+    ].join(';'));
 
-    const csvContent = [headers.join(','), ...rows].join('\n');
+    const csvContent = [headers.join(';'), ...rows].join('\n');
     const blob = new Blob(['\uFEFF' + csvContent], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
     const now = new Date();
