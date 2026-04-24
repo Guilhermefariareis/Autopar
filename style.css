@@ -3169,3 +3169,23 @@ body.keyboard-open .quiz-wrap {
     .prize-name-big { font-size: 130px; }
     .code-text { font-size: 160px; }
 }
+
+/* AJUSTES MOBILE.HTML PARA TOTEM VERTICAL */
+@media (orientation: portrait) and (min-height: 1200px) {
+    .field-group { margin-bottom: 60px !important; padding: 30px !important; border-radius: 20px; }
+    .field-icon { font-size: 45px !important; min-width: 80px !important; }
+    .field-input { font-size: 50px !important; height: 130px !important; padding-top: 30px !important; }
+    .field-label { font-size: 38px !important; top: 50px !important; }
+    .field-input:focus ~ .field-label, .field-input:not(:placeholder-shown) ~ .field-label { top: 10px !important; font-size: 28px !important; }
+    .lgpd-toggle-text { font-size: 32px !important; line-height: 1.4 !important; }
+    .toggle-track { width: 120px !important; height: 60px !important; }
+    .toggle-thumb { width: 50px !important; height: 50px !important; }
+    .reg-title { font-size: 80px !important; }
+    .reg-sub { font-size: 40px !important; }
+    .win-screen-logo { width: 400px !important; }
+    .success-title { font-size: 90px !important; }
+    .insta-title { font-size: 80px !important; }
+    .insta-subtitle { font-size: 38px !important; }
+    .insta-handle { font-size: 45px !important; }
+    .insta-qr-img { width: 500px !important; }
+}

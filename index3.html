@@ -1,182 +1,204 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Panther Quiz - Totem Vertical 43"</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Quiz Panther - Totem Vertical 43"</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&display=swap" rel="stylesheet">
     
     <!-- Supabase -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     
-    <link rel="stylesheet" href="style.css?v=11">
+    <link rel="stylesheet" href="style.css?v=13">
+    <link rel="stylesheet" href="mobile.css?v=13">
     
-    <!-- CSS Adicional para forçar Modo Totem Vertical -->
     <style>
-        body { overflow: hidden; touch-action: none; cursor: none; } /* Oculta cursor para o totem */
-        .keyboard-wrap { display: none; } /* Inicialmente oculto */
+        body { overflow: hidden; touch-action: none; cursor: none; }
+        .totem-vertical .field-input { font-size: 42px !important; height: 120px !important; }
+        .totem-vertical .field-label { font-size: 32px !important; }
+        .totem-vertical .field-group { margin-bottom: 50px !important; padding: 25px !important; }
+        .totem-vertical .btn-jumbo { min-height: 160px !important; font-size: 50px !important; border-radius: 80px !important; }
+        
+        /* Ajuste para o Teclado Panther */
+        .keyboard-wrap { display: none; }
         .keyboard-wrap.active { display: block; }
     </style>
 </head>
+
 <body class="totem-vertical">
-
     <div id="app">
-        <!-- TELA 1: HOME -->
-        <section id="screen-home" class="screen active">
-            <div class="content">
-                <img src="img/logo-panther.png" alt="Panther Logo" class="home-logo">
-                <h1 class="main-title">PANTHER<br>QUIZ</h1>
-                <p class="subtitle">PARTICIPE E GANHE<br>PRÊMIOS EXCLUSIVOS!</p>
-                <button class="btn btn-primary" onclick="goToScreen('register')">COMEÇAR AGORA</button>
-                <div class="home-footer">
-                    <img src="img/logo-leme.png" alt="Leme Logo" class="leme-logo">
+        <!-- ADMIN PANEL -->
+        <div id="admin-panel" class="screen screen-modal hide">
+            <div class="modal-backdrop" onclick="closeAdmin()"></div>
+            <div class="admin-content glass-panel" style="padding: 40px; gap: 30px;">
+                <h2 style="font-size: 48px;">Painel Admin</h2>
+                <div id="tab-stats" class="admin-tab-pane" style="display:flex; flex-direction:column; gap:30px; width:100%;">
+                    <div class="stat-row">
+                        <div class="stat-box">
+                            <p>Jogadores</p>
+                            <h3 id="stat-players">0</h3>
+                        </div>
+                        <div class="stat-box">
+                            <p>Brindes</p>
+                            <h3 id="stat-prizes">0</h3>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="exportCSV()" style="height: 120px; font-size: 32px;">Exportar Leads (CSV)</button>
+                </div>
+                <button class="btn btn-outline" onclick="closeAdmin()" style="height: 100px; font-size: 28px;">Fechar</button>
+            </div>
+        </div>
+
+        <!-- HOME -->
+        <div id="screen-home" class="screen active">
+            <div class="bg-decor">
+                <div class="bd-circle c1"></div>
+                <div class="bd-circle c2"></div>
+                <div class="bd-circle c3"></div>
+            </div>
+            <div class="content main-content">
+                <div class="logo-wrapper">
+                    <img src="panther.png" alt="Panther Lubrificantes" class="home-logo">
+                    <img src="leme_logo.png" alt="Leme Logo" class="home-logo leme-logo">
+                </div>
+                <div class="event-badge">AGRISHOW 2026</div>
+                <h1 class="main-title">QUIZ<br>PANTHER</h1>
+                <p class="subtitle">Responda as perguntas e<br>concorra a brindes exclusivos! ✨</p>
+                
+                <div id="sold-out-banner" class="sold-out-banner hidden">
+                    <h2>BRINDES ESGOTADOS</h2>
+                    <p>Volte amanhã para participar!</p>
+                </div>
+
+                <button class="btn btn-primary btn-jumbo bounce" onclick="goToRegister()">PARTICIPAR</button>
+            </div>
+        </div>
+
+        <!-- REGISTER -->
+        <div id="screen-register" class="screen">
+            <div class="content register-content">
+                <div class="glass-panel reg-panel">
+                    <div class="reg-logo-mini">
+                        <img src="logo.png" alt="Panther" class="reg-logo-img">
+                        <img src="leme_logo.png" alt="Leme" class="reg-logo-img leme-logo">
+                    </div>
+                    <h2 class="reg-title">Seus Dados</h2>
+                    <p class="reg-sub">Preencha para participar</p>
+                    
+                    <!-- Campo Nome com Teclado -->
+                    <div class="field-group">
+                        <div class="field-icon">👤</div>
+                        <div class="field-inner">
+                            <input type="text" id="input-name" class="field-input input-field" placeholder=" " maxlength="50" autocomplete="off">
+                            <label class="field-label">Nome completo</label>
+                            <span class="field-line"></span>
+                        </div>
+                    </div>
+
+                    <!-- Campo WhatsApp com Teclado -->
+                    <div class="field-group">
+                        <div class="field-icon">📱</div>
+                        <div class="field-inner">
+                            <input type="tel" id="input-phone" class="field-input input-field" placeholder=" " maxlength="20" autocomplete="off">
+                            <label class="field-label">WhatsApp</label>
+                            <span class="field-line"></span>
+                        </div>
+                    </div>
+
+                    <div class="lgpd-toggle-row">
+                        <label class="lgpd-toggle-wrap" for="input-lgpd">
+                            <input type="checkbox" id="input-lgpd" class="toggle-input">
+                            <span class="toggle-track">
+                                <span class="toggle-thumb"></span>
+                            </span>
+                            <span class="lgpd-toggle-text">Autorizo a Panther Lubrificantes a usar meus dados conforme a LGPD.</span>
+                        </label>
+                    </div>
+                    <p id="form-error" class="form-error hide"></p>
+                    <button class="btn btn-link" style="font-size: 32px;" onclick="showScreen('home')">Voltar</button>
+                </div>
+                <div class="reg-footer">
+                    <button class="btn btn-primary btn-block btn-jumbo" onclick="submitRegister()">▶ COMEÇAR QUIZ</button>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- TELA 2: CADASTRO -->
-        <section id="screen-register" class="screen">
-            <div class="content">
-                <div class="reg-panel">
-                    <h2 class="section-title">IDENTIFIQUE-SE</h2>
-                    <p class="section-sub">PARA RECEBER SEU VOUCHER</p>
-                    
-                    <div class="form-group">
-                        <label>Nome Completo</label>
-                        <input type="text" id="input-name" class="input-field" placeholder="Seu nome" maxlength="50">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>WhatsApp</label>
-                        <input type="tel" id="input-phone" class="input-field" placeholder="(00) 00000-0000" maxlength="20">
-                    </div>
-
-                    <button class="btn btn-primary btn-block" onclick="submitRegister()">AVANÇAR</button>
-                    <button class="btn-cancel" onclick="goToScreen('home')">VOLTAR</button>
-                </div>
+        <!-- QUIZ -->
+        <div id="screen-quiz" class="screen">
+            <div class="floating-products">
+                <img src="panther.png" alt="P1" class="float-img float-1" />
+                <img src="panther.png" alt="P2" class="float-img float-2" />
+                <img src="panther.png" alt="P3" class="float-img float-3" />
             </div>
-        </section>
-
-        <!-- TELA 3: QUIZ -->
-        <section id="screen-quiz" class="screen">
-            <div class="quiz-wrap">
+            <div class="quiz-wrap glass-panel">
                 <div class="quiz-header">
-                    <span id="question-number">PERGUNTA 1/7</span>
-                    <div class="quiz-timer" id="timer">20</div>
+                    <div class="progress-container">
+                        <div id="progress-bar" class="progress-bar"></div>
+                    </div>
+                    <div class="quiz-timer" id="quiz-timer">20s</div>
                 </div>
-                
-                <h2 id="question-text">Qual a principal característica do óleo Panther?</h2>
-                
-                <div class="answers-container" id="answers">
-                    <!-- Gerado via JS -->
+                <div class="question-box">
+                    <h2 id="question-text">Carregando...</h2>
                 </div>
-            </div>
-        </section>
-
-        <!-- TELA 4: RESULTADO -->
-        <section id="screen-result" class="screen">
-            <div class="content">
-                <div id="result-success" style="display:none;">
-                    <div class="result-icon">🔥</div>
-                    <h2 class="result-title">PARABÉNS!</h2>
-                    <p class="result-text">Você acertou a maioria e ganhou um giro na roleta!</p>
-                    <button class="btn btn-primary" onclick="goToScreen('instagram')">IR PARA ROLETA</button>
+                <div class="answers-container">
+                    <button class="btn btn-answer" id="ans-0" onclick="selectAnswer(0)"></button>
+                    <button class="btn btn-answer" id="ans-1" onclick="selectAnswer(1)"></button>
+                    <button class="btn btn-answer" id="ans-2" onclick="selectAnswer(2)"></button>
+                    <button class="btn btn-answer" id="ans-3" onclick="selectAnswer(3)"></button>
                 </div>
-                
-                <div id="result-fail" style="display:none;">
-                    <div class="result-icon">❌</div>
-                    <h2 class="result-title">QUASE LÁ!</h2>
-                    <p class="result-text">Infelizmente você não atingiu a pontuação mínima.</p>
-                    <button class="btn btn-primary" onclick="resetApp()">TENTAR NOVAMENTE</button>
+                <div class="quiz-footer-meta">
+                    <div id="question-counter" class="counter">1 / 7</div>
+                    <button class="btn-cancel-quiz" onclick="openExitConfirm()">ENCERRAR</button>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- TELA 5: INSTAGRAM -->
-        <section id="screen-instagram" class="screen instagram-screen">
-            <div class="insta-content">
-                <div class="insta-logos">
-                    <img src="img/logo-panther.png" alt="Panther" class="insta-logo-panther">
-                    <img src="img/logo-leme.png" alt="Leme" class="insta-logo-leme">
-                </div>
-                <div class="insta-badge">AGRISHOW 2026</div>
-                <h2 class="insta-title">SIGA-NOS NO INSTAGRAM</h2>
-                <p class="insta-subtitle">Para validar seu prêmio, siga @pantherlubrificantes</p>
-                
-                <div class="insta-qr-wrap">
-                    <img src="img/qr-insta.png" alt="QR Code Instagram" class="insta-qr-img">
-                </div>
-                
-                <p class="insta-handle">@pantherlubrificantes</p>
-                <button class="btn btn-primary insta-confirm-btn" onclick="goToScreen('roulette')">JÁ ESTOU SEGUINDO!</button>
-                <button class="btn-insta-exit" onclick="resetApp()">SAIR</button>
-            </div>
-        </section>
-
-        <!-- TELA 6: ROLETA -->
-        <section id="screen-roulette" class="screen roulette-screen">
+        <!-- ROULETTE SCREEN -->
+        <div id="screen-roulette" class="screen roulette-screen">
             <div class="roulette-top">
-                <div class="roulette-badge">BOA SORTE!</div>
-                <h2 class="roulette-heading">GIRE E<br>GANHE!</h2>
-                <p id="roulette-player-name">Olá, Jogador</p>
+                <h2 class="roulette-title">GIRE E <span class="ganhe-spin">GANHE!</span></h2>
+                <p id="roulette-player-name">Prepare-se!</p>
             </div>
-
             <div class="wheel-stage">
-                <div class="ring1"></div>
-                <div class="ring2"></div>
+                <div class="wheel-glow-ring ring1"></div>
                 <div class="wheel-pointer-wrap">
-                    <div class="wheel-pointer"></div>
+                    <div id="wheel-pointer" class="wheel-pointer"></div>
                 </div>
-                <canvas id="wheel-canvas" width="800" height="800"></canvas>
+                <canvas id="wheel-canvas" width="900" height="900"></canvas>
             </div>
-
             <div class="roulette-bottom">
-                <button id="btn-spin" class="btn btn-primary" onclick="spinWheel()">GIRAR ROLETA</button>
-                <p class="spin-status" id="spin-msg">Toque para girar!</p>
+                <button id="btn-spin" class="btn btn-primary btn-jumbo" onclick="spinWheel()">GIRAR AGORA</button>
             </div>
-        </section>
+        </div>
 
-        <!-- TELA 7: VOUCHER -->
-        <section id="screen-voucher" class="screen">
+        <!-- TELA DE INSTAGRAM (QR CODE) -->
+        <div id="screen-instagram" class="screen instagram-screen">
+            <div class="insta-content">
+                <h1 class="insta-title">SIGA A PANTHER!</h1>
+                <div class="insta-qr-wrap">
+                    <img src="qr_instagram.png" alt="QR Code" class="insta-qr-img">
+                </div>
+                <p class="insta-handle">@pantherlubrificantes</p>
+                <button class="btn btn-primary btn-jumbo" onclick="showRoulette()">✅ GIRAR A ROLETA</button>
+            </div>
+        </div>
+
+        <!-- FINAL VOUCHER -->
+        <div id="screen-code" class="screen code-screen">
             <div class="content">
                 <div class="ticket-wrapper">
-                    <div class="ticket-content">
-                        <img src="img/logo-panther.png" class="panther-voucher-logo">
-                        <div class="ticket-prize">
-                            <p class="ticket-prize-label">SEU PRÊMIO É:</p>
-                            <h2 id="final-prize-name" class="prize-name-big">...</h2>
-                        </div>
-                        <div class="ticket-code">
-                            <p>CÓDIGO DE RESGATE:</p>
-                            <h3 id="voucher-code" class="code-text">XXXX</h3>
-                        </div>
-                        <div class="ticket-footer">
-                            <p class="thanks-hashtag">#PANTHERNAAGRISHOW</p>
-                            <p class="thanks-sub">Apresente este código para nossa equipe e retire seu brinde!</p>
-                        </div>
-                        <img src="img/logo-leme.png" class="leme-voucher-logo">
+                    <div class="ticket-body">
+                        <p class="ticket-label">VOCÊ GANHOU</p>
+                        <h1 id="rescue-code" class="ticket-code">...</h1>
                     </div>
                 </div>
-                <button class="btn btn-primary" style="margin-top: 50px;" onclick="resetApp()">FINALIZAR</button>
+                <button class="btn btn-primary btn-jumbo" onclick="resetApp(true)">FINALIZAR</button>
             </div>
-        </section>
-
-        <!-- TELA ADMIN (OCULTA) -->
-        <section id="screen-admin" class="screen">
-            <!-- Conteúdo Admin igual ao original -->
-            <div class="content">
-                <h2 class="section-title">PAINEL ADMIN</h2>
-                <div class="admin-grid" id="admin-stats"></div>
-                <button class="btn btn-primary" onclick="resetApp()">SAIR</button>
-            </div>
-        </section>
+        </div>
     </div>
 
-    <!-- TECLADO VIRTUAL -->
+    <!-- TECLADO VIRTUAL PANTHER -->
     <div id="virtual-keyboard" class="keyboard-wrap hide">
         <div class="keyboard-header">
             <button class="btn-kb-clear" onclick="handleKeyPress('Limpar')">LIMPAR TUDO</button>
@@ -185,29 +207,37 @@
         <div id="keyboard-keys" class="keyboard-grid"></div>
     </div>
 
-    <!-- Server Status -->
+    <!-- Server Status Indicator -->
     <div id="server-indicator" class="server-status">
         <div class="status-dot"></div>
-        <span class="status-text">Local Server</span>
+        <span class="status-text">TOTEM OK</span>
     </div>
 
-    <!-- Scripts -->
-    <script src="script.js?v=11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js?v=13"></script>
     <script>
         // Trigger para Admin (5 toques no topo esquerdo)
         let topClicks = 0;
-        document.body.addEventListener('click', (e) => {
+        document.body.addEventListener('mousedown', (e) => {
             if (e.clientY < 150 && e.clientX < 150) {
                 topClicks++;
                 if (topClicks >= 5) {
                     topClicks = 0;
                     const pin = prompt("PIN ADMIN:");
-                    if (pin === "1234") goToScreen('admin');
+                    if (pin === "1234") showAdminPanel();
                 }
             } else {
                 topClicks = 0;
             }
         });
+
+        function showAdminPanel() {
+            document.getElementById('admin-panel').classList.remove('hide');
+        }
+        function closeAdmin() {
+            document.getElementById('admin-panel').classList.add('hide');
+        }
     </script>
 </body>
+
 </html>
