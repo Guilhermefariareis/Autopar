@@ -3181,6 +3181,10 @@ body.keyboard-open .quiz-wrap {
 
 .btn-start-quiz {
     width: 100%;
+    height: 120px;
+    font-size: 42px;
+    border-radius: 60px;
+    margin-top: 20px;
     margin-top: 40px;
     box-shadow: 0 10px 30px rgba(255, 69, 0, 0.3);
 }
