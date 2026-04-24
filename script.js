@@ -1288,7 +1288,8 @@ function confirmExit() {
 window.onload = () => {
     checkGlobalStock();
     resetInactivityTimer();
-    startAutoSync(); // Inicia auto-dump dos leads para o servidor a cada 30s
+    startAutoSync(); 
+    initKeyboard(); // Inicializa o teclado virtual
 
     // ───────────────────────────────────────────────
     // Admin Trigger: 5 toques no canto superior esquerdo
@@ -1309,3 +1310,86 @@ window.onload = () => {
         adminZone.addEventListener('touchstart', (e) => { e.preventDefault(); handleAdminTap(); }, { passive: false });
     }
 };
+
+// ==========================================
+// VIRTUAL KEYBOARD LOGIC
+// ==========================================
+let activeInput = null;
+
+function initKeyboard() {
+    const inputs = document.querySelectorAll('.input-field, .field-input');
+    inputs.forEach(input => {
+        // No totem, impedimos o teclado nativo do windows de subir se possível
+        input.setAttribute('readonly', 'true'); 
+        
+        input.onclick = (e) => {
+            activeInput = e.target;
+            openKeyboard();
+        };
+    });
+}
+
+function openKeyboard() {
+    const kb = document.getElementById('virtual-keyboard');
+    const grid = document.getElementById('keyboard-keys');
+    const label = document.getElementById('kb-target-label');
+    
+    if (!kb || !grid || !activeInput) return;
+
+    // Determina o layout (numérico ou texto)
+    const isPhone = activeInput.id.includes('phone') || activeInput.type === 'tel';
+    label.innerText = isPhone ? 'Digite seu WhatsApp' : 'Digite seu Nome';
+    
+    grid.innerHTML = '';
+    grid.className = isPhone ? 'keyboard-grid numeric' : 'keyboard-grid';
+
+    const layout = isPhone 
+        ? ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'Limpar', '0', '⌫']
+        : [
+            'Q','W','E','R','T','Y','U','I','O','P',
+            'A','S','D','F','G','H','J','K','L','Ç',
+            'Z','X','C','V','B','N','M',',','.','⌫',
+            'Espaço'
+        ];
+
+    layout.forEach(key => {
+        const btn = document.createElement('div');
+        btn.className = 'kb-key';
+        if (key === 'Espaço') btn.classList.add('space');
+        if (key === '⌫') btn.classList.add('backspace');
+        if (key === 'Limpar') btn.classList.add('special');
+        
+        btn.innerText = key;
+        btn.onclick = () => handleKeyPress(key);
+        grid.appendChild(btn);
+    });
+
+    kb.classList.remove('hide');
+    kb.classList.add('active');
+}
+
+function handleKeyPress(key) {
+    if (!activeInput) return;
+
+    if (key === '⌫') {
+        activeInput.value = activeInput.value.slice(0, -1);
+    } else if (key === 'Limpar') {
+        activeInput.value = '';
+    } else if (key === 'Espaço') {
+        activeInput.value += ' ';
+    } else {
+        activeInput.value += key;
+    }
+    
+    // Dispara evento de input para que outras lógicas do site (validação) funcionem
+    activeInput.dispatchEvent(new Event('input'));
+}
+
+function closeKeyboard() {
+    const kb = document.getElementById('virtual-keyboard');
+    if (kb) {
+        kb.classList.add('hide');
+        kb.classList.remove('active');
+    }
+    activeInput = null;
+}
