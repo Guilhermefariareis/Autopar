@@ -3180,7 +3180,7 @@ body.keyboard-open .quiz-wrap {
 
 
 .btn-start-quiz {
-    width: min(92%, 780px);
+    width: 100%;
     margin-top: 40px;
     box-shadow: 0 10px 30px rgba(255, 69, 0, 0.3);
 }
@@ -3257,7 +3257,8 @@ body.keyboard-open .quiz-wrap {
     .btn-link { font-size: 45px !important; opacity: 0.6; }
 
     .btn-start-quiz { 
-        margin-top: 50px !important; 
+        width: 100% !important; 
+        margin-top: 40px !important; 
         height: 180px !important; 
         font-size: 65px !important; 
     }
