@@ -3141,3 +3141,31 @@ body.keyboard-open .quiz-wrap {
     transform: translateY(-160px) !important;
     transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
+/* TOTEM VERTICAL 43 - PORTRAIT (1080 x 1920) */
+@media (orientation: portrait) and (min-height: 1200px) {
+    .content { padding: 100px 60px; }
+    .home-logo { width: 500px; margin-bottom: 60px; }
+    .main-title { font-size: 140px; line-height: 0.9; margin-bottom: 40px; }
+    .subtitle { font-size: 54px; margin-bottom: 80px; }
+    .btn { height: 180px !important; font-size: 58px !important; border-radius: 90px !important; margin-bottom: 40px; }
+    .reg-panel { padding: 100px 60px; border-radius: 40px; width: 95%; }
+    .section-title { font-size: 80px; }
+    .section-sub { font-size: 38px; margin-bottom: 60px; }
+    .form-group { margin-bottom: 60px; }
+    .form-group label { font-size: 42px; margin-bottom: 25px; }
+    .input-field { height: 150px; font-size: 56px; padding: 0 45px; border-radius: 25px; }
+    .quiz-wrap { max-width: 1000px; padding: 100px 40px; }
+    #question-number { font-size: 42px; }
+    .quiz-timer { font-size: 80px; width: 150px; height: 150px; }
+    #question-text { font-size: 82px; margin: 80px 0; }
+    .btn-answer { font-size: 58px !important; min-height: 200px !important; margin-bottom: 40px; border-radius: 30px; }
+    .wheel-stage { width: 950px; height: 950px; margin: 60px auto; position: relative !important; right: auto !important; top: auto !important; transform: none !important; }
+    #wheel-canvas { width: 900px !important; height: 900px !important; }
+    .roulette-heading { font-size: 110px; }
+    #roulette-player-name { font-size: 54px; }
+    #btn-spin { height: 220px !important; font-size: 80px !important; }
+    .spin-status { font-size: 48px; }
+    .ticket-wrapper { width: 95%; }
+    .prize-name-big { font-size: 130px; }
+    .code-text { font-size: 160px; }
+}
