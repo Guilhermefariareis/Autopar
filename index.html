@@ -164,29 +164,32 @@
         </div>
 
         <div id="screen-quiz" class="screen">
-            <!-- LOGOS FLUTUANTES (Marca Panther em 3D) -->
+            <!-- Barra de progresso no topo -->
+            <div class="progress-container-top">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
 
-            <div class="quiz-wrap glass-panel" style="z-index: 10;">
-                <div class="quiz-header">
-                    <div class="progress-container">
-                        <div id="progress-bar" class="progress-bar"></div>
-                    </div>
-                    <div class="quiz-status-row">
-                        <div id="question-counter" class="counter">1 / 7</div>
-                        <div id="quiz-timer" class="quiz-timer">20s</div>
-                    </div>
+            <div class="quiz-wrap" style="z-index: 10;">
+                <h2 class="quiz-title-main">DESAFIO PANTHER 🎯</h2>
+                
+                <div class="quiz-timer-box">
+                    <div id="quiz-timer" class="quiz-timer">20s</div>
                 </div>
+
                 <div class="question-box">
                     <h2 id="question-text">Carregando...</h2>
                 </div>
+
                 <div class="answers-container">
                     <button class="btn-answer" id="ans-0" onclick="selectAnswer(0)"></button>
                     <button class="btn-answer" id="ans-1" onclick="selectAnswer(1)"></button>
                     <button class="btn-answer" id="ans-2" onclick="selectAnswer(2)"></button>
                     <button class="btn-answer" id="ans-3" onclick="selectAnswer(3)"></button>
                 </div>
-                <div class="quiz-footer">
-                    <button class="btn-cancel-quiz-footer" onclick="openExitConfirm()">ENCERRAR SESSÃO</button>
+
+                <div class="quiz-bottom-info">
+                    <div id="question-counter" class="counter-bottom">1 / 7</div>
+                    <button class="btn-cancel-quiz-footer" onclick="openExitConfirm()">ENCERRAR</button>
                 </div>
             </div>
         </div>
