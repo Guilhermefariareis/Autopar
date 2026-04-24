@@ -3359,6 +3359,13 @@ body.keyboard-open .quiz-wrap {
         justify-content: space-between !important; 
         box-sizing: border-box !important;
         overflow: hidden !important;
+        
+        /* MOLDURA DO QUIZ */
+        border: 4px solid var(--orange) !important;
+        border-radius: 40px !important;
+        background: rgba(0,0,0,0.4) !important;
+        margin: 20px auto !important;
+        height: calc(100vh - 40px) !important;
     }
 
     .quiz-header-row { 
@@ -3391,12 +3398,36 @@ body.keyboard-open .quiz-wrap {
         justify-content: center !important;
         margin: 40px 0 !important; 
         min-height: 250px !important; 
+        
+        /* MOLDURA DA PERGUNTA */
+        border: 2px solid rgba(255, 69, 0, 0.4) !important;
+        background: rgba(255, 69, 0, 0.05) !important;
+        padding: 40px !important;
+        border-radius: 20px !important;
     }
     
     #question-text { font-size: 62px !important; margin: 0 !important; line-height: 1.2 !important; font-weight: 800 !important; }
     
     .answers-container { width: 100% !important; margin-bottom: 60px !important; flex: 1 !important; display: flex !important; flex-direction: column !important; justify-content: center !important; }
-    .btn-answer { font-size: 42px !important; padding: 28px !important; border-radius: 15px !important; margin-bottom: 20px !important; background: rgba(255,255,255,0.05) !important; width: 100% !important; }
+    
+    .btn-answer { 
+        font-size: 42px !important; 
+        padding: 28px !important; 
+        border-radius: 15px !important; 
+        margin-bottom: 20px !important; 
+        background: rgba(255,255,255,0.05) !important; 
+        width: 100% !important; 
+        transition: background 0.2s, border-color 0.2s !important;
+    }
+    
+    .btn-answer.selected { 
+        background: var(--orange) !important; 
+        border-color: white !important; 
+        color: white !important;
+        transform: scale(1.02) !important;
+        box-shadow: 0 0 30px rgba(255, 69, 0, 0.6) !important;
+    }
+
     .btn-answer:last-child { margin-bottom: 0 !important; }
 
     .counter-bottom { font-size: 45px !important; margin: 20px 0 !important; }
