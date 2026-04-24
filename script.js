@@ -1319,10 +1319,11 @@ let activeInput = null;
 function initKeyboard() {
     const inputs = document.querySelectorAll('.input-field, .field-input');
     inputs.forEach(input => {
-        input.onclick = (e) => {
+        // Usamos mousedown para capturar o toque antes do foco nativo
+        input.addEventListener('mousedown', (e) => {
             activeInput = e.target;
             openKeyboard();
-        };
+        });
     });
 }
 
