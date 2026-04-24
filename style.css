@@ -3193,7 +3193,7 @@ body.keyboard-open .quiz-wrap {
 
 /* AJUSTES FINAIS TOTEM */
 @media (orientation: portrait) and (min-height: 1200px) {
-    .form-error { font-size: 48px !important; margin: 40px 0 !important; color: #ff4444 !important; font-weight: 800 !important; display: block !important; text-align: center !important; }
+    .form-error { font-size: 45px !important; margin: 40px 0 !important; color: #ff4444 !important; font-weight: 800 !important; display: block !important; text-align: center !important; }
     .toggle-track { width: 140px !important; height: 75px !important; }
     .toggle-thumb { width: 60px !important; height: 60px !important; top: 50% !important; transform: translateY(-50%) !important; }
     .toggle-input:checked+.toggle-track .toggle-thumb { transform: translate(60px, -50%) !important; }
