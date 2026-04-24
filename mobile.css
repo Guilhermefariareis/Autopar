@@ -182,7 +182,7 @@ body {
 }
 .toggle-input:checked + .toggle-track .toggle-thumb { transform: translate(24px, -50%) !important; }
 
-.form-error { font-size: 14px !important; }
+.form-error { font-size: 20px !important; font-weight: 800 !important; margin: 15px 0 !important; }
 
 .field-line {
     width: 100% !important;
