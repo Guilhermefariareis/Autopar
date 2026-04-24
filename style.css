@@ -493,6 +493,40 @@ html, body {
 }
 
 /* â”€â”€ Floating Label Fields â”€â”€ */
+/* —— Estilos de Campo para index2.html —— */
+.form-group {
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: left;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.input-field {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid var(--border-g);
+    border-radius: 15px;
+    padding: 30px 35px;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    outline: none;
+    transition: all 0.25s ease;
+}
+.input-field:focus {
+    border-color: var(--orange);
+    background: rgba(255, 69, 0, 0.05);
+    box-shadow: 0 0 40px rgba(255, 69, 0, 0.25);
+}
+
 .field-group {
     width: 100%;
     display: flex;
