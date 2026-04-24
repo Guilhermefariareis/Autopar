@@ -163,7 +163,42 @@ window.onunhandledrejection = function (event) {
     debugLog(`Promise Rejection: ${event.reason}`, 'error');
 };
 
+// CONFIGURAÇÃO SUPABASE (BANCO ONLINE)
+const SUPABASE_URL = 'https://cqdsupishhkpbwfwpgju.supabase.co'; 
+const SUPABASE_KEY = 'sb_publishable_AAAtL9JH-CLn7QSaTpTaig_QoUOOuQB'; 
+
 let _syncTimer = null;
+
+/** Sincroniza um único lead com o Supabase (Nuvem) */
+async function syncToSupabase(lead) {
+    if (!SUPABASE_URL || !SUPABASE_KEY) return;
+
+    try {
+        const response = await fetch(`${SUPABASE_URL}/rest/v1/leads`, {
+            method: 'POST',
+            headers: {
+                'apikey': SUPABASE_KEY,
+                'Authorization': `Bearer ${SUPABASE_KEY}`,
+                'Content-Type': 'application/json',
+                'Prefer': 'return=minimal'
+            },
+            body: JSON.stringify({
+                name: lead.name,
+                phone: lead.phone,
+                score: lead.score,
+                prize: lead.prize,
+                code: lead.code,
+                created_at: new Date().toISOString()
+            })
+        });
+
+        if (response.ok) {
+            debugLog(`Nuvem: Lead de ${lead.name} sincronizado.`, 'info');
+        }
+    } catch (e) {
+        debugLog('Erro na sincronização em nuvem (Sem internet?).', 'warn');
+    }
+}
 
 /** Envia todos os leads do localStorage para o servidor local */
 function syncLeadsToServer(onComplete) {
@@ -219,10 +254,20 @@ function updateServerStatus(online) {
     }
 }
 
-/** Inicia auto-sync periódico a cada 30 segundos */
+/** Inicia auto-sync periódico a cada 20 segundos */
 function startAutoSync() {
     if (_syncTimer) clearInterval(_syncTimer);
-    _syncTimer = setInterval(() => syncLeadsToServer(), 30000);
+    
+    // Tenta sincronizar a cada 20 segundos
+    _syncTimer = setInterval(() => {
+        if (navigator.onLine) {
+            syncLeadsToServer();
+        } else {
+            updateServerStatus(false);
+            debugLog('Totem Offline: Aguardando conexão para sincronizar...', 'info');
+        }
+    }, 20000);
+    
     // Sincroniza imediatamente ao iniciar
     syncLeadsToServer();
 }
@@ -603,6 +648,9 @@ function showResults() {
         document.getElementById('lose-score').textContent = score;
         showScreen('lose');
     }
+
+    // Tenta sincronizar com a nuvem imediatamente após os resultados
+    if (record) syncToSupabase(record);
 }
 
 function showInstagram() {

@@ -16,12 +16,11 @@ echo 3. Aguardando o servidor carregar...
 timeout /t 3 /nobreak >nul
 
 echo.
-echo 4. Abrindo o painel no navegador padrao...
-:: Para abrir em tela cheia no Chrome, voce pode trocar a linha abaixo por:
-:: start chrome --kiosk http://localhost:8000
-start http://localhost:8000
+echo 4. Abrindo o painel no Google Chrome (Modo Totem)...
+:: Tenta abrir com Chrome em modo Quiosque (tela cheia sem barras)
+start chrome --kiosk --edge-touch-filtering --incognito http://localhost:8000
 
 echo.
-echo Tudo certo! Pode fechar esta janela (o servidor tem a propria janela).
-timeout /t 3 >nul
+echo Tudo certo! Divirta-se no evento.
+timeout /t 5 >nul
 exit
