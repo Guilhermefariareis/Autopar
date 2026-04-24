@@ -3222,6 +3222,8 @@ body.keyboard-open .quiz-wrap {
 }
 /* TOTEM VERTICAL 43 - PORTRAIT (1080 x 1920) */
 @media (orientation: portrait) and (min-height: 1200px) {
+    html, body { overflow: hidden !important; height: 100vh !important; width: 100vw !important; position: fixed !important; inset: 0 !important; }
+    #app, .screen { overflow: hidden !important; height: 100% !important; width: 100% !important; }
     .content { padding: 100px 60px; }
     .home-logo { width: 500px; margin-bottom: 60px; }
     .main-title { font-size: 140px; line-height: 0.9; margin-bottom: 40px; }
