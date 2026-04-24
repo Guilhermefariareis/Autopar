@@ -889,7 +889,7 @@ body {
     width: 100%;
     background: transparent;
     border: none;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 2px solid var(--orange-dark);
     color: white;
     font-family: 'Outfit', sans-serif;
     font-size: 42px;
@@ -3205,3 +3205,17 @@ body.keyboard-open .quiz-wrap {
 .form-error { color: #ff4444; font-size: 28px; font-weight: 800; margin: 25px 0; text-align: center; width: 100%; text-shadow: 0 0 20px rgba(255, 0, 0, 0.2); display: block; }
 .reg-footer { width: 100%; margin-top: 40px; }
 
+
+.btn-start-quiz {
+    width: min(92%, 780px);
+    margin-top: 40px;
+    box-shadow: 0 10px 30px rgba(255, 69, 0, 0.3);
+}
+
+@media (orientation: portrait) and (min-height: 1200px) {
+    .btn-start-quiz {
+        width: 90%;
+        max-width: 980px;
+        margin-top: 60px;
+    }
+}
