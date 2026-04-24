@@ -2015,11 +2015,11 @@ html, body {
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: white;
-    height: 90px;
+    height: 110px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 34px;
+    font-size: 38px;
     font-weight: 700;
     border-radius: 8px;
     cursor: pointer;
@@ -2034,20 +2034,20 @@ html, body {
 /* Key types */
 .kb-key.wide      { grid-column: span 1.5; }
 .kb-key.extra-wide { grid-column: span 2; }
-.kb-key.space      { grid-column: span 7; background: rgba(255,255,255,0.15); }
+.kb-key.space      { grid-column: span 6; background: rgba(255,255,255,0.15); }
 .kb-key.backspace  { background: rgba(255, 69, 0, 0.2); color: var(--orange); }
-.kb-key.special    { background: rgba(255, 255, 255, 0.12); font-size: 24px; }
+.kb-key.special    { grid-column: span 2; background: rgba(255, 255, 255, 0.12); font-size: 24px; }
 
 /* Numeric Layout (WhatsApp) */
 .keyboard-grid.numeric {
     grid-template-columns: repeat(3, 1fr);
     max-width: 500px;
 }
-.keyboard-grid.numeric .kb-key { height: 110px; font-size: 44px; }
+.keyboard-grid.numeric .kb-key { height: 130px; font-size: 52px; }
 
 /* Sobe o conteúdo quando o teclado abre */
 body.keyboard-open .reg-panel,
 body.keyboard-open .quiz-wrap {
-    transform: translateY(-400px) !important;
+    transform: translateY(-160px) !important;
     transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
