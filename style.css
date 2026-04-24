@@ -3129,6 +3129,11 @@ body {
     height: 130px;
     font-size: 52px;
 }
+.keyboard-grid.numeric .kb-key.backspace {
+    grid-column: span 2;
+    background: rgba(255, 69, 0, 0.3);
+    border-color: rgba(255, 69, 0, 0.4);
+}
 
 /* Sobe o conteúdo quando o teclado abre */
 body.keyboard-open .reg-panel,
