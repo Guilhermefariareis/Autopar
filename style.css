@@ -3368,18 +3368,18 @@ body.keyboard-open .quiz-wrap {
         height: calc(100vh - 40px) !important;
     }
 
-    .quiz-title-main { font-size: 55px !important; margin: 0 auto !important; text-align: center !important; width: 100% !important; }
+    .quiz-title-main { font-size: 45px !important; margin: 0 auto !important; text-align: center !important; width: 100% !important; }
     
     .quiz-timer-inline { 
         background: var(--orange) !important; 
         color: white !important; 
-        font-size: 42px !important; 
+        font-size: 34px !important; 
         font-weight: 900 !important; 
-        padding: 10px 35px !important; 
-        border-radius: 12px !important; 
-        min-width: 140px !important; 
+        padding: 8px 30px !important; 
+        border-radius: 10px !important; 
+        min-width: 120px !important; 
         text-align: center !important;
-        margin: 20px auto 0 !important;
+        margin: 15px auto 0 !important;
         display: block !important;
         width: fit-content !important;
     }
@@ -3392,25 +3392,25 @@ body.keyboard-open .quiz-wrap {
         display: flex !important; 
         align-items: center !important; 
         justify-content: center !important;
-        margin: 30px 0 !important; 
-        min-height: 220px !important; 
+        margin: 25px 0 !important; 
+        min-height: 180px !important; 
         
         /* MOLDURA DA PERGUNTA */
         border: 2px solid rgba(255, 69, 0, 0.4) !important;
         background: rgba(255, 69, 0, 0.05) !important;
-        padding: 40px !important;
+        padding: 30px !important;
         border-radius: 20px !important;
     }
     
-    #question-text { font-size: 62px !important; margin: 0 !important; line-height: 1.2 !important; font-weight: 800 !important; }
+    #question-text { font-size: 48px !important; margin: 0 !important; line-height: 1.25 !important; font-weight: 800 !important; }
     
-    .answers-container { width: 100% !important; margin-bottom: 50px !important; flex: 1 !important; display: flex !important; flex-direction: column !important; justify-content: center !important; }
+    .answers-container { width: 100% !important; margin-bottom: 40px !important; flex: 1 !important; display: flex !important; flex-direction: column !important; justify-content: center !important; }
     
     .btn-answer { 
-        font-size: 42px !important; 
-        padding: 28px !important; 
-        border-radius: 15px !important; 
-        margin-bottom: 20px !important; 
+        font-size: 32px !important; 
+        padding: 22px !important; 
+        border-radius: 12px !important; 
+        margin-bottom: 15px !important; 
         background: rgba(255,255,255,0.05) !important; 
         width: 100% !important; 
         border: 1.5px solid var(--orange) !important; /* BORDA LARANJA FINA */
