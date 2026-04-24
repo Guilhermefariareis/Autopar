@@ -327,12 +327,19 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    <script src="script.js?v=5"></script>
-    <!-- Server Status Indicator -->
-    <div id="server-status" class="server-status">
-        <div class="status-dot"></div>
-        <span class="status-text">Desconectado</span>
+    <!-- TECLADO VIRTUAL -->
+    <div id="virtual-keyboard" class="keyboard-wrap hide">
+        <div class="keyboard-header">
+            <span id="kb-target-label">Digitando...</span>
+            <button class="btn-kb-done" onclick="closeKeyboard()">PRONTO ✓</button>
+        </div>
+        <div id="keyboard-keys" class="keyboard-grid">
+            <!-- As teclas serão geradas pelo script.js -->
+        </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js?v=5"></script>
 </body>
 
 </html>
