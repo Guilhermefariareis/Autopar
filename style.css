@@ -3388,12 +3388,9 @@ body.keyboard-open .quiz-wrap {
         justify-content: center !important;
         margin: 25px 0 !important; 
         min-height: 180px !important; 
-        
-        /* MOLDURA DA PERGUNTA */
-        border: 2px solid rgba(255, 69, 0, 0.4) !important;
-        background: rgba(255, 69, 0, 0.05) !important;
-        padding: 30px !important;
-        border-radius: 20px !important;
+        padding: 20px !important;
+        background: transparent !important;
+        border: none !important;
     }
     
     #question-text { font-size: 48px !important; margin: 0 !important; line-height: 1.25 !important; font-weight: 800 !important; }
@@ -3405,10 +3402,11 @@ body.keyboard-open .quiz-wrap {
         padding: 22px !important; 
         border-radius: 12px !important; 
         margin-bottom: 15px !important; 
-        background: rgba(255,255,255,0.05) !important; 
+        background: #000000 !important; /* PRETO SÓLIDO */
         width: 100% !important; 
-        border: 1.5px solid var(--orange) !important; /* BORDA LARANJA FINA */
+        border: 1px solid var(--orange) !important; /* BORDA LARANJA MAIS FINA */
         transition: background 0.2s, border-color 0.2s !important;
+        color: white !important;
     }
     
     .btn-answer.selected { 
