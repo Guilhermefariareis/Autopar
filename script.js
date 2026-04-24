@@ -1352,8 +1352,16 @@ function openKeyboard() {
         ];
 
     layout.forEach(key => {
-        const btn = document.createElement('div');
+        if (key === '') {
+            const spacer = document.createElement('div');
+            spacer.className = 'kb-spacer';
+            grid.appendChild(spacer);
+            return;
+        }
+
+        const btn = document.createElement('button');
         btn.className = 'kb-key';
+        
         if (key === 'Espaço') btn.classList.add('space');
         if (key === '⌫') btn.classList.add('backspace');
         if (key === 'Limpar') btn.classList.add('special');
