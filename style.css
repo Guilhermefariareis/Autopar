@@ -3346,14 +3346,40 @@ body.keyboard-open .quiz-wrap {
         font-size: 65px !important; 
     }
 
-    /* QUIZ TOTEM REFINEMENT - REDUCED SCALE TO FIT SCREEN */
-    .quiz-title-main { font-size: 60px !important; margin-bottom: 30px !important; }
+    /* QUIZ TOTEM REFINEMENT - STATIC SCREEN (NO SCROLL) */
+    .quiz-wrap { 
+        height: 100vh !important; 
+        width: 100% !important;
+        max-width: 1000px !important; 
+        padding: 80px 50px 60px 50px !important; 
+        display: flex !important; 
+        flex-direction: column !important; 
+        justify-content: space-between !important; 
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+    }
+
+    .quiz-title-main { font-size: 55px !important; margin: 0 !important; }
     .quiz-timer { font-size: 60px !important; padding: 15px 60px !important; border-radius: 12px !important; min-width: 220px !important; }
-    .quiz-timer-box { margin-bottom: 40px !important; }
-    #question-text { font-size: 65px !important; margin-bottom: 40px !important; line-height: 1.2 !important; font-weight: 800 !important; }
-    .btn-answer { font-size: 45px !important; padding: 35px !important; border-radius: 15px !important; margin-bottom: 25px !important; background: rgba(255,255,255,0.05) !important; }
-    .counter-bottom { font-size: 45px !important; margin-bottom: 20px !important; }
+    .quiz-timer-box { margin: 20px 0 !important; }
+    
+    .question-box { 
+        flex: 1 !important; 
+        display: flex !important; 
+        align-items: center !important; 
+        justify-content: center !important;
+        margin: 20px 0 !important; 
+        min-height: auto !important; 
+    }
+    
+    #question-text { font-size: 62px !important; margin: 0 !important; line-height: 1.2 !important; font-weight: 800 !important; }
+    
+    .answers-container { width: 100% !important; margin-bottom: 20px !important; }
+    .btn-answer { font-size: 42px !important; padding: 28px !important; border-radius: 15px !important; margin-bottom: 20px !important; background: rgba(255,255,255,0.05) !important; width: 100% !important; }
+    .btn-answer:last-child { margin-bottom: 0 !important; }
+
+    .counter-bottom { font-size: 45px !important; margin: 15px 0 !important; }
     .btn-cancel-quiz-footer { font-size: 40px !important; padding: 25px 80px !important; border-radius: 100px !important; }
     .progress-container-top { height: 15px !important; }
-    .quiz-wrap { max-width: 1000px !important; padding: 20px !important; }
+    .quiz-bottom-info { margin-top: 10px !important; gap: 10px !important; }
 }
