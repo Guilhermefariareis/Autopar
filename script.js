@@ -194,6 +194,10 @@ async function syncToSupabase(lead) {
 
         if (response.ok) {
             debugLog(`Nuvem: Lead de ${lead.name} sincronizado.`, 'info');
+        } else {
+            const errText = await response.text();
+            debugLog(`Erro Nuvem: ${response.status} - ${errText}`, 'error');
+            console.error('Supabase Error:', errText);
         }
     } catch (e) {
         debugLog('Erro na sincronização em nuvem (Sem internet?).', 'warn');
