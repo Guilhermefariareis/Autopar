@@ -3353,10 +3353,10 @@ body.keyboard-open .quiz-wrap {
         height: 100vh !important; 
         width: 100% !important;
         max-width: 1000px !important; 
-        padding: 60px !important; 
+        padding: 0 60px !important; /* REMOVI PADDING VERTICAL PARA NÃO DESVIAR O CENTRO */
         display: flex !important; 
         flex-direction: column !important; 
-        justify-content: center !important; /* CENTRALIZAÇÃO REAL AGORA */
+        justify-content: center !important; 
         align-items: center !important;
         box-sizing: border-box !important;
         overflow: hidden !important;
@@ -3371,7 +3371,7 @@ body.keyboard-open .quiz-wrap {
         color: #ffffff !important; 
         font-weight: 900 !important; 
         position: absolute !important;
-        top: 80px !important;
+        top: 60px !important; /* SUBI UM POUCO O TÍTULO */
         left: 0 !important;
     }
     
@@ -3385,7 +3385,7 @@ body.keyboard-open .quiz-wrap {
         min-width: 120px !important; 
         text-align: center !important;
         position: absolute !important;
-        top: 160px !important;
+        top: 140px !important; /* SUBI UM POUCO O TIMER */
         left: 50% !important;
         transform: translateX(-50%) !important;
         width: fit-content !important;
@@ -3399,7 +3399,7 @@ body.keyboard-open .quiz-wrap {
         display: flex !important; 
         align-items: center !important; 
         justify-content: center !important;
-        margin: 0 0 40px 0 !important; 
+        margin: 0 0 30px 0 !important; /* REDUZI MARGEM PARA EQUILIBRAR */
         min-height: 120px !important; 
         padding: 20px 40px !important;
         background: transparent !important;
@@ -3422,13 +3422,13 @@ body.keyboard-open .quiz-wrap {
         display: flex !important; 
         flex-direction: column !important; 
         justify-content: center !important; 
-        gap: 25px !important;
+        gap: 20px !important; /* GAP MAIS COMPACTO */
         padding: 0 20px !important;
     }
     
     .btn-answer { 
-        font-size: 44px !important; /* AUMENTEI MAIS A FONTE */
-        padding: 35px !important; 
+        font-size: 48px !important; /* AUMENTEI A FONTE PARA 48PX */
+        padding: 30px !important; 
         border-radius: 15px !important; 
         margin-bottom: 0 !important; 
         background: #0c0c0c !important; 
@@ -3468,7 +3468,7 @@ body.keyboard-open .quiz-wrap {
     
     .quiz-bottom-info { 
         position: absolute !important;
-        bottom: 80px !important;
+        bottom: 60px !important; /* SUBI UM POUCO O RODAPÉ */
         left: 0 !important;
         display: flex !important;
         flex-direction: column !important;
