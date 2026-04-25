@@ -3504,9 +3504,9 @@ body.keyboard-open .quiz-wrap {
     }
 
     .win-logo-bottom {
-        height: 320px !important; /* AUMENTADO PARA 320px */
+        height: 380px !important; /* AUMENTADO PARA 380px PARA FICAR "BONITO" NO TOTEM */
         width: auto !important;
-        margin-top: -60px !important; /* SUBIDO PARA FICAR MAIS PRÓXIMO DO CENTRO */
+        margin-top: -80px !important; /* AJUSTE DE ELEVAÇÃO */
         flex-shrink: 0 !important;
         filter: drop-shadow(0 0 30px rgba(255,255,255,0.2)) !important;
     }
