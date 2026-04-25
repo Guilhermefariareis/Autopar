@@ -3692,9 +3692,9 @@ body.keyboard-open .quiz-wrap {
 
     /* TELA DE DERROTA NO TOTEM (QUASE LÁ) */
     #screen-lose .result-panel {
-        width: 95% !important;
-        max-width: 980px !important;
-        padding: 120px 60px !important;
+        width: 100% !important;
+        max-width: 1000px !important; /* MAIS LARGO PARA APROVEITAR A TELA */
+        padding: 140px 60px !important;
         border-radius: 60px !important;
         background: rgba(15, 15, 15, 0.85) !important;
         border: 2px solid rgba(255, 69, 0, 0.3) !important;
@@ -3702,37 +3702,40 @@ body.keyboard-open .quiz-wrap {
     }
 
     #screen-lose .trophy-icon { 
-        font-size: 180px !important; 
-        margin-bottom: 40px !important;
+        font-size: 220px !important; /* MAIOR */
+        margin-bottom: 50px !important;
     }
 
     #screen-lose .error-title { 
-        font-size: 120px !important; 
-        margin-bottom: 30px !important;
+        font-size: 130px !important; /* MAIOR */
+        margin-bottom: 40px !important;
         color: var(--orange) !important;
+        font-weight: 900 !important;
     }
 
     #screen-lose .result-score-text { 
-        font-size: 64px !important; 
-        margin-bottom: 30px !important;
-        font-weight: 700 !important;
+        font-size: 55px !important; /* REDUZIDO PARA NÃO DOMINAR A TELA */
+        margin-bottom: 40px !important;
+        font-weight: 800 !important;
+        opacity: 0.9;
     }
 
     #screen-lose .subtitle { 
-        font-size: 44px !important; 
-        margin-bottom: 80px !important; 
+        font-size: 50px !important; /* MAIOR */
+        margin-bottom: 100px !important; 
         line-height: 1.4 !important;
-        max-width: 800px !important;
+        max-width: 900px !important;
         margin-left: auto !important;
         margin-right: auto !important;
+        color: #ccc !important;
     }
 
     #screen-lose .btn-jumbo { 
-        height: 200px !important; 
-        font-size: 70px !important; 
-        width: 90% !important;
-        max-width: 800px !important;
-        border-radius: 100px !important;
+        height: 220px !important; 
+        font-size: 80px !important; 
+        width: 100% !important;
+        max-width: 850px !important;
+        border-radius: 110px !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
