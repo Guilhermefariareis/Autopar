@@ -3537,4 +3537,79 @@ body.keyboard-open .quiz-wrap {
     .success-title span {
         font-size: 60px !important;
     }
+
+    /* PAINEL ADMIN NO TOTEM */
+    .admin-content {
+        width: 85% !important;
+        max-width: 850px !important;
+        max-height: 85vh !important;
+        padding: 60px !important;
+        background: rgba(15, 15, 15, 0.98) !important;
+        border: 2px solid var(--orange) !important;
+        border-radius: 40px !important;
+        overflow-y: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 25px !important;
+        box-shadow: 0 0 100px rgba(0,0,0,0.8) !important;
+    }
+
+    .admin-content h2 {
+        font-size: 55px !important;
+        color: var(--orange) !important;
+        margin-bottom: 10px !important;
+        text-align: center !important;
+        font-weight: 900 !important;
+    }
+
+    .stat-row {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 20px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .stat-box {
+        background: rgba(255,255,255,0.05) !important;
+        padding: 25px !important;
+        border-radius: 20px !important;
+        text-align: center !important;
+        border: 1px solid rgba(255,255,255,0.1) !important;
+    }
+
+    .stat-box p { font-size: 28px !important; margin-bottom: 5px !important; color: #aaa !important; }
+    .stat-box h3 { font-size: 55px !important; color: white !important; font-weight: 900 !important; }
+
+    .admin-content .btn {
+        font-size: 30px !important;
+        padding: 25px !important;
+        border-radius: 15px !important;
+        width: 100% !important;
+        margin-bottom: 0 !important;
+        font-weight: 700 !important;
+    }
+
+    .admin-test-zone h3 {
+        font-size: 38px !important;
+        margin-bottom: 15px !important;
+        color: #ffaa00 !important;
+    }
+
+    #force-prize-select {
+        font-size: 30px !important;
+        padding: 20px !important;
+        height: auto !important;
+        border-radius: 15px !important;
+        background: #222 !important;
+        color: white !important;
+        border: 1px solid #444 !important;
+    }
+
+    .debug-log-box {
+        font-size: 22px !important;
+        max-height: 180px !important;
+        padding: 20px !important;
+        border-radius: 15px !important;
+        background: rgba(0,0,0,0.3) !important;
+    }
 }
