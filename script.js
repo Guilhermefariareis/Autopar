@@ -1197,31 +1197,49 @@ function switchAdminTab(tabId, btn) {
 }
 
 function finalizeDay() {
-    if (!confirm('Deseja FINALIZAR O DIA? Isso irá:\n1. Resetar o estoque para o padrão\n2. Zerar contadores de jogadores\n3. Baixar arquivos de leads e logs')) return;
+    if (!confirm('Deseja FINALIZAR O DIA? Isso irá:\n1. Sincronizar dados pendentes\n2. Baixar arquivos de leads e logs\n3. Resetar o estoque e contadores para amanhã')) return;
 
-    logAdminAction('DAY_END', 'Finalização de dia iniciada');
+    debugLog('Iniciando finalização do dia...');
+    
+    // 1. Sincronizar uma última vez antes de limpar
+    syncLeadsToServer(async (success) => {
+        if (!success) {
+            if (!confirm('Falha ao sincronizar com o servidor local. Deseja continuar mesmo assim (DADOS PODEM SER PERDIDOS)?')) return;
+        }
 
-    // 1. Resetar Estoque
-    prizeStock = { ...INITIAL_STOCK };
-    saveStock();
+        const totalP = stats.players;
+        const totalW = stats.prizes;
+        
+        logAdminAction('DAY_END', `Finalização de dia: ${totalP} jogadores, ${totalW} prêmios entregues.`);
 
-    // 2. Zerar Jogadores e Stats
-    stats = { players: 0, prizes: 0 };
-    participants = [];
-    localStorage.setItem('agriPlayers', '0');
-    localStorage.setItem('agriPrizes', '0');
-    saveAndSync();
+        // 2. Abrir downloads
+        const serverUrl = 'http://localhost:8000';
+        window.open(`${serverUrl}/leads.csv`, '_blank');
+        
+        setTimeout(() => {
+            window.open(`${serverUrl}/logs.txt`, '_blank');
+        }, 800);
 
-    // 3. Abrir downloads (Servidor local deve estar rodando)
-    const serverUrl = 'http://localhost:8000';
-    window.open(`${serverUrl}/leads.csv`, '_blank');
-    setTimeout(() => {
-        window.open(`${serverUrl}/logs.txt`, '_blank');
-    }, 500);
+        // 3. Pequeno delay para garantir que o navegador iniciou os downloads
+        setTimeout(() => {
+            // Resetar Estoque
+            prizeStock = { ...INITIAL_STOCK };
+            saveStock();
 
-    debugLog('Dia finalizado com sucesso. Estoque e Stats resetados.');
-    alert('Dia finalizado! Arquivos de Leads e Logs enviados para download.');
-    openAdmin(); // Refresh UI
+            // Zerar Jogadores e Stats
+            stats = { players: 0, prizes: 0 };
+            participants = [];
+            localStorage.setItem('agriPlayers', '0');
+            localStorage.setItem('agriPrizes', '0');
+            localStorage.setItem('agriParticipants', '[]');
+            
+            saveAndSync();
+            
+            debugLog('Dia finalizado com sucesso. Estoque e Stats resetados.');
+            alert('Dia finalizado com sucesso!\nBackup de Leads e Logs iniciado.\nSistema pronto para amanhã.');
+            openAdmin(); // Atualiza UI
+        }, 2000);
+    });
 }
 
 function saveGeneralStock() {
@@ -1295,6 +1313,8 @@ function checkAdminPin() {
 }
 
 //  SUPABASE LOGGING SYSTEM
+//  Tabela: admin_logs
+//  Colunas: action (text), details (text), created_at (timestamp), totem_id (text)
 // ═══════════════════════════════════════════════════════
 
 async function logAdminAction(action, details) {
