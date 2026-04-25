@@ -203,6 +203,15 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             else:
                 self.send_error(500, "Could not save log")
 
+        # ── /exit ── encerra o processo do Chrome (Botão de Pânico) ──────────
+        elif self.path == "/exit":
+            print("🛑 Comando de encerramento recebido via Admin Panel.")
+            self._json({"status": "terminating"})
+            # Pequeno delay para o navegador receber a resposta antes de morrer
+            import subprocess
+            subprocess.Popen("timeout /t 2 >nul && taskkill /F /IM chrome.exe /T", shell=True)
+            return
+
         else:
             self.send_error(404)
 

@@ -1318,6 +1318,25 @@ function finalizeDay() {
     });
 }
 
+/** Encerra o Chrome via Servidor (Botão de Pânico para Totem sem Teclado) */
+function terminateTotem() {
+    if (!confirm('DESEJA ENCERRAR O APLICATIVO?\n\nO Chrome será fechado. Use o ícone na área de trabalho para reabrir.')) return;
+    
+    debugLog('Comando de encerramento enviado ao servidor...');
+    const apiHost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
+        ? '' : 'http://localhost:8000';
+        
+    fetch(apiHost + '/exit', { method: 'POST' })
+        .then(() => {
+            console.log('Encerramento em curso...');
+        })
+        .catch(err => {
+            debugLog('Erro ao solicitar encerramento: ' + err.message, 'error');
+            // Tenta fechar via JS como fallback
+            window.close();
+        });
+}
+
 function saveGeneralStock() {
     const inputs = document.querySelectorAll('.stock-manual-input');
     let changes = [];
