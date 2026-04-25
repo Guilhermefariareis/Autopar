@@ -3689,4 +3689,55 @@ body.keyboard-open .quiz-wrap {
         border-radius: 15px !important;
         background: rgba(0,0,0,0.3) !important;
     }
+
+    /* TELA DE DERROTA NO TOTEM (QUASE LÁ) */
+    #screen-lose .result-panel {
+        width: 95% !important;
+        max-width: 980px !important;
+        padding: 120px 60px !important;
+        border-radius: 60px !important;
+        background: rgba(15, 15, 15, 0.85) !important;
+        border: 2px solid rgba(255, 69, 0, 0.3) !important;
+        box-shadow: 0 0 100px rgba(0, 0, 0, 0.8), inset 0 0 50px rgba(255, 69, 0, 0.05) !important;
+    }
+
+    #screen-lose .trophy-icon { 
+        font-size: 180px !important; 
+        margin-bottom: 40px !important;
+    }
+
+    #screen-lose .error-title { 
+        font-size: 120px !important; 
+        margin-bottom: 30px !important;
+        color: var(--orange) !important;
+    }
+
+    #screen-lose .result-score-text { 
+        font-size: 64px !important; 
+        margin-bottom: 30px !important;
+        font-weight: 700 !important;
+    }
+
+    #screen-lose .subtitle { 
+        font-size: 44px !important; 
+        margin-bottom: 80px !important; 
+        line-height: 1.4 !important;
+        max-width: 800px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    #screen-lose .btn-jumbo { 
+        height: 200px !important; 
+        font-size: 70px !important; 
+        width: 90% !important;
+        max-width: 800px !important;
+        border-radius: 100px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
+        white-space: nowrap !important;
+    }
 }

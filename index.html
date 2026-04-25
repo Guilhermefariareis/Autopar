@@ -240,10 +240,10 @@
         <div class="content">
             <div class="result-panel glass-panel">
                 <div class="trophy-icon">✨</div>
-                <h1 class="error-title">Quase la!</h1>
-                <p class="result-score-text">Voce acertou <strong id="lose-score">3</strong> de 7.</p>
-                <p class="subtitle">Eram necessarios 5 acertos. Tente de novo!</p>
-                <button class="btn btn-primary btn-jumbo" onclick="resetApp()">🔁 JOGAR NOVAMENTE</button>
+                <h1 class="error-title">Quase lá!</h1>
+                <p class="result-score-text">Você acertou <strong id="lose-score">3</strong> de 7.</p>
+                <p class="subtitle">Obrigado por participar! Infelizmente você não atingiu a pontuação mínima para girar a roleta.</p>
+                <button class="btn btn-primary btn-jumbo" onclick="resetApp(true)">FINALIZAR</button>
             </div>
         </div>
     </div>
@@ -270,7 +270,7 @@
 
         <div class="roulette-bottom">
             <p id="spin-status" class="spin-status">&nbsp;</p>
-            <button id="btn-spin" class="btn btn-primary btn-jumbo pulse-glow" onclick="spinWheel()">🎡 GIRAR
+            <button id="btn-spin" class="btn btn-primary btn-jumbo pulse-glow" onclick="spinWheel()">GIRAR
                 AGORA</button>
         </div>
     </div>
