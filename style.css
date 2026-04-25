@@ -3490,22 +3490,22 @@ body.keyboard-open .quiz-wrap {
         flex-direction: column !important;
         justify-content: space-between !important;
         align-items: center !important;
-        padding: 40px 60px !important;
+        padding: 30px 60px !important; /* REDUZI PARA 30px PARA CABER LOGOS MAIORES */
         box-sizing: border-box !important;
         overflow: hidden !important;
     }
 
     .win-logo-top {
-        height: 150px !important; /* AUMENTADO */
+        height: 170px !important; /* AUMENTADO NOVAMENTE */
         width: auto !important;
-        margin-bottom: 10px !important;
+        margin-bottom: 5px !important;
         flex-shrink: 0 !important;
     }
 
     .win-logo-bottom {
-        height: 130px !important; /* AUMENTADO */
+        height: 180px !important; /* AUMENTADO BASTANTE */
         width: auto !important;
-        margin-top: 10px !important;
+        margin-top: 5px !important;
         flex-shrink: 0 !important;
     }
 
