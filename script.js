@@ -1337,6 +1337,19 @@ function terminateTotem() {
         });
 }
 
+/** Alterna entre tela cheia e normal via código (Útil para Totem sem teclado F11) */
+function toggleFullscreen() {
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(err => {
+            alert(`Erro ao tentar entrar em tela cheia: ${err.message}`);
+        });
+    } else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        }
+    }
+}
+
 function saveGeneralStock() {
     const inputs = document.querySelectorAll('.stock-manual-input');
     let changes = [];
