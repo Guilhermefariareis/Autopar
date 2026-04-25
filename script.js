@@ -1103,8 +1103,7 @@ function openAdmin() {
                 <div class="stock-item-row" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; background: rgba(255,255,255,0.05); padding: 10px 15px; border-radius: 10px;">
                     <span style="font-size: 16px; font-weight: 600;">${name}</span>
                     <div style="display: flex; gap: 10px; align-items: center;">
-                        <input type="number" value="${count}" id="stock-input-${name}" style="width: 70px; background: #000; color: #fff; border: 1px solid #444; padding: 8px; border-radius: 6px; text-align: center;">
-                        <button class="btn btn-outline" style="padding: 8px 15px; font-size: 12px; min-width: auto; border-color: #00ff88; color: #00ff88;" onclick="updatePrizeStock('${name}', document.getElementById('stock-input-${name}').value)">OK</button>
+                        <input type="number" value="${count}" class="stock-manual-input" data-prize="${name}" style="width: 100px; background: #000; color: #fff; border: 1px solid #444; padding: 12px; border-radius: 8px; text-align: center; font-size: 18px;">
                     </div>
                 </div>
             `).join('');
@@ -1157,23 +1156,49 @@ function simulateSoldOut() {
     debugLog('Simulação de Brindes Esgotados ativada por Admin.');
 }
 
-function switchAdminTab(tabId) {
+function switchAdminTab(tabId, btn) {
+    debugLog(`Admin: Trocando para aba ${tabId}`);
+    
+    // Esconder todos os conteúdos e remover classe active dos botões
     document.querySelectorAll('.admin-tab-content').forEach(c => c.classList.remove('active'));
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
     
-    document.getElementById('tab-' + tabId).classList.add('active');
-    // Encontra o botão clicado através do evento se disponível
-    if (window.event && window.event.currentTarget) {
-        window.event.currentTarget.classList.add('active');
+    // Mostrar conteúdo da aba selecionada
+    const targetTab = document.getElementById('tab-' + tabId);
+    if (targetTab) {
+        targetTab.classList.add('active');
+    } else {
+        console.error(`Aba tab-${tabId} não encontrada.`);
+    }
+    
+    // Ativar o botão clicado
+    if (btn) {
+        btn.classList.add('active');
     }
 }
 
-function updatePrizeStock(name, amount) {
-    prizeStock[name] = parseInt(amount, 10) || 0;
-    saveStock();
-    debugLog(`Estoque de ${name} atualizado para ${prizeStock[name]}`);
+function saveGeneralStock() {
+    const inputs = document.querySelectorAll('.stock-manual-input');
+    let changes = [];
+    
+    inputs.forEach(input => {
+        const name = input.dataset.prize;
+        const newAmount = parseInt(input.value, 10) || 0;
+        if (prizeStock[name] !== newAmount) {
+            changes.push(`${name}: ${prizeStock[name]} -> ${newAmount}`);
+            prizeStock[name] = newAmount;
+        }
+    });
+
+    if (changes.length === 0) {
+        alert("Nenhuma alteração detectada no estoque.");
+        return;
+    }
+
+    saveStock(); // Salva local e sincroniza com backend
+    debugLog(`Estoque Geral Atualizado: ${changes.join(' | ')}`);
+    alert("Estoque Geral atualizado e sincronizado com sucesso!");
     openAdmin(); // Refresh UI
-    alert(`Estoque de ${name} atualizado!`);
 }
 
 function syncParticipantToGoogleSheets() { /* offline-only build */ }

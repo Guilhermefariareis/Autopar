@@ -20,10 +20,10 @@
                 <div class="admin-header">
                     <h2>PAINEL DE CONTROLE</h2>
                     <div class="admin-tabs">
-                        <button class="tab-btn active" onclick="switchAdminTab('dashboard')">Geral</button>
-                        <button class="tab-btn" onclick="switchAdminTab('stock')">Estoque</button>
-                        <button class="tab-btn" onclick="switchAdminTab('screens')">Telas</button>
-                        <button class="tab-btn" onclick="switchAdminTab('logs')">Logs</button>
+                        <button class="tab-btn active" onclick="switchAdminTab('dashboard', this)">Geral</button>
+                        <button class="tab-btn" onclick="switchAdminTab('stock', this)">Estoque</button>
+                        <button class="tab-btn" onclick="switchAdminTab('screens', this)">Telas</button>
+                        <button class="tab-btn" onclick="switchAdminTab('logs', this)">Logs</button>
                     </div>
                 </div>
 
@@ -50,8 +50,11 @@
                         <div id="admin-stock-info" class="admin-stock-list">
                             <!-- Gerado via JS -->
                         </div>
-                        <div style="display: flex; gap: 10px; margin-top: 30px;">
-                            <button class="btn btn-primary" style="flex: 1;" onclick="resetStock()">Resetar Estoque</button>
+                        <div style="margin-top: 20px;">
+                            <button class="btn btn-primary" style="width: 100%; margin-bottom: 20px; background: #00ff88; color: #000;" onclick="saveGeneralStock()">💾 SALVAR ESTOQUE GERAL</button>
+                        </div>
+                        <div style="display: flex; gap: 10px;">
+                            <button class="btn btn-outline" style="flex: 1;" onclick="resetStock()">Resetar Padrão</button>
                             <button class="btn btn-outline" style="flex: 1; border-color: #ffaa00; color: #ffaa00;" onclick="simulateSoldOut()">Esgotar Tudo</button>
                         </div>
                     </div>
