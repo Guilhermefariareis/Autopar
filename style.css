@@ -3504,9 +3504,9 @@ body.keyboard-open .quiz-wrap {
     }
 
     .win-logo-bottom {
-        height: 380px !important; /* AUMENTADO PARA 380px PARA FICAR "BONITO" NO TOTEM */
+        height: 380px !important; 
         width: auto !important;
-        margin-top: -80px !important; /* AJUSTE DE ELEVAÇÃO */
+        margin-top: -110px !important; /* SUBIDO MAIS UM POUCO */
         flex-shrink: 0 !important;
         filter: drop-shadow(0 0 30px rgba(255,255,255,0.2)) !important;
     }
@@ -3525,11 +3525,11 @@ body.keyboard-open .quiz-wrap {
 
     #win-product-podium {
         animation: none !important; 
-        margin: 15px 0 !important;
+        margin: 10px 0 !important; /* REDUZI MARGEM PARA COMPENSAR IMAGEM MAIOR */
     }
 
     #win-podium-img {
-        height: 20vh !important; /* REDUZI PARA COMPENSAR AS LOGOS GIGANTES */
+        height: 25vh !important; /* AUMENTADO PARA 25vh */
         width: auto !important;
         max-width: 100% !important;
         object-fit: contain !important;
@@ -3541,8 +3541,8 @@ body.keyboard-open .quiz-wrap {
     }
 
     .win-subtitle {
-        font-size: 35px !important; /* AUMENTADO */
-        margin-bottom: 30px !important;
+        font-size: 45px !important; /* AUMENTADO PARA 45px */
+        margin-bottom: 25px !important;
         color: rgba(255,255,255,0.9) !important;
     }
 
