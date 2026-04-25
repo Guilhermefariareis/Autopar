@@ -3490,52 +3490,56 @@ body.keyboard-open .quiz-wrap {
         flex-direction: column !important;
         justify-content: space-between !important;
         align-items: center !important;
-        padding: 60px !important;
+        padding: 40px 60px !important; /* REDUZI PADDING PARA GANHAR ESPAÇO */
         box-sizing: border-box !important;
+        overflow: hidden !important; /* GARANTE QUE NADA SAI DA TELA */
     }
 
     .win-logo-top {
-        height: 120px !important;
+        height: 100px !important; /* REDUZI UM POUCO */
         width: auto !important;
-        margin-bottom: 20px !important;
+        margin-bottom: 10px !important;
         flex-shrink: 0 !important;
     }
 
     .win-logo-bottom {
-        height: 100px !important;
+        height: 80px !important; /* REDUZI UM POUCO */
         width: auto !important;
-        margin-top: 20px !important;
+        margin-top: 10px !important;
         flex-shrink: 0 !important;
     }
 
     #screen-win .result-panel {
-        flex: 1 !important;
+        flex: 0 1 auto !important; /* NÃO FORÇA CRESCIMENTO */
         display: flex !important;
         flex-direction: column !important;
         justify-content: center !important;
         width: 100% !important;
         max-width: 900px !important;
-        margin: 20px 0 !important;
-        padding: 60px !important;
+        margin: 10px 0 !important;
+        padding: 40px !important;
+        border-radius: 30px !important;
     }
 
     #win-product-podium {
-        animation: none !important; /* REMOVE O GIRO/FLUTUAÇÃO */
-        margin: 40px 0 !important;
+        animation: none !important; 
+        margin: 20px 0 !important; /* REDUZI MARGEM */
     }
 
     #win-podium-img {
-        height: 40vh !important; /* APROVEITA O ESPAÇO VERTICAL */
+        height: 30vh !important; /* REDUZI DE 40vh PARA 30vh PARA CABER TUDO */
+        width: auto !important;
+        max-width: 100% !important;
         object-fit: contain !important;
     }
 
     .success-title {
-        font-size: 70px !important;
+        font-size: 60px !important; /* REDUZI UM POUCO */
         line-height: 1.1 !important;
     }
 
     .success-title span {
-        font-size: 60px !important;
+        font-size: 50px !important;
     }
 
     /* PAINEL ADMIN NO TOTEM */
