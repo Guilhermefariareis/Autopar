@@ -3555,6 +3555,10 @@ body.keyboard-open .quiz-wrap {
         font-size: 75px !important; /* REDUZIDO PARA CABER EM UMA LINHA */
         white-space: nowrap !important;
         margin-top: 40px !important; /* GAP COM AGRISHOW 2026 */
+        color: var(--orange) !important; /* LARANJA PANTHER */
+        text-shadow: none !important; /* REMOVIDO BRILHO */
+        animation: none !important; /* ESTATICO */
+        font-weight: 900 !important;
     }
 
     #roulette-player-name {
