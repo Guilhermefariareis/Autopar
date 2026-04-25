@@ -1181,6 +1181,34 @@ function switchAdminTab(tabId, btn) {
     }
 }
 
+function finalizeDay() {
+    if (!confirm('Deseja FINALIZAR O DIA? Isso irá:\n1. Resetar o estoque para o padrão\n2. Zerar contadores de jogadores\n3. Baixar arquivos de leads e logs')) return;
+
+    logAdminAction('DAY_END', 'Finalização de dia iniciada');
+
+    // 1. Resetar Estoque
+    prizeStock = { ...INITIAL_STOCK };
+    saveStock();
+
+    // 2. Zerar Jogadores e Stats
+    stats = { players: 0, prizes: 0 };
+    participants = [];
+    localStorage.setItem('agriPlayers', '0');
+    localStorage.setItem('agriPrizes', '0');
+    saveAndSync();
+
+    // 3. Abrir downloads (Servidor local deve estar rodando)
+    const serverUrl = 'http://localhost:8000';
+    window.open(`${serverUrl}/leads.csv`, '_blank');
+    setTimeout(() => {
+        window.open(`${serverUrl}/logs.txt`, '_blank');
+    }, 500);
+
+    debugLog('Dia finalizado com sucesso. Estoque e Stats resetados.');
+    alert('Dia finalizado! Arquivos de Leads e Logs enviados para download.');
+    openAdmin(); // Refresh UI
+}
+
 function saveGeneralStock() {
     const inputs = document.querySelectorAll('.stock-manual-input');
     let changes = [];
@@ -1265,10 +1293,19 @@ async function logAdminAction(action, details) {
         totem_id: 'TOTEM-AGRISHOW-01'
     };
 
-    // 1. Log Local (sempre funciona)
-    debugLog(`[SUPABASE LOG] ${action}: ${details}`);
+    // 1. Log Visual (Admin Panel)
+    debugLog(`[ADMIN LOG] ${action}: ${details}`);
 
-    // 2. Enviar para o Supabase (se configurado)
+    // 2. Log Local (server.py)
+    try {
+        fetch('http://localhost:8000/log', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(logEntry)
+        }).catch(e => console.warn('Servidor local offline para logs'));
+    } catch (e) {}
+
+    // 3. Enviar para o Supabase (se configurado)
     if (SUPABASE_URL && SUPABASE_KEY) {
         try {
             await fetch(`${SUPABASE_URL}/rest/v1/admin_logs`, {
@@ -1279,7 +1316,7 @@ async function logAdminAction(action, details) {
                     'Content-Type': 'application/json',
                     'Prefer': 'return=minimal'
                 },
-                body: json.stringify(logEntry)
+                body: JSON.stringify(logEntry)
             });
         } catch (err) {
             console.error('Erro ao enviar log para Supabase:', err);

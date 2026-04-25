@@ -28,6 +28,7 @@ PORT    = 8000
 TXT_FILE = os.path.join(application_path, "leads.txt")
 CSV_FILE = os.path.join(application_path, "leads.csv")
 STOCK_FILE = os.path.join(application_path, "stock.json")
+LOG_FILE = os.path.join(application_path, "logs.txt")
 
 CSV_FIELDS = ["id", "name", "phone", "date", "time", "score", "prize", "code"]
 
@@ -131,6 +132,19 @@ def save_stock(stock: dict):
         print(f"❌ Erro ao salvar estoque: {e}")
         return False
 
+def append_log(data: dict):
+    """Salva um log de ação administrativa no logs.txt."""
+    ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    log_line = f"[{ts}] {data.get('action', 'INFO')}: {data.get('details', '')}\n"
+    try:
+        with open(LOG_FILE, "a", encoding="utf-8") as f:
+            f.write(log_line)
+        print(f"📝 LOG: {data.get('action')} | {data.get('details')}")
+        return True
+    except Exception as e:
+        print(f"❌ Erro ao salvar log: {e}")
+        return False
+
 
 class Handler(http.server.SimpleHTTPRequestHandler):
     def log_message(self, format, *args):
@@ -181,6 +195,13 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 self._json({"status": "ok"})
             else:
                 self.send_error(500, "Could not save stock")
+
+        # ── /log ── salva logs administrativos ──────────
+        elif self.path == "/log":
+            if append_log(payload):
+                self._json({"status": "ok"})
+            else:
+                self.send_error(500, "Could not save log")
 
         else:
             self.send_error(404)

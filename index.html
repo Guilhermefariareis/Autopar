@@ -38,7 +38,10 @@
                             <h3 id="stat-prizes">0</h3>
                         </div>
                     </div>
-                    <button class="btn btn-export" onclick="exportCSV()" style="margin-bottom: 20px;">Exportar Lista (CSV)</button>
+                    <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                        <button class="btn btn-export" style="flex: 1; margin-bottom: 0;" onclick="exportCSV()">Exportar CSV</button>
+                        <button class="btn btn-primary" style="flex: 1; background: #0088ff; border-color: #0088ff;" onclick="finalizeDay()">🌙 FINALIZAR DIA</button>
+                    </div>
                     <div class="admin-danger-zone">
                         <button class="btn btn-danger" onclick="resetStats()">Zerar Jogadores</button>
                     </div>
