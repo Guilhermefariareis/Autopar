@@ -2811,13 +2811,13 @@ body {
     left: 30px;
     width: 80px;
     height: 80px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.01); /* Quase invisível */
+    border: 1px solid rgba(255, 255, 255, 0.02);
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.05); /* Ícone bem discreto */
     font-size: 32px;
     cursor: pointer;
     z-index: 99999 !important;
@@ -2833,30 +2833,36 @@ body {
 .admin-pin-content {
     position: relative;
     z-index: 10001;
-    width: 90%;
-    max-width: 450px;
-    margin: auto;
-    padding: 40px;
-    border-radius: 30px;
-    background: rgba(15, 15, 15, 0.98);
-    border: 1px solid rgba(255, 69, 0, 0.3);
-    text-align: center;
-    box-shadow: 0 40px 100px rgba(0,0,0,0.9);
+    width: 90% !important;
+    max-width: 450px !important;
+    margin: auto !important;
+    padding: 40px !important;
+    border-radius: 30px !important;
+    background: rgba(15, 15, 15, 0.98) !important;
+    border: 1px solid rgba(255, 69, 0, 0.3) !important;
+    text-align: center !important;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.9) !important;
+    box-sizing: border-box !important;
+}
+
+.admin-pin-content * {
+    box-sizing: border-box !important;
 }
 
 .admin-pin-content h3 {
-    color: white;
-    font-size: 24px;
-    margin-bottom: 25px;
-    font-weight: 800;
-    letter-spacing: 2px;
+    color: white !important;
+    font-size: 24px !important;
+    margin-bottom: 25px !important;
+    font-weight: 800 !important;
+    letter-spacing: 2px !important;
+    margin-top: 0 !important;
 }
 
 .admin-pin-body {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    width: 100% !important;
 }
 
 #input-admin-pin {
@@ -2868,12 +2874,14 @@ body {
     border: 1px solid rgba(255,255,255,0.1) !important;
     border-radius: 15px !important;
     color: white !important;
+    margin: 0 !important;
 }
 
 .admin-pin-actions {
-    display: flex;
-    gap: 15px;
-    width: 100%;
+    display: flex !important;
+    gap: 15px !important;
+    width: 100% !important;
+    justify-content: space-between !important;
 }
 
 .admin-pin-actions button {
@@ -2881,6 +2889,7 @@ body {
     height: 70px !important;
     font-size: 18px !important;
     border-radius: 15px !important;
+    margin: 0 !important;
 }
 
 /* Ajustes para o Totem Giga */
