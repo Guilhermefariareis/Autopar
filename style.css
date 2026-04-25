@@ -1336,6 +1336,16 @@ body {
     animation: titleGlow 3s ease-in-out infinite;
 }
 
+.roulette-fire {
+    display: inline-block;
+    font-size: 0.8em;
+    vertical-align: middle;
+    margin: 0 10px;
+    filter: drop-shadow(0 0 15px rgba(255, 69, 0, 0.8));
+    position: relative;
+    top: -4px; /* Ajuste fino para não parecer "para fora" */
+}
+
 @keyframes titleGlow {
 
     0%,
