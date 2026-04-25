@@ -3490,13 +3490,13 @@ body.keyboard-open .quiz-wrap {
         flex-direction: column !important;
         justify-content: space-between !important;
         align-items: center !important;
-        padding: 20px 60px !important; /* REDUZI MAIS PARA CABER LOGOS GIGANTES */
+        padding: 40px 60px !important; /* VOLTEI PARA PADDING MAIOR */
         box-sizing: border-box !important;
         overflow: hidden !important;
     }
 
     .win-logo-top {
-        height: 240px !important; /* LOGO GIGANTE PARA TOTEM - MANTIDA */
+        height: 240px !important; /* RESTAURADO PARA TAMANHO QUE O USUÁRIO GOSTOU */
         width: auto !important;
         margin-bottom: 0px !important;
         flex-shrink: 0 !important;
@@ -3504,45 +3504,45 @@ body.keyboard-open .quiz-wrap {
     }
 
     .win-logo-bottom {
-        height: 340px !important; /* REDUZIDO PARA 340px */
+        height: 340px !important; /* REDUZIDO EM 5% PARA AJUSTE FINAL */
         width: auto !important;
-        margin-top: -70px !important; /* DESCIDO PARA CENTRALIZAR MELHOR */
+        margin-top: -30px !important; /* ELEVADO PARA CENTRALIZAÇÃO IDEAL */
         flex-shrink: 0 !important;
         filter: drop-shadow(0 0 30px rgba(255,255,255,0.2)) !important;
     }
 
     #screen-win .result-panel {
-        flex: 0 1 auto !important;
+        flex: 1 !important;
         display: flex !important;
         flex-direction: column !important;
         justify-content: center !important;
         width: 100% !important;
-        max-width: 900px !important;
+        max-width: 850px !important;
         margin: 5px 0 !important;
-        padding: 40px !important;
+        padding: 30px !important;
         border-radius: 40px !important;
     }
 
     #win-product-podium {
         animation: none !important; 
-        margin: 10px 0 !important; /* REDUZI MARGEM PARA COMPENSAR IMAGEM MAIOR */
+        margin: 10px 0 !important; 
     }
 
     #win-podium-img {
-        height: 25vh !important; /* AUMENTADO PARA 25vh */
+        height: 28vh !important; /* AUMENTADO PARA 28vh */
         width: auto !important;
         max-width: 100% !important;
         object-fit: contain !important;
     }
 
     .success-title {
-        font-size: 65px !important;
+        font-size: 60px !important;
         line-height: 1.1 !important;
     }
 
     .win-subtitle {
-        font-size: 45px !important; /* AUMENTADO PARA 45px */
-        margin-bottom: 25px !important;
+        font-size: 30px !important; /* DIMINUÍDO PARA 30px */
+        margin-bottom: 20px !important;
         color: rgba(255,255,255,0.9) !important;
     }
 
