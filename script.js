@@ -1323,17 +1323,27 @@ function terminateTotem() {
     if (!confirm('DESEJA ENCERRAR O APLICATIVO?\n\nO Chrome será fechado. Use o ícone na área de trabalho para reabrir.')) return;
     
     debugLog('Comando de encerramento enviado ao servidor...');
+    
+    // Feedback visual imediato
+    const overlay = document.createElement('div');
+    overlay.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:#000;color:#fff;display:flex;align-items:center;justify-content:center;z-index:999999;font-size:50px;font-weight:900;';
+    overlay.innerHTML = 'ENCERRANDO APLICATIVO...';
+    document.body.appendChild(overlay);
+
     const apiHost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
         ? '' : 'http://localhost:8000';
         
     fetch(apiHost + '/exit', { method: 'POST' })
         .then(() => {
             console.log('Encerramento em curso...');
+            // Limpa o conteúdo para não ficar nada visível
+            document.body.innerHTML = '';
         })
         .catch(err => {
             debugLog('Erro ao solicitar encerramento: ' + err.message, 'error');
             // Tenta fechar via JS como fallback
             window.close();
+            setTimeout(() => { window.location.href = 'about:blank'; }, 500);
         });
 }
 
