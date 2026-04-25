@@ -809,8 +809,10 @@ function drawWheel(canvas) {
         const line1 = words.slice(0, Math.ceil(words.length / 2)).join(' ');
         const line2 = words.slice(Math.ceil(words.length / 2)).join(' ');
 
+        const isOutOfStock = prizeStock[prize] <= 0;
+
         ctx.font = '900 34px Outfit, sans-serif';
-        ctx.fillStyle = '#FFFFFF';
+        ctx.fillStyle = isOutOfStock ? 'rgba(255,255,255,0.2)' : '#FFFFFF';
         ctx.shadowColor = 'rgba(0,0,0,0.9)';
         ctx.shadowBlur = 12;
 
@@ -846,11 +848,20 @@ function drawWheel(canvas) {
     ctx.stroke();
 }
 
-function spinWheel() {
+async function spinWheel() {
     if (wheelSpun) return;
 
     // Pause inactivity timer during spin
     clearInterval(inactivityTimer);
+
+    // --- REFORÇO DE ESTOQUE ---
+    // Consulta o servidor local ANTES de decidir o prêmio
+    document.getElementById('spin-status').textContent = 'Consultando estoque...';
+    try {
+        await loadStockFromServer();
+    } catch (e) {
+        debugLog('Erro ao atualizar estoque antes do giro. Usando local.', 'warn');
+    }
 
     wheelSpun = true;
     document.getElementById('btn-spin').classList.add('hidden');
