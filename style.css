@@ -3246,9 +3246,28 @@ body.keyboard-open .quiz-wrap {
     #roulette-player-name { font-size: 54px; }
     #btn-spin { height: 220px !important; font-size: 80px !important; }
     .spin-status { font-size: 48px; }
-    .ticket-wrapper { width: 95%; }
-    .prize-name-big { font-size: 130px; }
-    .code-text { font-size: 160px; }
+    
+    /* VOUCHER / TICKET NO TOTEM */
+    .ticket-wrapper { 
+        width: 90% !important; 
+        max-width: 1000px !important;
+    }
+    
+    .ticket-logo-container { 
+        justify-content: center !important; /* CENTRALIZADO PARA NÃO CORTAR LOGO LEME */
+        gap: 100px !important; 
+        width: 100% !important;
+    }
+
+    .panther-voucher-logo { height: 180px !important; }
+    .leme-voucher-logo { height: 210px !important; }
+
+    .code-text { 
+        font-size: 110px !important; /* REDUZIDO PARA NÃO FICAR GIGANTE */
+        letter-spacing: 5px !important;
+    }
+
+    .thanks-hashtag { font-size: 48px !important; }
 }
 
 
