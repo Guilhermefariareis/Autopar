@@ -3551,6 +3551,25 @@ body.keyboard-open .quiz-wrap {
         margin-top: 10px !important;
     }
 
+    .roulette-heading {
+        font-size: 75px !important; /* REDUZIDO PARA CABER EM UMA LINHA */
+        white-space: nowrap !important;
+        margin-top: 40px !important; /* GAP COM AGRISHOW 2026 */
+    }
+
+    /* SUAVIZANDO O "FADE LARANJA" QUE ESTAVA FORTE DEMAIS */
+    .ring1 {
+        box-shadow: 0 0 40px 10px rgba(232, 64, 17, 0.15) !important;
+        animation-duration: 4s !important; /* MAIS LENTO */
+    }
+    .ring2 {
+        box-shadow: 0 0 20px 5px rgba(232, 64, 17, 0.1) !important;
+        animation-duration: 4s !important;
+    }
+    .bd-circle {
+        opacity: 0.05 !important; /* QUASE INVISÍVEL PARA NÃO OFUSCAR */
+    }
+
     /* PAINEL ADMIN NO TOTEM */
     .admin-content {
         width: 85% !important;
