@@ -3490,56 +3490,63 @@ body.keyboard-open .quiz-wrap {
         flex-direction: column !important;
         justify-content: space-between !important;
         align-items: center !important;
-        padding: 40px 60px !important; /* REDUZI PADDING PARA GANHAR ESPAÇO */
+        padding: 40px 60px !important;
         box-sizing: border-box !important;
-        overflow: hidden !important; /* GARANTE QUE NADA SAI DA TELA */
+        overflow: hidden !important;
     }
 
     .win-logo-top {
-        height: 100px !important; /* REDUZI UM POUCO */
+        height: 150px !important; /* AUMENTADO */
         width: auto !important;
         margin-bottom: 10px !important;
         flex-shrink: 0 !important;
     }
 
     .win-logo-bottom {
-        height: 80px !important; /* REDUZI UM POUCO */
+        height: 130px !important; /* AUMENTADO */
         width: auto !important;
         margin-top: 10px !important;
         flex-shrink: 0 !important;
     }
 
     #screen-win .result-panel {
-        flex: 0 1 auto !important; /* NÃO FORÇA CRESCIMENTO */
+        flex: 0 1 auto !important;
         display: flex !important;
         flex-direction: column !important;
         justify-content: center !important;
         width: 100% !important;
         max-width: 900px !important;
-        margin: 10px 0 !important;
+        margin: 5px 0 !important;
         padding: 40px !important;
-        border-radius: 30px !important;
+        border-radius: 40px !important;
     }
 
     #win-product-podium {
         animation: none !important; 
-        margin: 20px 0 !important; /* REDUZI MARGEM */
+        margin: 15px 0 !important;
     }
 
     #win-podium-img {
-        height: 30vh !important; /* REDUZI DE 40vh PARA 30vh PARA CABER TUDO */
+        height: 25vh !important; /* REDUZI PARA DAR ESPAÇO ÀS LOGOS MAIORES */
         width: auto !important;
         max-width: 100% !important;
         object-fit: contain !important;
     }
 
     .success-title {
-        font-size: 60px !important; /* REDUZI UM POUCO */
+        font-size: 65px !important;
         line-height: 1.1 !important;
     }
 
-    .success-title span {
-        font-size: 50px !important;
+    .win-subtitle {
+        font-size: 35px !important; /* AUMENTADO */
+        margin-bottom: 30px !important;
+        color: rgba(255,255,255,0.9) !important;
+    }
+
+    #screen-win .btn-jumbo {
+        transform: scale(0.95) !important; /* DIMINUÍDO EM 5% */
+        margin-top: 10px !important;
     }
 
     /* PAINEL ADMIN NO TOTEM */
