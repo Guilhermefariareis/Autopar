@@ -3483,29 +3483,58 @@ body.keyboard-open .quiz-wrap {
         left: 5% !important;
     }
     
-    /* MODAL DE SAÍDA NO TOTEM */
-    .confirm-content {
-        width: 80% !important;
-        max-width: 800px !important;
-        padding: 60px !important;
-        border-radius: 30px !important;
-        text-align: center !important;
-    }
-    .confirm-icon { font-size: 100px !important; margin-bottom: 30px !important; }
-    .confirm-title { font-size: 65px !important; margin-bottom: 20px !important; }
-    .confirm-text { font-size: 38px !important; margin-bottom: 60px !important; }
-    .confirm-buttons { 
-        flex-direction: column !important; 
-        gap: 30px !important;
-        width: 100% !important;
+    /* TELA DE VITÓRIA NO TOTEM */
+    .win-content {
+        height: 100vh !important;
         display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 60px !important;
+        box-sizing: border-box !important;
     }
-    .confirm-buttons .btn {
+
+    .win-logo-top {
+        height: 120px !important;
+        width: auto !important;
+        margin-bottom: 20px !important;
+        flex-shrink: 0 !important;
+    }
+
+    .win-logo-bottom {
+        height: 100px !important;
+        width: auto !important;
+        margin-top: 20px !important;
+        flex-shrink: 0 !important;
+    }
+
+    #screen-win .result-panel {
+        flex: 1 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
         width: 100% !important;
-        margin: 0 !important;
-        font-size: 40px !important;
-        padding: 35px !important;
-        border-radius: 20px !important;
-        flex: none !important;
+        max-width: 900px !important;
+        margin: 20px 0 !important;
+        padding: 60px !important;
+    }
+
+    #win-product-podium {
+        animation: none !important; /* REMOVE O GIRO/FLUTUAÇÃO */
+        margin: 40px 0 !important;
+    }
+
+    #win-podium-img {
+        height: 40vh !important; /* APROVEITA O ESPAÇO VERTICAL */
+        object-fit: contain !important;
+    }
+
+    .success-title {
+        font-size: 70px !important;
+        line-height: 1.1 !important;
+    }
+
+    .success-title span {
+        font-size: 60px !important;
     }
 }
