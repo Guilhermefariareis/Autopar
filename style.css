@@ -3267,7 +3267,7 @@ body.keyboard-open .quiz-wrap {
 
     .ticket-logo-container { 
         justify-content: center !important; 
-        gap: 60px !important; /* REDUZIDO PARA FICAREM MAIS PERTO */
+        gap: 40px !important; /* MAIS PERTO AINDA */
         width: 100% !important;
     }
 
