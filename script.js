@@ -1266,13 +1266,26 @@ function finalizeDay() {
         
         logAdminAction('DAY_END', `Finalização de dia: ${totalP} jogadores, ${totalW} prêmios entregues.`);
 
-        // 2. Abrir downloads
+        // 2. Abrir downloads (Método Robusto)
         const serverUrl = 'http://localhost:8000';
-        window.open(`${serverUrl}/leads.csv`, '_blank');
+        
+        const downloadFile = (url) => {
+            const link = document.createElement('a');
+            link.href = url;
+            link.target = '_blank';
+            // Adicionamos download attribute para forçar baixar em vez de abrir
+            const filename = url.split('/').pop();
+            link.setAttribute('download', filename);
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+
+        downloadFile(`${serverUrl}/leads.csv`);
         
         setTimeout(() => {
-            window.open(`${serverUrl}/logs.txt`, '_blank');
-        }, 800);
+            downloadFile(`${serverUrl}/logs.txt`);
+        }, 1000);
 
         // 3. Pequeno delay para garantir que o navegador iniciou os downloads
         setTimeout(() => {
