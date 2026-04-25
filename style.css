@@ -3918,8 +3918,8 @@ body.keyboard-open .quiz-wrap {
     .admin-content {
         max-width: 90vw !important;
         width: 600px !important;
-        max-height: 90vh !important;
-        overflow-y: auto !important;
+        max-height: 95vh !important;
+        overflow-y: hidden !important; /* Remove rolagem geral se possível */
         padding: 40px !important;
         border-radius: 30px !important;
         background: rgba(10, 10, 10, 0.98) !important;
@@ -3935,7 +3935,8 @@ body.keyboard-open .quiz-wrap {
         border-radius: 20px !important;
         flex-wrap: wrap !important;
         justify-content: center !important;
-        margin-top: 20px !important;
+        margin-top: 10px !important;
+        margin-bottom: 20px !important;
     }
 
     .tab-btn {
@@ -3960,22 +3961,42 @@ body.keyboard-open .quiz-wrap {
 
     .admin-tab-content {
         display: none !important;
+        max-height: 70vh !important;
+        overflow-y: auto !important;
     }
 
     .admin-tab-content.active {
         display: block !important;
     }
 
-    .admin-header h2 { font-size: 28px !important; margin-bottom: 20px !important; text-align: center; }
-
     /* Totem Admin Overrides */
     @media (max-height: 2000px) {
-        .admin-content { width: 90% !important; max-width: 1000px !important; }
+        .admin-content { 
+            width: 95% !important; 
+            max-width: 1000px !important; 
+            max-height: 98vh !important;
+            padding: 40px 30px !important;
+            overflow-y: hidden !important;
+        }
+        
+        .admin-tab-content {
+            max-height: 80vh !important;
+            overflow-y: auto !important;
+        }
+
+        /* Ocultar barra de rolagem mas manter funcionalidade se transbordar um pouco */
+        .admin-tab-content::-webkit-scrollbar {
+            display: none;
+        }
+
         .tab-btn { font-size: 32px !important; padding: 35px 20px !important; min-width: 200px !important; }
-        .admin-header h2 { font-size: 48px !important; }
-        .stat-box h3 { font-size: 90px !important; }
-        .stat-box p { font-size: 28px !important; }
-        .stock-item-row span { font-size: 34px !important; }
+        .admin-header h2 { font-size: 48px !important; margin-bottom: 20px !important; }
+        .stat-box h3 { font-size: 80px !important; }
+        .stat-box p { font-size: 26px !important; }
+        .stock-item-row { margin-bottom: 15px !important; padding: 15px 25px !important; }
+        .stock-item-row span { font-size: 32px !important; }
         .stock-manual-input { font-size: 34px !important; padding: 25px !important; width: 180px !important; }
+        
+        .admin-tabs { margin-bottom: 30px !important; }
     }
 }

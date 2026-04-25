@@ -1104,10 +1104,25 @@ function openAdmin() {
                 <div class="stock-item-row" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; background: rgba(255,255,255,0.05); padding: 10px 15px; border-radius: 10px;">
                     <span style="font-size: 16px; font-weight: 600;">${name}</span>
                     <div style="display: flex; gap: 10px; align-items: center;">
-                        <input type="number" value="${count}" class="stock-manual-input" data-prize="${name}" style="width: 100px; background: #000; color: #fff; border: 1px solid #444; padding: 12px; border-radius: 8px; text-align: center; font-size: 18px;">
+                        <input type="number" value="${count}" class="stock-manual-input" data-prize="${name}" style="width: 100px; background: #000; color: #fff; border: 1px solid #444; padding: 12px; border-radius: 8px; text-align: center; font-size: 18px;" inputmode="numeric">
                     </div>
                 </div>
             `).join('');
+
+            // Atachar teclado aos novos inputs dinâmicos
+            setTimeout(() => {
+                const newInputs = stockInfo.querySelectorAll('.stock-manual-input');
+                newInputs.forEach(input => {
+                    input.addEventListener('mousedown', (e) => {
+                        activeInput = e.target;
+                        openKeyboard();
+                    });
+                    input.addEventListener('focus', (e) => {
+                        activeInput = e.target;
+                        openKeyboard();
+                    });
+                });
+            }, 100);
         }
     }
 
@@ -1286,8 +1301,8 @@ function checkAdminPin() {
 async function logAdminAction(action, details) {
     const logEntry = {
         action: action,
-        details: details,
-        timestamp: new Date().toISOString(),
+        details: String(details), // Garante que seja string
+        created_at: new Date().toISOString(),
         totem_id: 'TOTEM-AGRISHOW-01'
     };
 
@@ -1306,7 +1321,7 @@ async function logAdminAction(action, details) {
     // 3. Enviar para o Supabase (se configurado)
     if (SUPABASE_URL && SUPABASE_KEY) {
         try {
-            await fetch(`${SUPABASE_URL}/rest/v1/admin_logs`, {
+            const response = await fetch(`${SUPABASE_URL}/rest/v1/admin_logs`, {
                 method: 'POST',
                 headers: {
                     'apikey': SUPABASE_KEY,
@@ -1316,6 +1331,12 @@ async function logAdminAction(action, details) {
                 },
                 body: JSON.stringify(logEntry)
             });
+
+            if (!response.ok) {
+                const errText = await response.text();
+                console.warn('Supabase Log Error:', errText);
+                debugLog(`Falha no Log Online (Erro ${response.status}). Verifique se a tabela 'admin_logs' existe.`, 'warn');
+            }
         } catch (err) {
             console.error('Erro ao enviar log para Supabase:', err);
         }
@@ -1501,12 +1522,15 @@ function openKeyboard() {
     document.body.classList.add('keyboard-open');
 
     // Determina o layout (numérico ou texto)
-    const isPhone = activeInput.id.includes('phone') || activeInput.type === 'tel';
+    const isNumeric = activeInput.id.includes('phone') || 
+                      activeInput.type === 'tel' || 
+                      activeInput.type === 'number' || 
+                      activeInput.classList.contains('stock-manual-input');
     
     grid.innerHTML = '';
-    grid.className = isPhone ? 'keyboard-grid numeric' : 'keyboard-grid';
+    grid.className = isNumeric ? 'keyboard-grid numeric' : 'keyboard-grid';
 
-    const layout = isPhone 
+    const layout = isNumeric 
         ? ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '⌫']
         : [
             'Q','W','E','R','T','Y','U','I','O','P',
