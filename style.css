@@ -4000,3 +4000,65 @@ body.keyboard-open .quiz-wrap {
         .admin-tabs { margin-bottom: 30px !important; }
     }
 }
+
+/* Otimização Vertical para Totem 43" */
+
+/* Modal de Confirmação (Sim/Não) */
+.confirm-buttons {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    margin-top: 40px !important;
+    width: 100% !important;
+}
+
+.confirm-buttons .btn {
+    width: 100% !important;
+    padding: 35px !important;
+    font-size: 32px !important;
+    border-radius: 20px !important;
+    margin: 0 !important;
+    justify-content: center !important;
+}
+
+.confirm-buttons .btn-danger {
+    order: 1; /* SIM fica em cima */
+}
+
+.confirm-buttons .btn-secondary {
+    order: 2; /* NÃO fica embaixo */
+}
+
+/* Rodapé do Quiz */
+.quiz-bottom-info {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 30px !important;
+    margin-top: 50px !important;
+    width: 100% !important;
+}
+
+.counter-bottom {
+    font-size: 32px !important;
+    color: rgba(255,255,255,0.4) !important;
+    font-weight: 700 !important;
+}
+
+.btn-cancel-quiz-footer {
+    background: transparent !important;
+    border: 2px solid rgba(255,255,255,0.15) !important;
+    color: rgba(255,255,255,0.3) !important;
+    padding: 20px 40px !important;
+    border-radius: 15px !important;
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-cancel-quiz-footer:active {
+    background: rgba(255,255,255,0.05) !important;
+    border-color: rgba(255,255,255,0.3) !important;
+    color: rgba(255,255,255,0.6) !important;
+}
