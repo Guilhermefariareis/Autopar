@@ -3557,6 +3557,15 @@ body.keyboard-open .quiz-wrap {
         margin-top: 40px !important; /* GAP COM AGRISHOW 2026 */
     }
 
+    #roulette-player-name {
+        color: #ffffff !important; /* BRANCO PURO */
+        text-shadow: none !important; /* REMOVIDO BRILHO */
+        animation: none !important; /* REMOVIDA PISCA-PISCA */
+        opacity: 0.8 !important; 
+        font-size: 54px !important;
+        font-weight: 400 !important;
+    }
+
     /* SUAVIZANDO O "FADE LARANJA" QUE ESTAVA FORTE DEMAIS */
     .ring1 {
         box-shadow: 0 0 40px 10px rgba(232, 64, 17, 0.15) !important;
