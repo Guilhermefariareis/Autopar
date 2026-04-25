@@ -2878,18 +2878,23 @@ body {
 }
 
 .admin-pin-actions {
-    display: flex !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
     gap: 15px !important;
     width: 100% !important;
-    justify-content: space-between !important;
+    justify-content: center !important;
 }
 
 .admin-pin-actions button {
-    flex: 1 !important;
+    width: 100% !important;
     height: 70px !important;
     font-size: 18px !important;
     border-radius: 15px !important;
     margin: 0 !important;
+    padding: 0 !important;
+    min-width: 0 !important;
+    box-shadow: none !important; /* Remove sombras que podem empurrar o layout */
+    transform: none !important;
 }
 
 /* Ajustes para o Totem Giga */
@@ -2901,8 +2906,8 @@ body {
     }
     .admin-pin-content h3 { font-size: 45px; margin-bottom: 50px; }
     #input-admin-pin { font-size: 80px !important; padding: 30px !important; border-radius: 25px !important; }
-    .admin-pin-actions { gap: 30px; }
-    .admin-pin-actions button { height: 140px !important; font-size: 38px !important; border-radius: 30px !important; }
+    .admin-pin-actions { gap: 20px !important; }
+    .admin-pin-actions button { height: 130px !important; font-size: 38px !important; border-radius: 30px !important; }
 }
 
 @media (max-height: 2000px) {
