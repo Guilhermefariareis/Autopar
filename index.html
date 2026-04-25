@@ -42,6 +42,19 @@
                         <button class="btn btn-export" style="flex: 1; margin-bottom: 0;" onclick="exportCSV()">Exportar CSV</button>
                         <button class="btn btn-primary" style="flex: 1; background: #0088ff; border-color: #0088ff;" onclick="finalizeDay()">🌙 FINALIZAR DIA</button>
                     </div>
+
+                    <!-- Relatório de Brindes Distribuídos (Novo) -->
+                    <div class="prize-summary-wrapper" style="margin-bottom: 20px;">
+                        <button class="btn btn-outline" style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 15px 25px; border-color: rgba(255,255,255,0.2); font-size: 18px;" onclick="togglePrizeSummary()">
+                            <span>📊 Brindes Distribuídos</span>
+                            <span id="prize-summary-icon" style="transition: transform 0.3s ease;">▼</span>
+                        </button>
+                        <div id="prize-summary-content" style="display: none; background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.05); border-top: none; padding: 20px; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">
+                            <div id="prize-distribution-list" style="display: grid; grid-template-columns: 1fr; gap: 10px;">
+                                <!-- Gerado via JS -->
+                            </div>
+                        </div>
+                    </div>
                     <div class="admin-danger-zone">
                         <button class="btn btn-danger" onclick="resetStats()">Zerar Jogadores</button>
                     </div>

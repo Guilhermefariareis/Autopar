@@ -1077,6 +1077,9 @@ function openAdmin() {
     if (playersEl) playersEl.textContent = stats.players;
     if (prizesEl) prizesEl.textContent = stats.prizes;
 
+    // Atualiza o resumo de brindes distribuídos (Novo)
+    updatePrizeSummary();
+
     // Show current stock in admin
     const adminContent = panel.querySelector('.admin-content');
     if (adminContent) {
@@ -1147,6 +1150,54 @@ function resetStock() {
     saveStock();
     alert('Estoque resetado com sucesso!');
     openAdmin();
+}
+
+/** Relatório de Brindes Distribuídos (Novo) */
+function togglePrizeSummary() {
+    const content = document.getElementById('prize-summary-content');
+    const icon = document.getElementById('prize-summary-icon');
+    if (!content) return;
+
+    const isHidden = content.style.display === 'none';
+    content.style.display = isHidden ? 'block' : 'none';
+    if (icon) {
+        icon.style.transform = isHidden ? 'rotate(180deg)' : 'rotate(0deg)';
+    }
+}
+
+function updatePrizeSummary() {
+    const listEl = document.getElementById('prize-distribution-list');
+    if (!listEl) return;
+
+    // Contar prêmios dos participantes do dia
+    const counts = {};
+    // Inicializa com zero para os brindes conhecidos
+    Object.keys(INITIAL_STOCK).forEach(p => counts[p] = 0);
+
+    participants.forEach(p => {
+        if (p.prize && counts[p.prize] !== undefined) {
+            counts[p.prize]++;
+        } else if (p.prize) {
+            counts[p.prize] = (counts[p.prize] || 0) + 1;
+        }
+    });
+
+    const icons = {
+        'Chapéu': '🪖',
+        'Squeeze': '💧',
+        'Chaveiro Trena': '🔑',
+        'Caneta': '✏️',
+        'Boné': '🧢'
+    };
+
+    listEl.innerHTML = Object.entries(counts)
+        .sort((a, b) => b[1] - a[1]) // Mostrar mais vitoriosos primeiro
+        .map(([name, count]) => `
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 15px; background: rgba(255,255,255,0.05); border-radius: 8px;">
+                <span style="font-size: 16px; font-weight: 600;">${icons[name] || '🎁'} ${name}</span>
+                <span style="font-size: 18px; font-weight: 900; color: var(--orange);">${count}</span>
+            </div>
+        `).join('');
 }
 
 function resetStats() {
