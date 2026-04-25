@@ -2834,15 +2834,23 @@ body {
     position: relative;
     z-index: 10001;
     width: 90% !important;
-    max-width: 450px !important;
-    margin: auto !important;
-    padding: 40px !important;
-    border-radius: 30px !important;
-    background: rgba(15, 15, 15, 0.98) !important;
+    max-width: 500px !important;
+    margin: 15vh auto auto auto !important; /* Move para cima */
+    padding: 60px 40px !important;
+    border-radius: 40px !important;
+    background: rgba(10, 10, 10, 0.95) !important;
+    backdrop-filter: blur(25px) !important;
     border: 1px solid rgba(255, 69, 0, 0.3) !important;
     text-align: center !important;
-    box-shadow: 0 40px 100px rgba(0,0,0,0.9) !important;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.9), 0 0 30px rgba(255, 69, 0, 0.1) !important;
     box-sizing: border-box !important;
+    animation: modalPop 0.4s cubic-bezier(0.17, 0.89, 0.32, 1.49) !important;
+    overflow: hidden !important; /* Segurança extra */
+}
+
+@keyframes modalPop {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
 }
 
 .admin-pin-content * {
@@ -2851,63 +2859,80 @@ body {
 
 .admin-pin-content h3 {
     color: white !important;
-    font-size: 24px !important;
-    margin-bottom: 25px !important;
-    font-weight: 800 !important;
-    letter-spacing: 2px !important;
+    font-size: 28px !important;
+    margin-bottom: 35px !important;
+    font-weight: 900 !important;
+    letter-spacing: 4px !important;
+    text-transform: uppercase !important;
     margin-top: 0 !important;
+    background: linear-gradient(to bottom, #fff, #888);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .admin-pin-body {
     display: flex !important;
     flex-direction: column !important;
-    gap: 20px !important;
+    gap: 30px !important;
     width: 100% !important;
 }
 
 #input-admin-pin {
-    font-size: 40px !important;
+    font-size: 48px !important;
     text-align: center !important;
-    padding: 15px !important;
+    padding: 20px !important;
     width: 100% !important;
-    background: rgba(255,255,255,0.05) !important;
-    border: 1px solid rgba(255,255,255,0.1) !important;
-    border-radius: 15px !important;
-    color: white !important;
+    background: rgba(0, 0, 0, 0.6) !important;
+    border: 2px solid rgba(255, 69, 0, 0.2) !important;
+    border-radius: 20px !important;
+    color: var(--orange) !important;
     margin: 0 !important;
+    letter-spacing: 15px !important;
+    font-weight: 900 !important;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.5) !important;
 }
 
 .admin-pin-actions {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
-    gap: 15px !important;
+    gap: 20px !important;
     width: 100% !important;
-    justify-content: center !important;
 }
 
 .admin-pin-actions button {
-    width: 100% !important;
-    height: 70px !important;
-    font-size: 18px !important;
-    border-radius: 15px !important;
+    height: 80px !important;
+    font-size: 20px !important;
+    border-radius: 20px !important;
     margin: 0 !important;
-    padding: 0 !important;
-    min-width: 0 !important;
-    box-shadow: none !important; /* Remove sombras que podem empurrar o layout */
-    transform: none !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    font-weight: 800 !important;
+}
+
+.admin-pin-actions .btn-outline {
+    border: 2px solid rgba(255,255,255,0.2) !important;
+    color: #888 !important;
+}
+
+.admin-pin-actions .btn-primary {
+    background: linear-gradient(135deg, #FF6020, #FF4500) !important;
+    box-shadow: 0 10px 25px rgba(255, 69, 0, 0.3) !important;
+    color: white !important;
+    border: none !important;
 }
 
 /* Ajustes para o Totem Giga */
 @media (max-height: 2000px) {
     .admin-pin-content {
-        max-width: 800px;
-        padding: 80px 60px;
-        border-radius: 50px;
+        max-width: 950px !important;
+        padding: 80px 50px !important; /* Reduz padding lateral */
+        border-radius: 60px !important;
+        margin-top: 10vh !important; /* Sobe no totem */
     }
-    .admin-pin-content h3 { font-size: 45px; margin-bottom: 50px; }
-    #input-admin-pin { font-size: 80px !important; padding: 30px !important; border-radius: 25px !important; }
-    .admin-pin-actions { gap: 20px !important; }
-    .admin-pin-actions button { height: 130px !important; font-size: 38px !important; border-radius: 30px !important; }
+    .admin-pin-content h3 { font-size: 55px !important; margin-bottom: 70px !important; }
+    #input-admin-pin { font-size: 100px !important; padding: 40px !important; border-radius: 35px !important; letter-spacing: 15px !important; }
+    .admin-pin-actions { gap: 30px !important; }
+    .admin-pin-actions button { height: 160px !important; font-size: 44px !important; border-radius: 40px !important; letter-spacing: 5px !important; }
 }
 
 @media (max-height: 2000px) {
