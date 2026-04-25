@@ -166,6 +166,7 @@ window.onunhandledrejection = function (event) {
 // CONFIGURAÇÃO SUPABASE (BANCO ONLINE)
 const SUPABASE_URL = 'https://cqdsupishhkpbwfwpgju.supabase.co'; 
 const SUPABASE_KEY = 'sb_publishable_AAAtL9JH-CLn7QSaTpTaig_QoUOOuQB'; 
+// SUPABASE_SECRET foi removido para segurança do repositório
 
 let _syncTimer = null;
 
@@ -1278,12 +1279,8 @@ function checkAdminPin() {
     }
 }
 
-// ═══════════════════════════════════════════════════════
 //  SUPABASE LOGGING SYSTEM
 // ═══════════════════════════════════════════════════════
-
-const SUPABASE_URL = ''; // Adicionar URL do Supabase
-const SUPABASE_KEY = ''; // Adicionar Key do Supabase
 
 async function logAdminAction(action, details) {
     const logEntry = {
