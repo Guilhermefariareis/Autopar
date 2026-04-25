@@ -3480,12 +3480,29 @@ body.keyboard-open .quiz-wrap {
         left: 5% !important;
     }
     
-    .quiz-bottom-info { 
-        margin-top: auto !important; 
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        padding-bottom: 50px !important;
+    /* MODAL DE SAÍDA NO TOTEM */
+    .confirm-content {
+        width: 80% !important;
+        max-width: 800px !important;
+        padding: 60px !important;
+        border-radius: 30px !important;
+        text-align: center !important;
+    }
+    .confirm-icon { font-size: 100px !important; margin-bottom: 30px !important; }
+    .confirm-title { font-size: 65px !important; margin-bottom: 20px !important; }
+    .confirm-text { font-size: 38px !important; margin-bottom: 60px !important; }
+    .confirm-buttons { 
+        flex-direction: column !important; 
+        gap: 30px !important;
         width: 100% !important;
+        display: flex !important;
+    }
+    .confirm-buttons .btn {
+        width: 100% !important;
+        margin: 0 !important;
+        font-size: 40px !important;
+        padding: 35px !important;
+        border-radius: 20px !important;
+        flex: none !important;
     }
 }
