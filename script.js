@@ -1266,28 +1266,37 @@ function finalizeDay() {
         
         logAdminAction('DAY_END', `Finalização de dia: ${totalP} jogadores, ${totalW} prêmios entregues.`);
 
-        // 2. Abrir downloads (Método Robusto)
+        // 2. Backup de Dados (Método Robusto via Blob)
         const serverUrl = 'http://localhost:8000';
         
-        const downloadFile = (url) => {
-            const link = document.createElement('a');
-            link.href = url;
-            link.target = '_blank';
-            // Adicionamos download attribute para forçar baixar em vez de abrir
-            const filename = url.split('/').pop();
-            link.setAttribute('download', filename);
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        };
-
-        downloadFile(`${serverUrl}/leads.csv`);
+        // Backup de Leads (Usando o array atual do navegador)
+        try {
+            exportCSV(); // Função nativa que já usa Blob e é robusta
+        } catch (e) {
+            debugLog('Erro ao exportar CSV local: ' + e.message, 'error');
+        }
         
-        setTimeout(() => {
-            downloadFile(`${serverUrl}/logs.txt`);
+        // Backup de Logs (Buscando do servidor e convertendo em Blob)
+        setTimeout(async () => {
+            try {
+                const logRes = await fetch(`${serverUrl}/logs.txt`);
+                if (logRes.ok) {
+                    const logBlob = await logRes.blob();
+                    const logUrl = URL.createObjectURL(logBlob);
+                    const logLink = document.createElement('a');
+                    logLink.href = logUrl;
+                    logLink.download = `panther_logs_${new Date().getTime()}.txt`;
+                    document.body.appendChild(logLink);
+                    logLink.click();
+                    document.body.removeChild(logLink);
+                    URL.revokeObjectURL(logUrl);
+                }
+            } catch (e) {
+                console.warn('Não foi possível baixar logs.txt do servidor.');
+            }
         }, 1000);
 
-        // 3. Pequeno delay para garantir que o navegador iniciou os downloads
+        // 3. Aguardar backup antes de limpar a memória
         setTimeout(() => {
             // Resetar Estoque
             prizeStock = { ...INITIAL_STOCK };
@@ -1302,10 +1311,10 @@ function finalizeDay() {
             
             saveAndSync();
             
-            debugLog('Dia finalizado com sucesso. Estoque e Stats resetados.');
-            alert('Dia finalizado com sucesso!\nBackup de Leads e Logs iniciado.\nSistema pronto para amanhã.');
+            debugLog('Dia finalizado com sucesso. Dados resetados após backup.');
+            alert('Dia finalizado com sucesso!\nBackup de Leads e Logs disparado.\nSistema pronto para amanhã.');
             openAdmin(); // Atualiza UI
-        }, 2000);
+        }, 3000);
     });
 }
 
