@@ -2830,6 +2830,72 @@ body {
     transform: scale(0.9);
 }
 
+.admin-pin-content {
+    position: relative;
+    z-index: 10001;
+    width: 90%;
+    max-width: 450px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 30px;
+    background: rgba(15, 15, 15, 0.98);
+    border: 1px solid rgba(255, 69, 0, 0.3);
+    text-align: center;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.9);
+}
+
+.admin-pin-content h3 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.admin-pin-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+#input-admin-pin {
+    font-size: 40px !important;
+    text-align: center !important;
+    padding: 15px !important;
+    width: 100% !important;
+    background: rgba(255,255,255,0.05) !important;
+    border: 1px solid rgba(255,255,255,0.1) !important;
+    border-radius: 15px !important;
+    color: white !important;
+}
+
+.admin-pin-actions {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.admin-pin-actions button {
+    flex: 1 !important;
+    height: 70px !important;
+    font-size: 18px !important;
+    border-radius: 15px !important;
+}
+
+/* Ajustes para o Totem Giga */
+@media (max-height: 2000px) {
+    .admin-pin-content {
+        max-width: 800px;
+        padding: 80px 60px;
+        border-radius: 50px;
+    }
+    .admin-pin-content h3 { font-size: 45px; margin-bottom: 50px; }
+    #input-admin-pin { font-size: 80px !important; padding: 30px !important; border-radius: 25px !important; }
+    .admin-pin-actions { gap: 30px; }
+    .admin-pin-actions button { height: 140px !important; font-size: 38px !important; border-radius: 30px !important; }
+}
+
 @media (max-height: 2000px) {
     .admin-trigger-fixed {
         width: 120px;

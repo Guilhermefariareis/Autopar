@@ -1267,13 +1267,14 @@ function closeAdminPin() {
 
 function checkAdminPin() {
     const input = document.getElementById('input-admin-pin');
-    const pin = input ? input.value : '';
+    const pin = (input ? input.value : '').trim().toLowerCase();
     
-    if (pin === ADMIN_PIN) {
+    // Aceita o código antigo ou a nova senha 'admin'
+    if (pin === ADMIN_PIN || pin === 'admin') {
         closeAdminPin();
         openAdmin();
     } else {
-        logAdminAction('LOGIN_FAIL', 'Tentativa de login com senha incorreta');
+        logAdminAction('LOGIN_FAIL', `Tentativa de login incorreta: ${pin}`);
         alert('Senha incorreta.');
         if (input) input.value = '';
     }
