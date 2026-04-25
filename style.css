@@ -3250,29 +3250,37 @@ body.keyboard-open .quiz-wrap {
     /* VOUCHER / TICKET NO TOTEM */
     .ticket-wrapper { 
         width: 95% !important; 
-        max-width: 1020px !important;
+        max-width: 1100px !important; /* MAIS ESPAÇO PARA AS LOGOS MAIORES */
     }
     
     .ticket-top {
-        padding: 80px 50px !important; /* MAIS ESPAÇO INTERNO */
+        padding: 100px 70px !important; /* RESPIRO MAIOR */
+    }
+
+    .ticket-event { 
+        font-size: 46px !important; /* TITULO AGRISHOW MAIOR */
+        font-weight: 900 !important;
+        margin-bottom: 30px !important;
+        letter-spacing: 6px !important;
+        opacity: 0.9;
     }
 
     .ticket-logo-container { 
         justify-content: center !important; 
-        gap: 50px !important; /* REDUZIDO GAP */
+        gap: 60px !important; /* REDUZIDO PARA FICAREM MAIS PERTO */
         width: 100% !important;
     }
 
-    .panther-voucher-logo { height: 95px !important; } /* REDUZIDO PARA NÃO CORTAR */
-    .leme-voucher-logo { height: 110px !important; } /* REDUZIDO PARA NÃO CORTAR */
+    .panther-voucher-logo { height: 155px !important; }
+    .leme-voucher-logo { height: 189px !important; } /* AUMENTADO 2% */
 
     .code-text { 
-        font-size: 100px !important; 
+        font-size: 85px !important; /* REDUZIDO MAIS UM POUCO */
         letter-spacing: 4px !important;
-        margin: 40px 0 !important;
+        margin: 50px 0 !important;
     }
 
-    .thanks-hashtag { font-size: 48px !important; }
+    .thanks-hashtag { font-size: 52px !important; }
 }
 
 
