@@ -1113,14 +1113,13 @@ function openAdmin() {
             setTimeout(() => {
                 const newInputs = stockInfo.querySelectorAll('.stock-manual-input');
                 newInputs.forEach(input => {
-                    input.addEventListener('mousedown', (e) => {
+                    const openKb = (e) => {
                         activeInput = e.target;
                         openKeyboard();
-                    });
-                    input.addEventListener('focus', (e) => {
-                        activeInput = e.target;
-                        openKeyboard();
-                    });
+                    };
+                    input.addEventListener('mousedown', openKb);
+                    input.addEventListener('focus', openKb);
+                    input.addEventListener('click', openKb);
                 });
             }, 100);
         }
