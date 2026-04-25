@@ -596,7 +596,7 @@ function handleTimeout() {
     // Mark as wrong, move to next
     setTimeout(() => {
         nextQuestion();
-    }, 1000);
+    }, 600); /* REDUZI PARA FICAR MAIS RÁPIDO */
 }
 
 function selectAnswer(index) {
@@ -623,7 +623,7 @@ function selectAnswer(index) {
 
     setTimeout(() => {
         nextQuestion();
-    }, 1200);
+    }, 800); /* REDUZI PARA FICAR MAIS RÁPIDO */
 }
 
 function nextQuestion() {
