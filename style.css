@@ -2805,6 +2805,41 @@ body {
     color: #ffaa00;
 }
 
+.admin-trigger-fixed {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+
+.admin-trigger-fixed:active {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(0.9);
+}
+
+@media (max-height: 2000px) {
+    .admin-trigger-fixed {
+        width: 120px;
+        height: 120px;
+        bottom: 50px;
+        left: 50px;
+        font-size: 50px;
+        border-radius: 30px;
+    }
+}
+
 /* Centralizar e aumentar o botao de girar na base */
 .roulette-bottom {
     display: flex;
