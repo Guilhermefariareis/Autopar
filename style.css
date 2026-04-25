@@ -3914,92 +3914,90 @@ body.keyboard-open .quiz-wrap {
         white-space: nowrap !important;
     }
 
-    /* --- Admin Panel Styles (Global + Totem) --- */
-    .admin-content {
-        max-width: 90vw !important;
-        width: 600px !important;
-        max-height: 95vh !important;
-        overflow-y: hidden !important; /* Remove rolagem geral se possível */
-        padding: 40px !important;
-        border-radius: 30px !important;
-        background: rgba(10, 10, 10, 0.98) !important;
-        border: 1px solid rgba(255, 69, 0, 0.3) !important;
-        box-shadow: 0 50px 100px rgba(0,0,0,0.9) !important;
-    }
-
-    .admin-tabs {
-        display: flex !important;
-        gap: 10px !important;
-        background: rgba(255,255,255,0.05) !important;
-        padding: 10px !important;
-        border-radius: 20px !important;
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        margin-top: 10px !important;
-        margin-bottom: 20px !important;
-    }
-
-    .tab-btn {
-        flex: 1 !important;
-        min-width: 120px !important;
-        padding: 15px 10px !important;
-        background: transparent !important;
-        border: none !important;
-        color: #888 !important;
-        font-size: 16px !important;
-        font-weight: 700 !important;
-        border-radius: 12px !important;
-        cursor: pointer !important;
-        transition: all 0.3s ease !important;
-    }
-
-    .tab-btn.active {
-        background: var(--orange) !important;
-        color: white !important;
-        box-shadow: 0 4px 12px rgba(255, 69, 0, 0.3) !important;
-    }
-
-    .admin-tab-content {
-        display: none !important;
-        max-height: 70vh !important;
-        overflow-y: auto !important;
-    }
-
-    .admin-tab-content.active {
-        display: block !important;
-    }
-
-    /* Totem Admin Overrides */
-    @media (max-height: 2000px) {
-        .admin-content { 
-            width: 95% !important; 
-            max-width: 1000px !important; 
-            max-height: 98vh !important;
-            padding: 40px 30px !important;
-            overflow-y: hidden !important;
-        }
-        
-        .admin-tab-content {
-            max-height: 80vh !important;
-            overflow-y: auto !important;
-        }
-
-        /* Ocultar barra de rolagem mas manter funcionalidade se transbordar um pouco */
-        .admin-tab-content::-webkit-scrollbar {
-            display: none;
-        }
-
-        .tab-btn { font-size: 32px !important; padding: 35px 20px !important; min-width: 200px !important; }
-        .admin-header h2 { font-size: 48px !important; margin-bottom: 20px !important; }
-        .stat-box h3 { font-size: 80px !important; }
-        .stat-box p { font-size: 26px !important; }
-        .stock-item-row { margin-bottom: 15px !important; padding: 15px 25px !important; }
-        .stock-item-row span { font-size: 32px !important; }
-        .stock-manual-input { font-size: 34px !important; padding: 25px !important; width: 180px !important; }
-        
-        .admin-tabs { margin-bottom: 30px !important; }
     }
 }
+
+/* ──────────────────────────────────────────────────────────────────────────
+   🛠️ ADMIN PANEL & TOTEM UNIVERSAL (Portrait + Landscape)
+   ────────────────────────────────────────────────────────────────────────── */
+.admin-content {
+    max-width: 95vw !important;
+    width: min(1000px, 92vw) !important;
+    max-height: 98vh !important;
+    overflow-y: hidden !important;
+    padding: 60px 40px !important;
+    border-radius: 50px !important;
+    background: rgba(10, 10, 10, 0.98) !important;
+    border: 2px solid rgba(255, 69, 0, 0.3) !important;
+    box-shadow: 0 50px 100px rgba(0,0,0,0.9) !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.admin-tabs {
+    display: flex !important;
+    gap: 15px !important;
+    background: rgba(255,255,255,0.05) !important;
+    padding: 15px !important;
+    border-radius: 30px !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    margin-bottom: 30px !important;
+}
+
+.tab-btn {
+    flex: 1 !important;
+    min-width: 180px !important;
+    padding: 30px 20px !important;
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    border-radius: 20px !important;
+    cursor: pointer !important;
+    background: transparent !important;
+    border: none !important;
+    color: #888 !important;
+    transition: all 0.3s ease !important;
+}
+
+.tab-btn.active {
+    background: var(--orange) !important;
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(255, 69, 0, 0.3) !important;
+}
+
+.admin-tab-content {
+    display: none !important;
+    max-height: 75vh !important;
+    overflow-y: auto !important;
+    padding-right: 10px !important;
+}
+
+.admin-tab-content.active {
+    display: block !important;
+}
+
+/* Scrollbar invisível mas funcional */
+.admin-tab-content::-webkit-scrollbar {
+    width: 6px;
+}
+.admin-tab-content::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+
+/* Dashboard Elements */
+.stat-box h3 { font-size: 80px !important; }
+.stat-box p { font-size: 26px !important; }
+.admin-content .btn {
+    font-size: 32px !important;
+    padding: 30px !important;
+    border-radius: 20px !important;
+    margin-bottom: 10px !important;
+}
+
+.stock-item-row { margin-bottom: 20px !important; padding: 20px 30px !important; border-radius: 20px !important; }
+.stock-item-row span { font-size: 34px !important; }
+.stock-manual-input { font-size: 34px !important; padding: 25px !important; width: 180px !important; }
 
 /* Otimização Vertical para Totem 43" */
 
