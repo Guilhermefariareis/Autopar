@@ -1193,9 +1193,12 @@ function updatePrizeSummary() {
     listEl.innerHTML = Object.entries(counts)
         .sort((a, b) => b[1] - a[1]) // Mostrar mais vitoriosos primeiro
         .map(([name, count]) => `
-            <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 15px; background: rgba(255,255,255,0.05); border-radius: 8px;">
-                <span style="font-size: 16px; font-weight: 600;">${icons[name] || '🎁'} ${name}</span>
-                <span style="font-size: 18px; font-weight: 900; color: var(--orange);">${count}</span>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px 30px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); border-radius: 15px;">
+                <span style="font-size: 28px; font-weight: 700; color: #ccc;">
+                    <span style="font-size: 32px; margin-right: 15px;">${icons[name] || '🎁'}</span>
+                    ${name}
+                </span>
+                <span style="font-size: 36px; font-weight: 900; color: var(--orange);">${count}</span>
             </div>
         `).join('');
 }
