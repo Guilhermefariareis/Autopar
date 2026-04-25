@@ -119,6 +119,7 @@ body {
 }
 
 /* Ã¢â€â‚¬Ã¢â€â‚¬ Screen System Ã¢â€â‚¬Ã¢â€â‚¬ */
+/* ── Screen System ── */
 .screen {
     position: absolute;
     inset: 0;
@@ -126,8 +127,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: 0;
-    visibility: hidden;
     transition: opacity 0.4s ease, visibility 0.4s;
     z-index: 10;
 }
@@ -2830,22 +2829,32 @@ body {
     transform: scale(0.9);
 }
 
+#screen-admin-pin {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    display: none; /* Alterado via JS para flex */
+    align-items: flex-start !important; /* Força início no topo */
+    justify-content: center !important;
+    z-index: 10000 !important;
+    padding-top: 5vh !important; /* Fica bem no topo para fugir do teclado */
+}
+
 .admin-pin-content {
-    position: relative;
-    z-index: 10001;
+    position: relative !important;
     width: 90% !important;
-    max-width: 500px !important;
-    margin: 15vh auto auto auto !important; /* Move para cima */
+    max-width: 550px !important;
     padding: 60px 40px !important;
     border-radius: 40px !important;
-    background: rgba(10, 10, 10, 0.95) !important;
-    backdrop-filter: blur(25px) !important;
-    border: 1px solid rgba(255, 69, 0, 0.3) !important;
+    background: rgba(10, 10, 10, 0.98) !important;
+    backdrop-filter: blur(30px) !important;
+    border: 2px solid rgba(255, 69, 0, 0.4) !important;
     text-align: center !important;
-    box-shadow: 0 0 80px rgba(0, 0, 0, 0.9), 0 0 30px rgba(255, 69, 0, 0.1) !important;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 1) !important;
     box-sizing: border-box !important;
     animation: modalPop 0.4s cubic-bezier(0.17, 0.89, 0.32, 1.49) !important;
-    overflow: hidden !important; /* Segurança extra */
 }
 
 @keyframes modalPop {
@@ -2899,40 +2908,41 @@ body {
     width: 100% !important;
 }
 
-.admin-pin-actions button {
+.admin-pin-btn {
     height: 80px !important;
-    font-size: 20px !important;
+    font-size: 22px !important;
     border-radius: 20px !important;
-    margin: 0 !important;
+    border: none !important;
+    font-weight: 900 !important;
+    cursor: pointer !important;
     text-transform: uppercase !important;
     letter-spacing: 2px !important;
-    font-weight: 800 !important;
+    transition: all 0.2s ease !important;
 }
 
-.admin-pin-actions .btn-outline {
-    border: 2px solid rgba(255,255,255,0.2) !important;
-    color: #888 !important;
+.admin-pin-btn.cancel {
+    background: rgba(255, 255, 255, 0.05) !important;
+    color: #666 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
-.admin-pin-actions .btn-primary {
+.admin-pin-btn.confirm {
     background: linear-gradient(135deg, #FF6020, #FF4500) !important;
-    box-shadow: 0 10px 25px rgba(255, 69, 0, 0.3) !important;
     color: white !important;
-    border: none !important;
+    box-shadow: 0 10px 20px rgba(255, 69, 0, 0.3) !important;
 }
 
 /* Ajustes para o Totem Giga */
 @media (max-height: 2000px) {
     .admin-pin-content {
-        max-width: 950px !important;
-        padding: 80px 50px !important; /* Reduz padding lateral */
+        max-width: 1000px !important;
+        padding: 80px 60px !important;
         border-radius: 60px !important;
-        margin-top: 10vh !important; /* Sobe no totem */
     }
-    .admin-pin-content h3 { font-size: 55px !important; margin-bottom: 70px !important; }
-    #input-admin-pin { font-size: 100px !important; padding: 40px !important; border-radius: 35px !important; letter-spacing: 15px !important; }
-    .admin-pin-actions { gap: 30px !important; }
-    .admin-pin-actions button { height: 160px !important; font-size: 44px !important; border-radius: 40px !important; letter-spacing: 5px !important; }
+    .admin-pin-content h3 { font-size: 60px !important; margin-bottom: 70px !important; }
+    #input-admin-pin { font-size: 110px !important; padding: 50px !important; border-radius: 35px !important; letter-spacing: 20px !important; }
+    .admin-pin-actions { gap: 40px !important; }
+    .admin-pin-btn { height: 180px !important; font-size: 48px !important; border-radius: 40px !important; }
 }
 
 @media (max-height: 2000px) {
