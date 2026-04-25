@@ -1378,21 +1378,8 @@ function saveGeneralStock() {
 function syncParticipantToGoogleSheets() { /* offline-only build */ }
 
 function showAdminPin() {
-    const modal = document.getElementById('screen-admin-pin');
-    const input = document.getElementById('input-admin-pin');
-    if (modal && input) {
-        input.value = '';
-        modal.classList.remove('hide');
-        modal.classList.add('active');
-        modal.style.display = 'flex';
-        
-        // Forçar foco e abrir teclado
-        setTimeout(() => {
-            input.focus();
-            activeInput = input;
-            openKeyboard();
-        }, 100);
-    }
+    // Senha removida a pedido do usuário para agilizar na feira
+    openAdmin();
 }
 
 function closeAdminPin() {
@@ -1402,22 +1389,11 @@ function closeAdminPin() {
         modal.classList.remove('active');
         modal.style.display = 'none';
     }
-    closeKeyboard();
 }
 
 function checkAdminPin() {
-    const input = document.getElementById('input-admin-pin');
-    const pin = (input ? input.value : '').trim().toLowerCase();
-    
-    // Aceita o código antigo ou a nova senha 'admin'
-    if (pin === ADMIN_PIN || pin === 'admin') {
-        closeAdminPin();
-        openAdmin();
-    } else {
-        logAdminAction('LOGIN_FAIL', `Tentativa de login incorreta: ${pin}`);
-        alert('Senha incorreta.');
-        if (input) input.value = '';
-    }
+    // Mantido apenas por compatibilidade, mas agora abre direto
+    openAdmin();
 }
 
 //  SUPABASE LOGGING SYSTEM

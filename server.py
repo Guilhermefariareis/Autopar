@@ -209,7 +209,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self._json({"status": "terminating"})
             # Pequeno delay para o navegador receber a resposta antes de morrer
             import subprocess
-            subprocess.Popen("timeout /t 2 >nul && taskkill /F /IM chrome.exe /T", shell=True)
+            # Usa taskkill direto para garantir o fechamento no Windows
+            subprocess.Popen('taskkill /F /IM chrome.exe /T', shell=True)
             return
 
         else:
