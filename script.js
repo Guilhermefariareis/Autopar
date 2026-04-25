@@ -1099,9 +1099,13 @@ function openAdmin() {
         }
 
         if (prizeStock) {
-            stockInfo.innerHTML = '<h3>Estoque Atual</h3>' + Object.entries(prizeStock).map(([name, count]) => `
-                <div class="stock-item">
-                    <span>${name}:</span> <strong>${count}</strong>
+            stockInfo.innerHTML = Object.entries(prizeStock).map(([name, count]) => `
+                <div class="stock-item-row" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; background: rgba(255,255,255,0.05); padding: 10px 15px; border-radius: 10px;">
+                    <span style="font-size: 16px; font-weight: 600;">${name}</span>
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <input type="number" value="${count}" id="stock-input-${name}" style="width: 70px; background: #000; color: #fff; border: 1px solid #444; padding: 8px; border-radius: 6px; text-align: center;">
+                        <button class="btn btn-outline" style="padding: 8px 15px; font-size: 12px; min-width: auto; border-color: #00ff88; color: #00ff88;" onclick="updatePrizeStock('${name}', document.getElementById('stock-input-${name}').value)">OK</button>
+                    </div>
                 </div>
             `).join('');
         }
@@ -1149,8 +1153,27 @@ function simulateSoldOut() {
     if (!confirm('Deseja simular o esgotamento total de brindes agora?')) return;
     Object.keys(prizeStock).forEach(k => prizeStock[k] = 0);
     checkGlobalStock();
-    closeAdmin();
+    openAdmin(); // Refresh instead of close
     debugLog('Simulação de Brindes Esgotados ativada por Admin.');
+}
+
+function switchAdminTab(tabId) {
+    document.querySelectorAll('.admin-tab-content').forEach(c => c.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    
+    document.getElementById('tab-' + tabId).classList.add('active');
+    // Encontra o botão clicado através do evento se disponível
+    if (window.event && window.event.currentTarget) {
+        window.event.currentTarget.classList.add('active');
+    }
+}
+
+function updatePrizeStock(name, amount) {
+    prizeStock[name] = parseInt(amount, 10) || 0;
+    saveStock();
+    debugLog(`Estoque de ${name} atualizado para ${prizeStock[name]}`);
+    openAdmin(); // Refresh UI
+    alert(`Estoque de ${name} atualizado!`);
 }
 
 function syncParticipantToGoogleSheets() { /* offline-only build */ }

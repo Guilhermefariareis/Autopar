@@ -17,54 +17,74 @@
         <div id="admin-panel" class="screen screen-modal hide">
             <div class="modal-backdrop" onclick="closeAdmin()"></div>
             <div class="admin-content glass-panel">
-                <h2>Painel Admin</h2>
-                <div class="stat-row">
-                    <div class="stat-box">
-                        <p>Jogadores</p>
-                        <h3 id="stat-players">0</h3>
-                    </div>
-                    <div class="stat-box">
-                        <p>Brindes</p>
-                        <h3 id="stat-prizes">0</h3>
+                <div class="admin-header">
+                    <h2>PAINEL DE CONTROLE</h2>
+                    <div class="admin-tabs">
+                        <button class="tab-btn active" onclick="switchAdminTab('dashboard')">Geral</button>
+                        <button class="tab-btn" onclick="switchAdminTab('stock')">Estoque</button>
+                        <button class="tab-btn" onclick="switchAdminTab('screens')">Telas</button>
+                        <button class="tab-btn" onclick="switchAdminTab('logs')">Logs</button>
                     </div>
                 </div>
-                <button class="btn btn-export" onclick="exportCSV()">Exportar Lista (CSV)</button>
-                <div id="admin-debug-log" class="debug-log-box"></div>
-                <button class="btn btn-primary" onclick="resetStock()">Resetar Estoque</button>
-                <button class="btn btn-outline" style="border-color: #ffaa00; color: #ffaa00;"
-                    onclick="simulateSoldOut()">Simular Esgotamento</button>
-                <button class="btn btn-danger" onclick="resetStats()">Zerar Jogadores</button>
-                <div class="admin-test-zone" style="margin-top: 20px; text-align: left;">
-                    <h3
-                        style="color: #FFD700; margin-bottom: 15px; border-bottom: 1px solid #333; padding-bottom: 10px;">
-                        🧪 Modo Apresentação (Vendas)</h3>
-                    <div style="display: flex; gap: 8px; margin-bottom: 15px;">
-                        <button class="btn btn-outline"
-                            style="flex: 1; border-color: #00ff88; color: #00ff88; font-size: 13px; min-height: 50px; padding: 5px;"
-                            onclick="demoAutoRegister()">👤 Cadastro</button>
-                        <button class="btn btn-outline"
-                            style="flex: 1; border-color: #00ff88; color: #00ff88; font-size: 13px; min-height: 50px; padding: 5px;"
-                            onclick="demoJumpToResult()">🏆 Acertos</button>
-                        <button class="btn btn-outline"
-                            style="flex: 1; border-color: #00ff88; color: #00ff88; font-size: 13px; min-height: 50px; padding: 5px;"
-                            onclick="demoJumpToResult()">🎊 Parabéns</button>
-                        <button class="btn btn-outline"
-                            style="flex: 1; border-color: #00ff88; color: #00ff88; font-size: 13px; min-height: 50px; padding: 5px;"
-                            onclick="demoJumpToRoulette()">🎡 Roleta</button>
+
+                <div id="tab-dashboard" class="admin-tab-content active">
+                    <div class="stat-row">
+                        <div class="stat-box">
+                            <p>Jogadores</p>
+                            <h3 id="stat-players">0</h3>
+                        </div>
+                        <div class="stat-box">
+                            <p>Brindes Ganhos</p>
+                            <h3 id="stat-prizes">0</h3>
+                        </div>
                     </div>
-                    <select id="force-prize-select"
-                        style="width: 100%; padding: 15px; border-radius: 8px; background: #222; color: #fff; border: 1px solid #555; font-size: 18px;">
-                        <option value="">🍀 Roleta: Modo Justo (Sorte)</option>
-                        <option value="Squeeze">🏆 Forçar: Squeeze</option>
-                        <option value="Boné">🏆 Forçar: Boné</option>
-                        <option value="Caneta">🏆 Forçar: Caneta</option>
-                        <option value="Chaveiro Trena">🏆 Forçar: Chaveiro Trena</option>
-                        <option value="Limpa Telas">🏆 Forçar: Limpa Telas</option>
-                        <option value="Sacochila Mochila">🏆 Forçar: Sacochila</option>
-                        <option value="Lixinho de Câmbio">🏆 Forçar: Lixinho</option>
-                    </select>
+                    <button class="btn btn-export" onclick="exportCSV()" style="margin-bottom: 20px;">Exportar Lista (CSV)</button>
+                    <div class="admin-danger-zone">
+                        <button class="btn btn-danger" onclick="resetStats()">Zerar Jogadores</button>
+                    </div>
                 </div>
-                <button class="btn btn-outline" onclick="closeAdmin()">Fechar Painel</button>
+
+                <div id="tab-stock" class="admin-tab-content">
+                    <div class="stock-manager">
+                        <h3 style="margin-bottom: 20px;">Estoque Diário</h3>
+                        <div id="admin-stock-info" class="admin-stock-list">
+                            <!-- Gerado via JS -->
+                        </div>
+                        <div style="display: flex; gap: 10px; margin-top: 30px;">
+                            <button class="btn btn-primary" style="flex: 1;" onclick="resetStock()">Resetar Estoque</button>
+                            <button class="btn btn-outline" style="flex: 1; border-color: #ffaa00; color: #ffaa00;" onclick="simulateSoldOut()">Esgotar Tudo</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-screens" class="admin-tab-content">
+                    <h3 style="margin-bottom: 20px;">Navegação e Testes</h3>
+                    <div class="screen-nav-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                        <button class="btn btn-outline" style="font-size: 14px;" onclick="showScreen('home'); closeAdmin();">Home</button>
+                        <button class="btn btn-outline" style="font-size: 14px;" onclick="demoAutoRegister()">Cadastro</button>
+                        <button class="btn btn-outline" style="font-size: 14px;" onclick="demoJumpToResult()">Quiz (Ganhar)</button>
+                        <button class="btn btn-outline" style="font-size: 14px;" onclick="showScreen('lose'); closeAdmin();">Quiz (Perder)</button>
+                        <button class="btn btn-outline" style="font-size: 14px;" onclick="demoJumpToRoulette()">Roleta</button>
+                    </div>
+                    
+                    <div class="force-prize-zone" style="margin-top: 30px; text-align: left;">
+                        <h3 style="color: #FFD700; margin-bottom: 10px; font-size: 18px;">🎯 Forçar na Roleta</h3>
+                        <select id="force-prize-select" style="width: 100%; padding: 15px; border-radius: 8px; background: #222; color: #fff; border: 1px solid #555; font-size: 16px;">
+                            <option value="">🍀 Sorte (Aleatório)</option>
+                            <option value="Squeeze">🏆 Squeeze</option>
+                            <option value="Boné">🏆 Boné</option>
+                            <option value="Caneta">🏆 Caneta</option>
+                            <option value="Chaveiro Trena">🏆 Chaveiro Trena</option>
+                            <option value="Chapéu">🏆 Chapéu</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="tab-logs" class="admin-tab-content">
+                    <div id="admin-debug-log" class="debug-log-box" style="height: 300px;"></div>
+                </div>
+
+                <button class="btn btn-outline" style="margin-top: 30px; width: 100%;" onclick="closeAdmin()">Fechar Painel</button>
             </div>
         </div>
 
@@ -92,7 +112,6 @@
                 </div>
 
                 <button class="btn btn-primary btn-jumbo bounce" onclick="goToRegister()">🚜 PARTICIPAR</button>
-                <button class="btn-test-roulette" onclick="testRoulette()">🎯 Testar Roleta</button>
             </div>
         </div>
 
@@ -239,7 +258,7 @@
     <div id="screen-lose" class="screen">
         <div class="content">
             <div class="result-panel glass-panel">
-                <div class="trophy-icon">✨</div>
+                <div class="trophy-icon">😔</div>
                 <h1 class="error-title">Quase lá!</h1>
                 <p class="result-score-text">Você acertou <strong id="lose-score">3</strong> de 7.</p>
                 <p class="subtitle">Obrigado por participar! Infelizmente você não atingiu a pontuação mínima para girar a roleta.</p>

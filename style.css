@@ -3657,37 +3657,63 @@ body.keyboard-open .quiz-wrap {
     .stat-box p { font-size: 28px !important; margin-bottom: 5px !important; color: #aaa !important; }
     .stat-box h3 { font-size: 55px !important; color: white !important; font-weight: 900 !important; }
 
-    .admin-content .btn {
-        font-size: 30px !important;
-        padding: 25px !important;
-        border-radius: 15px !important;
-        width: 100% !important;
-        margin-bottom: 0 !important;
-        font-weight: 700 !important;
+    .admin-content {
+        width: 1000px !important;
+        max-width: 95vw !important;
+        padding: 60px !important;
+        border-radius: 50px !important;
+        background: rgba(10, 10, 10, 0.98) !important;
     }
 
-    .admin-test-zone h3 {
-        font-size: 38px !important;
-        margin-bottom: 15px !important;
-        color: #ffaa00 !important;
+    .admin-header h2 { 
+        font-size: 48px !important; 
+        margin-bottom: 40px !important; 
+        letter-spacing: 4px !important;
     }
+
+    .admin-tabs { 
+        padding: 10px !important; 
+        border-radius: 25px !important; 
+        margin-bottom: 40px !important; 
+    }
+
+    .tab-btn { 
+        font-size: 28px !important; 
+        padding: 25px 10px !important; 
+        border-radius: 20px !important; 
+    }
+
+    .stat-row { gap: 30px !important; margin-bottom: 40px !important; }
+
+    .stat-box { padding: 40px 20px !important; border-radius: 30px !important; }
+    .stat-box p { font-size: 28px !important; margin-bottom: 15px !important; }
+    .stat-box h3 { font-size: 90px !important; }
+
+    .admin-tab-content h3 { font-size: 38px !important; margin-bottom: 30px !important; }
+
+    .admin-content .btn {
+        font-size: 32px !important;
+        padding: 30px !important;
+        border-radius: 20px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .stock-item-row { padding: 20px 30px !important; border-radius: 20px !important; margin-bottom: 20px !important; }
+    .stock-item-row span { font-size: 34px !important; }
+    .stock-item-row input { width: 140px !important; font-size: 34px !important; padding: 20px !important; border-radius: 12px !important; }
 
     #force-prize-select {
-        font-size: 30px !important;
-        padding: 20px !important;
-        height: auto !important;
+        font-size: 32px !important;
+        padding: 25px !important;
         border-radius: 15px !important;
-        background: #222 !important;
-        color: white !important;
-        border: 1px solid #444 !important;
     }
 
     .debug-log-box {
         font-size: 22px !important;
-        max-height: 180px !important;
-        padding: 20px !important;
-        border-radius: 15px !important;
-        background: rgba(0,0,0,0.3) !important;
+        height: 400px !important;
+        max-height: none !important;
+        padding: 25px !important;
+        border-radius: 20px !important;
     }
 
     /* TELA DE DERROTA NO TOTEM (QUASE LÁ) */
