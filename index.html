@@ -366,6 +366,19 @@
         <div class="status-dot"></div>
         <span class="status-text">Desconectado</span>
     </div>
+
+    <!-- PIN MODAL FOR ADMIN -->
+    <div id="screen-admin-pin" class="screen screen-modal hide">
+        <div class="modal-backdrop" onclick="closeAdminPin()"></div>
+        <div class="admin-pin-content glass-panel" style="width: 500px; padding: 40px; border-radius: 30px; text-align: center; position: relative; z-index: 10001; margin: auto;">
+            <h3 style="color: #fff; margin-bottom: 20px; font-size: 24px;">SENHA DE ACESSO</h3>
+            <input type="password" id="input-admin-pin" class="input-field" placeholder="****" maxlength="4" style="font-size: 60px; text-align: center; margin-bottom: 30px; width: 100%; padding: 20px; color: white; background: #000; border: 1px solid #333; border-radius: 15px;">
+            <div style="display: flex; gap: 15px;">
+                <button class="btn btn-outline" style="flex: 1; min-height: 80px; font-size: 20px;" onclick="closeAdminPin()">CANCELAR</button>
+                <button class="btn btn-primary" style="flex: 1; min-height: 80px; font-size: 20px;" onclick="checkAdminPin()">ENTRAR</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

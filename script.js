@@ -1110,6 +1110,9 @@ function openAdmin() {
         }
     }
 
+    // Log admin access
+    logAdminAction('LOGIN', 'Acesso ao painel administrativo');
+    
     panel.classList.remove('hide');
     panel.classList.add('active');
     
@@ -1158,6 +1161,7 @@ function simulateSoldOut() {
 
 function switchAdminTab(tabId, btn) {
     debugLog(`Admin: Trocando para aba ${tabId}`);
+    logAdminAction('TAB_CHANGE', `Navegou para aba: ${tabId}`);
     
     // Esconder todos os conteúdos e remover classe active dos botões
     document.querySelectorAll('.admin-tab-content').forEach(c => c.classList.remove('active'));
@@ -1197,6 +1201,7 @@ function saveGeneralStock() {
 
     saveStock(); // Salva local e sincroniza com backend
     debugLog(`Estoque Geral Atualizado: ${changes.join(' | ')}`);
+    logAdminAction('STOCK_UPDATE', changes.join(' | '));
     alert("Estoque Geral atualizado e sincronizado com sucesso!");
     openAdmin(); // Refresh UI
 }
@@ -1204,11 +1209,81 @@ function saveGeneralStock() {
 function syncParticipantToGoogleSheets() { /* offline-only build */ }
 
 function showAdminPin() {
-    const pin = prompt('Senha do painel administrativo:');
+    const modal = document.getElementById('screen-admin-pin');
+    const input = document.getElementById('input-admin-pin');
+    if (modal && input) {
+        input.value = '';
+        modal.classList.remove('hide');
+        modal.classList.add('active');
+        modal.style.display = 'flex';
+        
+        // Forçar foco e abrir teclado
+        setTimeout(() => {
+            input.focus();
+            activeInput = input;
+            openKeyboard();
+        }, 100);
+    }
+}
+
+function closeAdminPin() {
+    const modal = document.getElementById('screen-admin-pin');
+    if (modal) {
+        modal.classList.add('hide');
+        modal.classList.remove('active');
+        modal.style.display = 'none';
+    }
+    closeKeyboard();
+}
+
+function checkAdminPin() {
+    const input = document.getElementById('input-admin-pin');
+    const pin = input ? input.value : '';
+    
     if (pin === ADMIN_PIN) {
+        closeAdminPin();
         openAdmin();
-    } else if (pin !== null) {
+    } else {
+        logAdminAction('LOGIN_FAIL', 'Tentativa de login com senha incorreta');
         alert('Senha incorreta.');
+        if (input) input.value = '';
+    }
+}
+
+// ═══════════════════════════════════════════════════════
+//  SUPABASE LOGGING SYSTEM
+// ═══════════════════════════════════════════════════════
+
+const SUPABASE_URL = ''; // Adicionar URL do Supabase
+const SUPABASE_KEY = ''; // Adicionar Key do Supabase
+
+async function logAdminAction(action, details) {
+    const logEntry = {
+        action: action,
+        details: details,
+        timestamp: new Date().toISOString(),
+        totem_id: 'TOTEM-AGRISHOW-01'
+    };
+
+    // 1. Log Local (sempre funciona)
+    debugLog(`[SUPABASE LOG] ${action}: ${details}`);
+
+    // 2. Enviar para o Supabase (se configurado)
+    if (SUPABASE_URL && SUPABASE_KEY) {
+        try {
+            await fetch(`${SUPABASE_URL}/rest/v1/admin_logs`, {
+                method: 'POST',
+                headers: {
+                    'apikey': SUPABASE_KEY,
+                    'Authorization': `Bearer ${SUPABASE_KEY}`,
+                    'Content-Type': 'application/json',
+                    'Prefer': 'return=minimal'
+                },
+                body: json.stringify(logEntry)
+            });
+        } catch (err) {
+            console.error('Erro ao enviar log para Supabase:', err);
+        }
     }
 }
 
@@ -1365,10 +1440,16 @@ window.onload = () => {
 let activeInput = null;
 
 function initKeyboard() {
-    const inputs = document.querySelectorAll('.input-field, .field-input');
+    const inputs = document.querySelectorAll('.input-field, .field-input, .stock-manual-input');
     inputs.forEach(input => {
         // Usamos mousedown para capturar o toque antes do foco nativo
         input.addEventListener('mousedown', (e) => {
+            activeInput = e.target;
+            openKeyboard();
+        });
+        
+        // Garante que o clique/foco também funcione
+        input.addEventListener('focus', (e) => {
             activeInput = e.target;
             openKeyboard();
         });
