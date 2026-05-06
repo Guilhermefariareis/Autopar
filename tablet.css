@@ -281,12 +281,12 @@ body {
 }
 
 
-/* ─── QUIZ SCREEN ───────────────────────────────────────── */
 .quiz-wrap {
     padding: 8px 12px !important;
     border-radius: 20px !important;
     margin: 0 auto !important;
-    height: 100% !important;
+    height: 85% !important;
+    max-height: 85vh !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -297,6 +297,10 @@ body {
     border: none !important;
     box-shadow: none !important;
     box-sizing: border-box !important;
+}
+
+.progress-container {
+    margin-bottom: 8px !important;
 }
 
 .section-title {
@@ -393,12 +397,12 @@ body {
 }
 
 .counter {
-    font-size: 28px !important;
+    font-size: 16px !important;
 }
 
 .btn-cancel-quiz {
-    font-size: 20px !important;
-    padding: 16px 36px !important;
+    font-size: 13px !important;
+    padding: 8px 24px !important;
 }
 
 
