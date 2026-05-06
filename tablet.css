@@ -125,8 +125,46 @@ body {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
-    justify-content: center !important;
+    justify-content: space-between !important;
     width: 100% !important;
+    height: 82vh !important;
+    padding: 30px 0 !important;
+    box-sizing: border-box !important;
+}
+
+#screen-home .logo-wrapper {
+    margin-top: 20px !important;
+    margin-bottom: 0 !important;
+}
+
+#screen-home .home-logo {
+    width: min(340px, 55vw) !important;
+}
+
+#screen-home .main-title {
+    font-size: clamp(56px, 12vw, 84px) !important;
+    font-weight: 900 !important;
+    line-height: 1.05 !important;
+    margin: 15px 0 !important;
+}
+
+#screen-home .subtitle {
+    font-size: clamp(22px, 4vw, 28px) !important;
+    line-height: 1.4 !important;
+    margin-bottom: 20px !important;
+}
+
+#screen-home .btn-jumbo {
+    width: 90% !important;
+    max-width: 450px !important;
+    height: 85px !important;
+    font-size: 28px !important;
+    border-radius: 50px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 10px 30px rgba(255, 69, 0, 0.4) !important;
+    margin-bottom: 20px !important;
 }
 
 
