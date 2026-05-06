@@ -587,40 +587,59 @@ body {
 
 
 /* ─── INSTAGRAM SCREEN ──────────────────────────────────── */
+#screen-instagram {
+    justify-content: center !important;
+    padding: 15px !important;
+}
+
+#screen-instagram > img {
+    width: 200px !important;
+    height: auto !important;
+    margin-bottom: 15px !important;
+}
+
 .instagram-panel {
-    text-align: center;
-    padding: 80px 40px !important;
-    width: 90% !important;
-    max-width: 650px !important;
-    border-radius: 40px !important;
+    text-align: center !important;
+    padding: 25px 20px !important;
+    width: 95% !important;
+    max-width: 480px !important;
+    border-radius: 20px !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
 }
 
-.insta-title {
-    font-size: 56px !important;
-    margin-bottom: 20px !important;
+.instagram-panel h1 {
+    font-size: 28px !important;
+    margin: 0 !important;
+    font-weight: 900 !important;
 }
 
-.insta-subtitle {
-    font-size: 28px !important;
-    margin-bottom: 40px !important;
-    line-height: 1.4 !important;
+.qr-container {
+    margin: 15px 0 !important;
 }
 
 .qr-container img, .insta-qr-img {
-    width: 400px !important;
-    height: 400px !important;
-    margin: 30px auto !important;
-    border-radius: 20px;
-    border: 5px solid #fff;
+    width: 240px !important;
+    height: 240px !important;
+    margin: 0 auto !important;
+    border-radius: 15px !important;
+    border: 3px solid #fff !important;
 }
 
-.insta-handle {
-    font-size: 40px !important;
-    margin-bottom: 50px !important;
+.instagram-panel p {
+    font-size: 18px !important;
+    color: #ffb74d !important;
+    margin: 10px 0 20px 0 !important;
+    font-weight: bold !important;
+}
+
+.instagram-panel .btn-jumbo {
+    height: 65px !important;
+    font-size: 22px !important;
+    border-radius: 35px !important;
+    width: 100% !important;
 }
 
 
