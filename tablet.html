@@ -10,9 +10,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Quiz Panther - Autopar 2026</title>
     <link href="fonts.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=108">
-    <link rel="stylesheet" href="mobile.css?v=108">
-    <link rel="stylesheet" href="tablet.css?v=108">
+    <link rel="stylesheet" href="style.css?v=109">
+    <link rel="stylesheet" href="mobile.css?v=109">
+    <link rel="stylesheet" href="tablet.css?v=109">
 </head>
 
 <body>
@@ -235,19 +235,19 @@
 
         <!-- WIN -->
         <div id="screen-win" class="screen">
-            <img src="panther.png" alt="Panther" style="width: 400px; margin-bottom: 40px; filter: drop-shadow(0 0 20px rgba(255, 69, 0, 0.5));">
-            <div class="content result-panel glass-panel" style="padding: 40px 30px !important; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 95% !important; max-width: 680px !important;">
-                <div style="font-size: 90px !important; margin-bottom: 15px !important; filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.6)); line-height: 1 !important; display: block !important;">🏆</div>
-                <h1 class="success-title" style="margin-bottom: 10px !important; font-weight: 900 !important; text-transform: uppercase; letter-spacing: 1px !important;">PARABÉNS, <span id="win-name" style="color: #ff4500 !important;">Visitante</span>!</h1>
-                <p class="subtitle" style="font-size: 28px !important; margin-bottom: 15px !important; font-weight: bold; color: white !important;">Você fez <span id="win-score"></span> pontos.</p>
+            <img src="panther.png" alt="Panther" class="win-logo" style="filter: drop-shadow(0 0 20px rgba(255, 69, 0, 0.5));">
+            <div class="content result-panel glass-panel">
+                <div class="trophy-icon">🏆</div>
+                <h1 class="success-title">PARABÉNS, <span id="win-name" style="color: #ff4500 !important;">Visitante</span>!</h1>
+                <p class="subtitle">Você fez <span id="win-score"></span> pontos.</p>
                 
-                <div style="text-align: center; margin: 55px 0 !important; width: 100% !important; overflow: visible !important;">
-                    <img src="Oleo_1.png" alt="Produtos" style="width: 100% !important; max-width: 540px !important; height: auto; transform: scale(1.55) !important; transform-origin: center !important; filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 15px rgba(255, 69, 0, 0.15));">
+                <div class="win-product-box">
+                    <img src="Oleo_1.png" alt="Produtos" class="win-product-img">
                 </div>
                 
-                <p style="font-size: 20px !important; color: #cccccc !important; margin-bottom: 25px !important; line-height: 1.4; text-align: center;">Gire a roleta para descobrir sua recompensa!</p>
+                <p class="win-help-text">Gire a roleta para descobrir sua recompensa!</p>
                 
-                <button class="btn btn-primary btn-jumbo" onclick="showInstagram()" style="width: 100% !important; font-size: 28px !important;">GIRAR A ROLETA</button>
+                <button class="btn btn-primary btn-jumbo" onclick="showInstagram()">GIRAR A ROLETA</button>
             </div>
         </div>
 
