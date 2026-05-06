@@ -709,72 +709,88 @@ body {
 
 /* ─── ADMIN DASHBOARD OVERRIDES ─────────────────────────── */
 .mobile-admin-dashboard {
-    background: #0a0a0a !important;
-    border: 1px solid rgba(255,255,255,0.1);
-    box-shadow: 0 0 50px rgba(0,0,0,1);
-    width: 95% !important;
-    max-width: 440px !important;
-    height: auto !important;
-    max-height: 82vh !important;
-    border-radius: 16px !important;
-    padding: 12px 14px !important;
+    background: rgba(10, 10, 10, 0.95) !important;
+    border: 2px solid rgba(255, 69, 0, 0.45) !important;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.95), 0 0 30px rgba(255, 69, 0, 0.2), inset 0 0 20px rgba(255, 69, 0, 0.05) !important;
+    width: 92% !important;
+    max-width: 540px !important;
+    height: 90% !important;
+    max-height: 710px !important;
+    border-radius: 24px !important;
+    padding: 20px !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
     display: flex !important;
     flex-direction: column !important;
-    overflow-y: auto !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
 }
 
 .mini-stats {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 8px !important;
-    margin-bottom: 10px !important;
+    gap: 10px !important;
+    margin-bottom: 12px !important;
 }
 
 .stat-item {
-    background: rgba(255,255,255,0.05);
-    padding: 8px !important;
-    border-radius: 10px !important;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 10px !important;
+    border-radius: 12px !important;
     text-align: center;
 }
 
 .stat-item label {
     display: block;
-    font-size: 11px !important;
+    font-size: 12px !important;
     font-weight: 800;
     opacity: 0.6;
-    margin-bottom: 4px !important;
+    margin-bottom: 6px !important;
 }
 
 .stat-item span {
-    font-size: 20px !important;
+    font-size: 22px !important;
     font-weight: 900;
+    color: var(--orange) !important;
 }
 
 .admin-header-simple {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px !important;
+    margin-bottom: 15px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 12px !important;
 }
 
 .admin-header-simple h2 {
-    font-size: 18px !important;
+    font-size: 20px !important;
     margin: 0 !important;
     font-weight: 900 !important;
-    letter-spacing: 0.5px !important;
+    letter-spacing: 1px !important;
+    color: white !important;
+    text-shadow: 0 0 10px rgba(255, 69, 0, 0.3) !important;
 }
 
 .btn-close-admin {
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     border: none;
     color: white;
-    width: 32px !important;
-    height: 32px !important;
-    border-radius: 16px !important;
-    font-size: 14px !important;
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 18px !important;
+    font-size: 16px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+}
+
+.btn-close-admin:active {
+    background: rgba(255, 69, 0, 0.3) !important;
+    transform: scale(0.9) !important;
 }
 
 .admin-tab-content {
@@ -782,27 +798,43 @@ body {
 }
 
 .admin-tab-content.active {
-    display: block !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 !important;
+    overflow-y: auto !important;
+    padding-right: 6px !important;
+    gap: 15px !important;
+}
+
+/* Custom Scrollbars */
+.admin-tab-content.active::-webkit-scrollbar {
+    width: 6px !important;
+}
+
+.admin-tab-content.active::-webkit-scrollbar-thumb {
+    background: rgba(255, 69, 0, 0.4) !important;
+    border-radius: 10px !important;
 }
 
 .tab-btn {
     flex: 1;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: #fff;
-    padding: 6px 4px !important;
-    font-size: 11px !important;
-    font-weight: 800;
-    border-radius: 8px !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    padding: 12px 6px !important;
+    font-size: 13px !important;
+    font-weight: 900;
+    border-radius: 12px !important;
     cursor: pointer;
     transition: all 0.2s ease;
     white-space: nowrap !important;
 }
 
 .tab-btn.active {
-    background: var(--orange);
-    border-color: var(--orange);
-    box-shadow: 0 4px 12px rgba(255, 69, 0, 0.3);
+    background: var(--orange) !important;
+    border-color: var(--orange) !important;
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(255, 69, 0, 0.4) !important;
 }
 
 .admin-data-list::-webkit-scrollbar {
@@ -817,28 +849,29 @@ body {
 .actions-grid {
     display: flex !important;
     flex-direction: column !important;
-    gap: 8px !important;
-    margin-top: 10px !important;
+    gap: 12px !important;
+    margin-top: 5px !important;
 }
 
 .admin-btn-action {
-    font-size: 13px !important;
-    padding: 10px !important;
-    border-radius: 8px !important;
+    font-size: 16px !important;
+    padding: 16px !important;
+    border-radius: 12px !important;
+    font-weight: 900 !important;
 }
 
 .nav-shortcuts {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 8px !important;
-    margin-top: 10px !important;
+    gap: 12px !important;
+    margin-top: 5px !important;
 }
 
 .nav-shortcuts button {
-    font-size: 11px !important;
-    padding: 8px 4px !important;
-    border-radius: 8px !important;
-    font-weight: 800 !important;
+    font-size: 14px !important;
+    padding: 14px 10px !important;
+    border-radius: 12px !important;
+    font-weight: 900 !important;
 }
 
 /* Remove virtual keyboard overrides */
