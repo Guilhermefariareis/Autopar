@@ -26,7 +26,7 @@ html, body, #app {
     width: 100vw !important;
     height: 100vh !important;
     box-sizing: border-box !important;
-    padding: 40px !important;
+    padding: 15px !important;
     position: absolute !important;
     inset: 0 !important;
     opacity: 0;
@@ -293,13 +293,13 @@ body {
 }
 
 .question-box {
-    min-height: 75px !important;
+    min-height: 55px !important;
     height: auto !important;
     background: rgba(15, 15, 15, 0.85) !important;
     border: 2px solid #ff4500 !important;
-    border-radius: 16px !important;
-    padding: 10px 15px !important;
-    margin: 8px 0 20px 0 !important;
+    border-radius: 14px !important;
+    padding: 8px 12px !important;
+    margin: 5px 0 12px 0 !important;
     width: 100% !important;
     display: flex !important;
     align-items: center !important;
@@ -308,11 +308,11 @@ body {
 }
 
 .answers-container {
-    gap: 10px !important;
+    gap: 7px !important;
     width: 100% !important;
     display: flex !important;
     flex-direction: column !important;
-    margin-bottom: 8px !important;
+    margin-bottom: 5px !important;
 }
 
 .btn-answer {
