@@ -283,10 +283,10 @@ body {
 
 /* ─── QUIZ SCREEN ───────────────────────────────────────── */
 .quiz-wrap {
-    padding: 20px 18px !important;
+    padding: 12px 18px !important;
     border-radius: 20px !important;
     margin: 0 auto !important;
-    height: 90vh !important;
+    height: 82vh !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -331,13 +331,13 @@ body {
 }
 
 .question-box {
-    min-height: 100px !important;
+    min-height: 80px !important;
     height: auto !important;
     background: rgba(15, 15, 15, 0.85) !important;
     border: 2px solid #ff4500 !important;
     border-radius: 14px !important;
-    padding: 15px 20px !important;
-    margin: 15px 0 !important;
+    padding: 12px 18px !important;
+    margin: 10px 0 !important;
     width: 100% !important;
     display: flex !important;
     align-items: center !important;
@@ -346,18 +346,18 @@ body {
 }
 
 .answers-container {
-    gap: 12px !important;
+    gap: 10px !important;
     width: 100% !important;
     display: flex !important;
     flex-direction: column !important;
-    margin-bottom: 15px !important;
+    margin-bottom: 10px !important;
 }
 
 .btn-answer {
-    font-size: 19px !important;
+    font-size: 18px !important;
     font-weight: 800 !important;
-    padding: 14px 18px !important;
-    min-height: 60px !important;
+    padding: 11px 16px !important;
+    min-height: 52px !important;
     border-radius: 12px !important;
     border: 2px solid rgba(255, 255, 255, 0.3) !important;
     width: 100% !important;
