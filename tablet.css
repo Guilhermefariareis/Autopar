@@ -1,4 +1,4 @@
-/* Tablet Optimization - Samsung Tab A11 (Portrait Mode @ viewport width=1200) */
+/* Tablet Optimization - Samsung Tab A11 (Vertical / Portrait Mode) */
 
 /* ─── KIOSK STABILITY & PERFECT CENTERING ────────────────── */
 html, body, #app {
@@ -10,8 +10,6 @@ html, body, #app {
     position: fixed !important;
     inset: 0 !important;
     background: #000;
-    -webkit-text-size-adjust: 100% !important;
-    text-size-adjust: 100% !important;
 }
 
 /* Visibility Utilities */
@@ -68,31 +66,31 @@ html, body, #app {
 
 /* ─── GLOBAL SCALING OVERRIDES FOR TABLET ──────────────── */
 body {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .main-title {
-    font-size: clamp(48px, 8vw, 72px) !important;
-    margin-bottom: 15px !important;
+    font-size: clamp(52px, 12vw, 90px) !important;
+    margin-bottom: 20px !important;
     line-height: 1 !important;
 }
 
 .subtitle {
-    font-size: clamp(18px, 2.5vw, 26px) !important;
-    margin-bottom: 30px !important;
+    font-size: clamp(20px, 3.5vw, 30px) !important;
+    margin-bottom: 40px !important;
     line-height: 1.4 !important;
 }
 
 .logo-wrapper {
-    margin-bottom: 30px !important;
-    gap: 20px !important;
+    margin-bottom: 40px !important;
+    gap: 25px !important;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .home-logo {
-    width: min(300px, 40vw) !important;
+    width: min(380px, 55vw) !important;
     max-width: none !important;
 }
 
@@ -104,21 +102,21 @@ body {
 
 /* BUTTONS */
 .btn {
-    font-size: 20px !important;
-    padding: 16px 28px !important;
+    font-size: 22px !important;
+    padding: 20px 32px !important;
     border-radius: 60px !important;
 }
 
 .btn-jumbo {
-    height: 70px !important;
-    font-size: 24px !important;
-    padding: 0 36px !important;
+    height: 85px !important;
+    font-size: 28px !important;
+    padding: 0 40px !important;
     border-radius: 60px !important;
 }
 
 .btn-link {
-    font-size: 18px !important;
-    padding: 12px 24px !important;
+    font-size: 20px !important;
+    padding: 14px 30px !important;
 }
 
 
@@ -428,49 +426,49 @@ body {
     flex-direction: column !important;
     align-items: center !important;
     justify-content: space-around !important;
-    padding: 15px;
+    padding: 20px;
 }
 
 .roulette-title {
-    font-size: clamp(32px, 5vw, 44px) !important;
+    font-size: clamp(36px, 7vw, 52px) !important;
 }
 
 .roulette-title::before, .roulette-title::after {
-    font-size: 32px !important;
+    font-size: 36px !important;
     vertical-align: middle !important;
-    margin: 0 10px !important;
+    margin: 0 12px !important;
     display: inline-block !important;
 }
 
 .roulette-header-logo {
-    width: 150px !important;
+    width: 180px !important;
 }
 
 .roulette-subtitle {
-    font-size: 22px !important;
+    font-size: 24px !important;
 }
 
 .wheel-stage {
     position: relative;
-    width: min(380px, 55vh) !important;
-    height: min(380px, 55vh) !important;
+    width: min(420px, 58vh) !important;
+    height: min(420px, 58vh) !important;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto 15px auto !important;
+    margin: 30px auto 20px auto !important;
 }
 
 #wheel-canvas {
     width: 100% !important;
     height: 100% !important;
-    filter: drop-shadow(0 0 20px rgba(255,100,0,0.3));
+    filter: drop-shadow(0 0 25px rgba(255,100,0,0.3));
 }
 
 .wheel-pointer-wrap {
     position: absolute;
-    top: -18px !important;
+    top: -22px !important;
     left: 50%;
-    transform: translateX(-50%) scale(1) !important;
+    transform: translateX(-50%) scale(1.1) !important;
     z-index: 10;
 }
 
@@ -489,38 +487,38 @@ body {
     position: absolute !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
-    top: -15px !important;
+    top: -18px !important;
     width: 0 !important;
     height: 0 !important;
-    border-left: 18px solid transparent !important;
-    border-right: 18px solid transparent !important;
-    border-top: 35px solid #ffffff !important;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.6)) !important;
+    border-left: 22px solid transparent !important;
+    border-right: 22px solid transparent !important;
+    border-top: 40px solid #ffffff !important;
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.6)) !important;
 }
 
 .wheel-center-cap {
-    width: 70px !important;
-    height: 70px !important;
+    width: 80px !important;
+    height: 80px !important;
     border-width: 3px !important;
 }
 
 .wheel-glow-ring.ring1 {
-    width: calc(min(380px, 55vh) + 30px) !important;
-    height: calc(min(380px, 55vh) + 30px) !important;
+    width: min(450px, calc(58vh + 30px)) !important;
+    height: min(450px, calc(58vh + 30px)) !important;
 }
 
 .wheel-glow-ring.ring2 {
-    width: calc(min(380px, 55vh) - 20px) !important;
-    height: calc(min(380px, 55vh) - 20px) !important;
+    width: min(400px, calc(58vh - 20px)) !important;
+    height: min(400px, calc(58vh - 20px)) !important;
 }
 
 .spin-status {
-    height: 35px;
-    font-size: 20px !important;
+    height: 40px;
+    font-size: 24px !important;
     font-weight: 700;
     color: var(--orange);
     text-align: center;
-    margin-bottom: 10px !important;
+    margin-bottom: 15px !important;
 }
 
 /* Prize popup */
@@ -829,15 +827,15 @@ body {
 /* Reduzir o tamanho do botão girar no tablet vertical */
 #btn-spin {
     width: auto !important;
-    min-width: 220px !important;
-    max-width: 280px !important;
-    padding: 12px 24px !important;
-    font-size: 18px !important;
+    min-width: 250px !important;
+    max-width: 300px !important;
+    padding: 14px 26px !important;
+    font-size: 20px !important;
     letter-spacing: 1.5px !important;
     border-radius: 50px !important;
     margin: 0 auto !important;
     display: block !important;
-    box-shadow: 0 8px 16px rgba(255, 69, 0, 0.3) !important;
+    box-shadow: 0 10px 20px rgba(255, 69, 0, 0.3) !important;
 }
 
 /* Correções para a tela de perda (QUASE LÁ!) no tablet vertical */
