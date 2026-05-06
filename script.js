@@ -2,22 +2,28 @@
 
 // Prize Stock Configuration
 const INITIAL_STOCK = {
-    'Chapéu': 50,
-    'Boné': 70,
-    'Squeeze': 150,
-    'Chaveiro Trena': 150,
-    'Caneta': 150
+    'Caneta': 60,
+    'Squeeze': 50,
+    'Chaveiro Trena': 50,
+    'Boné': 40
 };
 
 // State Management
 let stats = {
     players: parseInt(localStorage.getItem('agriPlayers') || '0', 10),
-    prizes: parseInt(localStorage.getItem('agriPrizes') || '0', 10)
+    prizes: parseInt(localStorage.getItem('agriPrizes') || '0', 10),
+    winners: parseInt(localStorage.getItem('agriWinners') || '0', 10),
+    losers: parseInt(localStorage.getItem('agriLosers') || '0', 10)
 };
 
 let prizeStock = JSON.parse(localStorage.getItem('agriStock'));
 if (!prizeStock || Object.keys(prizeStock).length === 0 || Object.values(prizeStock).reduce((a, b) => a + b, 0) === 0) {
     prizeStock = { ...INITIAL_STOCK };
+}
+
+// Forçar a remoção remota do Chapéu caso ainda exista no cache/sistema deles
+if (prizeStock['Chapéu'] !== undefined) {
+    delete prizeStock['Chapéu'];
 }
 
 function saveStock() {
@@ -41,6 +47,12 @@ async function loadStockFromServer() {
 
         if (serverStock && Object.keys(serverStock).length > 0) {
             prizeStock = serverStock;
+            
+            if (prizeStock['Chapéu'] !== undefined) {
+                delete prizeStock['Chapéu'];
+                saveStock();
+            }
+            
             localStorage.setItem('agriStock', JSON.stringify(prizeStock));
             debugLog('Estoque carregado do servidor com sucesso.');
             checkGlobalStock();
@@ -93,6 +105,10 @@ let adminClicks = [];
 // Admin State
 let adminPinBuffer = '';
 const ADMIN_PIN = '1234';
+
+// Pre-load roulette logo
+const rouletteLogo = new Image();
+rouletteLogo.src = 'panther.png';
 
 
 // ============================================================
@@ -207,6 +223,46 @@ async function syncToSupabase(lead) {
     }
 }
 
+/** Sincroniza TODOS os leads acumulados offline para o Supabase (Nuvem) */
+async function pushAllOfflineLeadsToSupabase() {
+    if (!SUPABASE_URL || !SUPABASE_KEY || !navigator.onLine) return;
+    if (!participants || participants.length === 0) return;
+
+    try {
+        const payload = participants.map(lead => ({
+            id: lead.id || `lead-${Date.now()}-${Math.random()}`, // Garante ID para upsert
+            name: lead.name,
+            phone: lead.phone,
+            score: lead.score,
+            prize: lead.prize,
+            code: lead.code,
+            created_at: lead.created_at || new Date().toISOString()
+        }));
+
+        // Upsert em lote: insere ou atualiza via ID
+        const response = await fetch(`${SUPABASE_URL}/rest/v1/leads?on_conflict=id`, {
+            method: 'POST',
+            headers: {
+                'apikey': SUPABASE_KEY,
+                'Authorization': `Bearer ${SUPABASE_KEY}`,
+                'Content-Type': 'application/json',
+                'Prefer': 'resolution=merge-duplicates'
+            },
+            body: JSON.stringify(payload)
+        });
+
+        if (response.ok) {
+            debugLog(`[Supabase] Backup em Nuvem: ${participants.length} leads sincronizados com sucesso.`, 'info');
+        } else {
+            const errText = await response.text();
+            debugLog(`[Supabase] Falha no Backup em Nuvem: ${response.status}`, 'warn');
+            console.error(errText);
+        }
+    } catch (e) {
+        debugLog(`[Supabase] Aguardando conexão para enviar backup em nuvem...`, 'warn');
+    }
+}
+
 /** Envia todos os leads do localStorage para o servidor local */
 function syncLeadsToServer(onComplete) {
     if (!participants || participants.length === 0) {
@@ -269,6 +325,7 @@ function startAutoSync() {
     _syncTimer = setInterval(() => {
         if (navigator.onLine) {
             syncLeadsToServer();
+            pushAllOfflineLeadsToSupabase(); // Envia lote pra nuvem
         } else {
             updateServerStatus(false);
             debugLog('Totem Offline: Aguardando conexão para sincronizar...', 'info');
@@ -277,6 +334,16 @@ function startAutoSync() {
     
     // Sincroniza imediatamente ao iniciar
     syncLeadsToServer();
+    if (navigator.onLine) {
+        pushAllOfflineLeadsToSupabase();
+    }
+
+    // Dispara a sincronização instantaneamente se a internet voltar (ex: roteou 4G)
+    window.addEventListener('online', () => {
+        debugLog('Conexão de internet detectada! Iniciando upload para o Supabase...', 'info');
+        syncLeadsToServer();
+        pushAllOfflineLeadsToSupabase();
+    });
 }
 
 /** Salva imediatamente (wrapper para compatibilidade) */
@@ -285,55 +352,100 @@ function saveToServer() {
 }
 
 const questionsBank = [
+    // 🔧 FUNDAMENTOS
     {
-        q: "Qual é a principal função de um lubrificante Panther no motor?",
-        answers: ["Aumentar o tamanho do motor", "Reduzir o atrito entre as peças", "Colorir o motor", "Substituir o combustível"],
-        correct: 1
+        q: "A Panther Lubrificantes atua em quais segmentos?",
+        answers: ["Apenas motos", "Linha leve, pesada e industrial", "Apenas carros", "Apenas caminhões"],
+        correct: 1,
+        category: "fundamentos"
     },
     {
-        q: "A Panther Lubrificantes desenvolve produtos para quais tipos de aplicação?",
-        answers: ["Apenas carros de passeio", "Apenas motos", "Linha automotiva, motos, pesados e agrícola", "Apenas máquinas agrícolas"],
-        correct: 2
+        q: "A marca Panther se destaca por:",
+        answers: ["Não ter tecnologia", "Qualidade e inovação em lubrificantes", "Apenas preço baixo", "Produtos importados apenas"],
+        correct: 1,
+        category: "fundamentos"
     },
     {
-        q: "Os lubrificantes Panther são desenvolvidos para ajudar a:",
-        answers: ["Reduzir o desgaste do motor", "Proteger os componentes internos", "Melhorar o desempenho dos equipamentos", "Todas as alternativas"],
-        correct: 3
+        q: "Os produtos Panther são desenvolvidos para:",
+        answers: ["Qualquer uso sem critério", "Atender normas e desempenho exigido", "Apenas competição", "Uso doméstico"],
+        correct: 1,
+        category: "fundamentos"
     },
     {
-        q: "Para equipamentos agrícolas como tratores e colheitadeiras, é importante usar lubrificantes que:",
-        answers: ["Tenham qualidade e especificação correta", "Sejam apenas mais baratos", "Qualquer tipo de óleo serve", "Não precisam ser trocados"],
-        correct: 0
+        q: "O que acontece se faltar óleo no motor?",
+        answers: ["Nada", "Travamento do motor", "Mais potência", "Menos consumo"],
+        correct: 1,
+        category: "fundamentos"
     },
     {
-        q: "Utilizar um lubrificante de qualidade, como os da Panther, ajuda a:",
-        answers: ["Aumentar a vida útil do equipamento", "Reduzir manutenção inesperada", "Melhorar a eficiência da máquina", "Todas as alternativas"],
-        correct: 3
+        q: "Completar óleo substitui a troca?",
+        answers: ["Sim", "Não", "Às vezes", "Só em caminhão"],
+        correct: 1,
+        category: "fundamentos"
+    },
+
+    // ⚙️ OPERAÇÃO
+    {
+        q: "Qual o maior erro do motorista?",
+        answers: ["Trocar no prazo", "Ignorar manutenção", "Usar óleo correto", "Conferir nível"],
+        correct: 1,
+        category: "operacao"
     },
     {
-        q: "O que indica a viscosidade de um óleo lubrificante?",
-        answers: ["A cor do óleo", "A espessura ou fluidez do óleo", "O cheiro do óleo", "O tamanho da embalagem"],
-        correct: 1
+        q: "Qual o melhor lubrificante?",
+        answers: ["O mais barato", "O mais caro", "O recomendado pelo fabricante e de qualidade confiável (como Panther)", "Qualquer um"],
+        correct: 2,
+        category: "operacao"
     },
     {
-        q: "Qual tipo de motor é mais comum em tratores agrícolas?",
-        answers: ["Motor elétrico", "Motor diesel", "Motor a gás", "Motor híbrido"],
-        correct: 1
+        q: "O que é degradação do óleo?",
+        answers: ["Evaporação completa", "Perda de propriedades ao longo do tempo", "Mistura com combustível", "Troca automática"],
+        correct: 1,
+        category: "operacao"
     },
     {
-        q: "Lubrificantes Panther podem ser usados em:",
-        answers: ["Motores", "Sistemas hidráulicos", "Transmissões", "Todas as alternativas"],
-        correct: 3
+        q: "A função detergente do óleo serve para:",
+        answers: ["Lavar o carro", "Evitar sujeira interna", "Melhorar combustível", "Limpar pneus"],
+        correct: 1,
+        category: "operacao"
     },
     {
-        q: "Em operações agrícolas intensas, o lubrificante precisa:",
-        answers: ["Ser trocado quando escurece", "Ter especificação correta", "Durar para sempre", "Ser qualquer tipo"],
-        correct: 1
+        q: "Motores turbo exigem:",
+        answers: ["Qualquer óleo", "Óleo de maior desempenho térmico", "Água", "Gasolina especial"],
+        correct: 1,
+        category: "operacao"
+    },
+
+    // 🚀 PERFORMANCE
+    {
+        q: "Qual fator mais influencia na escolha do óleo?",
+        answers: ["Cor", "Manual do fabricante", "Preço apenas", "Marca do carro"],
+        correct: 1,
+        category: "performance"
     },
     {
-        q: "Durante a colheita, parar uma máquina por problema mecânico pode:",
-        answers: ["Não causar impacto", "Atrasar toda a operação", "Não fazer diferença", "Melhorar a produção"],
-        correct: 1
+        q: "O que pode causar borra no motor?",
+        answers: ["Troca correta", "Uso de óleo adequado", "Falta de manutenção", "Combustível bom"],
+        correct: 2,
+        category: "performance"
+    },
+    {
+        q: "Lubrificante sintético tem vantagem de:",
+        answers: ["Menor durabilidade", "Maior estabilidade térmica", "Menos proteção", "Mais consumo"],
+        correct: 1,
+        category: "performance"
+    },
+    {
+        q: "Em caminhões, o uso severo exige:",
+        answers: ["Troca mais longa", "Troca mais frequente", "Não trocar", "Apenas completar"],
+        correct: 1,
+        category: "performance"
+    },
+    {
+        q: "O que é viscosidade?",
+        answers: ["Cor do óleo", "Resistência ao fluxo", "Tipo de motor", "Temperatura"],
+        correct: 1,
+        category: "performance"
     }
 ];
 
@@ -477,12 +589,26 @@ function startQuiz() {
     score = 0;
     qIndex = 0;
 
-    // Shuffle and pick 7 random questions from the bank
-    // We create a fresh copy and shuffle twice to ensure high randomness
-    const shuffledBank = shuffleArray([...questionsBank]);
-    currentQs = shuffleArray(shuffledBank).slice(0, TOTAL_QUESTIONS);
+    // Shuffle and pick 7 random questions from the bank, balanced across categories
+    const catFundamentos = shuffleArray(questionsBank.filter(q => q.category === 'fundamentos'));
+    const catOperacao = shuffleArray(questionsBank.filter(q => q.category === 'operacao'));
+    const catPerformance = shuffleArray(questionsBank.filter(q => q.category === 'performance'));
+
+    // Pick 2 from each main category (Total 6)
+    const selectedQs = [
+        ...catFundamentos.slice(0, 2),
+        ...catOperacao.slice(0, 2),
+        ...catPerformance.slice(0, 2)
+    ];
+
+    // Pick 1 more from the remaining pool to reach 7
+    const usedIds = new Set(selectedQs.map(q => q.q));
+    const remainingPool = shuffleArray(questionsBank.filter(q => !usedIds.has(q.q)));
+    selectedQs.push(remainingPool[0]);
+
+    currentQs = shuffleArray(selectedQs);
     
-    console.log("Quiz Iniciado - Questões Embaralhadas:", currentQs.map(q => q.q.substring(0, 15) + "..."));
+    console.log("Quiz Iniciado - 7 Questões Balanceadas:", currentQs.map(q => q.q.substring(0, 15) + "..."));
 
     stats.players += 1;
     localStorage.setItem('agriPlayers', String(stats.players));
@@ -503,26 +629,6 @@ function startQuiz() {
 
     showScreen('quiz');
     loadQuestion();
-}
-
-function testRoulette() {
-    currentSessionId = Date.now();
-    playerName = "TESTE ROLETA";
-    playerPhone = "11999999999";
-    stats.players += 1;
-    localStorage.setItem('agriPlayers', String(stats.players));
-    participants.push({
-        id: currentSessionId,
-        name: playerName,
-        phone: playerPhone,
-        date: new Date().toLocaleDateString('pt-BR'),
-        time: new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }),
-        score: null,
-        prize: '-',
-        code: '-'
-    });
-    saveAndSync();
-    showRoulette();
 }
 
 function loadQuestion() {
@@ -648,10 +754,15 @@ function showResults() {
     }
 
     if (score >= WIN_SCORE) {
+        stats.winners++;
+        localStorage.setItem('agriWinners', stats.winners);
+        
         document.getElementById('win-score').textContent = score;
         document.getElementById('win-name').textContent = playerName.split(' ')[0];
         showScreen('win');
     } else {
+        stats.losers++;
+        localStorage.setItem('agriLosers', stats.losers);
         document.getElementById('lose-score').textContent = score;
         showScreen('lose');
     }
@@ -662,10 +773,15 @@ function showResults() {
 
 function showInstagram() {
     showScreen('instagram');
+    // Atualiza o estoque de forma discreta em background
+    loadStockFromServer().catch(e => debugLog('Update discreto de estoque falhou', 'warn'));
 }
 
 function showRoulette() {
     try {
+        // Atualiza o estoque em background caso tenha pulado a tela do instagram
+        loadStockFromServer().catch(e => debugLog('Update discreto de estoque falhou na roleta', 'warn'));
+
         wheelSpun = false;
         const canvas = document.getElementById('wheel-canvas');
         if (!canvas) throw new Error("Canvas da roleta não encontrado");
@@ -699,14 +815,13 @@ function drawWheel(canvas) {
     const radius = cx - 30;
 
     const UI_PRIZES = [
-        'Chapéu', 'Squeeze', 'Chaveiro Trena', 'Caneta',
-        'Boné', 'Squeeze', 'Chaveiro Trena', 'Caneta'
+        'Caneta', 'Squeeze', 'Chaveiro Trena', 'Boné',
+        'Caneta', 'Squeeze', 'Chaveiro Trena', 'Boné'
     ];
     const EMOJI = {
-        'Chapéu': '🪖',
+        'Caneta': '✏️',
         'Squeeze': '💧',
         'Chaveiro Trena': '🔑',
-        'Caneta': '✏️',
         'Boné': '🧢',
     };
     // Vibrant segment palette (alternating 8 distinct colours)
@@ -852,15 +967,6 @@ async function spinWheel() {
     // Pause inactivity timer during spin
     clearInterval(inactivityTimer);
 
-    // --- REFORÇO DE ESTOQUE ---
-    // Consulta o servidor local ANTES de decidir o prêmio
-    document.getElementById('spin-status').textContent = 'Consultando estoque...';
-    try {
-        await loadStockFromServer();
-    } catch (e) {
-        debugLog('Erro ao atualizar estoque antes do giro. Usando local.', 'warn');
-    }
-
     wheelSpun = true;
     document.getElementById('btn-spin').classList.add('hidden');
     document.getElementById('spin-status').innerHTML = '&nbsp;';
@@ -873,10 +979,10 @@ async function spinWheel() {
         return;
     }
 
-    // 8 Segments as requested: 1x Hat, 1x Cap, 2x Squeeze, 2x Keychain, 2x Pen
+    // 8 Segments: 2x Caneta, 2x Squeeze, 2x Chaveiro, 2x Boné
     const UI_PRIZES = [
-        'Chapéu', 'Squeeze', 'Chaveiro Trena', 'Caneta',
-        'Boné', 'Squeeze', 'Chaveiro Trena', 'Caneta'
+        'Caneta', 'Squeeze', 'Chaveiro Trena', 'Boné',
+        'Caneta', 'Squeeze', 'Chaveiro Trena', 'Boné'
     ];
 
     // Find all indices where this prize appears and pick one
@@ -1065,92 +1171,109 @@ checkGlobalStock();
 
 // Admin Stock Controls
 function openAdmin() {
-    console.log("📂 Abrindo Painel Admin...");
-    // alert("Ativando Painel Admin..."); // Debug alert
-    
-    const panel = document.getElementById('admin-panel');
-    if (!panel) {
-        console.error("❌ Erro: Elemento 'admin-panel' não encontrado.");
-        return;
-    }
-
-    // Brute-force visibility for mobile safari
-    panel.style.display = 'flex';
-    panel.style.opacity = '1';
-    panel.style.visibility = 'visible';
-    panel.style.zIndex = '10000';
-
-    const playersEl = document.getElementById('stat-players');
-    const prizesEl = document.getElementById('stat-prizes');
-    
-    if (playersEl) playersEl.textContent = stats.players;
-    if (prizesEl) prizesEl.textContent = stats.prizes;
-
-    // Atualiza o resumo de brindes distribuídos (Novo)
-    updatePrizeSummary();
-
-    // Show current stock in admin
-    const adminContent = panel.querySelector('.admin-content');
-    if (adminContent) {
-        adminContent.style.opacity = '1';
-        adminContent.style.visibility = 'visible';
-        adminContent.style.zIndex = '10010';
-        adminContent.style.display = 'flex';
-
-        let stockInfo = document.getElementById('admin-stock-info');
-        if (!stockInfo) {
-            stockInfo = document.createElement('div');
-            stockInfo.id = 'admin-stock-info';
-            stockInfo.className = 'admin-stock-list';
-            
-            const btnExport = adminContent.querySelector('.btn-export');
-            if (btnExport && btnExport.parentNode) {
-                btnExport.parentNode.insertBefore(stockInfo, btnExport);
-            } else {
-                adminContent.appendChild(stockInfo);
-            }
+    try {
+        console.log("📂 Abrindo Painel Admin...");
+        
+        const panel = document.getElementById('admin-panel');
+        if (!panel) {
+            console.error("❌ Erro: Elemento 'admin-panel' não encontrado.");
+            return;
         }
 
-        if (prizeStock) {
-            stockInfo.innerHTML = Object.entries(prizeStock).map(([name, count]) => `
-                <div class="stock-item-row" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; background: rgba(255,255,255,0.05); padding: 10px 15px; border-radius: 10px;">
-                    <span style="font-size: 16px; font-weight: 600;">${name}</span>
-                    <div style="display: flex; gap: 10px; align-items: center;">
-                        <input type="number" value="${count}" class="stock-manual-input" data-prize="${name}" style="width: 100px; background: #000; color: #fff; border: 1px solid #444; padding: 12px; border-radius: 8px; text-align: center; font-size: 18px;" inputmode="numeric">
-                    </div>
-                </div>
-            `).join('');
-
-            // Atachar teclado aos novos inputs dinâmicos
-            setTimeout(() => {
-                const newInputs = stockInfo.querySelectorAll('.stock-manual-input');
-                newInputs.forEach(input => {
-                    const openKb = (e) => {
-                        activeInput = e.target;
-                        openKeyboard();
-                    };
-                    input.addEventListener('mousedown', openKb);
-                    input.addEventListener('focus', openKb);
-                    input.addEventListener('click', openKb);
-                });
-            }, 100);
-        }
-    }
-
-    // Log admin access
-    logAdminAction('LOGIN', 'Acesso ao painel administrativo');
-    
-    panel.classList.remove('hide');
-    panel.classList.add('active');
-    
-    // Fallback force show
-    setTimeout(() => {
+        // Brute-force visibility for mobile safari
         panel.style.display = 'flex';
         panel.style.opacity = '1';
         panel.style.visibility = 'visible';
-    }, 100);
+        panel.style.zIndex = '100000';
 
-    console.log("✅ Painel Admin ativado.");
+        const playersEl = document.getElementById('stat-players');
+        const prizesEl = document.getElementById('stat-prizes');
+        const winnersEl = document.getElementById('stat-winners');
+        const losersEl = document.getElementById('stat-losers');
+        
+        if (playersEl) playersEl.textContent = stats.players || 0;
+        if (prizesEl) prizesEl.textContent = stats.prizes || 0;
+        if (winnersEl) winnersEl.textContent = stats.winners || 0;
+        if (losersEl) losersEl.textContent = stats.losers || 0;
+
+        // Atualiza o resumo de brindes distribuídos (Novo)
+        try {
+            updatePrizeSummary();
+        } catch (err) {
+            console.warn("Erro no updatePrizeSummary:", err);
+        }
+        
+        // Atualiza listas de ganhadores e perdedores
+        try {
+            renderAdminLists();
+        } catch (err) {
+            console.warn("Erro no renderAdminLists:", err);
+        }
+
+        // Show current stock in admin
+        const adminContent = panel.querySelector('.admin-content');
+        if (adminContent) {
+            adminContent.style.opacity = '1';
+            adminContent.style.visibility = 'visible';
+            adminContent.style.zIndex = '100100';
+            adminContent.style.display = 'flex';
+
+            let stockInfo = document.getElementById('admin-stock-info');
+            if (stockInfo && prizeStock) {
+                const isMobile = adminContent.classList.contains('mobile-admin-dashboard');
+                
+                if (isMobile) {
+                    stockInfo.innerHTML = Object.entries(prizeStock).map(([name, count]) => `
+                        <div class="stock-mini-item">
+                            <span>${name}</span>
+                            <div style="display:flex; align-items:center; gap:5px;">
+                                <input type="number" value="${count}" class="stock-manual-input" data-prize="${name}" 
+                                    style="width: 45px; background: transparent; border: 1px solid rgba(255,255,255,0.1); color: #00ff88; text-align: center; font-weight: 800; font-size: 14px; border-radius: 4px; padding: 2px;" inputmode="numeric">
+                            </div>
+                        </div>
+                    `).join('');
+                } else {
+                    stockInfo.innerHTML = Object.entries(prizeStock).map(([name, count]) => `
+                        <div class="stock-item-row" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; background: rgba(255,255,255,0.05); padding: 10px 15px; border-radius: 10px;">
+                            <span style="font-size: 16px; font-weight: 600;">${name}</span>
+                            <div style="display: flex; gap: 10px; align-items: center;">
+                                <input type="number" value="${count}" class="stock-manual-input" data-prize="${name}" style="width: 100px; background: #000; color: #fff; border: 1px solid #444; padding: 12px; border-radius: 8px; text-align: center; font-size: 18px;" inputmode="numeric">
+                            </div>
+                        </div>
+                    `).join('');
+                }
+
+                // Atachar teclado aos novos inputs dinâmicos
+                setTimeout(() => {
+                    try {
+                        const newInputs = stockInfo.querySelectorAll('.stock-manual-input');
+                        newInputs.forEach(input => {
+                            const openKb = (e) => {
+                                activeInput = e.target;
+                                openKeyboard();
+                            };
+                            input.addEventListener('mousedown', openKb);
+                            input.addEventListener('focus', openKb);
+                            input.addEventListener('click', openKb);
+                        });
+                    } catch (err) {}
+                }, 100);
+            }
+        }
+
+        // Log admin access
+        try {
+            logAdminAction('LOGIN', 'Acesso ao painel administrativo');
+        } catch (err) {}
+        
+        panel.classList.remove('hide');
+        panel.classList.add('active');
+        
+        console.log("✅ Painel Admin ativado.");
+    } catch (globalErr) {
+        alert("Erro ao abrir Admin: " + globalErr.message);
+        console.error("Erro global no openAdmin:", globalErr);
+    }
 }
 
 function resetStock() {
@@ -1183,10 +1306,10 @@ function updatePrizeSummary() {
     // Inicializa com zero para os brindes conhecidos
     Object.keys(INITIAL_STOCK).forEach(p => counts[p] = 0);
 
-    participants.forEach(p => {
-        if (p.prize && counts[p.prize] !== undefined) {
+    (participants || []).forEach(p => {
+        if (p && p.prize && counts[p.prize] !== undefined) {
             counts[p.prize]++;
-        } else if (p.prize) {
+        } else if (p && p.prize) {
             counts[p.prize] = (counts[p.prize] || 0) + 1;
         }
     });
@@ -1212,13 +1335,66 @@ function updatePrizeSummary() {
         `).join('');
 }
 
+function renderAdminLists() {
+    const winnersList = document.getElementById('admin-list-winners');
+    const losersList = document.getElementById('admin-list-losers');
+    
+    if (!winnersList || !losersList) return;
+
+    const winners = (participants || []).filter(p => p && p.score >= WIN_SCORE);
+    const losers = (participants || []).filter(p => p && p.score !== null && p.score < WIN_SCORE);
+
+    if (winners.length === 0) {
+        winnersList.innerHTML = '<p style="text-align:center; opacity:0.5; padding:20px;">Nenhum ganhador ainda.</p>';
+    } else {
+        winnersList.innerHTML = [...winners].reverse().map(p => `
+            <div class="admin-data-row" style="display:flex; justify-content:space-between; padding:10px; border-bottom:1px solid rgba(255,255,255,0.05);">
+                <div style="display:flex; flex-direction:column;">
+                    <strong style="font-size:16px; color:#fff;">${p.name || ''}</strong>
+                    <small style="opacity:0.6;">${p.phone || ''} | ${p.time || ''}</small>
+                </div>
+                <div style="text-align:right;">
+                    <span style="color:#00ff88; font-weight:800;">7/7</span><br>
+                    <small style="font-size:10px; opacity:0.8;">PRÊMIO: ${p.prize || '-'}</small>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    if (losers.length === 0) {
+        losersList.innerHTML = '<p style="text-align:center; opacity:0.5; padding:20px;">Nenhum perdedor ainda.</p>';
+    } else {
+        losersList.innerHTML = [...losers].reverse().map(p => `
+            <div class="admin-data-row" style="display:flex; justify-content:space-between; padding:10px; border-bottom:1px solid rgba(255,255,255,0.05);">
+                <div style="display:flex; flex-direction:column;">
+                    <strong style="font-size:16px; color:#fff;">${p.name || ''}</strong>
+                    <small style="opacity:0.6;">${p.phone || ''} | ${p.time || ''}</small>
+                </div>
+                <div style="text-align:right;">
+                    <span style="color:#ff4444; font-weight:800;">${p.score}/7</span>
+                </div>
+            </div>
+        `).join('');
+    }
+}
+
 function resetStats() {
-    if (!confirm('Zerar todos os dados de participantes e estatisticas?')) return;
-    stats = { players: 0, prizes: 0 };
-    participants = [];
+    if (!confirm("Tem certeza que deseja ZERAR todos os contadores de jogadores, ganhadores e perdedores?")) return;
+    
+    stats.players = 0;
+    stats.prizes = 0;
+    stats.winners = 0;
+    stats.losers = 0;
+    
     localStorage.setItem('agriPlayers', '0');
     localStorage.setItem('agriPrizes', '0');
-    saveAndSync();
+    localStorage.setItem('agriWinners', '0');
+    localStorage.setItem('agriLosers', '0');
+    
+    participants = [];
+    localStorage.setItem('agriParticipants', JSON.stringify([]));
+    
+    debugLog("Estatísticas e lista de participantes zeradas.");
     openAdmin();
 }
 
@@ -1312,10 +1488,15 @@ function finalizeDay() {
             saveStock();
 
             // Zerar Jogadores e Stats
-            stats = { players: 0, prizes: 0 };
-            participants = [];
+            stats.players = 0;
+            stats.prizes = 0;
+            stats.winners = 0;
+            stats.losers = 0;
             localStorage.setItem('agriPlayers', '0');
             localStorage.setItem('agriPrizes', '0');
+            localStorage.setItem('agriWinners', '0');
+            localStorage.setItem('agriLosers', '0');
+            participants = [];
             localStorage.setItem('agriParticipants', '[]');
             
             saveAndSync();
@@ -1425,7 +1606,7 @@ async function logAdminAction(action, details) {
         action: action,
         details: String(details), // Garante que seja string
         created_at: new Date().toISOString(),
-        totem_id: 'TOTEM-AGRISHOW-01'
+        totem_id: 'TOTEM-AUTOPAR-01'
     };
 
     // 1. Log Visual (Admin Panel)
@@ -1534,6 +1715,26 @@ function demoJumpToResult() {
     showScreen('win');
 }
 
+function jumpToLoseScreen() {
+    closeAdmin();
+    playerName = "Visitante VIP";
+    score = 3;
+    const scoreEl = document.getElementById('lose-score');
+    if (scoreEl) scoreEl.textContent = score;
+    showScreen('lose');
+}
+
+function jumpToWinScreen() {
+    closeAdmin();
+    playerName = "Visitante VIP";
+    score = 7;
+    const scoreEl = document.getElementById('win-score');
+    const nameEl = document.getElementById('win-name');
+    if (scoreEl) scoreEl.textContent = score;
+    if (nameEl) nameEl.textContent = "Visitante";
+    showScreen('win');
+}
+
 
 // ═══════════════════════════════════════════════════════
 //  EXIT CONFIRMATION MODAL
@@ -1590,7 +1791,7 @@ window.onload = () => {
     checkGlobalStock();
     resetInactivityTimer();
     startAutoSync(); 
-    initKeyboard(); // Inicializa o teclado virtual
+    // initKeyboard(); // Disabled for native keyboard use
 
     // ───────────────────────────────────────────────
     // Admin Trigger: 5 toques no canto superior esquerdo
@@ -1711,4 +1912,26 @@ function closeKeyboard() {
     // Remove a classe do body para a tela voltar ao normal
     document.body.classList.remove('keyboard-open');
     activeInput = null;
+}
+
+/* ─── EXIT CONFIRM MODAL FUNCTIONS ─────────────────────── */
+function openExitConfirm() {
+    const modal = document.getElementById('screen-exit-confirm');
+    if (modal) {
+        modal.classList.remove('hide');
+        modal.classList.add('active');
+    }
+}
+
+function closeExitConfirm() {
+    const modal = document.getElementById('screen-exit-confirm');
+    if (modal) {
+        modal.classList.add('hide');
+        modal.classList.remove('active');
+    }
+}
+
+function confirmExit() {
+    closeExitConfirm();
+    resetApp(true);
 }

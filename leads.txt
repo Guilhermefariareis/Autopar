@@ -1372,3 +1372,183 @@
 [NOVO] [2026-04-10 15:34:10] Nome=sadasdasd asdasda | WhatsApp=(12) 31231-2312 | Acertos= | Premio=- | Codigo=- | Data=08/04/2026 20:38
 [NOVO] [2026-04-10 15:34:10] Nome=asdsad aasdasd | WhatsApp=(12) 31231-2312 | Acertos= | Premio=- | Codigo=- | Data=08/04/2026 20:39
 [NOVO] [2026-04-10 15:34:10] Nome=asdas asda | WhatsApp=(12) 31231-2312 | Acertos= | Premio=- | Codigo=- | Data=08/04/2026 20:42
+[NOVO] [2026-04-24 09:35:40] Nome=Guilherme Reis | WhatsApp=(16) 99170-4868 | Acertos= | Premio=- | Codigo=- | Data=24/04/2026 09:35
+[ATUALIZADO] [2026-04-24 09:36:06] Nome=Guilherme Reis | WhatsApp=(16) 99170-4868 | Acertos=7 | Premio=- | Codigo=- | Data=24/04/2026 09:35
+[ATUALIZADO] [2026-04-24 09:36:27] Nome=Guilherme Reis | WhatsApp=(16) 99170-4868 | Acertos=7 | Premio=Chaveiro Trena | Codigo=CHAVEIRO TRENA | Data=24/04/2026 09:35
+[NOVO] [2026-04-24 09:38:56] Nome=asdad adadas | WhatsApp=(23) 13123-1312 | Acertos= | Premio=- | Codigo=- | Data=24/04/2026 09:38
+[ATUALIZADO] [2026-04-24 09:39:22] Nome=asdad adadas | WhatsApp=(23) 13123-1312 | Acertos=7 | Premio=- | Codigo=- | Data=24/04/2026 09:38
+[ATUALIZADO] [2026-04-24 09:39:48] Nome=asdad adadas | WhatsApp=(23) 13123-1312 | Acertos=7 | Premio=Caneta | Codigo=CANETA | Data=24/04/2026 09:38
+[NOVO] [2026-04-24 09:42:06] Nome=sada asad | WhatsApp=(12) 31312-3213 | Acertos= | Premio=- | Codigo=- | Data=24/04/2026 09:42
+[ATUALIZADO] [2026-04-24 09:42:26] Nome=sada asad | WhatsApp=(12) 31312-3213 | Acertos=7 | Premio=- | Codigo=- | Data=24/04/2026 09:42
+[ATUALIZADO] [2026-04-24 09:42:39] Nome=sada asad | WhatsApp=(12) 31312-3213 | Acertos=7 | Premio=Squeeze | Codigo=SQUEEZE | Data=24/04/2026 09:42
+[NOVO] [2026-04-24 09:50:48] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=15/04/2026 11:58
+[NOVO] [2026-04-24 09:50:48] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=Chaveiro Trena | Codigo=CHAVEIRO TRENA | Data=15/04/2026 11:58
+[NOVO] [2026-04-24 09:50:48] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=Caneta | Codigo=CANETA | Data=15/04/2026 11:58
+[NOVO] [2026-04-24 09:50:48] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=Boné | Codigo=BONÉ | Data=15/04/2026 12:18
+[NOVO] [2026-04-24 09:50:48] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=Caneta | Codigo=CANETA | Data=15/04/2026 12:19
+[NOVO] [2026-04-24 09:50:48] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=Chaveiro Trena | Codigo=CHAVEIRO TRENA | Data=15/04/2026 12:42
+[NOVO] [2026-04-24 09:50:48] Nome=asd asd | WhatsApp=(21) 31232-1312 | Acertos= | Premio=- | Codigo=- | Data=15/04/2026 12:43
+[NOVO] [2026-04-24 09:50:48] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=Squeeze | Codigo=SQUEEZE | Data=15/04/2026 12:46
+[NOVO] [2026-04-24 09:50:48] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=Squeeze | Codigo=SQUEEZE | Data=15/04/2026 19:02
+[NOVO] [2026-04-24 09:50:48] Nome=asda asdasd | WhatsApp=(21) 31231-2312 | Acertos= | Premio=- | Codigo=- | Data=15/04/2026 19:03
+[NOVO] [2026-04-24 09:50:48] Nome=asdasd asda | WhatsApp=(12) 31231-3123 | Acertos=7 | Premio=Chaveiro Trena | Codigo=CHAVEIRO TRENA | Data=15/04/2026 19:03
+[NOVO] [2026-04-24 09:50:48] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=Caneta | Codigo=CANETA | Data=15/04/2026 19:10
+[NOVO] [2026-04-24 09:50:48] Nome=123123 123 | WhatsApp=(12) 31231-2312 | Acertos= | Premio=- | Codigo=- | Data=15/04/2026 19:18
+[NOVO] [2026-04-24 09:50:48] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=Chaveiro Trena | Codigo=CHAVEIRO TRENA | Data=15/04/2026 19:18
+[NOVO] [2026-04-24 09:50:48] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=Boné | Codigo=BONÉ | Data=15/04/2026 19:31
+[NOVO] [2026-04-24 09:50:48] Nome=sadasd asdas | WhatsApp=(21) 31231-2312 | Acertos= | Premio=- | Codigo=- | Data=15/04/2026 19:32
+[NOVO] [2026-04-24 09:50:48] Nome=asdasd asdasdas12 | WhatsApp=(31) 23123-1232 | Acertos=7 | Premio=Squeeze | Codigo=SQUEEZE | Data=15/04/2026 19:32
+[NOVO] [2026-04-24 09:50:48] Nome=asdsa sad as | WhatsApp=(12) 31231-2312 | Acertos=7 | Premio=- | Codigo=- | Data=15/04/2026 19:34
+[NOVO] [2026-04-24 09:50:48] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Caneta | Codigo=CANETA | Data= 
+[NOVO] [2026-04-24 09:50:48] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Caneta | Codigo=CANETA | Data= 
+[NOVO] [2026-04-24 09:50:48] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Boné | Codigo=BONÉ | Data= 
+[NOVO] [2026-04-24 09:50:48] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Squeeze | Codigo=SQUEEZE | Data= 
+[NOVO] [2026-04-24 09:50:48] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Squeeze | Codigo=SQUEEZE | Data= 
+[NOVO] [2026-04-24 10:21:15] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=24/04/2026 10:21
+[NOVO] [2026-04-24 10:35:46] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=24/04/2026 10:35
+[NOVO] [2026-04-24 10:36:26] Nome=GUILHERME REIS | WhatsApp=(16) 99170-4868 | Acertos= | Premio=- | Codigo=- | Data=24/04/2026 10:36
+[ATUALIZADO] [2026-04-24 10:37:06] Nome=GUILHERME REIS | WhatsApp=(16) 99170-4868 | Acertos=5 | Premio=- | Codigo=- | Data=24/04/2026 10:36
+[ATUALIZADO] [2026-04-24 10:37:19] Nome=GUILHERME REIS | WhatsApp=(16) 99170-4868 | Acertos=5 | Premio=Squeeze | Codigo=SQUEEZE | Data=24/04/2026 10:36
+[NOVO] [2026-04-24 10:39:26] Nome=GGGGG BBB | WhatsApp=(11) 11111-1111 | Acertos= | Premio=- | Codigo=- | Data=24/04/2026 10:39
+[NOVO] [2026-04-24 10:50:11] Nome=GUILH REIS | WhatsApp=(16) 99170-4868 | Acertos= | Premio=- | Codigo=- | Data=24/04/2026 10:50
+[NOVO] [2026-04-24 10:51:07] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=24/04/2026 10:51
+[NOVO] [2026-04-24 10:51:07] Nome=TESTE ROLETA | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=24/04/2026 10:51
+[NOVO] [2026-04-24 15:46:55] Nome=GUILHERME REIS | WhatsApp=(16) 99170-4688 | Acertos= | Premio=- | Codigo=- | Data=24/04/2026 15:46
+[NOVO] [2026-04-24 15:48:05] Nome=asdasdasdasa21 123123 | WhatsApp=(21) 31231-2312 | Acertos= | Premio=- | Codigo=- | Data=24/04/2026 15:47
+[NOVO] [2026-04-24 15:51:34] Nome=asdad asda dsa | WhatsApp=(12) 31231-2312 | Acertos= | Premio=- | Codigo=- | Data=24/04/2026 15:51
+[NOVO] [2026-04-24 15:52:09] Nome=asdasas asdas | WhatsApp=(12) 31231-3123 | Acertos= | Premio=- | Codigo=- | Data=24/04/2026 15:51
+[NOVO] [2026-04-24 15:52:45] Nome=dfds sdfsdfsdf | WhatsApp=(16) 6666-6666 | Acertos= | Premio=- | Codigo=- | Data=24/04/2026 15:52
+[NOVO] [2026-04-24 15:56:48] Nome=sadad asda | WhatsApp=(21) 31231-2312 | Acertos= | Premio=- | Codigo=- | Data=24/04/2026 15:56
+[NOVO] [2026-04-24 15:58:51] Nome=as asd asd | WhatsApp=(21) 31231-2312 | Acertos= | Premio=- | Codigo=- | Data=24/04/2026 15:58
+[NOVO] [2026-04-24 16:00:03] Nome=asdasd asda | WhatsApp=(12) 31232-1312 | Acertos= | Premio=- | Codigo=- | Data=24/04/2026 15:59
+[NOVO] [2026-04-24 16:02:26] Nome=asdasd asda | WhatsApp=(12) 31231-2313 | Acertos= | Premio=- | Codigo=- | Data=24/04/2026 16:02
+[NOVO] [2026-04-24 16:02:46] Nome=asdasd asd | WhatsApp=(12) 31231-2312 | Acertos= | Premio=- | Codigo=- | Data=24/04/2026 16:02
+[NOVO] [2026-04-24 16:03:46] Nome=asdsa asdsa | WhatsApp=(21) 31231-2312 | Acertos= | Premio=- | Codigo=- | Data=24/04/2026 16:03
+[NOVO] [2026-04-24 19:47:15] Nome=asdasdasd asdasd | WhatsApp=(12) 31231-2321 | Acertos= | Premio=- | Codigo=- | Data=24/04/2026 19:47
+[NOVO] [2026-04-24 20:29:41] Nome=asdasda asdas | WhatsApp=(12) 31231-2312 | Acertos= | Premio=- | Codigo=- | Data=24/04/2026 20:29
+[NOVO] [2026-04-25 13:44:57] Nome=1sadasdas dada | WhatsApp=(12) 31231-2312 | Acertos= | Premio=- | Codigo=- | Data=25/04/2026 13:44
+[NOVO] [2026-04-25 13:48:14] Nome=asdasdasd 123123 | WhatsApp=(12) 31231-2321 | Acertos= | Premio=- | Codigo=- | Data=25/04/2026 13:48
+[NOVO] [2026-05-04 23:23:12] Nome=asdasdasd12 1231 23 | WhatsApp=(12) 32222-2211 | Acertos= | Premio=- | Codigo=- | Data=25/04/2026 13:49
+[NOVO] [2026-05-04 23:23:12] Nome=sadasd123 123 123 | WhatsApp=(12) 31231-2312 | Acertos=7 | Premio=Boné | Codigo=BONÉ | Data=29/04/2026 12:24
+[NOVO] [2026-05-04 23:23:12] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Boné | Codigo=BONÉ | Data= 
+[NOVO] [2026-05-04 23:23:12] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Chaveiro Trena | Codigo=CHAVEIRO TRENA | Data= 
+[NOVO] [2026-05-04 23:23:12] Nome=João Apresentação | WhatsApp=11999999999 | Acertos=4 | Premio=- | Codigo=- | Data=29/04/2026 12:26
+[NOVO] [2026-05-04 23:23:12] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Caneta | Codigo=CANETA | Data= 
+[NOVO] [2026-05-04 23:23:12] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Squeeze | Codigo=SQUEEZE | Data= 
+[NOVO] [2026-05-04 23:23:12] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Chaveiro Trena | Codigo=CHAVEIRO TRENA | Data= 
+[NOVO] [2026-05-04 23:36:06] Nome=asdas123 12313 | WhatsApp=(12) 31231-2312 | Acertos= | Premio=- | Codigo=- | Data=04/05/2026 23:35
+[ATUALIZADO] [2026-05-04 23:36:26] Nome=asdas123 12313 | WhatsApp=(12) 31231-2312 | Acertos=2 | Premio=- | Codigo=- | Data=04/05/2026 23:35
+[NOVO] [2026-05-04 23:44:37] Nome=sadasd123 123123 | WhatsApp=(21) 31231-2312 | Acertos= | Premio=- | Codigo=- | Data=04/05/2026 23:44
+[NOVO] [2026-05-04 23:44:57] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Squeeze | Codigo=SQUEEZE | Data= 
+[NOVO] [2026-05-04 23:53:17] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Caneta | Codigo=CANETA | Data= 
+[NOVO] [2026-05-04 23:56:39] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-04 23:59:32] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 00:01:49] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 00:06:27] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 00:07:44] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 00:09:18] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 00:14:18] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 00:16:18] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 00:24:58] Nome=SAD ASD ASD | WhatsApp=(13) 12312-3123 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 00:24
+[NOVO] [2026-05-05 00:25:18] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 00:54:43] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 12:38:58] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 12:40:40] Nome=Test UserB | WhatsApp=(11) 99999-9991 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 12:40
+[ATUALIZADO] [2026-05-05 12:41:26] Nome=Test UserB | WhatsApp=(11) 99999-9991 | Acertos=2 | Premio=- | Codigo=- | Data=05/05/2026 12:40
+[NOVO] [2026-05-05 12:42:42] Nome=Test User | WhatsApp=(11) 99999-9999 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 12:42
+[ATUALIZADO] [2026-05-05 12:43:13] Nome=Test User | WhatsApp=(11) 99999-9999 | Acertos=4 | Premio=- | Codigo=- | Data=05/05/2026 12:42
+[NOVO] [2026-05-05 12:44:08] Nome=Test UserWBTest User | WhatsApp=(11) 99999-9999 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 12:44
+[ATUALIZADO] [2026-05-05 12:44:41] Nome=Test UserWBTest User | WhatsApp=(11) 99999-9999 | Acertos=3 | Premio=- | Codigo=- | Data=05/05/2026 12:44
+[NOVO] [2026-05-05 12:46:09] Nome=HFDH KDFG | WhatsApp=(11) 99999-9999 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 12:46
+[ATUALIZADO] [2026-05-05 12:46:27] Nome=HFDH KDFG | WhatsApp=(11) 99999-9999 | Acertos=3 | Premio=- | Codigo=- | Data=05/05/2026 12:46
+[NOVO] [2026-05-05 12:54:16] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 12:54:36] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 12:54:40] Nome=dasdas fdsdf | WhatsApp=(12) 31313-2131 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 12:54
+[NOVO] [2026-05-05 12:54:59] Nome=asdasas asdad | WhatsApp=(22) 22222-2222 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 12:54
+[NOVO] [2026-05-05 13:01:28] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 13:01:28] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Squeeze | Codigo=SQUEEZE | Data= 
+[NOVO] [2026-05-05 13:01:48] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 13:08:44] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[ATUALIZADO] [2026-05-05 13:09:04] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Chaveiro Trena | Codigo=CHAVEIRO TRENA | Data= 
+[NOVO] [2026-05-05 13:09:20] Nome=asdasda asdasdasd | WhatsApp=(12) 31231-2312 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 13:09
+[NOVO] [2026-05-05 13:09:40] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 13:30:05] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 13:36:33] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 13:44:01] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 13:58:48] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 13:59:08] Nome=asdasd123 123123 | WhatsApp=(21) 31312-3123 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 13:58
+[NOVO] [2026-05-05 14:01:30] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 14:06:30] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 14:33:23] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 14:57:25] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[ATUALIZADO] [2026-05-05 14:57:45] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Chaveiro Trena | Codigo=CHAVEIRO TRENA | Data= 
+[NOVO] [2026-05-05 14:58:05] Nome=adasdas asd asda | WhatsApp=(12) 31231-2312 | Acertos=3 | Premio=- | Codigo=- | Data=05/05/2026 14:57
+[NOVO] [2026-05-05 15:06:29] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 15:06:41] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 17:42:43] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Boné | Codigo=BONÉ | Data= 
+[NOVO] [2026-05-05 18:00:02] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 18:12:06] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 18:18:47] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 18:19:57] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 18:21:06] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Boné | Codigo=BONÉ | Data= 
+[NOVO] [2026-05-05 18:32:42] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Squeeze | Codigo=SQUEEZE | Data= 
+[NOVO] [2026-05-05 18:40:36] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Boné | Codigo=BONÉ | Data= 
+[NOVO] [2026-05-05 18:40:57] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 18:42:15] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 19:15:57] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 19:18:40] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Caneta | Codigo=CANETA | Data= 
+[NOVO] [2026-05-05 19:21:18] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 19:23:57] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 19:24:43] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 19:28:58] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Chaveiro Trena | Codigo=CHAVEIRO TRENA | Data= 
+[NOVO] [2026-05-05 19:29:09] Nome=João Apresentação | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 19:28
+[NOVO] [2026-05-05 19:29:29] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 19:31:11] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 19:32:11] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 19:32:31] Nome=João Apresentação | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 19:32
+[ATUALIZADO] [2026-05-05 19:32:51] Nome=João Apresentação | WhatsApp=11999999999 | Acertos=1 | Premio=- | Codigo=- | Data=05/05/2026 19:32
+[NOVO] [2026-05-05 19:33:13] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 19:33:26] Nome=João Apresentação | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 19:33
+[NOVO] [2026-05-05 19:33:47] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 19:34:46] Nome=123123123123123 123123 | WhatsApp=(12) 31231-2312 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 19:34
+[ATUALIZADO] [2026-05-05 19:35:27] Nome=123123123123123 123123 | WhatsApp=(12) 31231-2312 | Acertos=4 | Premio=- | Codigo=- | Data=05/05/2026 19:34
+[NOVO] [2026-05-05 19:36:46] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Caneta | Codigo=CANETA | Data= 
+[NOVO] [2026-05-05 19:37:06] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 19:37:46] Nome=João Apresentação | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 19:37
+[NOVO] [2026-05-05 19:43:12] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 19:49:32] Nome=asdasdasda 1231231 | WhatsApp=(23) 12312-3123 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 19:49
+[NOVO] [2026-05-05 19:56:41] Nome=João Apresentação | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 19:56
+[ATUALIZADO] [2026-05-05 19:57:21] Nome=João Apresentação | WhatsApp=11999999999 | Acertos=2 | Premio=- | Codigo=- | Data=05/05/2026 19:56
+[NOVO] [2026-05-05 19:58:51] Nome=João Apresentação | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 19:58
+[NOVO] [2026-05-05 20:03:12] Nome=João Apresentação | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 20:02
+[NOVO] [2026-05-05 20:10:12] Nome=João Apresentação | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 20:09
+[ATUALIZADO] [2026-05-05 20:11:32] Nome=João Apresentação | WhatsApp=11999999999 | Acertos=1 | Premio=- | Codigo=- | Data=05/05/2026 20:09
+[NOVO] [2026-05-05 20:12:22] Nome=João Apresentação | WhatsApp=11999999999 | Acertos=4 | Premio=- | Codigo=- | Data=05/05/2026 20:12
+[NOVO] [2026-05-05 20:12:42] Nome=ASDA DASDAD | WhatsApp=(21) 31231-2312 | Acertos=6 | Premio=- | Codigo=- | Data=05/05/2026 20:12
+[NOVO] [2026-05-05 20:16:28] Nome=João Apresentação | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 20:16
+[NOVO] [2026-05-05 20:18:50] Nome=João Apresentação | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 20:18
+[ATUALIZADO] [2026-05-05 20:19:30] Nome=João Apresentação | WhatsApp=11999999999 | Acertos=3 | Premio=- | Codigo=- | Data=05/05/2026 20:18
+[NOVO] [2026-05-05 20:20:02] Nome=João Apresentação | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 20:19
+[NOVO] [2026-05-05 20:21:07] Nome=João Apresentação | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 20:20
+[NOVO] [2026-05-05 20:22:14] Nome=João Apresentação | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 20:21
+[NOVO] [2026-05-05 20:23:49] Nome=João Apresentação | WhatsApp=11999999999 | Acertos=2 | Premio=- | Codigo=- | Data=05/05/2026 20:23
+[NOVO] [2026-05-05 20:28:21] Nome=João Apresentação | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 20:28
+[NOVO] [2026-05-05 20:47:47] Nome=asdsad as3 | WhatsApp=(12) 32131-2312 | Acertos=1 | Premio=- | Codigo=- | Data=05/05/2026 20:47
+[NOVO] [2026-05-05 21:02:52] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 21:05:52] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[ATUALIZADO] [2026-05-05 21:06:13] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Boné | Codigo=BONÉ | Data= 
+[NOVO] [2026-05-05 21:08:04] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Boné | Codigo=BONÉ | Data= 
+[NOVO] [2026-05-05 21:11:43] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Chaveiro Trena | Codigo= | Data= 
+[NOVO] [2026-05-05 21:13:11] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Squeeze | Codigo=SQUEEZE | Data= 
+[NOVO] [2026-05-05 21:13:51] Nome=dasdasd asdasda | WhatsApp=(21) 31231-2321 | Acertos=1 | Premio=- | Codigo=- | Data=05/05/2026 21:13
+[NOVO] [2026-05-05 21:14:11] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 21:14:31] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Squeeze | Codigo=SQUEEZE | Data= 
+[NOVO] [2026-05-05 21:14:51] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Caneta | Codigo=CANETA | Data= 
+[NOVO] [2026-05-05 21:15:11] Nome=João Apresentação | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 21:15
+[NOVO] [2026-05-05 21:18:34] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Chaveiro Trena | Codigo=CHAVEIRO TRENA | Data= 
+[NOVO] [2026-05-05 21:19:07] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Caneta | Codigo=CANETA | Data= 
+[NOVO] [2026-05-05 21:20:01] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio=Caneta | Codigo=CANETA | Data= 
+[NOVO] [2026-05-05 21:20:22] Nome=asdasdas 123123 | WhatsApp=(21) 31231-2321 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 21:20
+[NOVO] [2026-05-05 21:21:07] Nome=Visitante VIP | WhatsApp=00000000000 | Acertos=7 | Premio= | Codigo= | Data= 
+[NOVO] [2026-05-05 21:21:53] Nome=João Apresentação | WhatsApp=11999999999 | Acertos= | Premio=- | Codigo=- | Data=05/05/2026 21:21
+[NOVO] [2026-05-05 21:24:01] Nome=sadasda sda | WhatsApp=(21) 31231-2312 | Acertos=1 | Premio=- | Codigo=- | Data=05/05/2026 21:23

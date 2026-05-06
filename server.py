@@ -100,13 +100,13 @@ def append_lead(data: dict) -> bool:
             # Atualiza cache
             _last_states[rid] = current_state_json
             
-            print(f"✅ {prefix} [#{rid[-4:]}]: {data.get('name','?')} | Pontos: {data.get('score','-')} | Brinde: {data.get('prize','-')}")
+            print(f"DONE {prefix} [#{rid[-4:]}]: {data.get('name','?')} | Pontos: {data.get('score','-')} | Brinde: {data.get('prize','-')}")
             return True
         except PermissionError:
-            print(f"⚠️  Arquivo bloqueado (tentativa {attempt+1}/{max_retries}). Feche o Excel!")
+            print(f"WARN: Arquivo bloqueado (tentativa {attempt+1}/{max_retries}). Feche o Excel!")
             time.sleep(0.5)
         except Exception as e:
-            print(f"❌ Erro ao salvar lead: {e}")
+            print(f"ERROR: Erro ao salvar lead: {e}")
             break
             
     return False
@@ -129,7 +129,7 @@ def save_stock(stock: dict):
             json.dump(stock, f, indent=4)
         return True
     except Exception as e:
-        print(f"❌ Erro ao salvar estoque: {e}")
+        print(f"ERROR: Erro ao salvar estoque: {e}")
         return False
 
 def append_log(data: dict):
@@ -139,10 +139,10 @@ def append_log(data: dict):
     try:
         with open(LOG_FILE, "a", encoding="utf-8") as f:
             f.write(log_line)
-        print(f"📝 LOG: {data.get('action')} | {data.get('details')}")
+        print(f"LOG: {data.get('action')} | {data.get('details')}")
         return True
     except Exception as e:
-        print(f"❌ Erro ao salvar log: {e}")
+        print(f"ERROR: Erro ao salvar log: {e}")
         return False
 
 
@@ -167,7 +167,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         try:
             payload = json.loads(raw.decode("utf-8"))
         except Exception as e:
-            print(f"❌ JSON inválido: {e}")
+            print(f"ERROR: JSON inválido: {e}")
             self.send_error(400, "Invalid JSON")
             return
 
@@ -186,7 +186,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             for lead in leads:
                 if lead.get("name") and append_lead(lead):
                     saved += 1
-            print(f"📦 Dump recebido: {len(leads)} leads, {saved} novos salvos.")
+            print(f"DUMP: Dump recebido: {len(leads)} leads, {saved} novos salvos.")
             self._json({"status": "ok", "saved": saved, "total": len(leads)})
 
         # ── /stock ── salva o estado atual do estoque ──────────
@@ -205,7 +205,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
         # ── /exit ── encerra o processo do Chrome (Botão de Pânico) ──────────
         elif self.path == "/exit":
-            print("🛑 Comando de encerramento recebido via Admin Panel.")
+            print("STOP: Comando de encerramento recebido via Admin Panel.")
             self._json({"status": "terminating"})
             # Pequeno delay para o navegador receber a resposta antes de morrer
             import subprocess
@@ -240,10 +240,10 @@ if __name__ == "__main__":
     ThreadedHTTPServer.allow_reuse_address = True
     with ThreadedHTTPServer(("", PORT), Handler) as httpd:
         print("=" * 55)
-        print("  🐾  Panther Totem — Servidor Ativo")
-        print(f"  🌐  http://localhost:{PORT}")
-        print(f"  📄  TXT: {TXT_FILE}")
-        print(f"  📊  CSV: {CSV_FILE}")
-        print(f"  ℹ️   IDs já salvos carregados: {len(_last_states)}")
+        print("  [PANTHER] Panther Totem - Servidor Ativo")
+        print(f"  URL: http://localhost:{PORT}")
+        print(f"  TXT: {TXT_FILE}")
+        print(f"  CSV: {CSV_FILE}")
+        print(f"  INFO: IDs já salvos carregados: {len(_last_states)}")
         print("=" * 55)
         httpd.serve_forever()

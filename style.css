@@ -31,8 +31,9 @@
 html,
 body {
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     margin: 0;
+    overflow: hidden !important;
     background: linear-gradient(180deg, #050505 0%, #010101 100%);
     font-family: 'Outfit', sans-serif;
     color: var(--text);
@@ -109,8 +110,8 @@ body {
 /* Ã¢â€â‚¬Ã¢â€â‚¬ App Wrapper full bleed Ã¢â€â‚¬Ã¢â€â‚¬ */
 #app {
     width: 100vw;
-    min-height: 100vh;
-    overflow: hidden;
+    height: 100vh;
+    overflow: hidden !important;
     position: relative;
     background: var(--bg-dark);
     display: flex;
@@ -811,17 +812,9 @@ body {
     display: block;
 }
 
-.leme-logo {
-    height: 100%;
-    object-fit: contain;
-    transform: scale(1.1);
-    transform-origin: center;
-}
 
-.leme-voucher-logo {
-    height: 143px !important;
-    width: auto !important;
-}
+
+
 
 /* â”€â”€ Floating Label Fields â”€â”€ */
 /* —— Estilos de Campo para index2.html —— */
@@ -1595,12 +1588,7 @@ body {
     transition: transform 0.3s ease;
 }
 
-.leme-voucher-logo {
-    height: 180px !important;
-    width: auto !important;
-    filter: brightness(0) invert(1) drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
-    transition: transform 0.3s ease;
-}
+
 
 .ticket-top span {
     z-index: 2;
@@ -2702,9 +2690,7 @@ body {
         height: 220px !important;
     }
 
-    .leme-voucher-logo {
-        height: 264px !important;
-    }
+
 
     .code-text {
         font-size: clamp(60px, 10vw, 150px);
@@ -3113,11 +3099,7 @@ body {
     filter: drop-shadow(0 0 30px rgba(255, 69, 0, 0.3));
 }
 
-.insta-logo-leme {
-    height: 260px;
-    width: auto;
-    filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.15));
-}
+
 
 .insta-badge {
     background: linear-gradient(135deg, #FF4500, #c93918);
@@ -3368,25 +3350,25 @@ body {
 /* Sobe o conteúdo quando o teclado abre */
 body.keyboard-open .reg-panel,
 body.keyboard-open .quiz-wrap {
-    transform: translateY(-160px) !important;
+    transform: translateY(-120px) !important;
     transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
 /* TOTEM VERTICAL 43 - PORTRAIT (1080 x 1920) */
 @media (orientation: portrait) and (min-height: 1200px) {
     html, body { overflow: hidden !important; height: 100vh !important; width: 100vw !important; position: fixed !important; inset: 0 !important; }
     #app, .screen { overflow: hidden !important; height: 100% !important; width: 100% !important; }
-    .content { padding: 100px 60px; }
+    .content { padding: 40px 60px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; width: 100%; }
     .home-logo { width: 500px; margin-bottom: 60px; }
     .main-title { font-size: 140px; line-height: 0.9; margin-bottom: 40px; }
     .subtitle { font-size: 54px; margin-bottom: 80px; }
     .btn { height: 180px !important; font-size: 58px !important; border-radius: 90px !important; margin-bottom: 40px; }
-    .reg-panel { padding: 100px 60px; border-radius: 40px; width: 90%; max-width: 980px; box-sizing: border-box; }
+    .reg-panel { padding: 40px 60px; border-radius: 40px; width: 90%; max-width: 980px; box-sizing: border-box; }
     .section-title { font-size: 80px; }
     .section-sub { font-size: 38px; margin-bottom: 60px; }
     .form-group { margin-bottom: 60px; }
     .form-group label { font-size: 42px; margin-bottom: 25px; }
     .input-field { height: 150px; font-size: 56px; padding: 0 45px; border-radius: 25px; }
-    .quiz-wrap { max-width: 1000px; padding: 100px 40px; }
+    .quiz-wrap { max-width: 1000px; padding: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; }
     #question-number { font-size: 42px; }
     .quiz-timer { font-size: 80px; width: 150px; height: 150px; }
     #question-text { font-size: 82px; margin: 80px 0; }
@@ -3423,7 +3405,7 @@ body.keyboard-open .quiz-wrap {
     }
 
     .panther-voucher-logo { height: 155px !important; }
-    .leme-voucher-logo { height: 189px !important; } /* AUMENTADO 2% */
+
 
     .code-text { 
         font-size: 85px !important; /* REDUZIDO MAIS UM POUCO */
@@ -3874,7 +3856,7 @@ body.keyboard-open .quiz-wrap {
     #screen-lose .result-panel {
         width: 100% !important;
         max-width: 1000px !important; /* MAIS LARGO PARA APROVEITAR A TELA */
-        padding: 140px 60px !important;
+        padding: 60px 60px !important;
         border-radius: 60px !important;
         background: rgba(15, 15, 15, 0.85) !important;
         border: 2px solid rgba(255, 69, 0, 0.3) !important;
@@ -4066,7 +4048,103 @@ body.keyboard-open .quiz-wrap {
     box-shadow: 0 10px 20px rgba(255, 69, 0, 0.2) !important;
 }
 
-.btn-cancel-quiz-footer:active {
-    transform: scale(0.95) !important;
-    background: var(--orange-dark) !important;
+
+
+
+
+
+/* ========== TABLET OPTIMIZATION (Samsung Galaxy Tab A series) ========== */
+@media (max-width: 1340px) {
+    .main-title {
+        font-size: clamp(50px, 10vw, 90px) !important;
+        margin-bottom: 20px;
+    }
+    
+    .subtitle {
+        font-size: clamp(20px, 2.5vw, 28px) !important;
+        margin-bottom: 30px !important;
+    }
+    
+    .logo-wrapper {
+        flex-direction: column !important;
+        gap: 20px !important;
+        margin-bottom: 30px !important;
+        margin-top: 10px !important;
+    }
+    
+    .home-logo {
+        width: min(300px, 60vw) !important;
+    }
+    
+    .event-badge {
+        font-size: 18px !important;
+        padding: 8px 30px !important;
+        margin-bottom: 20px !important;
+        letter-spacing: 4px !important;
+    }
+    
+    .btn-jumbo {
+        font-size: 32px !important;
+        padding: 25px 50px !important;
+    }
+    
+    /* Adjust Roulette for Tablet Height */
+    @media (max-height: 900px) {
+        .wheel-stage {
+            width: min(65vh, 550px) !important;
+            height: min(65vh, 550px) !important;
+            margin: 5px 0 !important;
+        }
+        
+        #wheel-canvas {
+            width: 100% !important;
+            height: 100% !important;
+        }
+        
+        .roulette-heading {
+            font-size: 42px !important;
+            margin-bottom: 5px !important;
+        }
+        
+        #roulette-player-name {
+            font-size: 24px !important;
+        }
+        
+        .roulette-top {
+            padding: 0 15px !important;
+        }
+    }
+    
+    /* Quiz Screen Fixes for Tablet */
+    .question-box {
+        min-height: 150px !important;
+        margin-bottom: 25px !important;
+    }
+    
+    #question-text {
+        font-size: 34px !important;
+    }
+    
+    .btn-answer {
+        font-size: 24px !important;
+        padding: 18px 25px !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .quiz-wrap {
+        padding: 30px !important;
+    }
+
+    /* Win Screen Optimization */
+    .success-title {
+        font-size: 52px !important;
+    }
+    
+    #win-podium-img {
+        height: 22vh !important;
+    }
+    
+    .result-panel {
+        padding: 30px !important;
+    }
 }

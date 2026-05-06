@@ -6,22 +6,30 @@
 
 /* ─── SAFE AREA / SCROLL ─────────────────────────────────── */
 body {
-    overflow-y: auto !important;
-    overflow-x: hidden;
+    overflow: hidden !important;
+    height: 100vh !important;
+    width: 100vw !important;
+    position: fixed !important;
+    inset: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 #app {
-    min-height: 100dvh;
+    height: 100vh !important;
+    overflow: hidden !important;
 }
 
 /* ─── SCREEN SYSTEM ─────────────────────────────────────── */
 .screen {
-    position: relative !important;
-    min-height: 100dvh;
+    position: absolute !important;
+    inset: 0 !important;
+    height: 100vh !important;
+    width: 100vw !important;
     display: none;
     flex-direction: column;
     padding: env(safe-area-inset-top, 16px) 20px env(safe-area-inset-bottom, 24px);
-    overflow: hidden;
+    overflow: hidden !important;
 }
 .screen.active {
     display: flex;
@@ -118,6 +126,10 @@ body {
     padding: 12px 28px !important;
 }
 
+.btn-block {
+    width: 100% !important;
+}
+
 /* ─── REGISTER ───────────────────────────────────────────── */
 .register-content {
     justify-content: center !important;
@@ -204,6 +216,10 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
 }
 .quiz-header { margin-bottom: 20px !important; gap: 15px !important; }
 .progress-container { height: 8px !important; margin-bottom: 10px !important; }
@@ -213,7 +229,7 @@ body {
     align-items: center !important; 
     justify-content: center !important; 
     width: 100% !important; 
-    gap: 20px !important;
+    gap: 10px !important;
 }
 .quiz-timer { font-size: 18px !important; padding: 5px 12px !important; min-width: 70px !important; }
 .quiz-footer-meta { margin-top: 25px !important; display: flex; justify-content: center; }
@@ -302,7 +318,12 @@ body {
 .roulette-top { padding: 0 10px !important; }
 .roulette-badge { font-size: 11px !important; padding: 4px 12px !important; margin-bottom: 5px !important; }
 .roulette-heading { font-size: clamp(18px, 5vw, 24px) !important; margin-bottom: 5px !important; }
-#roulette-player-name { font-size: 16px !important; margin-top: 5px !important; }
+#roulette-player-name { 
+    font-size: 24px !important; 
+    margin-top: 10px !important; 
+    font-weight: 700 !important;
+    color: #fff !important;
+}
 
 /* ─── WHEEL STAGE SCALING ───────────────────────── */
 .wheel-stage {
@@ -329,6 +350,30 @@ body {
 .wheel-pointer-wrap {
     top: -15px !important;
     transform: translateX(-50%) scale(0.6) !important;
+}
+
+.wheel-pointer {
+    width: 0 !important;
+    height: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    position: relative !important;
+}
+
+.wheel-pointer::after {
+    content: '' !important;
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: -20px !important;
+    width: 0 !important;
+    height: 0 !important;
+    border-left: 25px solid transparent !important;
+    border-right: 25px solid transparent !important;
+    border-top: 45px solid #ffffff !important; /* Branco elegante igual à imagem do usuário! */
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.6)) !important;
 }
 
 .wheel-center-cap {
@@ -593,6 +638,173 @@ body {
 .stat-box p      { font-size: 16px !important; }
 .btn-danger, .btn-export { font-size: 16px !important; padding: 16px 20px !important; }
 
+/* ─── MOBILE ADMIN DASHBOARD (NO SCROLL) ─────────────────── */
+.mobile-admin-dashboard {
+    background: rgba(15, 15, 15, 0.98) !important;
+    border: 1px solid rgba(255, 69, 0, 0.3) !important;
+    border-radius: 24px !important;
+    padding: 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+    max-width: 600px !important;
+    width: 92% !important;
+    max-height: 85vh !important;
+    overflow: hidden !important;
+}
+
+.admin-header-simple {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 10px;
+}
+
+.admin-header-simple h2 {
+    font-size: 20px !important;
+    font-weight: 900 !important;
+    color: var(--orange);
+    letter-spacing: 1px;
+    margin: 0 !important;
+}
+
+.btn-close-admin {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.mini-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.stat-item {
+    background: rgba(255,255,255,0.05);
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.stat-item label {
+    display: block;
+    font-size: 10px;
+    opacity: 0.6;
+    margin-bottom: 2px;
+}
+
+.stat-item span {
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.actions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 10px;
+}
+
+.admin-btn-action {
+    border: none;
+    border-radius: 12px;
+    padding: 15px 10px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #fff;
+    cursor: pointer;
+}
+
+.admin-btn-action.csv { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.1); }
+.admin-btn-action.finalize { background: linear-gradient(135deg, #FF4500 0%, #C93918 100%); }
+
+.stock-mini-list {
+    background: rgba(0,0,0,0.2);
+    border-radius: 12px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.stock-mini-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 6px;
+}
+
+.force-prize-mini {
+    margin-top: 10px;
+}
+
+.force-prize-mini label {
+    display: block;
+    font-size: 11px;
+    color: #FFD700;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.force-prize-mini select {
+    width: 100%;
+    padding: 10px;
+    background: #222;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.nav-shortcuts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.nav-shortcuts button {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: #fff;
+    padding: 8px 2px;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.danger-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.danger-row button {
+    background: transparent;
+    border: 1px solid rgba(255,0,0,0.3);
+    color: #ff4444;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 11px;
+}
+
+/* Override para tablet maior */
+@media (min-width: 768px) {
+    .mobile-admin-dashboard {
+        max-width: 500px !important;
+        gap: 25px !important;
+        padding: 40px !important;
+    }
+    .stat-item span { font-size: 42px; }
+    .admin-header-simple h2 { font-size: 28px !important; }
+}
+
 /* ─── ANIMATIONS ─────────────────────────────────────────── */
 @keyframes slowFloat {
     0%   { transform: translateY(0px) scale(1); }
@@ -690,3 +902,97 @@ body {
 .win-screen-logo { width: 240px !important; margin: 0 auto; animation: none !important; }
 .win-logo-top { margin-bottom: 20px !important; }
 .win-logo-bottom { width: 220px !important; margin-top: 20px !important; }
+
+
+/* ========== TABLET PRO MAX OPTIMIZATION (min-width: 768px) ========== */
+@media (min-width: 768px) {
+    .screen {
+        padding: 40px 60px !important;
+    }
+    
+    .main-title {
+        font-size: 110px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .subtitle {
+        font-size: 32px !important;
+        margin-bottom: 50px !important;
+    }
+    
+    .home-logo { 
+        max-width: 320px !important; 
+    }
+    
+    .logo-wrapper {
+        gap: 40px !important;
+        margin-bottom: 40px !important;
+    }
+    
+    .event-badge {
+        font-size: 22px !important;
+        padding: 12px 40px !important;
+    }
+    
+    .btn-jumbo {
+        font-size: 42px !important;
+        padding: 35px 70px !important;
+        border-radius: 24px !important;
+    }
+    
+    /* Quiz Scaling */
+    #question-text {
+        font-size: 48px !important;
+    }
+    
+    .btn-answer {
+        font-size: 32px !important;
+        padding: 30px 40px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .counter {
+        font-size: 28px !important;
+    }
+    
+    /* Roulette Scaling */
+    .wheel-stage {
+        width: 650px !important;
+        height: 650px !important;
+        margin: 60px auto !important;
+    }
+    
+    #wheel-canvas {
+        width: 600px !important;
+        height: 600px !important;
+    }
+    
+    .wheel-glow-ring.ring1 { width: 650px !important; height: 650px !important; }
+    .wheel-glow-ring.ring2 { width: 580px !important; height: 580px !important; }
+    
+    .wheel-pointer-wrap {
+        transform: translateX(-50%) scale(1) !important;
+        top: -30px !important;
+    }
+    
+    .roulette-title {
+        font-size: 64px !important;
+    }
+    
+    .roulette-header-logo {
+        width: 280px !important;
+    }
+    
+    /* Ticket / Win Scaling */
+    .ticket-wrapper {
+        max-width: 500px !important;
+    }
+    
+    .ticket-code {
+        font-size: 72px !important;
+    }
+    
+    .success-title {
+        font-size: 80px !important;
+    }
+}

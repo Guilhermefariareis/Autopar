@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Quiz Panther - Autopar 2026</title>
+    <link href="fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=27">
+    <link rel="stylesheet" href="mobile.css?v=27">
+    <link rel="stylesheet" href="tablet.css?v=27">
+</head>
+
+<body>
+    <div id="app">
+        <div id="admin-zone" aria-hidden="true"></div>
+
+        <!-- ADMIN PANEL -->
+        <div id="admin-panel" class="screen screen-modal hide">
+            <div class="modal-backdrop" onclick="closeAdmin()"></div>
+            <div class="admin-content mobile-admin-dashboard">
+                <div class="admin-header-simple">
+                    <h2>ADMIN PANTHER</h2>
+                    <button class="btn-close-admin" onclick="closeAdmin()">✕</button>
+                </div>
+
+                <!-- Admin Tabs -->
+                <div class="admin-tabs-nav" style="display: flex; gap: 10px; margin-bottom: 20px;">
+                    <button class="tab-btn active" onclick="switchAdminTab('telas', this)">🚀 TELAS</button>
+                    <button class="tab-btn" onclick="switchAdminTab('estoque', this)">📦 ESTOQUE</button>
+                    <button class="tab-btn" onclick="switchAdminTab('encerramento', this)">📊 ENCERRAMENTO</button>
+                </div>
+
+                <!-- Tab 1: TELAS (Default Active) -->
+                <div id="tab-telas" class="admin-tab-content active">
+                    <!-- Controle de Sorteio Forçado -->
+                    <div class="force-prize-row"
+                        style="margin-bottom: 25px; background: rgba(255,255,255,0.03); padding: 15px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.05);">
+                        <label
+                            style="display: block; font-size: 14px; font-weight: 900; margin-bottom: 10px; color: var(--orange); text-transform: uppercase; letter-spacing: 1px;">FORÇAR
+                            PRÊMIO NA ROLETA:</label>
+                        <select id="force-prize-select" class="admin-select" style="width: 100%;">
+                            <option value="">[ Desativado - Sorteio Aleatório ]</option>
+                            <option value="Caneta">Caneta</option>
+                            <option value="Squeeze">Squeeze</option>
+                            <option value="Chaveiro Trena">Chaveiro Trena</option>
+                            <option value="Boné">Boné</option>
+                        </select>
+                    </div>
+
+                    <label
+                        style="display: block; font-size: 14px; font-weight: 900; margin-bottom: 12px; color: var(--orange); text-transform: uppercase; letter-spacing: 1px; text-align: left;">IR
+                        DIRETO PARA A TELA:</label>
+                    <div class="nav-shortcuts"
+                        style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-bottom: 20px;">
+                        <button onclick="showScreen('home'); closeAdmin();"
+                            style="font-size: 18px !important; padding: 20px !important; font-weight: 900 !important; border-radius: 16px !important;">🏠
+                            TELA HOME</button>
+                        <button onclick="demoAutoRegister()"
+                            style="font-size: 18px !important; padding: 20px !important; font-weight: 900 !important; border-radius: 16px !important; color: #00ff88;">👤
+                            TELA CADASTRO</button>
+                        <button onclick="demoJumpToRoulette()"
+                            style="font-size: 18px !important; padding: 20px !important; font-weight: 900 !important; border-radius: 16px !important; color: #ffaa00;">🎡
+                            TELA ROLETA</button>
+                        <button onclick="jumpToWinScreen()"
+                            style="font-size: 18px !important; padding: 20px !important; font-weight: 900 !important; border-radius: 16px !important; color: #00ff88;">🏆
+                            TELA GANHOU</button>
+                        <button onclick="jumpToLoseScreen()"
+                            style="font-size: 18px !important; padding: 20px !important; font-weight: 900 !important; border-radius: 16px !important; color: #ff4444;">❌
+                            TELA PERDEU</button>
+                    </div>
+                </div>
+
+                <!-- Tab 2: ESTOQUE -->
+                <div id="tab-estoque" class="admin-tab-content" style="display: none;">
+                    <div class="stock-header"
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                        <label
+                            style="font-size: 14px; font-weight: 900; color: var(--orange); text-transform: uppercase; letter-spacing: 1px;">ESTOQUE
+                            DE BRINDES</label>
+                        <button onclick="saveGeneralStock()"
+                            style="background: var(--orange) !important; color: white !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 12px !important; border: none !important; cursor: pointer !important; font-size: 16px !important;">SALVAR
+                            ESTOQUE</button>
+                    </div>
+                    <div class="stock-mini-list" id="admin-stock-info" style="margin-bottom: 20px;"></div>
+
+                    <button onclick="resetStock()"
+                        style="width: 100%; padding: 18px; background: rgba(255,170,0,0.1); border: 1px solid rgba(255,170,0,0.2); color: #ffaa00; border-radius: 16px; font-size: 18px; font-weight: bold; cursor: pointer;">🔄
+                        RESETAR ESTOQUE INICIAL</button>
+                </div>
+
+                <!-- Tab 3: ENCERRAMENTO -->
+                <div id="tab-encerramento" class="admin-tab-content" style="display: none;">
+                    <label
+                        style="display: block; font-size: 14px; font-weight: 900; margin-bottom: 15px; color: var(--orange); text-transform: uppercase; letter-spacing: 1px; text-align: left;">ENCERRAMENTO
+                        E RELATÓRIOS:</label>
+
+                    <div class="actions-grid"
+                        style="display: flex; flex-direction: column; gap: 15px; margin-bottom: 20px;">
+                        <button class="admin-btn-action csv" onclick="exportCSV()"
+                            style="font-size: 20px !important; padding: 25px !important; width: 100% !important; border-radius: 16px !important; font-weight: 900 !important; background: #00ff88 !important; color: black !important; border: none !important; box-shadow: 0 4px 15px rgba(0,255,136,0.2) !important;">📁
+                            SALVAR LEADS (CSV)</button>
+                        <button class="admin-btn-action finalize" onclick="finalizeDay()"
+                            style="font-size: 20px !important; padding: 25px !important; width: 100% !important; border-radius: 16px !important; font-weight: 900 !important; background: #ff4444 !important; color: white !important; border: none !important; box-shadow: 0 4px 15px rgba(255,68,68,0.2) !important;">🌙
+                            ENCERRAR O DIA (RESET)</button>
+                    </div>
+
+                    <div
+                        style="background: rgba(255,255,255,0.03); padding: 15px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); margin-bottom: 15px;">
+                        <h4 style="color: white; margin: 0 0 10px; font-size: 14px; text-transform: uppercase;">Ações
+                            Secundárias:</h4>
+                        <div style="display: flex; gap: 10px;">
+                            <button onclick="resetStats()"
+                                style="flex: 1; padding: 14px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 12px; font-size: 14px; cursor: pointer;">ZERAR
+                                LEADS LOCAIS</button>
+                            <button onclick="terminateTotem()"
+                                style="flex: 1; padding: 14px; background: rgba(255,0,0,0.1); border: 1px solid rgba(255,0,0,0.2); color: #ff4444; border-radius: 12px; font-size: 14px; cursor: pointer;">🛑
+                                FECHAR TOTEM</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hidden IDs for script compatibility -->
+                <div id="prize-summary-content" style="display:none;"></div>
+                <div id="prize-summary-icon" style="display:none;"></div>
+                <div id="prize-distribution-list" style="display:none;"></div>
+                <div id="admin-list-winners" style="display:none;"></div>
+                <div id="admin-list-losers" style="display:none;"></div>
+
+                <div id="admin-debug-log" style="display:none;"></div>
+                <div id="server-status" style="display:none;"><span class="status-text"></span></div>
+            </div>
+        </div>
+
+        <!-- HOME -->
+        <div id="screen-home" class="screen active">
+            <div class="content main-content">
+                <div class="logo-wrapper">
+                    <img src="panther.png" alt="Panther Lubrificantes" class="home-logo">
+                </div>
+                <div class="event-badge">AUTOPAR 2026</div>
+                <h1 class="main-title">QUIZ<br>PANTHER</h1>
+                <p class="subtitle">Responda as perguntas e<br>concorra a brindes exclusivos! ✨</p>
+
+                <div id="sold-out-banner" class="sold-out-banner hide"
+                    style="margin: 20px 0; background: rgba(255,0,0,0.2); border: 1px solid rgba(255,0,0,0.3); padding: 15px; border-radius: 12px; display: none;">
+                    <h2 style="color: #ff4444; margin: 0; font-size: 18px;">BRINDES ESGOTADOS</h2>
+                    <p style="margin: 5px 0 0; font-size: 14px; opacity: 0.8;">Agradecemos sua visita. Volte amanhã!</p>
+                </div>
+
+                <button class="btn btn-primary btn-jumbo bounce" onclick="goToRegister()">PARTICIPAR</button>
+            </div>
+        </div>
+
+        <!-- REGISTER -->
+        <div id="screen-register" class="screen">
+            <div class="content register-content">
+                <div class="glass-panel reg-panel">
+                    <div class="reg-logo-mini">
+                        <img src="logo.png" alt="Panther" class="reg-logo-img">
+                    </div>
+                    <h2 class="reg-title">Seus Dados</h2>
+                    <div class="field-group">
+                        <div class="field-inner">
+                            <input type="text" id="input-name" class="field-input" placeholder=" " maxlength="50"
+                                autocomplete="off">
+                            <label class="field-label">Nome completo</label>
+                            <span class="field-line"></span>
+                        </div>
+                    </div>
+                    <div class="field-group">
+                        <div class="field-inner">
+                            <input type="tel" id="input-phone" class="field-input" placeholder=" " maxlength="20"
+                                autocomplete="off">
+                            <label class="field-label">WhatsApp</label>
+                            <span class="field-line"></span>
+                        </div>
+                    </div>
+                    <div class="lgpd-toggle-row">
+                        <label class="lgpd-toggle-wrap">
+                            <input type="checkbox" id="input-lgpd" class="toggle-input">
+                            <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                            <span class="lgpd-toggle-text">Autorizo o uso dos meus dados conforme a LGPD.</span>
+                        </label>
+                    </div>
+                    <p id="form-error" class="form-error hide"></p>
+                    <button class="btn btn-link" onclick="showScreen('home')">Voltar</button>
+                </div>
+                <div class="reg-footer">
+                    <button class="btn btn-primary btn-block btn-jumbo" onclick="submitRegister()">▶ COMEÇAR
+                        QUIZ</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- QUIZ -->
+        <div id="screen-quiz" class="screen">
+            <div class="quiz-wrap glass-panel">
+                
+                <!-- Barra de Progresso Visível e Premium -->
+                <div class="progress-container" style="width: 100% !important; height: 10px !important; background: rgba(255, 255, 255, 0.15) !important; border-radius: 10px !important; margin-bottom: 20px !important; overflow: hidden !important; display: block !important;">
+                    <div id="progress-bar" class="progress-bar" style="width: 0%; height: 100% !important; background: linear-gradient(90deg, #ff8c00, #ff4500) !important; border-radius: 10px !important; transition: width 0.3s ease !important; display: block !important;"></div>
+                </div>
+                
+                <!-- Cabeçalho do Quiz -->
+                <div class="quiz-header" style="text-align: center; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                    <h2 class="section-title">DESAFIO PANTHER 🎯</h2>
+                    <div id="quiz-timer" class="quiz-timer">20s</div>
+                </div>
+
+                <!-- Caixa de Pergunta (Estilo Card Separado) -->
+                <div class="question-box">
+                    <h2 id="question-text">Carregando...</h2>
+                </div>
+
+                <!-- Alternativas -->
+                <div class="answers-container">
+                    <button class="btn btn-answer" id="ans-0" onclick="selectAnswer(0)"></button>
+                    <button class="btn btn-answer" id="ans-1" onclick="selectAnswer(1)"></button>
+                    <button class="btn btn-answer" id="ans-2" onclick="selectAnswer(2)"></button>
+                    <button class="btn btn-answer" id="ans-3" onclick="selectAnswer(3)"></button>
+                </div>
+
+                <!-- Rodapé com Contador e Botão Encerrar -->
+                <div class="quiz-footer-meta" style="width: 100% !important; display: flex !important; flex-direction: column !important; align-items: center; gap: 15px !important; margin-top: auto !important;">
+                    <div id="question-counter" class="counter" style="font-size: 26px !important; color: #ff4500 !important; font-weight: 900 !important; margin: 0 !important;">1 / 7</div>
+                    <button class="btn-cancel-quiz" onclick="openExitConfirm()" style="background: #ff4500 !important; color: white !important; font-size: 18px !important; font-weight: bold !important; letter-spacing: 1px !important; padding: 12px 35px !important; border-radius: 50px !important; border: none !important; cursor: pointer !important; text-align: center !important; box-shadow: 0 4px 10px rgba(255, 69, 0, 0.3) !important;">ENCERRAR</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- WIN -->
+        <div id="screen-win" class="screen">
+            <img src="panther.png" alt="Panther" style="width: 400px; margin-bottom: 40px; filter: drop-shadow(0 0 20px rgba(255, 69, 0, 0.5));">
+            <div class="content result-panel glass-panel" style="padding: 40px 30px !important; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 95% !important; max-width: 680px !important;">
+                <div style="font-size: 90px !important; margin-bottom: 15px !important; filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.6)); line-height: 1 !important; display: block !important;">🏆</div>
+                <h1 class="success-title" style="margin-bottom: 10px !important; font-weight: 900 !important; text-transform: uppercase; letter-spacing: 1px !important;">PARABÉNS, <span id="win-name" style="color: #ff4500 !important;">Visitante</span>!</h1>
+                <p class="subtitle" style="font-size: 28px !important; margin-bottom: 15px !important; font-weight: bold; color: white !important;">Você fez <span id="win-score"></span> pontos.</p>
+                
+                <div style="text-align: center; margin: 55px 0 !important; width: 100% !important; overflow: visible !important;">
+                    <img src="oleo_1.png" alt="Produtos" style="width: 100% !important; max-width: 540px !important; height: auto; transform: scale(1.55) !important; transform-origin: center !important; filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 15px rgba(255, 69, 0, 0.15));">
+                </div>
+                
+                <p style="font-size: 20px !important; color: #cccccc !important; margin-bottom: 25px !important; line-height: 1.4; text-align: center;">Gire a roleta para descobrir sua recompensa!</p>
+                
+                <button class="btn btn-primary btn-jumbo" onclick="showInstagram()" style="width: 100% !important; font-size: 28px !important;">GIRAR A ROLETA</button>
+            </div>
+        </div>
+
+        <!-- LOSE -->
+        <div id="screen-lose" class="screen">
+            <div class="content result-panel glass-panel" style="padding: 40px 30px !important; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 95% !important; max-width: 680px !important;">
+                <div style="font-size: 90px !important; margin-bottom: 15px !important; filter: drop-shadow(0 0 20px rgba(255, 69, 0, 0.4)); line-height: 1 !important; display: block !important;">🎯</div>
+                <h1 class="error-title" style="margin-bottom: 10px !important; font-weight: 900 !important; text-transform: uppercase; letter-spacing: 1px !important;">QUASE LÁ!</h1>
+                <p class="result-score-text" style="font-size: 28px !important; margin-bottom: 15px !important; font-weight: bold; color: white !important;">Você acertou <span id="lose-score">0</span> de 7.</p>
+                
+                <div style="text-align: center; margin: 55px 0 !important; width: 100% !important; overflow: visible !important;">
+                    <img src="Oleo_2.png" alt="Produtos" style="width: 100% !important; max-width: 540px !important; height: auto; transform: scale(1.55) !important; transform-origin: center !important; filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 15px rgba(255, 69, 0, 0.15));">
+                </div>
+                
+                <p style="font-size: 20px !important; color: #cccccc !important; margin-bottom: 25px !important; line-height: 1.4; text-align: center;">Não desanime! Tente responder novamente para ganhar brindes.</p>
+                <button class="btn btn-primary btn-jumbo" onclick="resetApp()" style="width: 100% !important; font-size: 28px !important;">TENTAR NOVAMENTE</button>
+            </div>
+        </div>
+
+        <!-- INSTAGRAM -->
+        <div id="screen-instagram" class="screen">
+            <img src="panther.png" alt="Panther" style="width: 400px; margin-bottom: 40px; filter: drop-shadow(0 0 20px rgba(255, 69, 0, 0.5));">
+            <div class="glass-panel instagram-panel" style="padding: 40px 30px !important; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 90% !important; max-width: 600px !important;">
+                <h1 style="font-size: 38px !important; margin: 0 !important; letter-spacing: 1px;">SIGA A PANTHER!</h1>
+                
+                <div class="qr-container" style="margin: 30px 0 !important;">
+                    <img src="qr_instagram.png" style="width: 320px; border-radius: 20px; box-shadow: 0 0 30px rgba(255,69,0,0.3);">
+                </div>
+                
+                <p style="font-size: 22px !important; color: #ffb74d !important; margin: 0 0 50px 0 !important; font-weight: bold;">Siga-nos para liberar a roleta!</p>
+                
+                <button class="btn btn-primary btn-jumbo" onclick="showRoulette()" style="width: 100% !important; font-size: 28px !important;">JÁ ESTOU SEGUINDO</button>
+            </div>
+        </div>
+
+        <!-- ROULETTE -->
+        <div id="screen-roulette" class="screen" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 50px 40px 30px 40px !important;">
+            <img src="panther.png" alt="Panther Lubrificantes" style="width: 400px !important; height: auto !important; display: block; margin: 25px auto 10px auto !important; filter: drop-shadow(0 0 15px rgba(255, 69, 0, 0.5));">
+            <div class="roulette-container" style="height: auto !important; width: 100% !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 15px !important; padding: 0 !important; margin-top: 15px !important;">
+                <div class="roulette-top" style="text-align: center; margin-bottom: 5px; padding-top: 0 !important;">
+                    <h2 class="roulette-title" style="margin: 10px 0 !important; font-size: 58px !important; line-height: 1.1 !important; letter-spacing: 1.5px !important; font-weight: 900 !important;">GIRE E GANHE!</h2>
+                    <p id="roulette-player-name" style="margin: 0 0 5px 0 !important; font-size: 24px !important; color: #ffb74d !important; font-weight: bold;"></p>
+                </div>
+                <div class="wheel-stage">
+                    <div class="wheel-pointer-wrap">
+                        <div id="wheel-pointer" class="wheel-pointer"></div>
+                    </div>
+                    <canvas id="wheel-canvas" width="800" height="800"></canvas>
+                </div>
+                <div class="roulette-bottom" style="text-align: center; width: 100%;">
+                    <div id="spin-status" class="spin-status" style="margin-bottom: 5px !important;">&nbsp;</div>
+                    <button id="btn-spin" class="btn btn-primary btn-jumbo" onclick="spinWheel()" style="width: 100% !important; max-width: 450px !important; height: auto !important; padding: 22px 35px !important; font-size: 28px !important; font-weight: 900 !important; border-radius: 50px !important; box-shadow: 0 8px 25px rgba(255, 69, 0, 0.4) !important; margin: 15px auto 0 auto !important; display: block !important;">GIRAR AGORA</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CODE -->
+        <div id="screen-code" class="screen">
+            <!-- Hidden rescue-code element to prevent JS TypeError since script.js expects it -->
+            <div id="rescue-code" style="display: none;"></div>
+            <div class="ticket-wrapper" style="width: 95% !important; max-width: 550px !important; border-radius: 28px !important; overflow: hidden !important; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6), 0 0 40px rgba(255, 69, 0, 0.2) !important; margin: 0 auto !important;">
+                <!-- Header: Orange Solid with Autopar and Center Panther Logo -->
+                <div class="ticket-top" style="background: #e04415 !important; padding: 40px 30px !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 20px !important; position: relative !important;">
+                    <h2 style="font-size: 38px !important; font-weight: 900 !important; color: white !important; text-transform: uppercase !important; letter-spacing: 4px !important; margin: 0 !important; text-shadow: 0 2px 4px rgba(0,0,0,0.2) !important;">AUTOPAR 2026</h2>
+                    <img src="panther.png" alt="Panther" style="height: 110px !important; width: auto !important; margin: 0 auto !important; display: block !important; filter: brightness(0) invert(1) !important;">
+                </div>
+                <!-- Body: White Solid with VOCÊ GANHOU and Prize Name -->
+                <div class="ticket-body" style="background: white !important; padding: 50px 40px !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 15px !important; min-height: 250px !important;">
+                    <p style="font-size: 24px !important; font-weight: 800 !important; color: #888888 !important; text-transform: uppercase !important; letter-spacing: 3px !important; margin: 0 !important;">VOCÊ GANHOU</p>
+                    <h2 id="code-prize-name" style="font-size: 62px !important; font-weight: 900 !important; color: #e04415 !important; text-transform: uppercase !important; margin: 15px 0 0 0 !important; letter-spacing: 1px !important; text-align: center !important; line-height: 1.2 !important;">...</h2>
+                </div>
+                <!-- Footer: Black Solid with Hashtag -->
+                <div class="ticket-bottom" style="background: #000000 !important; padding: 25px 20px !important; text-align: center !important; border-top: 1px solid rgba(255,255,255,0.05) !important;">
+                    <p style="color: #e04415 !important; font-size: 26px !important; font-weight: 900 !important; letter-spacing: 2px !important; margin: 0 !important; text-shadow: 0 0 15px rgba(224, 68, 21, 0.4) !important;">#PANTHERSAUTOPAR2026</p>
+                </div>
+            </div>
+            
+            <!-- Button & Countdown Timer -->
+            <button class="btn btn-primary btn-jumbo" onclick="resetApp(true)" style="width: 100% !important; max-width: 500px !important; height: 110px !important; font-size: 32px !important; font-weight: 900 !important; border-radius: 60px !important; margin-top: 35px !important; display: flex !important; align-items: center !important; justify-content: center !important; gap: 15px !important; background: transparent !important; border: 2px solid #ff4500 !important; color: #ff4500 !important; box-shadow: 0 0 25px rgba(255, 69, 0, 0.3) !important;">
+                <span style="background: #00ff88 !important; color: white !important; width: 50px !important; height: 50px !important; border-radius: 12px !important; display: flex !important; align-items: center !important; justify-content: center !important; font-size: 28px !important; font-weight: bold !important; line-height: 1 !important; margin-right: 5px !important;">✔</span>
+                FINALIZAR
+            </button>
+            <p style="font-size: 20px !important; color: #888888 !important; margin-top: 25px !important; text-align: center !important;">Voltando ao início em <span id="timer-sec" style="color: #ff4500 !important; font-weight: bold !important;">20</span>s...</p>
+        </div>
+
+        <!-- MODALS -->
+        <div id="screen-exit-confirm" class="screen screen-modal hide" style="z-index: 9999 !important;">
+            <div class="modal-backdrop" onclick="closeExitConfirm()" style="background: rgba(0,0,0,0.8) !important; backdrop-filter: blur(15px) !important;"></div>
+            <div class="confirm-content glass-panel" style="width: 90% !important; max-width: 750px !important; padding: 70px 50px !important; border-radius: 40px !important; border: 2px solid rgba(255, 69, 0, 0.4) !important; box-shadow: 0 25px 60px rgba(0,0,0,0.8), inset 0 0 40px rgba(255, 69, 0, 0.1) !important; text-align: center !important;">
+                <h2 style="font-size: 54px !important; font-weight: 900 !important; color: #ff4500 !important; letter-spacing: 2px !important; margin-top: 0 !important; margin-bottom: 20px !important; text-shadow: 0 0 20px rgba(255, 69, 0, 0.4) !important;">TEM CERTEZA?</h2>
+                <p style="font-size: 28px !important; color: #dddddd !important; margin-bottom: 50px !important;">Seu progresso será <strong>perdido</strong>.</p>
+                <div style="display:flex; flex-direction: row; gap: 30px; width: 100%;">
+                    <button onclick="closeExitConfirm()" style="flex: 1 !important; padding: 25px !important; font-size: 26px !important; font-weight: 900 !important; border-radius: 60px !important; background: transparent !important; color: #aaaaaa !important; border: 2px solid #555555 !important; box-shadow: none !important; cursor: pointer;">NÃO, VOLTAR</button>
+                    <button onclick="confirmExit()" style="flex: 1 !important; padding: 25px !important; font-size: 26px !important; font-weight: 900 !important; border-radius: 60px !important; background: linear-gradient(145deg, #e00000 0%, #ff4500 100%) !important; color: white !important; border: none !important; box-shadow: 0 10px 25px rgba(255, 69, 0, 0.5) !important; cursor: pointer;">SIM, ENCERRAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="confetti.browser.min.js"></script>
+    <script src="script.js?v=27"></script>
+    <div id="admin-trigger" class="admin-trigger-fixed" onclick="openAdmin()" style="position: fixed !important; top: 15px !important; left: 15px !important; right: auto !important; bottom: auto !important; width: 50px !important; height: 50px !important; background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; opacity: 0.15 !important; z-index: 999999 !important; display: flex !important; align-items: center !important; justify-content: center !important;">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" style="color: #ffffff; display: block;">
+            <path
+                d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z" />
+        </svg>
+    </div>
+</body>
+
+</html>
