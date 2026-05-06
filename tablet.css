@@ -1027,72 +1027,72 @@ body {
     }
 }
 
-/* ─── WIN SCREEN OVERRIDES (-30% COMPACT) ────────────────── */
+/* ─── WIN SCREEN OVERRIDES (PERFECT SCALE TO BORDERS) ────── */
 #screen-win {
     justify-content: center !important;
     padding: 15px !important;
 }
 
 #screen-win .win-logo {
-    width: 180px !important;
+    width: 220px !important;
     height: auto !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 15px !important;
 }
 
 #screen-win .result-panel {
-    padding: 20px 25px !important;
+    padding: 25px 30px !important;
     width: 95% !important;
-    max-width: 440px !important;
-    border-radius: 20px !important;
+    max-width: 500px !important;
+    border-radius: 24px !important;
 }
 
 #screen-win .trophy-icon {
-    font-size: 55px !important;
-    margin-bottom: 8px !important;
+    font-size: 70px !important;
+    margin-bottom: 12px !important;
     line-height: 1 !important;
 }
 
 #screen-win .success-title {
-    font-size: 26px !important;
+    font-size: 30px !important;
     font-weight: 900 !important;
-    margin-bottom: 5px !important;
+    margin-bottom: 8px !important;
     text-transform: uppercase !important;
 }
 
 #screen-win .subtitle {
-    font-size: 18px !important;
+    font-size: 22px !important;
     font-weight: bold !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 15px !important;
     color: white !important;
 }
 
 .win-product-box {
     text-align: center !important;
-    margin: 15px 0 !important;
+    margin: 25px 0 !important;
     width: 100% !important;
     overflow: visible !important;
 }
 
 .win-product-img {
     width: 100% !important;
-    max-width: 320px !important;
+    max-width: 380px !important;
     height: auto !important;
-    transform: scale(1.1) !important;
+    transform: scale(1.25) !important;
     transform-origin: center !important;
     filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 10px rgba(255, 69, 0, 0.15)) !important;
 }
 
 .win-help-text {
-    font-size: 15px !important;
+    font-size: 16px !important;
     color: #cccccc !important;
-    margin-bottom: 15px !important;
+    margin-bottom: 20px !important;
     line-height: 1.3 !important;
     text-align: center !important;
 }
 
 #screen-win .btn-jumbo {
-    height: 60px !important;
-    font-size: 20px !important;
-    border-radius: 30px !important;
+    height: 65px !important;
+    font-size: 24px !important;
+    border-radius: 35px !important;
     width: 100% !important;
 }
