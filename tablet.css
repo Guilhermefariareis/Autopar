@@ -494,12 +494,12 @@ body {
 
 .wheel-stage {
     position: relative;
-    width: min(320px, 48vh) !important;
-    height: min(320px, 48vh) !important;
+    width: min(370px, 52vh) !important;
+    height: min(370px, 52vh) !important;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 55px auto 10px auto !important;
+    margin: 40px auto 10px auto !important;
 }
 
 #wheel-canvas {
@@ -547,13 +547,13 @@ body {
 }
 
 .wheel-glow-ring.ring1 {
-    width: min(350px, calc(48vh + 30px)) !important;
-    height: min(350px, calc(48vh + 30px)) !important;
+    width: min(400px, calc(52vh + 30px)) !important;
+    height: min(400px, calc(52vh + 30px)) !important;
 }
 
 .wheel-glow-ring.ring2 {
-    width: min(300px, calc(48vh - 20px)) !important;
-    height: min(300px, calc(48vh - 20px)) !important;
+    width: min(350px, calc(52vh - 20px)) !important;
+    height: min(350px, calc(52vh - 20px)) !important;
 }
 
 .spin-status {
