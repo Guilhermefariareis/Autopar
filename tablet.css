@@ -455,7 +455,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px auto 10px auto !important;
+    margin: 30px auto 10px auto !important;
 }
 
 #wheel-canvas {
